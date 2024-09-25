@@ -15,6 +15,7 @@ import {
 import IconContainer from "./iconContainer";
 import Input from "./input";
 import Button from "./button";
+import ModalThankYou from "./modalThankYou";
 
 export default function Form() {
   const [formData, setFormData] = useState({
@@ -22,6 +23,8 @@ export default function Form() {
     from_correo: "",
     from_message: "",
   });
+
+  const [isOpen, setIsOpen] = useState(false);
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -50,6 +53,10 @@ export default function Form() {
             from_message: "",
           });
           console.log(result.text);
+          setIsOpen(true);
+          setTimeout(() => {
+            setIsOpen(false);
+          }, 6000);
         },
         (error) => {
           console.log(error.text);
@@ -119,6 +126,8 @@ export default function Form() {
           </Button>
         </form>
       </div>
+      {}
+      <ModalThankYou isOpen={isOpen}/>
     </div>
   );
 }

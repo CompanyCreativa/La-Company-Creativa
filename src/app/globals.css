@@ -1,0 +1,327 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@font-face {
+  font-family: 'Cooper';
+  src: url('assets/fonts/CooperHewitt-Thin.otf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cooper';
+  src: url('assets/fonts/CooperHewitt-Book.otf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cooper';
+  src: url('assets/fonts/CooperHewitt-Bold.otf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cooper';
+  src: url('assets/fonts/CooperHewitt-Heavy.otf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cooper';
+  src: url('assets/fonts/CooperHewitt-Light.otf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cooper';
+  src: url('assets/fonts/CooperHewitt-Medium.otf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cooper';
+  src: url('assets/fonts/CooperHewitt-Semibold.otf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Mangiola';
+  src: url('assets/fonts/Mangiola-Italic-BF64701b1cba905.otf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Mangiola';
+  src: url('assets/fonts/Mangiola-SemiBold-BF64701b1c3ab22.otf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Archivo';
+  src: url('assets/fonts/Archivo_Condensed-Light\ 2.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Mosk';
+  src: url('assets/fonts/Mosk\ Light\ 300.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Mosk';
+  src: url('assets/fonts/Mosk\ Medium\ 500.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+
+
+* {
+  font-family: 'Cooper', sans-serif;
+  line-height: normal;
+
+}
+
+body {
+  background-color: #fff8ea;
+}
+
+
+.mangiola {
+  font-family: "Mangiola", sans-serif;
+
+}
+
+
+.mosk {
+  font-family: "Mosk", sans-serif;
+  font-style: normal;
+}
+
+.archivo-condensed {
+  font-family: "Archivo", sans-serif;
+  font-style: normal;
+}
+
+.active {
+  position: relative
+}
+
+.active::after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  background-color: #363A3D;
+  height: 2px;
+}
+
+.header-item {
+  position: relative;
+
+}
+
+.header-item::after {
+  content: "";
+  width: 0%;
+  opacity: 0;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #363A3D;
+  height: 2px;
+  transition: all 0.2s ease-in;
+}
+
+.header-item:hover::after {
+  width: 100%;
+  opacity: 1;
+}
+
+
+/* Swiper custom styles */
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.homeSwiper {
+  padding-bottom: 32px !important;
+
+}
+
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+
+.swiper-container-free-mode>.swiper-wrapper {
+  transition-timing-function: linear !important;
+}
+
+.swiper-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  position: absolute !important;
+  bottom: 0px !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  width: fit-content !important;
+  height: fit-content;
+  z-index: 10 !important;
+}
+
+
+
+.swiper-pagination-bullet {
+  border: 1px solid #C6C6C6;
+  background-color: #C6C6C6 !important;
+  width: 12px !important;
+  height: 12px !important;
+  opacity: 1 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #454545 !important;
+  border: 1px solid #454545
+}
+
+/* end of Swiper custom styles */
+
+/* custom styles for material ui accordion */
+
+.accordion-rounded {
+  border-radius: 0px !important;
+  background-color: #fff8ea !important;
+  box-shadow: none !important;
+  height: fit-content;
+}
+
+.accordion-rounded::before {
+  height: 0px !important;
+}
+
+.accordion-rounded .MuiAccordionSummary-content {
+  margin: 0 !important;
+}
+
+.css-1086bdv-MuiPaper-root-MuiAccordion-root.Mui-expanded {
+  margin: 0 !important;
+}
+
+/* end of custom styles for material ui accordion */
+
+
+.member span:nth-of-type(1)::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  transition: 0.2s;
+}
+
+.member span:nth-of-type(1)::after {
+  content: "";
+  position: absolute;
+  bottom: 8px;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  transition: 0.2s;
+}
+
+
+
+/* Animations for homeSwiper */
+
+.slide-up {
+  animation: slide-up 1s ease-in-out;
+  opacity: 1;
+}
+
+
+@keyframes slide-up {
+
+  0% {
+    bottom: -50%;
+  }
+
+  50% {
+    opacity: 0.3;
+    bottom: -20%;
+  }
+
+  100% {
+    opacity: 0.7;
+    bottom: 32px;
+  }
+}
+
+
+
+/* End of Animations for homeSwiper */
+
+
+.slide-down {
+  animation: slide-down 0.5s ease-in-out;
+  opacity: 1;
+}
+
+
+@keyframes slide-down {
+
+  0% {
+    top: -50%;
+    opacity: 0.9;
+  }
+
+
+  100% {
+    opacity: 1;
+    top: 0px;
+  }
+}
+
+
+
+@media screen and (max-width: 1023px) {
+  .swiper-pagination-bullet {
+    width: 9px !important;
+    height: 9px !important;
+  }
+
+  .active::after {
+    background-color: white;
+    height: 0;
+  }
+}

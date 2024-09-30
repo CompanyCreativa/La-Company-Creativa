@@ -22,9 +22,6 @@ export default function TeamMembersList() {
               "relative right-[7%] 2xl:right-[7%] 3xl:right-[4%] max-w-[112%]";
           }
 
-          if (teamMember.name === "SARA lóPEZ") {
-          }
-
           return (
             <TeamMember
               key={index}
@@ -48,9 +45,6 @@ export default function TeamMembersList() {
           if (teamMember.name === "Alejandro ossa") {
             className =
               "relative right-[7%] 2xl:right-[7%] 3xl:right-[4%] max-w-[112%]";
-          }
-
-          if (teamMember.name === "SARA lóPEZ") {
           }
 
           return (

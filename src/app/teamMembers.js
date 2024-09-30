@@ -1,19 +1,19 @@
-import alejaImg from "/public/teamMembers/alejaImg.png";
-import alejoImg from "/public/teamMembers/alejoImg.png";
-import claudiaImg from "/public/teamMembers/claudiaImg.png";
-import daniImg from "/public/teamMembers/daniImg.png";
-import emmaImg from "/public/teamMembers/emmaImg.png";
-import estebanImg from "/public/teamMembers/estebanImg.png";
-import gabrielImg from "/public/teamMembers/gabrielImg.png";
-import gladysImg from "/public/teamMembers/gladysImg.png";
-import guilleImg from "/public/teamMembers/guilleImg.png";
-import karlaImg from "/public/teamMembers/karlaImg.png";
-import manuImg from "/public/teamMembers/manuImg.png";
-import mileImg from "/public/teamMembers/mileImg.png";
-import moniImg from "/public/teamMembers/moniImg.png";
-import saraImg from "/public/teamMembers/saraImg.png";
-import sebasImg from "/public/teamMembers/sebasImg.png";
-import tomasImg from "/public/teamMembers/tomasImg.png";
+import alejaImg from "/public/teamMembers/news/alejalmg.png";
+import alejoImg from "/public/teamMembers/news/alejolmg.png";
+import claudiaImg from "/public/teamMembers/news/claudialmg.png";
+import daniImg from "/public/teamMembers/news/danilmg.png";
+import emmaImg from "/public/teamMembers/news/emmalmg.png";
+import estebanImg from "/public/teamMembers/news/estebanlmg.png";
+import gabrielImg from "/public/teamMembers/news/gabriellmg.png";
+import gladysImg from "/public/teamMembers/news/gladyslmg.png";
+import guilleImg from "/public/teamMembers/news/guillelmg.png";
+import karlaImg from "/public/teamMembers/news/karlalmg.png";
+import manuImg from "/public/teamMembers/news/manulmg.png";
+import mileImg from "/public/teamMembers/news/milelmg.png";
+import moniImg from "/public/teamMembers/news/monilmg.png";
+import saraImg from "/public/teamMembers/news/saralmg.png";
+import sebasImg from "/public/teamMembers/news/sebaslmg.png";
+import tomasImg from "/public/teamMembers/news/tomaslmg.png";
 
 export const teamMembers = [
   {

@@ -15,16 +15,21 @@ import {
 import IconContainer from "./iconContainer";
 import Input from "./input";
 import Button from "./button";
-import ModalThankYou from "./modalThankYou";
 
 export default function Form() {
   const [formData, setFormData] = useState({
     from_name: "",
     from_correo: "",
     from_message: "",
+    check: false,
   });
 
-  const [isOpen, setIsOpen] = useState(false);
+  const handleCheckboxChange = () => {
+    setFormData((prevData) => ({
+      ...prevData,
+      check: !prevData.check,
+    }));
+  };
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -38,30 +43,30 @@ export default function Form() {
   const sendEmail = async (e) => {
     e.preventDefault();
 
-    emailjs
-      .send(
-        "service_r145bos",
-        "template_p5p51zs",
-        formData,
-        "FWjbrvz8yv7lrOYwV"
-      )
-      .then(
-        (result) => {
-          setFormData({
-            from_name: "",
-            from_correo: "",
-            from_message: "",
-          });
-          console.log(result.text);
-          setIsOpen(true);
-          setTimeout(() => {
-            setIsOpen(false);
-          }, 6000);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+    if (formData.check !== false) {
+      emailjs
+        .send(
+          "service_r145bos",
+          "template_p5p51zs",
+          formData,
+          "FWjbrvz8yv7lrOYwV"
+        )
+        .then(
+          (result) => {
+            setFormData({
+              from_name: "",
+              from_correo: "",
+              from_message: "",
+              check: false,
+            });
+
+            window.location.href = "/gracias";
+          },
+          (error) => {
+            console.log(error.text);
+          }
+        );
+    }
   };
 
   return (
@@ -121,13 +126,17 @@ export default function Form() {
             value={formData.mensaje}
             onChange={handleInputChange}
           />
-          <Button color={"border"} type="button">
+          <Input
+            type={"checkbox"}
+            name="from_check"
+            value={formData.check}
+            onClick={handleCheckboxChange}
+          />
+          <Button color={formData.check ? "border" : "disabled"} type="button">
             Enviar
           </Button>
         </form>
       </div>
-      {}
-      <ModalThankYou isOpen={isOpen}/>
     </div>
   );
 }

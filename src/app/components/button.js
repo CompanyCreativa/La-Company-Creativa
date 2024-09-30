@@ -13,6 +13,9 @@ export default function Button({ children, color, type = "button", link }) {
   } else if (color === "border") {
     classes =
       "text-base font-normal bg-transparent text-[#11190C] border border-[#11190C] px-7 py-2 tracking-widest self-start";
+  } else if (color === "disabled") {
+    classes =
+      "text-base font-normal bg-[#808080] text-[#11190C] border border-[#11190C] px-7 py-2 tracking-widest self-start cursor-not-allowed";
   }
 
   if (type === "link") {

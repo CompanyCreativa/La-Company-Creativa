@@ -44,7 +44,7 @@ export default function TeamMembersList() {
 
           if (teamMember.name === "Alejandro ossa") {
             className =
-              "relative right-[7%] 2xl:right-[7%] 3xl:right-[4%] max-w-[112%]";
+              "relative right-[5%] 2xl:right-[7%] 3xl:right-[4%] max-w-[112%]";
           }
 
           return (

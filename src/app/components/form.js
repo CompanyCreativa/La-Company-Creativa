@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import emailjs from "emailjs-com";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -15,16 +15,33 @@ import {
 import IconContainer from "./iconContainer";
 import Input from "./input";
 import Button from "./button";
-import { GoogleReCaptchaProvider, useGoogleReCaptcha } from "react-google-recaptcha-v3";
+import {
+  GoogleReCaptchaProvider,
+  useGoogleReCaptcha,
+} from "react-google-recaptcha-v3";
 
-export default function Form() {
+function FormComponent() {
   const { executeRecaptcha } = useGoogleReCaptcha(); // Hook para obtener el token
   const [formData, setFormData] = useState({
     from_name: "",
     from_correo: "",
     from_message: "",
     check: false,
+    from_phone: "",
   });
+  const [checkForm, setCheckForm] = useState(false);
+  const [isFormValid, setIsFormValid] = useState(false); // Estado para controlar si el formulario es válido
+
+  // Actualiza la validez del formulario
+  useEffect(() => {
+    const isValid =
+      formData.from_name !== "" &&
+      formData.from_correo !== "" &&
+      formData.from_phone !== "" &&
+      formData.from_message !== "" &&
+      formData.check;
+    setIsFormValid(isValid);
+  }, [formData]);
 
   const handleCheckboxChange = () => {
     setFormData((prevData) => ({
@@ -41,15 +58,13 @@ export default function Form() {
     }));
   };
 
-  console.log("hola");
-
   const sendEmail = async (e) => {
     e.preventDefault();
 
-    if (formData.check !== false) {
+    if (isFormValid) {
+      setCheckForm(true);
       const token = await executeRecaptcha("submit_form");
       formData["g-recaptcha-response"] = token;
-      console.log(token);
       emailjs
         .send(
           "service_r145bos",
@@ -64,8 +79,8 @@ export default function Form() {
               from_correo: "",
               from_message: "",
               check: false,
+              from_phone: "",
             });
-
             // window.location.href = "/gracias";
           },
           (error) => {
@@ -75,7 +90,6 @@ export default function Form() {
     }
   };
 
-  // ! RECORDAR PONER LAS VARIABLES DE ENTORNO DE SERVIDOR!!!
   return (
     <GoogleReCaptchaProvider reCaptchaKey="6LdzC1UqAAAAANjJhkHauOCOdlaJTb7yQejRiQZI">
       <div className="bg-background mt-12">
@@ -128,6 +142,13 @@ export default function Form() {
               onChange={handleInputChange}
             />
             <Input
+              placeholder={"Num. telefónico"}
+              type="tel"
+              name="from_phone"
+              value={formData.from_phone}
+              onChange={handleInputChange}
+            />
+            <Input
               placeholder={"Mensaje"}
               type="textarea"
               name="from_message"
@@ -141,14 +162,23 @@ export default function Form() {
               onClick={handleCheckboxChange}
             />
             <Button
-              color={formData.check ? "border" : "disabled"}
-              type="button"
+              color={isFormValid ? "border" : "disabled"}
+              type="submit"
+              disabled={!isFormValid} // Botón deshabilitado si el formulario no es válido
             >
               Enviar
             </Button>
           </form>
         </div>
       </div>
+    </GoogleReCaptchaProvider>
+  );
+}
+
+export default function Form() {
+  return (
+    <GoogleReCaptchaProvider reCaptchaKey="TU_CLAVE_DE_RECAPTCHA">
+      <FormComponent />
     </GoogleReCaptchaProvider>
   );
 }

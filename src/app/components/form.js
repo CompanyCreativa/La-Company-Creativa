@@ -91,7 +91,6 @@ function FormComponent() {
   };
 
   return (
-    <GoogleReCaptchaProvider reCaptchaKey="6LdzC1UqAAAAANjJhkHauOCOdlaJTb7yQejRiQZI">
       <div className="bg-background mt-12">
         <div className="w-[91.5%] lg:w-[90%] max-w-[1373px] mx-auto lg:border-t lg:border-l lg:border-[#3A3A3A]/50 flex flex-col px-5 lg:flex-row lg:justify-between lg:items-start lg:pl-[6%] lg:pt-[6%] lg:pr-[2%]">
           <div>
@@ -171,13 +170,12 @@ function FormComponent() {
           </form>
         </div>
       </div>
-    </GoogleReCaptchaProvider>
   );
 }
 
 export default function Form() {
   return (
-    <GoogleReCaptchaProvider reCaptchaKey="TU_CLAVE_DE_RECAPTCHA">
+    <GoogleReCaptchaProvider reCaptchaKey="6LdvCVUqAAAAAFu4m6fcWmoaqH9ChXiuv4svye7d">
       <FormComponent />
     </GoogleReCaptchaProvider>
   );

@@ -9,110 +9,135 @@ import gladysImg from "/public/teamMembers/news/gladyslmg.png";
 import guilleImg from "/public/teamMembers/news/guillelmg.png";
 import karlaImg from "/public/teamMembers/news/karlalmg.png";
 import manuImg from "/public/teamMembers/news/manulmg.png";
-import mileImg from "/public/teamMembers/news/milelmg.png";
+import mileImg from "/public/teamMembers/news/mileImg.png";
 import moniImg from "/public/teamMembers/news/monilmg.png";
 import saraImg from "/public/teamMembers/news/saralmg.png";
 import sebasImg from "/public/teamMembers/news/sebaslmg.png";
 import tomasImg from "/public/teamMembers/news/tomaslmg.png";
+import mateoImg from "/public/teamMembers/news/mateoImg.png";
+import federicoImg from "/public/teamMembers/news/federicoImg.png";
+import kellyImg from "/public/teamMembers/news/kellyImg.png";
+import yenniImg from "/public/teamMembers/news/yenniImg.png";
 
 export const teamMembers = [
   {
+    img: mateoImg, 
+    name: "Mateo Morales",
+    profesion: "Director creativo",
+    position: 1,
+  },
+  {
     img: estebanImg,
     name: "Esteban restrepo",
-    profesion: "Director de planeación",
-    position: 1,
+    profesion: "Socio/Proyectos especiales",
+    position: 2,
+  },
+  {
+    img: mileImg,
+    name: "Milena garzón",
+    profesion: "Directora ejecutiva",
+    position: 3,
   },
   {
     img: tomasImg,
     name: "tomás jaramillo",
-    profesion: "Coordinador digital",
-    position: 2,
+    profesion: "Estratega digital",
+    position: 4,
   },
   {
     img: gabrielImg,
     name: "Gabriel Jaramillo",
-    profesion: "Director de publicidad",
-    position: 3,
+    profesion: "Fundador/Director General",
+    position: 5,
   },
-
+  {
+    img: kellyImg, 
+    name: "Kelly Orozco",
+    profesion: "Creativa gráfica",
+    position: 6,
+  },
   {
     img: guilleImg,
     name: "GUILLERMO FUENTES",
     profesion: "Creativo gráfico",
-    position: 6,
+    position: 8,
   },
   {
     img: daniImg,
     name: "DANIEL ZAPATA",
     profesion: "Diseñador UI UX",
-    position: 5,
+    position: 9,
   },
   {
-    img: manuImg,
-    name: "Manuela Correa",
-    profesion: "Community manager",
-    position: 4,
+    img: yenniImg, 
+    name: "Yenifer Cadavid",
+    profesion: "Creativa audiovisual",
+    position: 10,
   },
   {
-    img: karlaImg,
-    name: "Karla Estrada",
-    profesion: "Creativa gráfica",
-    position: 7,
+    img: federicoImg, 
+    name: "Federico López",
+    profesion: "Programador",
+    position: 11,
   },
   {
     img: saraImg,
     name: "SARA lóPEZ",
     profesion: "Creativa gráfica",
-    position: 8,
+    position: 12,
   },
   {
     img: alejoImg,
     name: "Alejandro ossa",
     profesion: "Copy writer",
-    position: 9,
+    position: 13,
   },
   {
     img: sebasImg,
     name: "sebastían salavarrieta",
     profesion: "Community manager",
-    position: 10,
+    position: 14,
   },
-
+  {
+    img: karlaImg,
+    name: "Karla Estrada",
+    profesion: "Creativa gráfica",
+    position: 15,
+  },
+  {
+    img: manuImg,
+    name: "Manuela Correa",
+    profesion: "Community manager",
+    position: 16,
+  },
   {
     img: alejaImg,
     name: "Alejandra luján",
     profesion: "Project manager",
-    position: 11,
-  },
-
-  {
-    img: mileImg,
-    name: "Milena garzón",
-    profesion: "Project manager",
-    position: 12,
+    position: 17,
   },
   {
     img: emmaImg,
     name: "emma villareal",
     profesion: "Project manager",
-    position: 13,
+    position: 18,
   },
   {
     img: gladysImg,
     name: "Gladys Rodríguez",
     profesion: "Coordinadora administrativa",
-    position: 14,
+    position: 19,
   },
   {
     img: claudiaImg,
     name: "Claudia llano",
     profesion: "Auxiliar administrativa",
-    position: 15,
+    position: 20,
   },
   {
     img: moniImg,
     name: "mónica arias",
     profesion: "Coordinadora de RH",
-    position: 16,
+    position: 21,
   },
 ];

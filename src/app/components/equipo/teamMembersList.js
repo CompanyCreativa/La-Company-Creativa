@@ -22,6 +22,11 @@ export default function TeamMembersList() {
               "relative right-[7%] 2xl:right-[7%] 3xl:right-[4%] max-w-[112%]";
           }
 
+          if (teamMember.name === "Kelly Orozco") {
+            className =
+              "max-w-[105.5%] lg:max-w-[120%] 2xl:max-w-[114%] 2xl:w-[114%] relative sm:right-[10%] lg:ml-3";
+          }
+
           return (
             <TeamMember
               key={index}
@@ -33,7 +38,7 @@ export default function TeamMembersList() {
           );
         })}
       </div>
-      <div className="w-full flex flex-col lg:flex-row lg:flex-wrap justify-between lg:hidden">
+      <div className="w-full flex flex-col lg:flex-row lg:flex-wrap lg:hidden">
         {orderedMembers.map((teamMember, index) => {
           let className;
 
@@ -45,6 +50,11 @@ export default function TeamMembersList() {
           if (teamMember.name === "Alejandro ossa") {
             className =
               "relative right-[5%] 2xl:right-[7%] 3xl:right-[4%] max-w-[112%]";
+          }
+
+          if (teamMember.name === "Kelly Orozco") {
+            className =
+              "max-w-[120%] lg:max-w-[180%] 2xl:max-w-[160%] 2xl:w-[140%] z-900 ";
           }
 
           return (

@@ -2,12 +2,12 @@ import Image from "next/image";
 
 export default function TeamMember({ img, name, profesion, className }) {
   return (
-    <div className={`flex justify-center w-full lg:w-[31%] w-[87%]`}>
+    <div className={`flex justify-center w-full lg:w-[31%] w-[87%] mx-auto `}>
       <div>
         <Image
           src={img}
           alt="miembro del equipo de la company creativa"
-          className={`lg:h-[32.5vw] xl:h-[28vw] 2xl:max-h-[509px]  mt-10 object-cover ${
+          className={`lg:h-[32.5vw] xl:h-[28vw] 2xl:max-h-[509px]  mt-10 object-cover  ${
             className ? className : ""
           }`}
         />

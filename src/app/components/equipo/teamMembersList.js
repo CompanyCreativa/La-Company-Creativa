@@ -8,7 +8,7 @@ export default function TeamMembersList() {
   );
   return (
     <div className=" w-[95%] max-w-[1560px] mx-auto mt-10 lg:mt-16">
-      <div className="w-full flex-col lg:flex-row lg:flex-wrap justify-between hidden lg:flex">
+      <div className="w-full flex-col lg:flex-row lg:flex-wrap  hidden lg:flex">
         {teamMembers.map((teamMember, index) => {
           let className;
 
@@ -24,7 +24,7 @@ export default function TeamMembersList() {
 
           if (teamMember.name === "Kelly Orozco") {
             className =
-              "max-w-[105.5%] lg:max-w-[120%] 2xl:max-w-[114%] 2xl:w-[114%] relative sm:right-[10%] lg:ml-3";
+              "max-w-[105.5%] lg:max-w-[120%] 2xl:max-w-[140%] 2xl:w-[114%] relative sm:right-[10%] lg:right-0 lg:ml-3";
           }
 
           return (
@@ -38,7 +38,7 @@ export default function TeamMembersList() {
           );
         })}
       </div>
-      <div className="w-full flex flex-col lg:flex-row lg:flex-wrap lg:hidden">
+      <div className="w-full flex flex-col lg:flex-row lg:flex-wrap lg:hidden overflow-x-hidden">
         {orderedMembers.map((teamMember, index) => {
           let className;
 

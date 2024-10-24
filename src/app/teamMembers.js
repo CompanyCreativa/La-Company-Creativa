@@ -29,7 +29,7 @@ export const teamMembers = [
   {
     img: estebanImg,
     name: "Esteban restrepo",
-    profesion: "Socio/Proyectos especiales",
+    profesion: "Socio / Proyectos especiales",
     position: 2,
   },
   {
@@ -65,7 +65,7 @@ export const teamMembers = [
   {
     img: daniImg,
     name: "DANIEL ZAPATA",
-    profesion: "Diseñador UI UX",
+    profesion: "Diseñador UX",
     position: 9,
   },
   {
@@ -89,7 +89,7 @@ export const teamMembers = [
   {
     img: alejoImg,
     name: "Alejandro ossa",
-    profesion: "Copy writer",
+    profesion: "Creativo Copy",
     position: 13,
   },
   {
@@ -113,13 +113,13 @@ export const teamMembers = [
   {
     img: alejaImg,
     name: "Alejandra luján",
-    profesion: "Project manager",
+    profesion: "Ejecutiva de Cuentas",
     position: 17,
   },
   {
     img: emmaImg,
     name: "emma villareal",
-    profesion: "Project manager",
+    profesion: "Ejecutiva de Cuentas / Producción",
     position: 18,
   },
   {
@@ -137,7 +137,7 @@ export const teamMembers = [
   {
     img: moniImg,
     name: "mónica arias",
-    profesion: "Coordinadora de RH",
+    profesion: "Gestión Humana",
     position: 21,
   },
 ];

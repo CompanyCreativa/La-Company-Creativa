@@ -7,7 +7,7 @@ export default function TeamMember({ img, name, profesion, className }) {
         <Image
           src={img}
           alt="miembro del equipo de la company creativa"
-          className={`lg:h-[32.5vw] xl:h-[28vw] 2xl:max-h-[509px]  mt-10 object-cover  ${
+          className={`lg:h-[32.5vw] xl:h-[30vw] 2xl:max-h-[509px]  mt-10 object-cover  ${
             className ? className : ""
           }`}
         />

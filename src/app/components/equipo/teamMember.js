@@ -11,15 +11,11 @@ export default function TeamMember({ img, name, profesion, className }) {
             className ? className : ""
           }`}
         />
-        <div
-          className={`member relative mt-5 w-fit px-7 lg:px-7 2xl:px-8 py-1 text-[#11190c] ${
-            name === "Alejandro ossa"  ? "relative lg:left-0 2xl:left-4" : ""
-          }`}
-        >
-          <h3 className="text-xl lg:text-[17px] 2xl:text-[26px] uppercase font-bold">
+        <div className={`relative mt-5 ml-14 w-fit  py-1 text-[#11190c]`}>
+          <h3 className="text-xl lg:text-[17px] 2xl:text-[30px] font-bold SpaceGrotesk">
             {name}
           </h3>
-          <p className="font-montserrat text-sm lg:text-[15px] 2xl:text-xl font-light">
+          <p className="border-t border-[#11190c] border-b mt-2 w-fit font-montserrat text-sm lg:text-[15px] 2xl:text-lg font-light">
             {profesion}
           </p>
           <span></span>

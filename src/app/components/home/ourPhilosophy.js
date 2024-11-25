@@ -4,22 +4,28 @@ import Image from "next/image";
 import Button from "../button";
 
 import heartImg from "/public/heartImg.png";
+import heart from "/public/heart.png";
+import decoration from "/public/decoration.png";
 import Section from "../section";
 
 function OurPhilosophy() {
   return (
-    <Section className={"bg-background"}>
-      <div className="w-full mt-12 max-w-[1230px] mx-auto flex flex-col lg:flex-row justify-between items-center gap-10 px-5">
-        <div className="flex flex-col gap-6 max-w-[486px]">
-          <h1 className="text-[32px] font-normal tracking-wider">
-            <strong>Nuestra</strong> filosofía
-          </h1>
-          <span className="text-base font-thin leading-8 lg:leading-9 lg:text-lg">
-            El activo más importante de <strong>La Company</strong> es el
-            <strong> recurso humano</strong>, por eso promovemos{" "}
-            <strong>el crecimiento personal y profesional</strong>, impulsamos
-            planes de estudio y capacitación y permitimos su participación en
-            las utilidades anuales.
+    <Section className={"bg-transparent mt-20"}>
+      <h1 className="ml-20 SpaceGrotesk text-[40px] mb-10 tracking-widest font-semibold">
+        Nuestra filosofía
+      </h1>
+      <div className="w-full max-w-[1600px] mx-auto flex flex-col lg:flex-row justify-between items-center gap-10 px-20 py-[100px] border bg-background relative overflow-hidden">
+        <div className="flex flex-col gap-6 max-w-[600px] ">
+          <span className="text-base font-light font-SpaceGrotesk tracking-wider leading-8 lg:leading-9 lg:text-2xl">
+            El activo más importante de{" "}
+            <strong className="font-semibold">La Company</strong> es el
+            <strong className="font-semibold"> recurso humano</strong>, por eso
+            promovemos{" "}
+            <strong className="font-semibold">
+              el crecimiento personal y profesional
+            </strong>
+            , impulsamos planes de estudio y capacitación y permitimos su
+            participación en las utilidades anuales.
           </span>
           <div className="mt-4 flex flex-col gap-14 lg:gap-0">
             <div className="-ml-1 flex flex-col gap-10 items-start lg:hidden lg:mt-8">
@@ -34,8 +40,15 @@ function OurPhilosophy() {
             </Button>
           </div>
         </div>
-        <div className="mt-8 -ml-1 hidden flex-col gap-10 items-start lg:flex">
-          <Image src={heartImg} alt="Human for human image" />
+        <div className="absolute hidden flex-col gap-10 items-start lg:flex bottom-0  right-[-10%]">
+          <Image
+            src={decoration}
+            alt="Human for human image"
+            className="w-[90%]"
+          />
+        </div>
+        <div className="absolute hidden flex-col gap-10 items-start lg:flex bottom-[-60%] right-[10%]">
+          <Image src={heart} alt="Human for human image" className="w-[90%]" />
         </div>
       </div>
     </Section>

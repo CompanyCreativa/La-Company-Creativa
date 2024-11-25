@@ -20,11 +20,14 @@ export default function OurClients() {
     <div className="bg-[#0C0C0C] pt-12 pb-16 flex flex-col">
       <Section>
         <div className="lg:mt-12">
-          <h1 className="text-white text-lg tracking-widest leading-7 lg:text-[32px] ">
-            <strong>Así hemos</strong> materializado{" "}
-            <span className="font-bold text-companyGreen">las ideas</span>
+          <h1 className="font-SpaceGrotesk font-normal text-white text-lg tracking-widest leading-7 lg:text-[32px] ">
+            Ideas que hemos
+            <span className="font-semibold text-companySalmon">
+              {" "}
+              materializado{" "}
+            </span>
             <br /> para
-            <strong> nuestros clientes</strong>
+            <strong className="font-semibold"> nuestros clientes</strong>
           </h1>
         </div>
         <div>

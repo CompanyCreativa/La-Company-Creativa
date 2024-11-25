@@ -11,7 +11,6 @@ import {
   faBehance,
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
-import decorationtwo from "/public/decoration2.png";
 
 import IconContainer from "./iconContainer";
 import Input from "./input";
@@ -20,10 +19,18 @@ import {
   GoogleReCaptchaProvider,
   useGoogleReCaptcha,
 } from "react-google-recaptcha-v3";
+import ArrowTitle from "./SVGicons/arrowTitle";
+import decorationthree from "/public/decorationthree.png";
 import Image from "next/image";
+import brandOne from "/public/brandOne.png";
+import brandTwo from "/public/brandTwo.png";
+import brandThree from "/public/brandThree.png";
+import brandFour from "/public/brandFour.png";
+import brandFive from "/public/brandFive.png";
+import brandSix from "/public/brandSix.png";
 import Link from "next/link";
 
-function FormComponent() {
+function FormContactComponent() {
   const { executeRecaptcha } = useGoogleReCaptcha(); // Hook para obtener el token
   const [formData, setFormData] = useState({
     from_name: "",
@@ -94,23 +101,87 @@ function FormComponent() {
   };
 
   return (
-    <div className="mt-12">
-      <div className="max-w-[1400px] mx-auto border bg-background flex flex-col px-5 lg:flex-row lg:justify-between lg:items-start lg:pl-[6%] lg:pt-[6%] lg:pr-[2%] overflow-hidden relative">
-        <div>
-          <div className="flex flex-col gap-7">
-            <h1 className="text-[27px] lg:text-[32px] SpaceGrotesk font-bold tracking-widest text-companySalmon">
-              ¡Tenemos más para contarte!
-            </h1>
-            <span className=" text-base SpaceGrotesk tracking-wider leading-7 lg:max-w-[556px] lg:text-lg">
-              Si llegaste hasta aquí es porque seguramente te gustó lo que viste
-              y tienes algo en mente.
-              <strong className="font-semibold">
-                {" "}
-                Escríbenos y lo hacemos realidad.
-              </strong>
-            </span>
+    <div className="mt-12 mx-auto ">
+      <div
+        className="max-w-[1250px]
+       mx-auto border bg-background flex flex-col lg:flex-row lg:justify-between  p-14 gap-14 items-stretch	"
+      >
+        <div className="relative flex-1 w-[50%] flex flex-col gap-7 border p-10  overflow-hidden">
+          <div className="flex gap-2 w-full justify-center items-center">
+            <ArrowTitle className="rotate-180" />
+            <h2 className="text-xl font-semibold">CONFÍAN EN NOSOTROS</h2>
+            <ArrowTitle />
           </div>
-          <div className="flex items-center gap-8 mt-5 lg:mt-10">
+          <div className="z-20 w-full justify-between flex flex-wrap wrap-3 gap-7">
+            <div className="w-1/4 flex justify-center items-center">
+              <Image src={brandOne} alt="" />
+            </div>
+            <div className="w-1/4 flex justify-center items-center">
+              <Image src={brandTwo} alt="" />
+            </div>
+            <div className="w-1/4 flex justify-center items-center">
+              <Image src={brandThree} alt="" />
+            </div>
+            <div className="w-1/4 flex justify-center items-center ">
+              <Image src={brandFour} alt="" />
+            </div>
+            <div className="w-1/4 flex justify-center items-center">
+              <Image src={brandFive} alt="" />
+            </div>
+            <div className="w-1/4 flex justify-center items-center">
+              <Image src={brandSix} alt="" />
+            </div>
+          </div>
+          <div className="absolute w-[200%] bottom-[-57%] left-[-40%]">
+            <Image src={decorationthree} alt="Decoration" />
+          </div>
+        </div>
+        <form
+          onSubmit={sendEmail}
+          className="flex-1	 w-[50%] mt-10 flex flex-col gap-8 items-start lg:mt-0 pb-16"
+        >
+          <Input
+            placeholder={"Nombre"}
+            type="text"
+            name="from_name"
+            value={formData.from_name}
+            onChange={handleInputChange}
+          />
+          <Input
+            placeholder={"Email"}
+            type="email"
+            name="from_correo"
+            value={formData.from_correo}
+            onChange={handleInputChange}
+          />
+          <Input
+            placeholder={"Num. telefónico"}
+            type="tel"
+            name="from_phone"
+            value={formData.from_phone}
+            onChange={handleInputChange}
+          />
+          <Input
+            placeholder={"Mensaje"}
+            type="textarea"
+            name="from_message"
+            value={formData.from_message}
+            onChange={handleInputChange}
+          />
+          <Input
+            type={"checkbox"}
+            name="from_check"
+            value={formData.check}
+            onClick={handleCheckboxChange}
+          />
+          <div className="flex items-center gap-8 w-full">
+            <Button
+              color={isFormValid ? "border" : "disabled"}
+              type="submit"
+              disabled={!isFormValid} // Botón deshabilitado si el formulario no es válido
+            >
+              Enviar
+            </Button>
             <Link
               href="https://co.linkedin.com/company/companycreativa"
               target="_blank"
@@ -159,65 +230,16 @@ function FormComponent() {
               </IconContainer>
             </Link>
           </div>
-        </div>
-        <form
-          onSubmit={sendEmail}
-          className="w-full mt-10 flex flex-col gap-8 items-start lg:max-w-[438px] lg:mt-0 pb-16"
-        >
-          <Input
-            placeholder={"Nombre"}
-            type="text"
-            name="from_name"
-            value={formData.from_name}
-            onChange={handleInputChange}
-          />
-          <Input
-            placeholder={"Email"}
-            type="email"
-            name="from_correo"
-            value={formData.from_correo}
-            onChange={handleInputChange}
-          />
-          <Input
-            placeholder={"Num. telefónico"}
-            type="tel"
-            name="from_phone"
-            value={formData.from_phone}
-            onChange={handleInputChange}
-          />
-          <Input
-            placeholder={"Mensaje"}
-            type="textarea"
-            name="from_message"
-            value={formData.from_message}
-            onChange={handleInputChange}
-          />
-          <Input
-            type={"checkbox"}
-            name="from_check"
-            value={formData.check}
-            onClick={handleCheckboxChange}
-          />
-          <Button
-            color={isFormValid ? "border" : "disabled"}
-            type="submit"
-            disabled={!isFormValid} // Botón deshabilitado si el formulario no es válido
-          >
-            Enviar
-          </Button>
         </form>
-        <div className="absolute bottom-0 left-0">
-          <Image src={decorationtwo} alt="Decoration" />
-        </div>
       </div>
     </div>
   );
 }
 
-export default function Form() {
+export default function FormContact() {
   return (
     <GoogleReCaptchaProvider reCaptchaKey="6LdvCVUqAAAAAFu4m6fcWmoaqH9ChXiuv4svye7d">
-      <FormComponent />
+      <FormContactComponent />
     </GoogleReCaptchaProvider>
   );
 }

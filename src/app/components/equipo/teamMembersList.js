@@ -8,23 +8,13 @@ export default function TeamMembersList() {
   );
   return (
     <div className=" w-[95%] max-w-[1560px] mx-auto mt-10 lg:mt-16">
-      <div className="w-full flex-col lg:flex-row lg:flex-wrap  hidden lg:flex">
+      <div className="w-full flex-col lg:flex-row lg:flex-wrap hidden lg:flex">
         {teamMembers.map((teamMember, index) => {
           let className;
 
-          if (teamMember.name === "Esteban restrepo") {
+          if (teamMember.name === "Tomás Jaramillo") {
             className =
-              "max-w-[102.5%] lg:max-w-[103%] 2xl:max-w-[102%] 2xl:w-[102%]";
-          }
-
-          if (teamMember.name === "Alejandro ossa") {
-            className =
-              "relative right-[7%] 2xl:right-[7%] 3xl:right-[4%] max-w-[112%]";
-          }
-
-          if (teamMember.name === "Kelly Orozco") {
-            className =
-              "max-w-[105.5%] lg:max-w-[120%] 2xl:max-w-[140%] 2xl:w-[114%] relative sm:right-[10%] lg:right-0 lg:ml-3";
+              "relative left-[-7%] top-[1.5%]";
           }
 
           return (
@@ -45,16 +35,6 @@ export default function TeamMembersList() {
           if (teamMember.name === "Esteban restrepo") {
             className =
               "max-w-[102.5%] lg:max-w-[103%] 2xl:max-w-[102%] 2xl:w-[102%]";
-          }
-
-          if (teamMember.name === "Alejandro ossa") {
-            className =
-              "relative right-[5%] 2xl:right-[7%] 3xl:right-[4%] max-w-[112%]";
-          }
-
-          if (teamMember.name === "Kelly Orozco") {
-            className =
-              "max-w-[120%] lg:max-w-[180%] 2xl:max-w-[160%] 2xl:w-[140%] z-900 ";
           }
 
           return (

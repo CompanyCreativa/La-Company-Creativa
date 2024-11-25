@@ -12,14 +12,15 @@ export default function page() {
           <Breadcrumbs lastPage="Inicio" currentPage="Equipo" />
         </div>
         <div className="flex flex-col pb-24">
-          <div className="mt-16 flex flex-col justify-center items-center gap-5 lg:gap-2">
-            <h1 className="text-[38px] lg:text-[55px] xl:text-[70px] 2xl:text-[82px] text-center">
-              Conoce a nuestro <strong>equipo de trabajo</strong>
+          <div className="mt-16 flex flex-col justify-center items-center gap-5 lg:gap-2 SpaceGrotesk">
+            <h1 className="text-[38px] lg:text-[55px] xl:text-[70px] 2xl:text-[80px] text-center SpaceGrotesk">
+              Conoce a nuestro{" "}
+              <strong className="font-semibold">equipo de trabajo</strong>
             </h1>
-            <p className="text-[15px] lg:text-lg text-center text-[#11190c] font-light">
+            <p className="text-[15px] lg:text-lg text-center text-[#11190c] font-light SpaceGrotesk">
               Cuenta con nosotros para descubrir y crear un universo de
-              posibilidades que impulsen tu marca, alejándonos de lo cotidiano,{" "}
-              <strong>pero acercándonos a tus clientes.</strong>
+              posibilidades que impulsen tu marca, <br /> alejándonos de lo
+              cotidiano, <strong>pero acercándonos a tus clientes.</strong>
             </p>
           </div>
           <TeamMembersList />

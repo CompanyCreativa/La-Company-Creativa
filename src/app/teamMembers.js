@@ -96,7 +96,7 @@ export const teamMembers = [
   },
   {
     img: sebasImg,
-    name: "sebastían Salavarrieta",
+    name: "Sebastían Salavarrieta",
     profesion: "Community Manager",
     position: 14,
   },

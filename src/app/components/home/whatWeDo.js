@@ -6,13 +6,13 @@ import Image from "next/image";
 
 export default function WhatWeDo() {
   return (
-    <Section className="">
-      <h1 className="text-[40px] mt-24 ml-64 mb-10 SpaceGrotesk font-semibold tracking-widest">
+    <Section className="w-full">
+      <h1 className="text-[25px] md:text-[40px] w-full md:ml-64 mt-24 mb-5 SpaceGrotesk font-semibold tracking-widest">
         Esto es lo que hacemos
       </h1>
       <div className="w-full max-w-[1400px] border mx-auto bg-background">
-        <div className="w-full flex flex-col px-20 pt-16 justify-center items-center lg:items-start"></div>
-        <div className="relative  grid grid-cols-1 gap-x-16 px-20 pb-32  lg:grid-cols-2">
+        <div className="w-full flex flex-col px-20 pt-10 md:pt-16 justify-center items-center lg:items-start"></div>
+        <div className="relative grid grid-cols-1 gap-x-16 px-3 md:px-20 pb-16 md:pb-32 lg:grid-cols-2">
           <div>
             <Accordion title={"Branding"}>
               <ul className="list-disc pl-5 flex flex-col gap-2">
@@ -62,7 +62,7 @@ export default function WhatWeDo() {
               </ul>
             </Accordion>
           </div>
-          <div className="w-1/3 absolute top-[-200px] left-[-12%]">
+          <div className="w-1/3 absolute top-[-200px] left-[-12%] hidden md:block">
             <Image src={arrow} alt={"arrow"} />
           </div>
         </div>

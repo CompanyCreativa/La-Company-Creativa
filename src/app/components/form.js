@@ -12,6 +12,7 @@ import {
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
 import decorationtwo from "/public/decoration2.png";
+import decorationFormMobile from "/public/decorationMobileForm.png";
 
 import IconContainer from "./iconContainer";
 import Input from "./input";
@@ -94,10 +95,10 @@ function FormComponent() {
   };
 
   return (
-    <div className="mt-12">
-      <div className="max-w-[1400px] mx-auto border bg-background flex flex-col px-5 lg:flex-row lg:justify-between lg:items-start lg:pl-[6%] lg:pt-[6%] lg:pr-[2%] overflow-hidden relative">
+    <div className="mt-12 px-5">
+      <div className="max-w-[1400px] mx-auto border bg-background flex flex-col md:px-5 lg:flex-row lg:justify-between lg:items-start lg:pl-[6%] lg:pt-[6%] lg:pr-[2%] overflow-hidden relative">
         <div>
-          <div className="flex flex-col gap-7">
+          <div className="flex flex-col gap-7 px-5 md:px-0 pt-5 md:pt-0">
             <h1 className="text-[27px] lg:text-[32px] SpaceGrotesk font-bold tracking-widest text-companySalmon">
               ¡Tenemos más para contarte!
             </h1>
@@ -110,7 +111,7 @@ function FormComponent() {
               </strong>
             </span>
           </div>
-          <div className="flex items-center gap-8 mt-5 lg:mt-10">
+          <div className="flex items-center gap-8 mt-5 lg:mt-10 px-5 md:px-0">
             <Link
               href="https://co.linkedin.com/company/companycreativa"
               target="_blank"
@@ -160,9 +161,19 @@ function FormComponent() {
             </Link>
           </div>
         </div>
+        <div className="hidden md:block md:absolute bottom-0 left-0">
+          <Image src={decorationtwo} alt="Decoration" />
+        </div>
+        <div className="md:hidden">
+          <Image
+            src={decorationFormMobile}
+            alt="Decoration"
+            className="w-full"
+          />
+        </div>
         <form
           onSubmit={sendEmail}
-          className="w-full mt-10 flex flex-col gap-8 items-start lg:max-w-[438px] lg:mt-0 pb-16"
+          className="w-full mt-10 flex flex-col gap-8 items-start lg:max-w-[438px] lg:mt-0 pb-16 px-5 md:px-0"
         >
           <Input
             placeholder={"Nombre"}
@@ -206,9 +217,6 @@ function FormComponent() {
             Enviar
           </Button>
         </form>
-        <div className="absolute bottom-0 left-0">
-          <Image src={decorationtwo} alt="Decoration" />
-        </div>
       </div>
     </div>
   );

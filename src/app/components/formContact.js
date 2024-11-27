@@ -11,6 +11,7 @@ import {
   faBehance,
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
+import decorationMobileFormContact from "/public/decorationMobileFormContact.png";
 
 import IconContainer from "./iconContainer";
 import Input from "./input";
@@ -101,18 +102,18 @@ function FormContactComponent() {
   };
 
   return (
-    <div className="mt-12 mx-auto ">
+    <div className="mt-12 mx-auto p-4 lg:p-0">
       <div
         className="max-w-[1250px]
-       mx-auto border bg-background flex flex-col lg:flex-row lg:justify-between  p-14 gap-14 items-stretch	"
+       mx-auto border bg-background flex flex-col-reverse lg:flex-row lg:justify-between lg:p-10 gap-14 items-stretch	"
       >
-        <div className="relative flex-1 w-[50%] flex flex-col gap-7 border p-10  overflow-hidden">
-          <div className="flex gap-2 w-full justify-center items-center">
-            <ArrowTitle className="rotate-180" />
+        <div className="relative flex-1 w-[100%] lg:w-[50%] flex flex-col gap-7 lg:border lg:p-10  overflow-hidden">
+          <div className="flex gap-2 w-full justify-center items-center p-5">
+            <ArrowTitle className="rotate-180 hidden lg:block" />
             <h2 className="text-xl font-semibold">CONFÍAN EN NOSOTROS</h2>
-            <ArrowTitle />
+            <ArrowTitle className="hidden lg:block" />
           </div>
-          <div className="z-20 w-full justify-between flex flex-wrap wrap-3 gap-7">
+          <div className="z-20 w-full justify-between flex flex-wrap wrap-3 gap-7 px-5 lg:px-0">
             <div className="w-1/4 flex justify-center items-center">
               <Image src={brandOne} alt="" />
             </div>
@@ -132,13 +133,20 @@ function FormContactComponent() {
               <Image src={brandSix} alt="" />
             </div>
           </div>
-          <div className="absolute w-[200%] bottom-[-57%] left-[-40%]">
+          <div className=" hidden lg:block lg:absolute w-[200%] bottom-[-57%] left-[-40%]">
             <Image src={decorationthree} alt="Decoration" />
+          </div>
+          <div className="lg:hidden w-full ">
+            <Image
+              src={decorationMobileFormContact}
+              alt="Decoration"
+              className="w-full"
+            />
           </div>
         </div>
         <form
           onSubmit={sendEmail}
-          className="flex-1	 w-[50%] mt-10 flex flex-col gap-8 items-start lg:mt-0 pb-16"
+          className="flex-1 w-[100%] lg:w-[50%] mt-10 flex flex-col gap-8 items-start lg:mt-0 lg:pb-16 px-5 lg:px-0"
         >
           <Input
             placeholder={"Nombre"}
@@ -174,7 +182,7 @@ function FormContactComponent() {
             value={formData.check}
             onClick={handleCheckboxChange}
           />
-          <div className="flex items-center gap-8 w-full">
+          <div className="flex justify-center items-center gap-8 w-full">
             <Button
               color={isFormValid ? "border" : "disabled"}
               type="submit"
@@ -185,6 +193,7 @@ function FormContactComponent() {
             <Link
               href="https://co.linkedin.com/company/companycreativa"
               target="_blank"
+              className="hidden lg:block"
             >
               <IconContainer className="border border-black h-7 w-7 flex justify-center items-center rounded-md">
                 <FontAwesomeIcon
@@ -193,7 +202,11 @@ function FormContactComponent() {
                 />
               </IconContainer>
             </Link>
-            <Link href="https://www.behance.net/lacompanycrea" target="_blank">
+            <Link
+              href="https://www.behance.net/lacompanycrea"
+              target="_blank"
+              className="hidden lg:block"
+            >
               <IconContainer className="border border-black h-7 w-7 flex justify-center items-center rounded-md">
                 <FontAwesomeIcon
                   icon={faBehance}
@@ -201,15 +214,18 @@ function FormContactComponent() {
                 />
               </IconContainer>
             </Link>
-            <IconContainer className="border border-black h-7 w-7 flex justify-center items-center rounded-md">
-              <FontAwesomeIcon
-                icon={faWhatsapp}
-                className="text-[16px] text-companySalmon"
-              />
-            </IconContainer>
+            <div className="hidden lg:block">
+              <IconContainer className="border border-black h-7 w-7 flex justify-center items-center rounded-md">
+                <FontAwesomeIcon
+                  icon={faWhatsapp}
+                  className="text-[16px] text-companySalmon"
+                />
+              </IconContainer>
+            </div>
             <Link
               href="https://www.instagram.com/lacompanycrea/?hl=es"
               target="_blank"
+              className="hidden lg:block"
             >
               <IconContainer className="border border-black h-7 w-7 flex justify-center items-center rounded-md">
                 <FontAwesomeIcon
@@ -219,6 +235,7 @@ function FormContactComponent() {
               </IconContainer>
             </Link>
             <Link
+              className="hidden lg:block"
               href="https://www.facebook.com/lacompanycreativa"
               target="_blank"
             >

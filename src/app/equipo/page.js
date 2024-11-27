@@ -6,12 +6,12 @@ import Breadcrumbs from "../components/breadcrumbs";
 
 export default function page() {
   return (
-    <MainContainer className="min-h-screen mt-[115px]">
+    <div className="min-h-screen mt-[115px] md:bg-pattern bg-repeat">
       <Section>
         <div className="my-2">
           <Breadcrumbs lastPage="Inicio" currentPage="Equipo" />
         </div>
-        <div className="flex flex-col pb-24">
+        <div className="flex flex-col pb-24 mr-[-40px] md:mr-0">
           <div className="mt-16 flex flex-col justify-center items-center gap-5 lg:gap-2 SpaceGrotesk">
             <h1 className="text-[38px] lg:text-[55px] xl:text-[70px] 2xl:text-[80px] text-center SpaceGrotesk">
               Conoce a nuestro{" "}
@@ -26,9 +26,9 @@ export default function page() {
           <TeamMembersList />
         </div>
       </Section>
-      <div className="-mt-20 lg:mt-28">
+      <div className="lg:mt-0">
         <Form />
       </div>
-    </MainContainer>
+    </div>
   );
 }

@@ -4,6 +4,7 @@ import LogoCompany from "../../../public/logoCompany.svg";
 import Heart from "../../../public/corazonThanks.png";
 import MainContainer from "../components/mainContainer";
 import Link from "next/link";
+import decorationThanks from "../../../public/decorationThanks.png";
 
 // * Modal de gracias por llenar el formulario y enviarlo.
 const ModalThankYou = () => {
@@ -13,8 +14,15 @@ const ModalThankYou = () => {
 
   return (
     <MainContainer>
-      <div className="h-screen inset-0 z-50 flex items-center justify-center backdrop-blur-sm">
-        <div className="lg:px-[175px] lg:py-[100px] rounded-lg text-center flex flex-col gap-5  relative lg:max-w-[1000px] md:max-w-[800px] md:px-20 md:py-16 px-4 py-20 max-w-[370px]">
+      <div className="h-screen inset-0 z-50 flex items-center justify-center bg-pattern bg-repeat">
+        <div className="border lg:px-[175px] lg:pb-[100px] lg:pt-[250px] rounded-2xl text-center flex flex-col gap-5  relative lg:max-w-[1000px] md:max-w-[800px] md:px-20 md:py-16 px-4 py-20 max-w-[370px] bg-background">
+          <Image
+            src={decorationThanks}
+            alt="Heart"
+            width={500}
+            height={200}
+            className="absolute top-0 left-0 w-full z-0"
+          />
           <h1 className="lg:text-4xl md:text-3xl font-semibold z-10 text-xl">
             ¡Gracias por enviarnos tus datos!
           </h1>
@@ -31,14 +39,6 @@ const ModalThankYou = () => {
               className="z-10"
             />
           </Link>
-
-          <Image
-            src={Heart}
-            alt="Heart"
-            width={500}
-            height={200}
-            className="absolute top-0 right-0 md:right-[-40px] z-0 opacity-100 w-[170px] md:w-[330px] lg:w-[430px]"
-          />
         </div>
       </div>
     </MainContainer>

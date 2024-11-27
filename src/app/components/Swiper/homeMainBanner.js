@@ -45,9 +45,12 @@ function HomeMainBanner() {
           disableOnInteraction: false,
         }}
         onSlideChange={handleSlideChange}
-        className="homeSwiper h-full w-full"
+        className="homeSwiper h-full w-full relative"
       >
-        <SwiperSlide className="lg:h-full w-full relative">
+        <button className="hidden lg:block absolute bottom-[70px] right-10 z-10 text-background font-normal SpaceGrotesk border border-background py-2 px-4 hover:bg-companySalmon transition-all">
+          Contáctanos
+        </button>
+        <SwiperSlide className="lg:h-full  w-full relative">
           <SwiperImageContainer
             img={zigzagImg}
             imgMobile={zigzagMobile}

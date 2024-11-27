@@ -7,7 +7,6 @@ import PublicLayout from "./components/publicLayout";
 import MainContainer from "./components/mainContainer";
 
 export default function Home() {
-
   return (
     <PublicLayout page="home">
       <MainContainer>

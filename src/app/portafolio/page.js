@@ -19,7 +19,7 @@ import Breadcrumbs from "../components/breadcrumbs";
 export default function Page() {
   return (
     <MainContainer>
-      <Section className="w-full px-5">
+      <Section className="px-5">
         <div className="my-2">
           <Breadcrumbs lastPage="Inicio" currentPage="Portafolio" />
         </div>

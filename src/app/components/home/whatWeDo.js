@@ -20,7 +20,7 @@ export default function WhatWeDo() {
                 <li>Esencia y arquitectura de marca</li>
               </ul>
             </Accordion>
-            <Accordion title={"Estretegia e investigación"}>
+            <Accordion title={"Estrategia e investigación"}>
               <ul className="list-disc pl-5 flex flex-col gap-2">
                 <li> Planeación estratégica</li>
                 <li>Investigación de mercados</li>

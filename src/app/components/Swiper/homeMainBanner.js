@@ -25,6 +25,7 @@ import banner7Mobile from "/public/banner7Mobile.png";
 import banner8 from "/public/banner8.png";
 import banner8Mobile from "/public/banner8Mobile.png";
 import SwiperImageContainer from "./swiperImageContainer";
+import Link from "next/link";
 
 function HomeMainBanner() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -47,9 +48,9 @@ function HomeMainBanner() {
         onSlideChange={handleSlideChange}
         className="homeSwiper h-full w-full relative"
       >
-        <button className="hidden lg:block absolute bottom-[70px] right-10 z-10 text-background font-normal SpaceGrotesk border border-background py-2 px-4 hover:bg-companySalmon transition-all">
+        <Link href="/contacto" className="hidden lg:block absolute bottom-[70px] right-10 z-10 text-background font-normal SpaceGrotesk border border-background py-2 px-4 hover:bg-companySalmon transition-all">
           Contáctanos
-        </button>
+        </Link>
         <SwiperSlide className="lg:h-full  w-full relative">
           <SwiperImageContainer
             img={zigzagImg}

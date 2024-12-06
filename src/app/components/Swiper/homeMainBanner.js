@@ -54,7 +54,6 @@ function HomeMainBanner() {
         >
           Contáctanos
         </Link>
-
         <SwiperSlide className="lg:h-full  w-full relative">
           <SwiperImageContainer
             img={zigzagImg}

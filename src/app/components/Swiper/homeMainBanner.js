@@ -48,9 +48,13 @@ function HomeMainBanner() {
         onSlideChange={handleSlideChange}
         className="homeSwiper h-full w-full relative"
       >
-        <Link href="/contacto" className="hidden lg:block absolute bottom-[70px] right-10 z-10 text-background font-normal SpaceGrotesk border border-background py-2 px-4 hover:bg-companySalmon transition-all">
+        <Link
+          href="/contacto"
+          className="hidden lg:block absolute bottom-[70px] right-10 z-10 text-background font-normal SpaceGrotesk border border-background py-2 px-4 hover:bg-companySalmon transition-all"
+        >
           Contáctanos
         </Link>
+
         <SwiperSlide className="lg:h-full  w-full relative">
           <SwiperImageContainer
             img={zigzagImg}

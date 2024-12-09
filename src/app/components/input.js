@@ -1,13 +1,19 @@
 import React from "react";
 import Link from "next/link";
 
-export default function Input({ placeholder, type, ...props }) {
+export default function Input({
+  placeholder,
+  type,
+  color,
+  className,
+  ...props
+}) {
   let input = (
     <input
       {...props}
       type={type}
       placeholder={placeholder}
-      className="w-full text-lg bg-transparent border border-black px-4 py-2 text-black placeholder-black"
+      className={`w-full text-lg bg-transparent border border-black px-4 py-2 text-black placeholder-black ${className}`}
     />
   );
 
@@ -18,7 +24,7 @@ export default function Input({ placeholder, type, ...props }) {
         type="text"
         rows={4}
         placeholder={placeholder}
-        className="w-full text-lg bg-transparent border border-black px-4 py-2 text-black placeholder-black resize-none"
+        className={`w-full text-lg bg-transparent border border-black px-4 py-2 text-black placeholder-black resize-none ${className}`}
       />
     );
   }
@@ -30,11 +36,15 @@ export default function Input({ placeholder, type, ...props }) {
           {...props}
           type="checkbox"
           placeholder={placeholder}
-          className="text-lg bg-transparent border border-black px-4 py-2 text-black placeholder-black cursor-pointer"
+          className={`text-lg bg-transparent border border-black px-4 py-2 text-black placeholder-black cursor-pointer ${className}`}
         />
-        <label htmlFor="checkbox">
+        <label htmlFor="checkbox" className={`${className}`}>
           Aceptas nuestra{" "}
-          <Link href="/politicas" className="underline" target="_blank">
+          <Link
+            href="/politicas"
+            className={`underline ${className}`}
+            target="_blank"
+          >
             política de tratamiento de datos
           </Link>
         </label>

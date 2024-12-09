@@ -5,12 +5,14 @@ import WhatWeDo from "./components/home/whatWeDo";
 import Form from "./components/form";
 import PublicLayout from "./components/publicLayout";
 import MainContainer from "./components/mainContainer";
+import ModalForm from "./components/modalForm";
 
 export default function Home() {
   return (
     <PublicLayout page="home">
       <MainContainer>
         <HomeMainBanner />
+        <ModalForm />
         <OurPhilosophy />
         <OurClients />
         <WhatWeDo />

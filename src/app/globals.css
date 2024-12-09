@@ -144,6 +144,93 @@ body {
   background-color: #fff8ea;
 }
 
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px; /* $buttonWidth + 20px */
+  height: 120px; /* $buttonHeight + 20px */
+  margin-top: 100px;
+  perspective: 1800px;
+  margin-left: auto;
+}
+
+.button .qube {
+  position: relative;
+  height: 50px; /* $buttonHeight */
+  width: 50px; /* $buttonWidth */
+  perspective: 1800px;
+}
+
+.button .qubetwo {
+  position: relative;
+  height: 50px; /* $buttonHeight */
+  width: 100px; /* $buttonWidth */
+  perspective: 1800px;
+}
+
+.button .qube .front,
+.button .qube .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  transform: rotateX(-90deg);
+  transition: transform 0.3s ease;
+  color: white;
+  line-height: 50px; /* $buttonHeight */
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.button .qube .front {
+  background-color: #f55548;
+}
+
+.button .qube .front::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.button .qube .back {
+  background-color: #fff8ea; /* Reemplaza $pear */
+  color: black;
+  border: 1px solid #f55548;
+  transform: rotateX(0deg) translateZ(50px); /* $buttonHeight */
+}
+
+.button .qube:hover .front {
+  transform: rotateX(0deg) translateZ(25px); /* $buttonHeight / 2 */
+}
+
+.button .qube:hover .back {
+  transform: rotateX(90deg) translateZ(25px); /* $buttonHeight / 2 */
+}
+
+.button:active .front {
+  border-radius: 0;
+  background-color: transparent;
+  color: black;
+}
+
+.button:active .front::after {
+  left: 120%;
+  transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.react-player {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
 .SpaceGrotesk {
   font-family: "SpaceGrotesk", sans-serif;
 }

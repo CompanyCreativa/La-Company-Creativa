@@ -7,7 +7,7 @@ import Image from "next/image";
 export default function WhatWeDo() {
   return (
     <Section className="w-full">
-      <h1 className="text-[25px] md:text-[40px] w-full md:ml-64 mt-24 mb-5 SpaceGrotesk font-semibold tracking-widest">
+      <h1 className="text-[25px] md:text-[40px] md:ml-64 mt-24 mb-5 SpaceGrotesk font-semibold tracking-widest">
         Esto es lo que hacemos
       </h1>
       <div className="w-full max-w-[1400px] border mx-auto bg-background">

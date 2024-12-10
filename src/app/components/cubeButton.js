@@ -3,12 +3,12 @@ import X from "./SVGicons/x";
 
 export default function CubeButton({ onClick, content }) {
   return (
-    <button href="#" class="button" onClick={onClick}>
-      <div class="qube">
-        <div class="front">
+    <button href="#" className="button" onClick={onClick}>
+      <div className="qube">
+        <div className="front">
           <X />
         </div>
-        <div class="back">
+        <div className="back">
           <X />
         </div>
       </div>

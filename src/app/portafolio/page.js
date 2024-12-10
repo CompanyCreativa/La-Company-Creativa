@@ -15,6 +15,7 @@ import navidadDesktop from "/public/portfolio/navidadDesktop.png";
 import GridCard from "../components/gridCard";
 import MainContainer from "../components/mainContainer";
 import Breadcrumbs from "../components/breadcrumbs";
+import ModalForm from "../components/modalForm";
 
 export default function Page() {
   return (
@@ -93,6 +94,7 @@ export default function Page() {
           </div>
         </div>
       </Section>
+      <ModalForm />
       <Form />
     </MainContainer>
   );

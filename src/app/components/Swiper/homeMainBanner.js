@@ -39,7 +39,6 @@ function HomeMainBanner() {
           src="https://player.vimeo.com/video/1024776482?title=0&amp;byline=0&amp;portrait=0&amp;playsinline=0&amp;muted=1&amp;autoplay=1&amp;autopause=0&amp;controls=0&amp;loop=1&amp;app_id=122963"
           width="100%"
           height="100%"
-          frameborder="0"
           allow="autoplay; fullscreen; clipboard-write"
           title="La Company"
           data-ready="true"

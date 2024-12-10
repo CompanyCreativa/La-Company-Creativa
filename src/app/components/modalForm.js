@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import emailjs from "emailjs-com";
+import { motion, AnimatePresence } from "framer-motion";
 
 import Input from "./input";
 import Button from "./button";
@@ -10,7 +11,6 @@ import {
   useGoogleReCaptcha,
 } from "react-google-recaptcha-v3";
 
-import X from "./SVGicons/x";
 import CubeButton from "./cubeButton";
 
 const ModalForm = () => {
@@ -85,16 +85,29 @@ const ModalForm = () => {
   };
 
   return (
-    <>
+    <AnimatePresence>
       {isModalOpen ? (
-        <div className="fixed right-0 left-0 top-0 h-screen z-50 w-full h-full flex items-center justify-end bg-[rgba(0,0,0,0.7)]  backdrop-blur-sm">
-          <div className="max-w-[500px] border-1 w-full h-full flex flex-col justify-center bg-[#0C0A09] p-5">
+        <motion.div
+          className="fixed right-0 left-0 top-0 h-screen z-50 w-full h-full flex items-center justify-end bg-[rgba(0,0,0,0.7)]  backdrop-blur-sm"
+          key={"blur"}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.3 }}
+        >
+          <motion.div
+            className="max-w-[500px] border-1 w-full h-full flex flex-col justify-center bg-[#0C0A09] p-5"
+            key={"form"}
+            initial={{ x: 300 }}
+            animate={{ x: 0 }}
+            exit={{ x: 300 }}
+          >
             <CubeButton onClick={() => setIsModalOpen(false)} />
             <div>
               <div className="flex flex-col gap-2 px-5 md:px-0 pt-5 md:pt-0">
                 <h1 className="text-[27px] lg:text-[52px] SpaceGrotesk font-light tracking-wider text-white">
                   ¡Tenemos
-                  <br /> más para <br />
+                  <br className="hidden lg:block"/> más para <br />
                   <strong className="font-semibold text-companySalmon">
                     contarte!
                   </strong>
@@ -111,7 +124,7 @@ const ModalForm = () => {
             </div>
             <form
               onSubmit={sendEmail}
-              className="w-full mt-10 flex flex-col gap-4 items-start lg:max-w-[438px] lg:mt-0 pb-16 px-5 md:px-0"
+              className="w-full flex flex-col gap-4 items-start lg:max-w-[438px] lg:mt-0 pb-16 px-5 md:px-0"
             >
               <Input
                 placeholder={"Nombre"}
@@ -163,8 +176,8 @@ const ModalForm = () => {
                 Enviar
               </Button>
             </form>
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
       ) : null}
 
       <button
@@ -176,7 +189,7 @@ const ModalForm = () => {
           <div className="back">HABLEMOS</div>
         </div>
       </button>
-    </>
+    </AnimatePresence>
   );
 };
 

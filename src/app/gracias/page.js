@@ -1,7 +1,6 @@
 import React from "react";
 import Image from "next/image";
 import LogoCompany from "../../../public/logoCompany.svg";
-import Heart from "../../../public/corazonThanks.png";
 import MainContainer from "../components/mainContainer";
 import Link from "next/link";
 import decorationThanks from "../../../public/decorationThanks.png";

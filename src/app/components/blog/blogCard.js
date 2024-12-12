@@ -1,7 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEye, faChevronRight } from "@fortawesome/free-solid-svg-icons";
 
-import blogExampleImg from "@/app/assets/blogExample.png";
 import Image from "next/image";
 
 export default function BlogCard() {

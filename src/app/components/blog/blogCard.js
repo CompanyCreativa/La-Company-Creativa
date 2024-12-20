@@ -1,12 +1,8 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEye, faChevronRight } from "@fortawesome/free-solid-svg-icons";
-
-import Image from "next/image";
-
 export default function BlogCard() {
   return (
     <div className="w-full relative">
-      <Image src={blogExampleImg} className="w-full" />
       <div className="w-full h-full absolute top-0 left-0 px-7 py-4 flex flex-col justify-between bg-blogCard rounded-lg">
         <div className="flex items-end justify-end">
           <div className="bg-[#0C0A09]/30 w-[84px] h-[36px] rounded-lg flex justify-center items-center gap-3 self-end text-white">

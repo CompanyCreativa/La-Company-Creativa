@@ -105,14 +105,14 @@ const ModalForm = () => {
             <CubeButton onClick={() => setIsModalOpen(false)} />
             <div>
               <div className="flex flex-col gap-2 px-5 md:px-0 pt-5 md:pt-0">
-                <h1 className="text-[27px] lg:text-[52px] SpaceGrotesk font-light tracking-wider text-white">
+                <h1 className="text-[27px] lg:text-[35px] 2xl:text-[40px] SpaceGrotesk font-light tracking-wider text-white">
                   ¡Tenemos
-                  <br className="hidden lg:block"/> más para <br />
+                  <br className="hidden lg:block" /> más para <br />
                   <strong className="font-semibold text-companySalmon">
                     contarte!
                   </strong>
                 </h1>
-                <span className=" text-base text-white SpaceGrotesk tracking-wide leading-7 mb-5 lg:max-w-[556px] lg:text-lg">
+                <span className="text-base text-white SpaceGrotesk tracking-wide leading-7 mb-5 lg:max-w-[556px] 2xl:text-sm">
                   Si llegaste hasta aquí es porque seguramente te gustó lo que
                   viste y tienes algo en mente.
                   <strong className="font-semibold">
@@ -182,11 +182,49 @@ const ModalForm = () => {
 
       <button
         onClick={() => setIsModalOpen(true)}
-        className="button fixed bottom-10 right-10 z-40"
+        className="button fixed bottom-0 right-[4%] z-40"
       >
         <div className="qubetwo qube">
-          <div className="front ">HABLEMOS</div>
-          <div className="back">HABLEMOS</div>
+          <div className="front" style={{ color: "#ffffff", gap: "8px" }}>
+            HABLEMOS
+            <svg
+              width="12"
+              height="12"
+              viewBox="0 0 12 12"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M11.75 1C11.75 0.585787 11.4142 0.250001 11 0.250001L4.25 0.250001C3.83579 0.250001 3.5 0.585787 3.5 1C3.5 1.41421 3.83579 1.75 4.25 1.75H10.25V7.75C10.25 8.16421 10.5858 8.5 11 8.5C11.4142 8.5 11.75 8.16421 11.75 7.75L11.75 1ZM2.03033 11.0303L11.5303 1.53033L10.4697 0.469671L0.96967 9.96967L2.03033 11.0303Z"
+                fill="#FFF8EA"
+              />
+              <path d="M1 1L11 1L11 11" stroke="#FFF8EA" stroke-width="1.5" />
+            </svg>
+          </div>
+          <div
+            className="back"
+            style={{
+              backgroundColor: "#272727",
+              color: "#ffffff",
+              border: "1px solid #271717",
+              gap: "8px",
+            }}
+          >
+            HABLEMOS
+            <svg
+              width="12"
+              height="12"
+              viewBox="0 0 12 12"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M11.75 1C11.75 0.585787 11.4142 0.250001 11 0.250001L4.25 0.250001C3.83579 0.250001 3.5 0.585787 3.5 1C3.5 1.41421 3.83579 1.75 4.25 1.75H10.25V7.75C10.25 8.16421 10.5858 8.5 11 8.5C11.4142 8.5 11.75 8.16421 11.75 7.75L11.75 1ZM2.03033 11.0303L11.5303 1.53033L10.4697 0.469671L0.96967 9.96967L2.03033 11.0303Z"
+                fill="#FFF8EA"
+              />
+              <path d="M1 1L11 1L11 11" stroke="#FFF8EA" stroke-width="1.5" />
+            </svg>
+          </div>
         </div>
       </button>
     </AnimatePresence>

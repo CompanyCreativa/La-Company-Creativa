@@ -1,5 +1,3 @@
-import alejaImg from "/public/teamMembers/news/alejaImg.png";
-import alejoImg from "/public/teamMembers/news/danitwo.png";
 import claudiaImg from "/public/teamMembers/news/claudiaImg.png";
 import daniImg from "/public/teamMembers/news/daniImg.png";
 import emmaImg from "/public/teamMembers/news/emmaImg.png";
@@ -110,12 +108,6 @@ export const teamMembers = [
     name: "Karla Estrada",
     profesion: "Creativa Gráfica",
     position: 15,
-  },
-  {
-    img: alejaImg,
-    name: "Alejandra Luján",
-    profesion: "Project Manager",
-    position: 17,
   },
   {
     img: emmaImg,

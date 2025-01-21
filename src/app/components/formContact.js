@@ -92,7 +92,7 @@ function FormContactComponent() {
               check: false,
               from_phone: "",
             });
-            // window.location.href = "/gracias";
+            window.location.href = "/gracias";
           },
           (error) => {
             console.log(error.text);

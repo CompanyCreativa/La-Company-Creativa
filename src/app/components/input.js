@@ -31,7 +31,7 @@ export default function Input({
 
   if (type === "checkbox") {
     input = (
-      <div className="w-full flex gap-2">
+      <div className="w-full flex gap-2 z-30">
         <input
           {...props}
           type="checkbox"

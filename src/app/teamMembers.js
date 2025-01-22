@@ -17,6 +17,7 @@ import federicoImg from "/public/teamMembers/news/federicoImg.png";
 import kellyImg from "/public/teamMembers/news/kellyImg.png";
 import yenniImg from "/public/teamMembers/news/yenniImg.png";
 import dannitwoImg from "/public/teamMembers/news/danitwo.png";
+import andreaImg from "/public/teamMembers/news/andreaImg.png";
 
 export const teamMembers = [
   {
@@ -132,5 +133,11 @@ export const teamMembers = [
     name: "Mónica Arias",
     profesion: "Coordinadora de RH",
     position: 21,
+  },
+  {
+    img: andreaImg,
+    name: "Andrea Suaza",
+    profesion: "Ejecutiva de cuentas",
+    position: 22,
   },
 ];

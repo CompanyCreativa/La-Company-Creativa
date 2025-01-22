@@ -39,6 +39,7 @@ function FormContactComponent() {
     from_message: "",
     check: false,
     from_phone: "",
+    from_company: "",
   });
   const [checkForm, setCheckForm] = useState(false);
   const [isFormValid, setIsFormValid] = useState(false); // Estado para controlar si el formulario es válido
@@ -50,6 +51,7 @@ function FormContactComponent() {
       formData.from_correo !== "" &&
       formData.from_phone !== "" &&
       formData.from_message !== "" &&
+      formData.from_company !== "" &&
       formData.check;
     setIsFormValid(isValid);
   }, [formData]);
@@ -89,6 +91,7 @@ function FormContactComponent() {
               from_name: "",
               from_correo: "",
               from_message: "",
+              from_company: "",
               check: false,
               from_phone: "",
             });
@@ -147,6 +150,7 @@ function FormContactComponent() {
         <form
           onSubmit={sendEmail}
           className="flex-1 w-[100%] lg:w-[50%] mt-10 flex flex-col gap-8 items-start lg:mt-0 lg:pb-16 px-5 lg:px-0"
+          id="form_laco"
         >
           <Input
             placeholder={"Nombre"}
@@ -167,6 +171,13 @@ function FormContactComponent() {
             type="tel"
             name="from_phone"
             value={formData.from_phone}
+            onChange={handleInputChange}
+          />
+          <Input
+            placeholder={"Empresa"}
+            type="text"
+            name="from_company"
+            value={formData.from_company}
             onChange={handleInputChange}
           />
           <Input

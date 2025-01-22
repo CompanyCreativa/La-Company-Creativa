@@ -13,7 +13,7 @@ export default function Input({
       {...props}
       type={type}
       placeholder={placeholder}
-      className={`w-full text-lg bg-transparent border border-black px-4 py-2 text-black placeholder-black ${className}`}
+      className={`w-full text-lg bg-transparent border border-black px-4 py-2 text-black placeholder-black ${className} z-30`}
     />
   );
 
@@ -24,7 +24,7 @@ export default function Input({
         type="text"
         rows={4}
         placeholder={placeholder}
-        className={`w-full text-lg bg-transparent border border-black px-4 py-2 text-black placeholder-black resize-none ${className}`}
+        className={`w-full text-lg bg-transparent border border-black px-4 py-2 text-black placeholder-black resize-none ${className} z-30`}
       />
     );
   }

@@ -32,6 +32,7 @@ function FormComponent() {
     from_message: "",
     check: false,
     from_phone: "",
+    from_company: "",
   });
   const [checkForm, setCheckForm] = useState(false);
   const [isFormValid, setIsFormValid] = useState(false); // Estado para controlar si el formulario es válido
@@ -43,6 +44,7 @@ function FormComponent() {
       formData.from_correo !== "" &&
       formData.from_phone !== "" &&
       formData.from_message !== "" &&
+      formData.from_company !== "" &&
       formData.check;
     setIsFormValid(isValid);
   }, [formData]);
@@ -84,6 +86,7 @@ function FormComponent() {
               from_message: "",
               check: false,
               from_phone: "",
+              from_company: "",
             });
             window.location.href = "/gracias";
           },
@@ -174,6 +177,7 @@ function FormComponent() {
         <form
           onSubmit={sendEmail}
           className="w-full mt-10 flex flex-col gap-8 items-start lg:max-w-[438px] lg:mt-0 pb-16 px-5 md:px-0"
+          id="form_laco"
         >
           <Input
             placeholder={"Nombre"}
@@ -195,6 +199,14 @@ function FormComponent() {
             name="from_phone"
             value={formData.from_phone}
             onChange={handleInputChange}
+          />
+          <Input
+            placeholder={"Empresa"}
+            type="text"
+            name="from_company"
+            value={formData.from_company}
+            onChange={handleInputChange}
+            tooltip="El nombre de la empresa es opcional"
           />
           <Input
             placeholder={"Mensaje"}

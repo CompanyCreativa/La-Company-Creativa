@@ -19,7 +19,7 @@ export default function Header({ page }) {
   return (
     <>
       <header
-        className={`bg-background min-h-[100px] px-4 lg:px-0 fixed top-0 z-30 w-full flex items-center shadow-md`}
+        className={`bg-background min-h-[100px] px-4 lg:px-0 fixed top-0 z-30 w-full flex items-center shadow-md z-40`}
       >
         <div className="max-w-[1760px] w-full lg:w-[91.5%] mx-auto flex justify-between items-center ">
           <Link href="/" className="cursor-pointer">

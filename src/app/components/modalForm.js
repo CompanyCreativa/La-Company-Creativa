@@ -13,7 +13,7 @@ import {
 
 import CubeButton from "./cubeButton";
 
-const ModalForm = () => {
+const ModalFormInt = () => {
   const { executeRecaptcha } = useGoogleReCaptcha(); // Hook para obtener el token
   const [formData, setFormData] = useState({
     from_name: "",
@@ -57,6 +57,7 @@ const ModalForm = () => {
 
     if (isFormValid) {
       setCheckForm(true);
+
       const token = await executeRecaptcha("submit_form");
       formData["g-recaptcha-response"] = token;
       emailjs
@@ -125,6 +126,7 @@ const ModalForm = () => {
             <form
               onSubmit={sendEmail}
               className="w-full flex flex-col gap-4 items-start lg:max-w-[438px] lg:mt-0 pb-16 px-5 md:px-0"
+              id="form_laco"
             >
               <Input
                 placeholder={"Nombre"}
@@ -150,6 +152,14 @@ const ModalForm = () => {
                 color="white"
                 name="from_phone"
                 value={formData.from_phone}
+                onChange={handleInputChange}
+                className={"text-white placeholder:text-white border-white"}
+              />
+              <Input
+                placeholder={"Empresa"}
+                type="text"
+                name="from_company"
+                value={formData.from_company}
                 onChange={handleInputChange}
                 className={"text-white placeholder:text-white border-white"}
               />
@@ -231,4 +241,10 @@ const ModalForm = () => {
   );
 };
 
-export default ModalForm;
+export default function ModalForm() {
+  return (
+    <GoogleReCaptchaProvider reCaptchaKey="6LdvCVUqAAAAAFu4m6fcWmoaqH9ChXiuv4svye7d">
+      <ModalFormInt />
+    </GoogleReCaptchaProvider>
+  );
+}

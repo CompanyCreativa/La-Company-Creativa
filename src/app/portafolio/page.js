@@ -16,6 +16,7 @@ import GridCard from "../components/gridCard";
 import MainContainer from "../components/mainContainer";
 import Breadcrumbs from "../components/breadcrumbs";
 import ModalForm from "../components/modalForm";
+import { GoogleReCaptchaProvider } from "react-google-recaptcha-v3";
 
 export default function Page() {
   return (
@@ -94,7 +95,9 @@ export default function Page() {
           </div>
         </div>
       </Section>
-      <ModalForm />
+      <GoogleReCaptchaProvider reCaptchaKey="6LdvCVUqAAAAAFu4m6fcWmoaqH9ChXiuv4svye7d">
+        <ModalForm />
+      </GoogleReCaptchaProvider>
       <Form />
     </MainContainer>
   );

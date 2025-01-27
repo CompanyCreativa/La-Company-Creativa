@@ -1,3 +1,4 @@
+"use client";
 import Section from "../components/section";
 import Form from "../components/form";
 

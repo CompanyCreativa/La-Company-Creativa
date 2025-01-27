@@ -24,44 +24,39 @@ export const questions = [
     question: "¿Hay algún color que nos caracterice?",
     answer: "",
   },
+
   {
     id: 6,
-    question:
-      "¿Estaremos bajo la arquitectura de marca de importadores asociadas?",
-    answer: "",
-  },
-  {
-    id: 7,
     question: "¿Qué productos y marcas comercializará?",
     answer: "",
   },
   {
-    id: 8,
+    id: 7,
     question: "¿A quiénes se dirigirá la marca?",
     answer: "",
   },
   {
-    id: 9,
+    id: 8,
     question: "¿Quién es la competencia en este segmento",
     answer: "",
   },
   {
-    id: 10,
+    id: 9,
     question: "¿Hay alguna palabra específica que se deba incluir",
     answer: "",
   },
   {
-    id: 11,
+    id: 10,
     question: "¿Qué apellido o descriptor debería tener la marca?",
     answer: "",
   },
   {
-    id: 12,
+    id: 11,
     question: "¿Tienen alguna preferencia de estilo para el nombre?",
     answer: "",
   },
   {
-    id: 13,
+    id: 12,
     question: "¿Qué nombres de otras marcas te gustan y por qué?",
     answer: "",
   },

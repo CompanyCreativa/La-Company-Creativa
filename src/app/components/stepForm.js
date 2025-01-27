@@ -2,11 +2,10 @@ import { motion } from "motion/react";
 import { CheckIcon } from "./SVGicons/checkIcon";
 
 export const StepForm = ({ question, index, currentQuestion }) => {
-  console.log(question.id);
 
   return (
-    <div key={index} className="flex justify-center items-center">
-      {(index !== 0 && index !== 9) && (
+    <div key={index} className="justify-center items-center hidden md:flex">
+      {index !== 0 && index !== 9 && (
         <>
           <motion.div
             className={`w-[60px] h-[3px] bg-companySalmon`}

@@ -5,7 +5,7 @@ export const StepForm = ({ question, index, currentQuestion }) => {
 
   return (
     <div key={index} className="justify-center items-center hidden md:flex">
-      {index !== 0 && index !== 9 && (
+      {index !== 0 && index !== 8 && (
         <>
           <motion.div
             className={`w-[60px] h-[3px] bg-companySalmon`}

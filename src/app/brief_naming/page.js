@@ -8,6 +8,7 @@ import { questions } from "./info";
 import { StepForm } from "../components/stepForm";
 import { ExampleBrief } from "../components/exampleBrief";
 import Loader from "../components/loader";
+import { generateAndSendBrief } from "../components/GenerateAndSendBrief"; // Asegúrate de importar la función
 
 const page = () => {
   const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -36,27 +37,25 @@ const page = () => {
   const handlePOST = async () => {
     setLoading(true);
     try {
-      const response = await fetch("/api/test-dependencies", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ answers }),
-      });
-      const data = await response.json();
+      // Llamar directamente a la función
+      const result = await generateAndSendBrief(
+        answers, // Pasar las respuestas
+        process.env.NEXT_PUBLIC_EMAIL_USER_FEDE // Pasar el correo del destinatario
+      );
+
+      console.log(result); // Ver el resultado de la función
       setLoading(false);
       setSubmit(true);
 
       setTimeout(() => {
-        window.location.href = "/";
         setSubmit(false);
+        window.location.href = "/";
       }, 5000);
     } catch (error) {
-      console.error("Error al probar la API:", error);
+      console.error("Error al enviar el brief:", error);
       setLoading(false);
     }
   };
-
   return (
     <MainContainer>
       <Header page="brief_naming" />
@@ -115,13 +114,13 @@ const page = () => {
               <div className="flex justify-center items-center">
                 {questions
                   .slice(
-                    Math.floor(currentQuestion / 9) * 9,
-                    Math.floor(currentQuestion / 9) * 9 + 9
+                    Math.floor(currentQuestion / 8) * 8,
+                    Math.floor(currentQuestion / 8) * 8 + 8
                   )
                   .map((question, index) => (
                     <StepForm
                       question={question}
-                      index={index + Math.floor(currentQuestion / 9) * 9}
+                      index={index + Math.floor(currentQuestion / 8) * 8}
                       currentQuestion={currentQuestion}
                       key={question.id}
                     />

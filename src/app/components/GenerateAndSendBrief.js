@@ -17,7 +17,7 @@ export async function generateAndSendBrief(answers, recipientEmail) {
     answers.forEach((item) => {
       doc.text(`${item.id}. ${item.question}`, marginLeft, yPosition);
       yPosition += lineHeight;
-      
+
       if (item.answer) {
         doc.text(`Respuesta: ${item.answer}`, marginLeft + 5, yPosition);
         yPosition += lineHeight;
@@ -42,11 +42,13 @@ export async function generateAndSendBrief(answers, recipientEmail) {
       to: recipientEmail,
       subject: "Brief Naming",
       text: "Hay un nuevo formulario de brief naming",
-      attachments: [{
-        filename: "brief-naming.pdf",
-        content: pdfBuffer,
-        contentType: "application/pdf",
-      }],
+      attachments: [
+        {
+          filename: "brief-naming.pdf",
+          content: pdfBuffer,
+          contentType: "application/pdf",
+        },
+      ],
     });
 
     return { success: true, message: "Brief enviado correctamente" };

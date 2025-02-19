@@ -5,7 +5,6 @@ import estebanImg from "/public/teamMembers/news/estebanImg.png";
 import gabrielImg from "/public/teamMembers/news/gabrielImg.png";
 import gladysImg from "/public/teamMembers/news/gladysImg.png";
 import guilleImg from "/public/teamMembers/news/guilleImg.png";
-import karlaImg from "/public/teamMembers/news/karlaImg.png";
 import manuImg from "/public/teamMembers/news/manuImg.png";
 import mileImg from "/public/teamMembers/news/mileImg.png";
 import moniImg from "/public/teamMembers/news/moniImg.png";
@@ -18,6 +17,8 @@ import kellyImg from "/public/teamMembers/news/kellyImg.png";
 import yenniImg from "/public/teamMembers/news/yenniImg.png";
 import dannitwoImg from "/public/teamMembers/news/danitwo.png";
 import andreaImg from "/public/teamMembers/news/andreaImg.png";
+import susanaImg from "/public/teamMembers/news/susanaImg.png";
+import ignacioImg from "/public/teamMembers/news/ignacioImg.png";
 
 export const teamMembers = [
   {
@@ -29,7 +30,7 @@ export const teamMembers = [
   {
     img: estebanImg,
     name: "Esteban Restrepo",
-    profesion: "Socio/Proyectos Especiales",
+    profesion: "Socio / Proyectos Especiales",
     position: 2,
   },
   {
@@ -47,8 +48,14 @@ export const teamMembers = [
   {
     img: gabrielImg,
     name: "Gabriel Jaramillo",
-    profesion: "Fundador/Director General",
+    profesion: "Fundador / Director General",
     position: 5,
+  },
+  {
+    img: ignacioImg,
+    name: "Ignacio Restrepo",
+    profesion: "Fundador / Gerente administrativo",
+    position: 7,
   },
   {
     img: kellyImg,
@@ -58,7 +65,7 @@ export const teamMembers = [
   },
   {
     img: guilleImg,
-    name: "Guillermo Fuentes",
+    name: "Guillermo Puentes",
     profesion: "Creativo Gráfico",
     position: 8,
   },
@@ -105,15 +112,15 @@ export const teamMembers = [
     profesion: "Creativa Copy",
   },
   {
-    img: karlaImg,
-    name: "Karla Estrada",
+    img: susanaImg,
+    name: "Susana Cano",
     profesion: "Creativa Gráfica",
     position: 15,
   },
   {
     img: emmaImg,
     name: "Emma Villareal",
-    profesion: "Project Manager",
+    profesion: "Ejecutiva de cuentas / Producción",
     position: 18,
   },
   {

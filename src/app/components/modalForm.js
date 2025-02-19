@@ -179,7 +179,7 @@ const ModalFormInt = () => {
                 className={"text-white placeholder:text-white border-white"}
               />
               <Button
-                color={isFormValid ? "border" : "disabled"}
+                color={isFormValid ? "cream" : "disabled"}
                 type="submit"
                 disabled={!isFormValid} // Botón deshabilitado si el formulario no es válido
               >

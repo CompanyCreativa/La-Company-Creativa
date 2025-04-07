@@ -5,7 +5,7 @@ import Footer from "./footer";
 export default function PublicLayout({ children, page = "" }) {
   return (
     <>
-      <Header page={page} />
+      {page !== "digital" && <Header page={page} />}
       {children}
       <Footer />
     </>

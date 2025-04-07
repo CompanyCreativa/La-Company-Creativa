@@ -21,7 +21,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${abel.variable} ${montserrat.variable}`}>
+    <html lang="es" className={`${abel.variable} ${montserrat.variable}`}>
       <head>
         {/* Meta Pixel Code */}
         <script

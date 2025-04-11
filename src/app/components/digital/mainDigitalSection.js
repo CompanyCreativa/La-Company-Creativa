@@ -28,7 +28,7 @@ export default function MainDigitalSection({ children }) {
           diseñadas para vender.
         </p>
         <div class="w-full h-px bg-gradient-to-r from-transparent via-gray-500 to-transparent"></div>
-        <button className="flex items-center mt-7 mb-10 gap-2 text-[12px] uppercase tracking-[3px] bg-companySalmon py-4 px-7 font-thin hover:">
+        <button className="flex items-center mt-7 mb-10 gap-2 text-[12px] uppercase tracking-[3px] bg-companySalmon py-4 px-7 font-thin hover:bg-[#B92A1D] transition-all duration-300">
           Hagámoslo posible{" "}
           <svg
             width="11"
@@ -68,10 +68,10 @@ export default function MainDigitalSection({ children }) {
               />
             </motion.svg>
           </motion.div>
-          <p className="font-robout text-[16px] md:text-[18px] lg:text-[28px] lg:max-w-[600px] pl-8">
-            <span className="font-semibold">Expertos</span> en estrategias de
-            pauta digital Menos desperdicio,{" "}
-            <span className="font-semibold">más resultados.</span>
+          <p className="robout font-[300] text-[16px] md:text-[18px] lg:text-[28px] lg:max-w-[600px] pl-8">
+            <span className="font-[500]">Expertos</span> en estrategias de pauta
+            digital Menos desperdicio,{" "}
+            <span className="font-[500]">más resultados.</span>
           </p>
         </div>
       </div>
@@ -97,9 +97,10 @@ export default function MainDigitalSection({ children }) {
             fill="#FFF8EA"
           />
         </svg>
-        <p className="font-robout text-[16px] md:text-2xl lg:text-3xl">
-          <span>Expertos</span> en estrategias de pauta digital Menos
-          desperdicio, <span>más resultados.</span>
+        <p className="robout text-[14px] tracking-wider md:text-2xl lg:text-3xl font-[300]">
+          <span className="font-[500]">Expertos</span> en estrategias de pauta
+          digital Menos desperdicio,{" "}
+          <span className="font-[500]">más resultados.</span>
         </p>
       </div>
     </div>

@@ -4,7 +4,6 @@ import Image from "next/image";
 import DigitalHeader from "../components/digital/header";
 import MainDigitalSection from "../components/digital/mainDigitalSection";
 
-
 import iconDigital5 from "/public/digital/icon-digital5.png";
 import iconDigital6 from "/public/digital/icon-digital6.png";
 
@@ -19,6 +18,7 @@ import logoLondonio from "/public/digital/logo-londonio.png";
 import logoIdeo from "/public/digital/logo-ideo.png";
 import logoArquitectura from "/public/digital/logo-arquitectura.png";
 import WhyChooseUs from "../components/digital/whyChooseUs";
+import DigitalServices from "../components/digital/digitalServices";
 
 export default function page() {
   return (
@@ -28,99 +28,7 @@ export default function page() {
         <DigitalHeader />
         <MainDigitalSection />
         <WhyChooseUs />
-        <div>
-          <div>
-            <div>
-              <p>01</p>
-              <h4>Pauta digital en Meta Ads</h4>
-              <p>
-                Aumenta tu visibilidad y multiplica tus ventas con campañas
-                optimizadas para la generación de resultados.
-              </p>
-            </div>
-            <div>
-              <p>02</p>
-              <h4>Optimización y escalamiento de campañas</h4>
-              <p>
-                No basta con lanzar anuncios, hay que hacerlos rentables.
-                Analizamos y optimizamos cada campaña en Meta y Google Ads para
-                reducir costos y aumentar conversiones.
-              </p>
-            </div>
-            <div>
-              <p>03</p>
-              <h4>Anuncios Creativos</h4>
-              <p>
-                Anuncios que no solo llaman la atención, sino que venden.
-                Creamos imágenes, videos y copys irresistibles que elevan el
-                rendimiento de tus campañas
-              </p>
-            </div>
-          </div>
-          <div>
-            <div>
-              <h3>
-                <Image src={logoGoogle} alt="iconDigital1" />
-                Google Ads
-              </h3>
-              <p>
-                Lleva tu negocio a la audiencia correcta y maximiza tu ROI con
-                campañas efectivas en Google Ads.
-              </p>
-            </div>
-            <div>
-              <h3>
-                <Image src={logoMeta} alt="iconDigital1" />
-                Meta Ads
-              </h3>
-              <p>
-                Aprovecha el poder de Meta Ads para conectar, convertir y
-                fidelizar a tu audiencia en redes sociales.
-              </p>
-            </div>
-            <div>
-              <h3>
-                <Image src={logoLinkedin} alt="iconDigital1" />
-                Linkedin Ads
-              </h3>
-              <p>
-                Llega a los tomadores de decisión con campañas estratégicas en
-                LinkedIn Ads que generan conexiones y oportunidades de negocio.
-              </p>
-            </div>
-            <div>
-              <h3>
-                <Image src={logoTiktok} alt="iconDigital1" />
-                TikTok Ads
-              </h3>
-              <p>
-                Llega a los tomadores de decisión con campañas estratégicas en
-                LinkedIn Ads que generan conexiones y oportunidades de negocio.
-              </p>
-            </div>
-            <h3>Especialistas en pauta digital</h3>
-            <p>
-              Tenemos mas de 10 años de experiencia generando campañas de pauta
-              paga rentables.
-            </p>
-            <button>
-              Explora nuestros servicios{" "}
-              <svg
-                width="12"
-                height="12"
-                viewBox="0 0 12 12"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M11.75 1C11.75 0.585787 11.4142 0.250001 11 0.250001L4.25 0.250001C3.83579 0.250001 3.5 0.585787 3.5 1C3.5 1.41421 3.83579 1.75 4.25 1.75H10.25V7.75C10.25 8.16421 10.5858 8.5 11 8.5C11.4142 8.5 11.75 8.16421 11.75 7.75L11.75 1ZM2.03033 11.0303L11.5303 1.53033L10.4697 0.469671L0.96967 9.96967L2.03033 11.0303Z"
-                  fill="#FFF8EA"
-                />
-                <path d="M1 1L11 1L11 11" stroke="#FFF8EA" stroke-width="1.5" />
-              </svg>
-            </button>
-          </div>
-        </div>
+        <DigitalServices />
         <div>
           <div>
             <h3>Como trabajamos:</h3>

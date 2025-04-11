@@ -15,6 +15,20 @@
 }
 
 @font-face {
+  font-family: "Robout";
+  src: url("assets/fonts/Robout-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Robout";
+  src: url("assets/fonts/Robout-Semibold.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
   font-family: "Cooper";
   src: url("assets/fonts/CooperHewitt-Thin.otf") format("truetype");
   font-weight: 300;
@@ -241,6 +255,10 @@ body {
   top: 0;
   left: 0;
   right: 0;
+}
+
+.robout {
+  font-family: "Robout", sans-serif;
 }
 
 .SpaceGrotesk {

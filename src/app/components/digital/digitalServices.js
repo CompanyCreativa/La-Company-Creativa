@@ -55,8 +55,8 @@ export default function DigitalServices({ children }) {
   ];
 
   return (
-    <div className="flex flex-col lg:flex-row gap-5 lg:gap-10 mt-14 xl:mt-40 w-full lg:px-32 mx-[-10] lg:mx-[-20] w-screen">
-      <div>
+    <div className="flex flex-col lg:flex-row gap-5 mt-14 xl:mt-40 w-full md:pr-10 xl:pr-20 2xl:pr-44 mx-[-10] lg:mx-[-20] w-screen lg:justify-between">
+      <div className="lg:w-[50%]">
         {stepsServices.map((service, index) => (
           <div
             key={index}
@@ -64,38 +64,48 @@ export default function DigitalServices({ children }) {
               index === 1
                 ? "bg-gradient-to-r from-[rgba(43,255,195,0.2)] to-[rgba(43,255,195,0.0)]"
                 : ""
-            } py-3 px-6`}
+            } py-3 px-6 md:pl-10 xl:pl-20 2xl:pl-44 xl:py-5`}
           >
             <p
               className={`${
                 index === 1 ? "text-[#FFF8EA]" : "text-[#5d5d5e]"
-              } font-thin font-montserrat text-[17px] leading-[30px]`}
+              } font-thin font-montserrat text-[17px] xl:text-[24px] leading-[30px]`}
             >
               {service.step}
             </p>
-            <h4 className="font-regular text-[20px] mb-2">{service.title}</h4>
-            <p className="font-light font-montserrat text-[14px] text-[#FFF8EA] leading-[20px] tracking-large">
+            <h4 className="font-regular text-[20px] xl:text-[32px] mb-2">
+              {service.title}
+            </h4>
+            <p className="font-light font-montserrat text-[14px] text-[16px] text-[#FFF8EA] leading-[20px] tracking-large">
               {service.description}
             </p>
           </div>
         ))}
       </div>
-      <div className="flex flex-col gap-10">
+      <div className="p-4 lg:w-[40%] rounded-[11px] bg-gradient-to-b from-[rgba(255,255,255,0.05)] to-[rgba(255,255,255,0.02)]  flex flex-col gap-4 mx-6">
         {platformsServices.map((service, index) => (
-          <div className="bg-[rgba(43,255,195,0.02)]">
-            <h3 className="font-montserrat text-[18px]">
-              <Image src={service.logo} alt="iconDigital1" />
+          <div className="xl:py-5 bg-[#2BFFC3] bg-opacity-[0.02] rounded-[7px] p-4 flex flex-col gap-2 border border-[#2BFFC3] border-opacity-[0.1]">
+            <h3 className="font-montserrat flex items-center gap-1 text-[18px] xl:text-[24px] font-semibold text-[#FFF8EA] leading-[30px]">
+              <Image
+                src={service.logo}
+                alt="iconDigital1"
+                className="w-[24px] xl:w-[38px]"
+              />
               {service.title}
             </h3>
-            <p>{service.description}</p>
+            <p className="font-light font-montserrat text-[14px] text-[#FFF8EA] opacity-80 leading-[20px] tracking-large">
+              {service.description}
+            </p>
           </div>
         ))}
-        <h3>Especialistas en pauta digital</h3>
-        <p>
+        <h3 className="text-companySalmon font-regular text-[24px] mt-2">
+          Especialistas en pauta digital
+        </h3>
+        <p className="font-light font-montserrat text-[16px] text-[#FFF8EA] leading-[20px] tracking-large">
           Tenemos mas de 10 años de experiencia generando campañas de pauta paga
           rentables.
         </p>
-        <button>
+        <button className="flex inline-flex items-center mt-2 gap-2 text-[12px] uppercase tracking-[3px] bg-companySalmon py-4 px-7 font-thin hover:bg-[#B92A1D] transition-all duration-300">
           Explora nuestros servicios{" "}
           <svg
             width="12"

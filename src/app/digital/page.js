@@ -4,159 +4,27 @@ import Image from "next/image";
 import DigitalHeader from "../components/digital/header";
 import MainDigitalSection from "../components/digital/mainDigitalSection";
 
-import iconDigital5 from "/public/digital/icon-digital5.png";
-import iconDigital6 from "/public/digital/icon-digital6.png";
 
-import logoGoogle from "/public/digital/logo-google.png";
-import logoMeta from "/public/digital/logo-meta.png";
-import logoTiktok from "/public/digital/logo-tiktok.png";
-import logoLinkedin from "/public/digital/logo-linkedin.png";
-import logoConinsa from "/public/digital/logo-coninsa.png";
-import logoViva from "/public/digital/logo-viva.png";
-import logoNutresa from "/public/digital/logo-nutresa.png";
-import logoLondonio from "/public/digital/logo-londonio.png";
-import logoIdeo from "/public/digital/logo-ideo.png";
-import logoArquitectura from "/public/digital/logo-arquitectura.png";
 import WhyChooseUs from "../components/digital/whyChooseUs";
 import DigitalServices from "../components/digital/digitalServices";
+import HowWeWork from "../components/digital/howWeWork";
+import Results from "../components/digital/Results";
+import FormDigital from "../components/digital/formDigital";
+import FrequentQuestions from "../components/digital/frequentQuestions";
 
 export default function page() {
   return (
     <div className="relative min-h-screen bg-[#090916] overflow-hidden bg-svg-noise">
       {/* Contenido */}
-      <div className="flex flex-col justify-center items-center relative z-10 text-white px-6 md:px-10 lg:px-20 py-14">
+      <div className="flex flex-col justify-center items-center relative z-10 text-white px-6 md:px-10 xl:px-20 2xl:px-44 py-14">
         <DigitalHeader />
         <MainDigitalSection />
         <WhyChooseUs />
         <DigitalServices />
-        <div>
-          <div>
-            <h3>Como trabajamos:</h3>
-            <div>
-              <div></div>
-              <p>Análisis inicial y auditoría de tu marca</p>
-              <p>Creación de una estrategia personalizada</p>
-              <p>Lanzamiento y optimización continua</p>
-              <p>Informe de resultados y plan de mejoras mes a mes</p>
-            </div>
-            <button>
-              Máximiza tus resultados{" "}
-              <svg
-                width="12"
-                height="12"
-                viewBox="0 0 12 12"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M11.75 1C11.75 0.585787 11.4142 0.250001 11 0.250001L4.25 0.250001C3.83579 0.250001 3.5 0.585787 3.5 1C3.5 1.41421 3.83579 1.75 4.25 1.75H10.25V7.75C10.25 8.16421 10.5858 8.5 11 8.5C11.4142 8.5 11.75 8.16421 11.75 7.75L11.75 1ZM2.03033 11.0303L11.5303 1.53033L10.4697 0.469671L0.96967 9.96967L2.03033 11.0303Z"
-                  fill="#FFF8EA"
-                />
-                <path d="M1 1L11 1L11 11" stroke="#FFF8EA" stroke-width="1.5" />
-              </svg>
-            </button>
-          </div>
-        </div>
-        <div>
-          <h3>
-            <Image src={iconDigital5} alt="iconDigital1" /> No desperdicies más
-            presupuesto
-          </h3>
-          <p>“Deja que los números hablen. Nosotros hacemos que crezcan.”</p>
-          <div></div>
-          <h4>
-            Tenemos <span>para ti:</span>
-          </h4>
-          <ul>
-            <li>Acompañamiento experto en cada paso.</li>
-            <li>Estrategias probadas.</li>
-            <li>Impacto real en tus resultados.</li>
-            <li>Optimización constante para mejorar tu inversión.</li>
-          </ul>
-          <button>
-            Diagnóstico gratuito{" "}
-            <svg
-              width="12"
-              height="12"
-              viewBox="0 0 12 12"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M11.75 1C11.75 0.585787 11.4142 0.250001 11 0.250001L4.25 0.250001C3.83579 0.250001 3.5 0.585787 3.5 1C3.5 1.41421 3.83579 1.75 4.25 1.75H10.25V7.75C10.25 8.16421 10.5858 8.5 11 8.5C11.4142 8.5 11.75 8.16421 11.75 7.75L11.75 1ZM2.03033 11.0303L11.5303 1.53033L10.4697 0.469671L0.96967 9.96967L2.03033 11.0303Z"
-                fill="#FFF8EA"
-              />
-              <path d="M1 1L11 1L11 11" stroke="#FFF8EA" stroke-width="1.5" />
-            </svg>
-          </button>
-        </div>
-        <div>
-          <h3>
-            <Image src={iconDigital6} alt="iconDigital1" /> Resultados o no
-            pagas:
-          </h3>
-          <p>
-            Si en 60 días no ves mejoras en ventas o leads (siguiendo nuestras
-            recomendaciones estratégicas), te devolvemos el 50% de tu dinero.
-          </p>
-          <button>
-            Comienza ya{" "}
-            <svg
-              width="12"
-              height="12"
-              viewBox="0 0 12 12"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M11.75 1C11.75 0.585787 11.4142 0.250001 11 0.250001L4.25 0.250001C3.83579 0.250001 3.5 0.585787 3.5 1C3.5 1.41421 3.83579 1.75 4.25 1.75H10.25V7.75C10.25 8.16421 10.5858 8.5 11 8.5C11.4142 8.5 11.75 8.16421 11.75 7.75L11.75 1ZM2.03033 11.0303L11.5303 1.53033L10.4697 0.469671L0.96967 9.96967L2.03033 11.0303Z"
-                fill="#FFF8EA"
-              />
-              <path d="M1 1L11 1L11 11" stroke="#FFF8EA" stroke-width="1.5" />
-            </svg>
-          </button>
-        </div>
-        <div>
-          <form>
-            <input type="text" placeholder="Nombre" />
-            <input type="text" placeholder="Email" />
-            <textarea placeholder="Mensaje" />
-            <button type="submit">Enviar</button>
-          </form>
-          <div>
-            <h2>Expertos en pauta digital</h2>
-            <div>
-              <Image src={logoGoogle} alt="iconDigital1" />
-              <p>Google Ads</p>
-            </div>
-            <div>
-              <Image src={logoMeta} alt="iconDigital1" />
-              <p>Meta Ads</p>
-            </div>
-            <div>
-              <Image src={logoLinkedin} alt="iconDigital1" />
-              <p>Linkedin Ads</p>
-            </div>
-            <div>
-              <Image src={logoTiktok} alt="iconDigital1" />
-              <p>Tik Tok Ads</p>
-            </div>
-          </div>
-        </div>
-        <div>
-          <h3>
-            CONFÍAN <span>EN NOSOTROS</span>
-          </h3>
-          <div>
-            <Image src={logoConinsa} alt="iconDigital1" />
-            <Image src={logoViva} alt="iconDigital1" />
-            <Image src={logoNutresa} alt="iconDigital1" />
-            <Image src={logoLondonio} alt="iconDigital1" />
-            <Image src={logoIdeo} alt="iconDigital1" />
-            <Image src={logoIdeo} alt="iconDigital1" />
-            <Image src={logoArquitectura} alt="iconDigital1" />
-          </div>
-        </div>
+        <HowWeWork />
+        <Results />
+        <FormDigital />
+        <FrequentQuestions />
       </div>
 
       {/* Luces difuminadas */}

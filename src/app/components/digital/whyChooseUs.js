@@ -55,10 +55,10 @@ export default function WhyChooseUs({ children }) {
   ];
 
   return (
-    <section className="mt-14 xl:mt-40 w-full flex flex-col lg:items-start lg:lg:pl-10">
-      <div className="flex flex-col lg:flex-row gap-5 ">
-        <div className="flex flex-col items-center lg:items-start">
-          <h3 className="text-3xl lg:text-4xl 2xl:text-5xl">
+    <section className="mt-14 xl:mt-40 w-full flex flex-col lg:items-start">
+      <div className="flex flex-col lg:flex-row gap-5 w-full lg:justify-between">
+        <div className="flex flex-col items-center lg:items-start ">
+          <h3 className="text-3xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl">
             ¿Por qué <span className="font-semibold">elegirnos?</span>
           </h3>
           <button className="w-[85%] lg:w-[80%] flex items-center justify-center mt-7 mb-10 gap-2 text-[12px] uppercase tracking-[3px] bg-[#666AAC] py-4 px-7 font-thin hover:bg-[#4E5295] transition-all duration-300 hidden lg:flex">
@@ -78,9 +78,9 @@ export default function WhyChooseUs({ children }) {
             </svg>
           </button>
         </div>
-        <div className="grid grid-cols-2 grid-rows-2 gap-4 lg:flex lg:w-2/3 lg:justify-center lg:gap-5 2xl:gap-10 2xl:ml-">
+        <div className="grid grid-cols-2 grid-rows-2 gap-4 lg:flex lg:w-2/3 lg:justify-between lg:gap-5 2xl:gap-10 2xl:ml-">
           {cards.map((card, index) => (
-            <div class="relative p-3 py-6 rounded-xl bg-white/10 backdrop-blur-md text-white overflow-hidden shadow-lg shadow-black/30 border border-white/10 text-center flex flex-col items-center justify-center gap-2 lg:w-[228px]">
+            <div class="relative px-3 py-6 rounded-3xl bg-[#2BFFC3] bg-opacity-[0.02] backdrop-blur-md text-white overflow-hidden shadow-lg shadow-black/30 border border-[#2BFFC3]/10 text-center flex flex-col items-center justify-center gap-2 md:w-[228px]">
               <Image src={card.image} alt={card.imageAlt} />
               <p className="text-[14px] lg:text-[16px] tracking-wide">
                 {card.title}

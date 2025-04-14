@@ -24,6 +24,7 @@ module.exports = {
         zigzagBg: "url('/zig-zag/grid-bg.png')",
         booblist: "url('/booblist/Rectangle.png')",
         pattern: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60'%3E%3Crect width='60' height='60' fill='none' stroke='%23ccc' stroke-width='.2'/%3E%3C/svg%3E")`,
+        digitalSection: `url('/digital/backgroundSectionDigital.png')`,
       },
       screens: {
         "3xl": "1740px",

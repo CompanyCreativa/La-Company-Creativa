@@ -4,6 +4,7 @@ import Accordion from "../customAccordion";
 import arrow from "/public/arrow.png";
 import Image from "next/image";
 
+
 export default function WhatWeDo() {
   return (
     <Section className="w-full">

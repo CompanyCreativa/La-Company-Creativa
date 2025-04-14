@@ -9,9 +9,9 @@ export default function MainDigitalSection({ children }) {
   };
 
   return (
-    <div className="flex flex-col lg:flex-row lg:pl-10">
-      <div className="flex flex-col justify-center items-center lg:items-start lg:w-1/2">
-        <h2 className="max-w-[323px] md:max-w-[500px] lg:max-w-[800px] text-center lg:text-left text-[24px] md:text-4xl lg:text-5xl font-thin">
+    <div className="flex flex-col lg:flex-row lg:justify-between">
+      <div className="flex flex-col justify-center items-center lg:items-start lg:w-[45%]">
+        <h2 className="max-w-[323px] md:max-w-[500px] lg:max-w-[800px] text-center lg:text-left text-[24px] md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-thin">
           <span className="font-semibold ">Más clientes,</span> más ventas y una
           agencia de marketing digital que
           <span className="font-semibold text-companySalmon">
@@ -68,7 +68,7 @@ export default function MainDigitalSection({ children }) {
               />
             </motion.svg>
           </motion.div>
-          <p className="robout font-[300] text-[16px] md:text-[18px] lg:text-[28px] lg:max-w-[600px] pl-8">
+          <p className="robout font-[300] text-[16px] md:text-[18px] lg:text-[20px] xl:text-[22px] 2xl:text-[28px] lg:max-w-[600px] pl-8">
             <span className="font-[500]">Expertos</span> en estrategias de pauta
             digital Menos desperdicio,{" "}
             <span className="font-[500]">más resultados.</span>

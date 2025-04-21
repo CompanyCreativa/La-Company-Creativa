@@ -7,7 +7,7 @@ export default function PublicLayout({ children, page = "" }) {
     <>
       {page !== "digital" && <Header page={page} />}
       {children}
-      <Footer />
+      {page !== "digital" && <Footer page={page} />}
     </>
   );
 }

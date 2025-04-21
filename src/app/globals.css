@@ -14,6 +14,10 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 @font-face {
   font-family: "Robout";
   src: url("assets/fonts/Robout-Light.ttf") format("truetype");
@@ -429,6 +433,12 @@ body {
   }
 }
 
+.bg-noise-new {
+  background-image: url("/digital/bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 /* End of Animations for homeSwiper */
 
 .slide-down {

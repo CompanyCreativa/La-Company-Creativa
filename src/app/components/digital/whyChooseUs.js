@@ -80,7 +80,7 @@ export default function WhyChooseUs({ children }) {
         </div>
         <div className="grid grid-cols-2 grid-rows-2 gap-4 lg:flex lg:w-2/3 lg:justify-between lg:gap-5 2xl:gap-10 2xl:ml-">
           {cards.map((card, index) => (
-            <div class="relative px-3 py-6 rounded-3xl bg-[#2BFFC3] bg-opacity-[0.02] backdrop-blur-md text-white overflow-hidden shadow-lg shadow-black/30 border border-[#2BFFC3]/10 text-center flex flex-col items-center justify-center gap-2 md:w-[228px]">
+            <div class="relative px-3 py-6 rounded-3xl bg-gradient-to-b from-[rgba(255,255,255,0.05)] to-[rgba(255,255,255,0.02)] bg-opacity-[0.02] text-white overflow-hidden shadow-lg shadow-black/30 border border-[#2BFFC3]/10 text-center flex flex-col items-center justify-center gap-2 md:w-[228px]">
               <Image src={card.image} alt={card.imageAlt} />
               <p className="text-[14px] lg:text-[16px] tracking-wide">
                 {card.title}

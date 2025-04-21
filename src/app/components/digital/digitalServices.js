@@ -82,9 +82,9 @@ export default function DigitalServices({ children }) {
           </div>
         ))}
       </div>
-      <div className="p-4 lg:w-[40%] rounded-[11px] bg-gradient-to-b from-[rgba(255,255,255,0.05)] to-[rgba(255,255,255,0.02)]  flex flex-col gap-4 mx-6">
+      <div className="p-4 xl:p-6 2xl:p-8 lg:w-[40%] rounded-[11px] bg-gradient-to-b from-[rgba(255,255,255,0.05)] to-[rgba(255,255,255,0.02)]  flex flex-col gap-4 shadow-black/30">
         {platformsServices.map((service, index) => (
-          <div className="xl:py-5 bg-[#2BFFC3] bg-opacity-[0.02] rounded-[7px] p-4 flex flex-col gap-2 border border-[#2BFFC3] border-opacity-[0.1]">
+          <div className="xl:py-5 bg-[#2BFFC3]/[0.02] hover:bg-[#2BFFC3]/[0.05] transition-colors duration-300 rounded-[7px] p-4 flex flex-col gap-2 border border-[#2BFFC3] border-opacity-[0.1]">
             <h3 className="font-montserrat flex items-center gap-1 text-[18px] xl:text-[24px] font-semibold text-[#FFF8EA] leading-[30px]">
               <Image
                 src={service.logo}
@@ -105,7 +105,7 @@ export default function DigitalServices({ children }) {
           Tenemos mas de 10 años de experiencia generando campañas de pauta paga
           rentables.
         </p>
-        <button className="flex inline-flex items-center mt-2 gap-2 text-[12px] uppercase tracking-[3px] bg-companySalmon py-4 px-7 font-thin hover:bg-[#B92A1D] transition-all duration-300">
+        <button className="inline-flex max-w-max items-center mt-2 gap-2 text-[12px] uppercase tracking-[3px] bg-companySalmon py-4 px-7 font-thin hover:bg-[#B92A1D] transition-all duration-300 ">
           Explora nuestros servicios{" "}
           <svg
             width="12"

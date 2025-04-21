@@ -11,10 +11,17 @@ export default function MainDigitalSection({ children }) {
   return (
     <div className="flex flex-col lg:flex-row lg:justify-between">
       <div className="flex flex-col justify-center items-center lg:items-start lg:w-[45%]">
-        <h2 className="max-w-[323px] md:max-w-[500px] lg:max-w-[800px] text-center lg:text-left text-[24px] md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-thin">
-          <span className="font-semibold ">Más clientes,</span> más ventas y una
-          agencia de marketing digital que
-          <span className="font-semibold text-companySalmon">
+        <h2 className="max-w-[323px] md:max-w-[500px] lg:max-w-[800px] text-center lg:text-left text-[24px] md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-thin leading-[60px]">
+          <span className="font-semibold leading-[60px]">
+            Más clientes,
+            <br className="hidden md:block" />
+          </span>{" "}
+          <span className="leading-[60px]">
+            más ventas y una agencia <br className="hidden md:block" /> de
+            marketing digital
+            <br className="hidden md:block" /> que
+          </span>
+          <span className="font-semibold text-companySalmon leading-[60px]">
             {" "}
             optimiza tu inversión
           </span>
@@ -45,29 +52,31 @@ export default function MainDigitalSection({ children }) {
           </svg>
         </button>
         <div className="hidden md:flex justify-center items-center gap-4 px-4">
-          <motion.div
-            className="flex justify-center items-center border border-white border-opacity-50 rounded-full relative cursor-pointer hover:border-transparent transition-all duration-500"
-            whileHover="hover" // Cambia el estado al hacer hover
-            initial="initial" // Estado inicial
-          >
-            <motion.svg
-              width="40"
-              height="30"
-              viewBox="0 0 11 15"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              className="bg-companySalmon rounded-full p-3 w-[50px] h-[50px] flex justify-center items-center"
-              variants={svgVariants} // Aplicar variantes
-              transition={{ duration: 0.5 }} // Duración de la animación
+          <a href="#contact">
+            <motion.div
+              className="flex justify-center items-center border border-white border-opacity-50 rounded-full relative cursor-pointer hover:border-transparent transition-all duration-500"
+              whileHover="hover" // Cambia el estado al hacer hover
+              initial="initial" // Estado inicial
             >
-              <path
-                fillRule="evenodd"
-                clipRule="evenodd"
-                d="M9.73629 8.87116C9.95211 8.65535 10.302 8.65535 10.5178 8.87116C10.7336 9.08698 10.7336 9.43688 10.5178 9.6527L5.8286 14.3419C5.61278 14.5578 5.26287 14.5578 5.04706 14.3419L0.357824 9.6527C0.142008 9.43688 0.142008 9.08698 0.357824 8.87116C0.57364 8.65535 0.923547 8.65535 1.13936 8.87116L4.8852 12.617V1.44654C4.8852 1.14133 5.13262 0.893908 5.43783 0.893909C5.74304 0.893908 5.99046 1.14133 5.99046 1.44654V12.617L9.73629 8.87116Z"
-                fill="#FFF8EA"
-              />
-            </motion.svg>
-          </motion.div>
+              <motion.svg
+                width="40"
+                height="30"
+                viewBox="0 0 11 15"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                className="bg-companySalmon rounded-full p-3 w-[50px] h-[50px] flex justify-center items-center"
+                variants={svgVariants} // Aplicar variantes
+                transition={{ duration: 0.5 }} // Duración de la animación
+              >
+                <path
+                  fillRule="evenodd"
+                  clipRule="evenodd"
+                  d="M9.73629 8.87116C9.95211 8.65535 10.302 8.65535 10.5178 8.87116C10.7336 9.08698 10.7336 9.43688 10.5178 9.6527L5.8286 14.3419C5.61278 14.5578 5.26287 14.5578 5.04706 14.3419L0.357824 9.6527C0.142008 9.43688 0.142008 9.08698 0.357824 8.87116C0.57364 8.65535 0.923547 8.65535 1.13936 8.87116L4.8852 12.617V1.44654C4.8852 1.14133 5.13262 0.893908 5.43783 0.893909C5.74304 0.893908 5.99046 1.14133 5.99046 1.44654V12.617L9.73629 8.87116Z"
+                  fill="#FFF8EA"
+                />
+              </motion.svg>
+            </motion.div>
+          </a>
           <p className="robout font-[300] text-[16px] md:text-[18px] lg:text-[20px] xl:text-[22px] 2xl:text-[28px] lg:max-w-[600px] pl-8">
             <span className="font-[500]">Expertos</span> en estrategias de pauta
             digital Menos desperdicio,{" "}

@@ -2,7 +2,6 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import emailjs from "emailjs-com";
 
-
 import logoGoogle from "/public/digital/logo-google.png";
 import logoMeta from "/public/digital/logo-meta.png";
 import logoTiktok from "/public/digital/logo-tiktok.png";
@@ -83,7 +82,10 @@ export default function FormDigital() {
   };
 
   return (
-    <div className="flex flex-col lg:flex-row mt-14 lg:mt-40  bg-gradient-to-b from-[rgba(255,255,255,0.05)] to-[rgba(255,255,255,0.02)] border border-[#2BFFC3] border-opacity-[0.1] rounded-b-[11px] rounded-[16px] w-full p-4 lg:p-10 lg:gap-20">
+    <div
+      id="contact"
+      className="flex flex-col lg:flex-row mt-14 lg:mt-40  bg-gradient-to-b from-[rgba(255,255,255,0.05)] to-[rgba(255,255,255,0.02)] border border-[#2BFFC3] border-opacity-[0.1] rounded-b-[11px] rounded-[16px] w-full p-4 lg:p-10 lg:gap-20"
+    >
       <form
         className="flex flex-col gap-4 lg:gap-5 lg:w-[500px]"
         onSubmit={sendEmail}

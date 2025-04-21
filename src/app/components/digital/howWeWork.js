@@ -21,13 +21,13 @@ export default function HowWeWork({ children }) {
       <h3 className="text-[#FFF8EA] text-[32px] mb-5">
         Como <span className="font-semibold">trabajamos:</span>
       </h3>
-      <div className="flex flex-col lg:flex-row gap-4 lg:justify-between ">
-        <div className="flex flex-col lg:w-[50%] items-start gap-4 p-4 rounded-[11px] bg-gradient-to-b from-[rgba(255,255,255,0.05)] to-[rgba(255,255,255,0.02)] 2xl:p-6">
+      <div className="flex flex-col lg:flex-row gap-4 lg:justify-between">
+        <div className="flex flex-col lg:w-[50%] items-start gap-4  p-4 xl:p-6 2xl:p-8 rounded-[11px] bg-gradient-to-b from-[rgba(255,255,255,0.05)] to-[rgba(255,255,255,0.02)] ">
           <ul className="flex flex-col w-full gap-4 2xl:gap-7 bg-[#2BFFC3] bg-opacity-[0.02] rounded-[7px] border border-[#2BFFC3] border-opacity-[0.1] p-4 2xl:py-6 2xl:px-20">
             {weWorkPoints.map((point, index) => (
               <li key={index} className="relative pl-4 2xl:pl-10">
                 <div className="absolute -left-[4px] top-[35%] w-3 h-3 2xl:w-4 2xl:h-4 rounded-full bg-red-500 shadow-[0_0_10px_rgba(255,0,0,0.7)]"></div>
-                <p className="inline-flex px-3 py-2 2xl:py-3 2xl:px-4 border border-[#2BFFC3] border-opacity-[0.1] bg-[#2BFFC3] bg-opacity-[0.02] rounded-full text-[13px] lg:text-[14px] xl:text-[16px] 2xl:text-[18px]">
+                <p className="inline-flex px-3 md:px-4 xl:px-5  2xl:px-7 py-2 2xl:py-3 border border-[#2BFFC3] border-opacity-[0.1] bg-[#2BFFC3] bg-opacity-[0.02] rounded-full text-[13px] lg:text-[14px] xl:text-[16px] 2xl:text-[18px]">
                   {point}
                 </p>
               </li>
@@ -50,7 +50,7 @@ export default function HowWeWork({ children }) {
             </svg>
           </button>
         </div>
-        <div className="mt-14 lg:mt-0 p-4 lg:w-[40%] rounded-[11px] bg-gradient-to-b from-[rgba(255,255,255,0.05)] to-[rgba(255,255,255,0.02)]  flex flex-col gap-4 2xl:py-6 2xl:px-6">
+        <div className="mt-14 lg:mt-0 p-4 xl:p-6 2xl:p-8 lg:w-[40%] rounded-[11px] bg-gradient-to-b from-[rgba(255,255,255,0.05)] to-[rgba(255,255,255,0.02)]  flex flex-col gap-4 ">
           <div className="flex">
             <Image
               src={iconDigital5}
@@ -91,7 +91,7 @@ export default function HowWeWork({ children }) {
               </li>
             ))}
           </ul>
-          <button className="inline-flex mr-auto flex justify-center gap-2 text-[12px] uppercase tracking-[3px] bg-[#666AAC] py-4 px-5 font-thin ">
+          <button className="inline-flex mr-auto flex justify-center gap-2 text-[12px] uppercase tracking-[3px] bg-[#666AAC] py-4 px-7 font-thin hover:bg-[#4E5295] transition-all duration-300 py-4 px-5 font-thin ">
             Diagnóstico gratuito{" "}
             <svg
               width="12"

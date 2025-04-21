@@ -18,10 +18,14 @@ import casaMagnaImg2 from "/public/casaMagna/casaMagnaImg2.png";
 import casaMagnaImg2Mobile from "/public/casaMagna/casaMagnaImg2Mobile.png";
 import Campaña360Icon from "@/app/components/SVGicons/campaña360Icon";
 import ConceptualizacionIcon from "@/app/components/SVGicons/conceptualizacionIcon";
+import Head from "next/head";
 
 export default function Page() {
   return (
     <MainContainer className="-mt-[142px]">
+      <Head>
+        <meta name="robots" content="noindex, nofollow" />
+      </Head>
       <div className="w-full">
         <Image
           src={bannerMobile}

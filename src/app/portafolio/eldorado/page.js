@@ -24,10 +24,14 @@ import promImg4Desktop from "/public/dorado/prom4Desktop.png";
 import promImg5Desktop from "/public/dorado/prom5Desktop.png";
 import Campaña360Icon from "@/app/components/SVGicons/campaña360Icon";
 import ConceptualizacionIcon from "@/app/components/SVGicons/conceptualizacionIcon";
+import Head from "next/head";
 
 export default function Page() {
   return (
     <MainContainer className="-mt-[142px]">
+      <Head>
+        <meta name="robots" content="noindex, nofollow" />
+      </Head>
       <div className="w-full">
         <Image
           src={bannerMobile}

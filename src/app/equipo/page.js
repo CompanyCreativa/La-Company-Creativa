@@ -3,10 +3,14 @@ import Form from "../components/form";
 import MainContainer from "../components/mainContainer";
 import Section from "../components/section";
 import Breadcrumbs from "../components/breadcrumbs";
+import Head from "next/head";
 
 export default function page() {
   return (
     <div className="min-h-screen mt-[115px] md:bg-pattern bg-repeat">
+      <Head>
+        <meta name="robots" content="noindex, nofollow" />
+      </Head>
       <Section>
         <div className="my-2">
           <Breadcrumbs lastPage="Inicio" currentPage="Equipo" />

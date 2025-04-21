@@ -15,7 +15,7 @@ const X = ({ className, color = "#0C0C0C" }) => {
         x2="14.0081"
         y2="14.313"
         stroke={color}
-        stroke-width="0.734506"
+        strokeWidth="0.734506"
       />
       <line
         x1="14.0077"
@@ -23,7 +23,7 @@ const X = ({ className, color = "#0C0C0C" }) => {
         x2="0.786617"
         y2="14.098"
         stroke={color}
-        stroke-width="0.734506"
+        strokeWidth="0.734506"
       />
     </svg>
   );

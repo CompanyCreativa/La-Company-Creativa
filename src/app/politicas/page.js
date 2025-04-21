@@ -1,9 +1,13 @@
 import React from "react";
 import MainContainer from "../components/mainContainer";
+import Head from "next/head";
 
 export default function page() {
   return (
     <MainContainer>
+      <Head>
+        <meta name="robots" content="noindex, nofollow" />
+      </Head>
       <div className="w-full max-w-[1192px] mx-auto mt-16 mb-10">
         <h1 className="text-[32px]">
           POLÍTICAS DE TRATAMIENTO DE INFORMACIÓN Y DATOS PERSONALES

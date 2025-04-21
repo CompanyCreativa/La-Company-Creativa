@@ -30,10 +30,14 @@ import promIdeo4 from "/public/ideoterapia/promIdeo4.png";
 import promIdeo5 from "/public/ideoterapia/promIdeo5.png";
 import promIdeo6 from "/public/ideoterapia/promIdeo6.png";
 import MainContainer from "@/app/components/mainContainer";
+import Head from "next/head";
 
 export default function page() {
   return (
     <MainContainer className="-mt-[142px]">
+      <Head>
+        <meta name="robots" content="noindex, nofollow" />
+      </Head>
       <div className="w-full">
         <Image
           src={bannerMobile}

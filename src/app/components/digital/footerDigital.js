@@ -22,27 +22,28 @@ export default function FooterDigital() {
     },
     {
       icon: whatsApp,
-      link: "https://wa.me/573123456789",
+      link: "https://wa.me/573148629805",
     },
   ];
 
   return (
     <div className="flex flex-col justify-center items-center gap-5 mt-10 lg:mt-30 2xl:mt-40">
       <div className="flex flex-col lg:flex-row lg:gap-20 gap-10 justify-center items-center">
-        <Image src={companyWhiteLogo} />
+        <Image src={companyWhiteLogo} alt="companyWhiteLogo"/>
         <div className="flex gap-5 items-center justify-center">
           {socials.map((social, index) => (
-            <Link key={index} href={social.link}>
+            <Link key={index} href={social.link} target="_blank">
               <Image
                 key={index}
                 src={social.icon}
                 className="bg-companySalmon p-3 w-[50px] rounded-full"
+                alt={social.link}
               />
             </Link>
           ))}
         </div>
       </div>
-      <p className="mt-14">
+      <p className="mt-14 mb-20">
         Copyright © 2025 |{" "}
         <Link href={"/"} className="underline">
           LA COMPANY CREATIVA

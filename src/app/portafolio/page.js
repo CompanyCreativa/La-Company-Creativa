@@ -18,10 +18,19 @@ import MainContainer from "../components/mainContainer";
 import Breadcrumbs from "../components/breadcrumbs";
 import ModalForm from "../components/modalForm";
 import { GoogleReCaptchaProvider } from "react-google-recaptcha-v3";
+import Head from "next/head";
 
 export default function Page() {
   return (
     <MainContainer>
+      <Head>
+        <title>La Company Creativa | Portafolio</title>
+        <meta
+          name="description"
+          content="Explora nuestras campañas más exitosas."
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </Head>
       <Section className="px-5">
         <div className="my-2">
           <Breadcrumbs lastPage="Inicio" currentPage="Portafolio" />

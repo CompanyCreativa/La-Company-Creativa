@@ -4,10 +4,14 @@ import BlogCard from "../components/blog/blogCard";
 import Form from "../components/form";
 import Section from "../components/section";
 import Breadcrumbs from "../components/breadcrumbs";
+import Head from "next/head";
 
 export default function page() {
   return (
     <main className="min-h-screen ">
+      <Head>
+        <meta name="robots" content="noindex, nofollow" />
+      </Head>
       <Section>
         <div className="flex flex-col mt-[120px] lg:mt-[110px] pb-12 lg:pb-24">
           <div className="mb-10">

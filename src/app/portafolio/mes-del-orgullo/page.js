@@ -24,10 +24,14 @@ import promImg2 from "/public/mes-del-orgullo/promImg2.png";
 import promImg3 from "/public/mes-del-orgullo/promImg3.png";
 import BtlIcon from "@/app/components/SVGicons/btlIcon";
 import ConceptualizacionIcon from "@/app/components/SVGicons/conceptualizacionIcon";
+import Head from "next/head";
 
 export default function Page() {
   return (
     <MainContainer>
+      <Head>
+        <meta name="robots" content="noindex, nofollow" />
+      </Head>
       <div className="w-full">
         <Image
           src={bannerMobile}

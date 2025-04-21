@@ -84,7 +84,10 @@ export default function DigitalServices({ children }) {
       </div>
       <div className="p-4 xl:p-6 2xl:p-8 lg:w-[40%] rounded-[11px] bg-gradient-to-b from-[rgba(255,255,255,0.05)] to-[rgba(255,255,255,0.02)]  flex flex-col gap-4 shadow-black/30">
         {platformsServices.map((service, index) => (
-          <div className="xl:py-5 bg-[#2BFFC3]/[0.02] hover:bg-[#2BFFC3]/[0.05] transition-colors duration-300 rounded-[7px] p-4 flex flex-col gap-2 border border-[#2BFFC3] border-opacity-[0.1]">
+          <div
+            className="xl:py-5 bg-[#2BFFC3]/[0.02] hover:bg-[#2BFFC3]/[0.05] transition-colors duration-300 rounded-[7px] p-4 flex flex-col gap-2 border border-[#2BFFC3] border-opacity-[0.1]"
+            key={index}
+          >
             <h3 className="font-montserrat flex items-center gap-1 text-[18px] xl:text-[24px] font-semibold text-[#FFF8EA] leading-[30px]">
               <Image
                 src={service.logo}
@@ -105,7 +108,10 @@ export default function DigitalServices({ children }) {
           Tenemos mas de 10 años de experiencia generando campañas de pauta paga
           rentables.
         </p>
-        <button className="inline-flex max-w-max items-center mt-2 gap-2 text-[12px] uppercase tracking-[3px] bg-companySalmon py-4 px-7 font-thin hover:bg-[#B92A1D] transition-all duration-300 ">
+        <a
+          className="inline-flex max-w-max items-center mt-2 gap-2 text-[12px] uppercase tracking-[3px] bg-companySalmon py-4 px-7 font-thin hover:bg-[#B92A1D] transition-all duration-300"
+          href="#contact"
+        >
           Explora nuestros servicios{" "}
           <svg
             width="12"
@@ -118,9 +124,9 @@ export default function DigitalServices({ children }) {
               d="M11.75 1C11.75 0.585787 11.4142 0.250001 11 0.250001L4.25 0.250001C3.83579 0.250001 3.5 0.585787 3.5 1C3.5 1.41421 3.83579 1.75 4.25 1.75H10.25V7.75C10.25 8.16421 10.5858 8.5 11 8.5C11.4142 8.5 11.75 8.16421 11.75 7.75L11.75 1ZM2.03033 11.0303L11.5303 1.53033L10.4697 0.469671L0.96967 9.96967L2.03033 11.0303Z"
               fill="#FFF8EA"
             />
-            <path d="M1 1L11 1L11 11" stroke="#FFF8EA" stroke-width="1.5" />
+            <path d="M1 1L11 1L11 11" stroke="#FFF8EA" strokeWidth="1.5" />
           </svg>
-        </button>
+        </a>
       </div>
     </div>
   );

@@ -23,10 +23,14 @@ import zigzagRender2 from "/public/zig-zag/zigzagRender2.png";
 
 import zigzagMockup from "/public/zig-zag/zigzagMockup.png";
 import ZigzagAltoSection from "@/app/components/zigzag/zigzagAltoSection";
+import Head from "next/head";
 
 export default function Page() {
   return (
     <MainContainer>
+      <Head>
+        <meta name="robots" content="noindex, nofollow" />
+      </Head>
       <div className="w-full">
         <Image
           src={zigzagBannerMobile}

@@ -31,6 +31,7 @@ import gridImg4 from "/public/bigbang/gridImg4.png";
 import gridImg5 from "/public/bigbang/gridImg5.png";
 import gridImg6 from "/public/bigbang/gridImg6.png";
 import MainContainer from "@/app/components/mainContainer";
+import Head from "next/head";
 
 const GridChild = ({ children }) => {
   return <div className="flex justify-center items-start">{children}</div>;
@@ -39,6 +40,10 @@ const GridChild = ({ children }) => {
 export default function page() {
   return (
     <MainContainer>
+      <Head>
+      
+        <meta name="robots" content="noindex, nofollow" />
+      </Head>
       <div className="w-full">
         <Image
           src={bannerBigbangMobile}

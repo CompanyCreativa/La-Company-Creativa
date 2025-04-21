@@ -19,10 +19,14 @@ import promImg2 from "/public/reflex/promImg2.png";
 import promImg3 from "/public/reflex/promImg3.png";
 import promImg4 from "/public/reflex/promImg4.png";
 import promImg5 from "/public/reflex/promImg5.png";
+import Head from "next/head";
 
 export default function Page() {
   return (
     <MainContainer>
+      <Head>
+        <meta name="robots" content="noindex, nofollow" />
+      </Head>
       <div className="w-full">
         <Image
           src={reflexBannerMobile}

@@ -23,10 +23,14 @@ import gridImg1 from "/public/franca/gridImg1.png";
 import gridImg2 from "/public/franca/gridImg2.png";
 import gridImg3 from "/public/franca/gridImg3.png";
 import gridImg4 from "/public/franca/gridImg4.png";
+import Head from "next/head";
 
 export default function Page() {
   return (
     <MainContainer>
+      <Head>
+        <meta name="robots" content="noindex, nofollow" />
+      </Head>
       <div className="w-full">
         <Image
           src={francaBannerMobile}

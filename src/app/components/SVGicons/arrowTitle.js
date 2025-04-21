@@ -14,7 +14,7 @@ const ArrowTitle = ({ className }) => {
         <path
           d="M55.4844 9L7.48437 9"
           stroke="#363A3D"
-          stroke-width="1.98033"
+          strokeWidth="1.98033"
           stroke-miterlimit="10"
         />
         <path

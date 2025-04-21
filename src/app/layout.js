@@ -8,6 +8,7 @@ const abel = Abel({
   variable: "--font-abel",
   weight: "400",
 });
+
 const montserrat = Montserrat({
   subsets: ["latin"],
   variable: "--font-montserrat",
@@ -22,8 +23,14 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="es" className={`${abel.variable} ${montserrat.variable}`}>
-      <head>
+      <Head>
         {/* Meta Pixel Code */}
+        <title>La Company Creativa | Agencia De Publicidad</title>
+        <meta
+          name="description"
+          content="Agencia de publicidad 360 experta en branding, pauta digital y campañas que generan resultados reales."
+        ></meta>
+        
         <script
           dangerouslySetInnerHTML={{
             __html: `
@@ -48,7 +55,7 @@ export default function RootLayout({ children }) {
             src="https://www.facebook.com/tr?id=864233115587766&ev=PageView&noscript=1"
           />
         </noscript>
-      </head>
+      </Head>
       <body>
         {children}
         <GoogleTagManager gtmId="GTM-WJ345W3" />

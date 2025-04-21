@@ -18,7 +18,7 @@ export default function Reviews() {
           Hemos <span className=" font-semibold">transformado</span>
           <br className="lg:hidden" /> marcas como la tuya
         </h2>
-        <Image src={googleLogo} />
+        <Image src={googleLogo} alt="google logo"/>
       </div>
       <div className="mt-4 p-5 bg-[#2BFFC3] bg-opacity-[0.02] rounded-[7px] border border-[#2BFFC3] border-opacity-[0.1]">
         <Swiper

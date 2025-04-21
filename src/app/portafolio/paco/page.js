@@ -21,10 +21,14 @@ import bannerPacoMobile from "/public/paco/bannerPacoMobile.png";
 import pacoProm from "/public/paco/pacoProm.png";
 import bannerDesktop from "/public/paco/pacoBannerDesktop.png";
 import Breadcrumbs from "@/app/components/breadcrumbs";
+import Head from "next/head";
 
 export default function Page() {
   return (
     <MainContainer>
+      <Head>
+        <meta name="robots" content="noindex, nofollow" />
+      </Head>
       <div className="w-full">
         <Image
           src={bannerPacoMobile}

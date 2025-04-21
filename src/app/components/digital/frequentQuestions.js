@@ -26,7 +26,7 @@ export default function FrequentQuestions() {
   const contentAccordion1 = [
     {
       title: (
-        <p className="text-[15px]">
+        <p>
           ¿Por qué elegir a <strong>LaCompany Creativa?</strong>
         </p>
       ),
@@ -83,7 +83,7 @@ export default function FrequentQuestions() {
 
   const contentAccordion2 = [
     {
-      title: <p>¿Cuál es la diferencia entre SEM y SEO?</p>,
+      title: <p className="text">¿Cuál es la diferencia entre SEM y SEO?</p>,
       description: (
         <ul>
           <li>
@@ -165,8 +165,8 @@ export default function FrequentQuestions() {
             className="w-full flex justify-center"
           >
             {companies.map((company, index) => (
-              <SwiperSlide key={index} style={{ width: "auto" }}>
-                <div className="flex items-center justify-center h-10 lg:h-14 2xl:h-20 ">
+              <SwiperSlide style={{ width: "auto" }} key={index}>
+                <div className="flex items-center justify-center h-10 lg:h-14 2xl:h-20 mr-4 py-1 xl:mr-0 xl:py-0">
                   <Image
                     src={company}
                     alt={`logo-${index}`}
@@ -183,6 +183,7 @@ export default function FrequentQuestions() {
               src={company}
               alt={`logo-${index}`}
               className="h-10 lg:h-14 2xl:h-15 object-contain"
+              key={index}
             />
           ))}
         </div>
@@ -198,7 +199,7 @@ export default function FrequentQuestions() {
                 expandIcon={
                   <ExpandMoreIcon className="text-[30px] md:text-[40px] xl:text-[50px] text-companySalmon" />
                 }
-                className="text-white transition-colors duration-300 ease-in-out [&.Mui-expanded]:text-red-500"
+                className="text-white transition-colors duration-300 ease-in-out [&.Mui-expanded]:text-red-500 hover:text-companySalmon tracking-wider text-[16px] xl:text-[18px] 2xl:text-[21px]"
               >
                 {item.title}
               </AccordionSummary>
@@ -208,7 +209,7 @@ export default function FrequentQuestions() {
             </Accordion>
           ))}
         </div>
-        <div className="flex flex-col gap-4 mt-5 lg:mt-0">
+        <div className="flex flex-col gap-4 overflow-hidden rounded-[7px] lg:rounded-[11px]">
           {contentAccordion2.map((item, index) => (
             <Accordion
               className="bg-[rgba(255,255,255,0.05)] rounded-[7px] lg:rounded-[11px] overflow-hidden"
@@ -218,7 +219,7 @@ export default function FrequentQuestions() {
                 expandIcon={
                   <ExpandMoreIcon className="text-[30px] md:text-[40px] xl:text-[50px] text-companySalmon" />
                 }
-                className="text-white"
+                className="text-white transition-colors duration-300 ease-in-out [&.Mui-expanded]:text-red-500 hover:text-companySalmon tracking-wider text-[16px] xl:text-[18px] 2xl:text-[21px]"
               >
                 {item.title}
               </AccordionSummary>

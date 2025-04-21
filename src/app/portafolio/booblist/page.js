@@ -17,10 +17,14 @@ import booblistBannerMobile from "/public/booblist/booblistBannerMobile.png";
 import BooblistRender1 from "/public/booblist/boblisRender1.png";
 import nominacionImg from "/public/booblist/nominacionImg.png";
 import CounterText from "@/app/components/booblist/counterText";
+import Head from "next/head";
 
 export default function Page() {
   return (
     <MainContainer>
+      <Head>
+        <meta name="robots" content="noindex, nofollow" />
+      </Head>
       <div className="w-full">
         <Image
           src={booblistBannerMobile}

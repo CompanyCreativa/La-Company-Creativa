@@ -24,7 +24,7 @@ export default function Page() {
   return (
     <MainContainer>
       <Head>
-        <title>La Company Creativa | Portafolio</title>
+        <title>Explora nuestras campañas más exitosas.</title>
         <meta
           name="description"
           content="Explora nuestras campañas más exitosas."

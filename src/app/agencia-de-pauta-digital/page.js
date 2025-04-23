@@ -19,7 +19,7 @@ export default function page() {
   return (
     <div className="relative min-h-screen overflow-hidden bg-noise-new mt-[-55px]">
       <Head>
-        <title>Agencia de Pauta Digital</title>
+        <title>Campañas que venden. Punto.</title>
         <meta name="description" content="Campañas que venden. Punto." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>

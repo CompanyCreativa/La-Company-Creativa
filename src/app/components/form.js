@@ -134,12 +134,14 @@ function FormComponent() {
                 />
               </IconContainer>
             </Link>
-            <IconContainer className="border border-black h-7 w-7 flex justify-center items-center rounded-md">
-              <FontAwesomeIcon
-                icon={faWhatsapp}
-                className="text-[16px] text-companySalmon"
-              />
-            </IconContainer>
+            <Link href="https://wa.link/omjp5g" target="_blank">
+              <IconContainer className="border border-black h-7 w-7 flex justify-center items-center rounded-md">
+                <FontAwesomeIcon
+                  icon={faWhatsapp}
+                  className="text-[16px] text-companySalmon"
+                />
+              </IconContainer>
+            </Link>
             <Link
               href="https://www.instagram.com/lacompanycrea/?hl=es"
               target="_blank"

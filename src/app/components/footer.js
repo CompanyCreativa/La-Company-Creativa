@@ -1,4 +1,14 @@
+import Link from "next/link";
 import React from "react";
+import IconContainer from "./iconContainer";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faBehance,
+  faFacebook,
+  faInstagram,
+  faLinkedinIn,
+  faWhatsapp,
+} from "@fortawesome/free-brands-svg-icons";
 
 export default function Footer() {
   return (
@@ -30,9 +40,62 @@ export default function Footer() {
           <span className="text-xs text-white font-montserrat tracking-widest font-thin lg:text-sm">
             Torre 1 - Oficina 901
           </span>
-          <span className="text-xs text-white font-montserrat tracking-widest font-thin lg:text-sm">
-            (604) 311 53 53
-          </span>
+          <Link href="https://wa.link/omjp5g" target="_blank">
+            <span className="text-xs text-white font-montserrat tracking-widest font-thin lg:text-sm">
+              321 6393413
+            </span>
+          </Link>
+          <div className="flex items-center gap-8 mt-5 mb-20">
+            <Link
+              href="https://co.linkedin.com/company/companycreativa"
+              target="_blank"
+            >
+              <IconContainer className="border border-black h-7 w-7 flex justify-center items-center rounded-md">
+                <FontAwesomeIcon
+                  icon={faLinkedinIn}
+                  className="text-[16px] text-companySalmon"
+                />
+              </IconContainer>
+            </Link>
+            <Link href="https://www.behance.net/lacompanycrea" target="_blank">
+              <IconContainer className="border border-black h-7 w-7 flex justify-center items-center rounded-md">
+                <FontAwesomeIcon
+                  icon={faBehance}
+                  className="text-[16px] text-companySalmon"
+                />
+              </IconContainer>
+            </Link>
+            <Link href="https://wa.link/omjp5g" target="_blank">
+              <IconContainer className="border border-black h-7 w-7 flex justify-center items-center rounded-md">
+                <FontAwesomeIcon
+                  icon={faWhatsapp}
+                  className="text-[16px] text-companySalmon"
+                />
+              </IconContainer>
+            </Link>
+            <Link
+              href="https://www.instagram.com/lacompanycrea/?hl=es"
+              target="_blank"
+            >
+              <IconContainer className="border border-black h-7 w-7 flex justify-center items-center rounded-md">
+                <FontAwesomeIcon
+                  icon={faInstagram}
+                  className="text-[16px] text-companySalmon"
+                />
+              </IconContainer>
+            </Link>
+            <Link
+              href="https://www.facebook.com/lacompanycreativa"
+              target="_blank"
+            >
+              <IconContainer className="border border-black h-7 w-7 flex justify-center items-center rounded-md">
+                <FontAwesomeIcon
+                  icon={faFacebook}
+                  className="text-[16px] text-companySalmon"
+                />
+              </IconContainer>
+            </Link>
+          </div>
         </div>
       </div>
       <div className="absolute bottom-10 left-10 hidden lg:block">

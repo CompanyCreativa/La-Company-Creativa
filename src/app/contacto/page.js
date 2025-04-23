@@ -6,7 +6,7 @@ export default function page() {
   return (
     <MainContainer>
       <Head>
-        <title>La Company Creativa | Contacto</title>
+        <title>¿Hablamos o seguimos siendo extraños digitales?</title>
         <meta
           name="description"
           content="¿Hablamos o seguimos siendo extraños digitales?"

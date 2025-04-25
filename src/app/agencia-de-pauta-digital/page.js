@@ -12,18 +12,11 @@ import FormDigital from "../components/digital/formDigital";
 import FrequentQuestions from "../components/digital/frequentQuestions";
 import Reviews from "../components/digital/reviews";
 import FooterDigital from "../components/digital/footerDigital";
-import Head from "next/head";
 import WppLogo from "/public/digital/wppLogo.webp";
 
 export default function page() {
   return (
     <div className="relative min-h-screen overflow-hidden bg-noise-new mt-[-55px]">
-      <Head>
-        <title>Campañas que venden. Punto.</title>
-        <meta name="description" content="Campañas que venden. Punto." />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-      </Head>
-
       {/* Contenido */}
       <div className="flex flex-col justify-center items-center relative z-10 text-white px-6 md:px-10 xl:px-20 2xl:px-44">
         <DigitalHeader />

@@ -7,6 +7,12 @@ import PublicLayout from "./components/publicLayout";
 import MainContainer from "./components/mainContainer";
 import ModalForm from "./components/modalForm";
 
+export const metadata = {
+  title: "La Company Creativa | Agencia De Publicidad",
+  description:
+    "Agencia de publicidad 360 experta en branding, pauta digital y campañas que generan resultados reales.",
+};
+
 export default function Home() {
   return (
     <PublicLayout page="home">

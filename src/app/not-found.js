@@ -7,7 +7,7 @@ export default function NotFound() {
   return (
     <>
       <Header />
-      <div className="bg-pattern flex justify-center flex-col items-center  h-[calc(100vh-100px)]">
+      <div className="bg-pattern flex justify-center flex-col items-center h-[calc(100vh-100px)]">
         <div className="flex lg:w-[50%] 2xl:w-[40%] flex-col text-4xl font-bold items-center justify-center bg-[#FFF8EA] text-center gap-4 border-2 border-[#E1DBD1] p-10">
           <Image src={Img404} alt="404" />
           <h2 className="text-[28px] lg:text-[32px] text-companySalmon SpaceGrotesk mt-2">
@@ -22,7 +22,7 @@ export default function NotFound() {
             href="/"
           >
             Volver al inicio
-            <svg  
+            <svg
               width="12"
               height="12"
               viewBox="0 0 12 12"

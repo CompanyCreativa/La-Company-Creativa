@@ -59,20 +59,35 @@ const ModalFormInt = () => {
       setCheckForm(true);
 
       const token = await executeRecaptcha("submit_form");
-      formData["g-recaptcha-response"] = token;
+      const fullFormData = {
+        ...formData,
+        "g-recaptcha-response": token,
+      };
+
+      // Enviar los datos al webhook de Make
+      fetch("https://hook.us1.make.com/kn3qt1opg1k8ftn7dj5hiooq11th947f", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(fullFormData),
+      }).catch((error) => {
+        console.error("Error al enviar al webhook de Make:", error);
+      });
+
+      // Enviar los datos a EmailJS
       emailjs
         .send(
           "service_r145bos",
           "template_p5p51zs",
-          formData,
+          fullFormData,
           "FWjbrvz8yv7lrOYwV"
         )
         .then(
-          (result) => {
+          () => {
             setFormData({
               from_name: "",
               from_correo: "",
               from_message: "",
+              from_company: "",
               check: false,
               from_phone: "",
             });

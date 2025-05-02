@@ -56,7 +56,7 @@ export default function FormDigital() {
 
     if (isFormValid) {
       // Enviar al webhook de Make
-      fetch("https://hook.us1.make.com/kn3qt1opg1k8ftn7dj5hiooq11th947f", {
+      fetch("https://hook.us1.make.com/ry6vrnkpnue5zaon13l8ozrp89akijkn", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),

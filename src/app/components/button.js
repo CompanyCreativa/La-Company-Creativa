@@ -12,7 +12,7 @@ export default function Button({ children, color, type = "button", link }) {
       "text-base font-normal bg-background text-[#11190C] px-7 py-2 tracking-widest self-start";
   } else if (color === "border") {
     classes =
-      "text-base font-normal bg-transparent text-[#11190C] border border-[#11190C] px-7 py-2 tracking-widest self-start";
+      "text-base font-normal bg-companySalmon text-white border border-white px-7 py-2 tracking-widest self-start";
   } else if (color === "disabled") {
     classes =
       "text-base font-normal bg-[#808080] text-[#11190C] border border-[#11190C] px-7 py-2 tracking-widest self-start cursor-not-allowed";

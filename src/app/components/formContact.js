@@ -30,9 +30,11 @@ import brandFour from "/public/brandFour.png";
 import brandFive from "/public/brandFive.png";
 import brandSix from "/public/brandSix.png";
 import Link from "next/link";
+import Loader from "./SVGicons/loader";
 
 function FormContactComponent() {
   const { executeRecaptcha } = useGoogleReCaptcha(); // Hook para obtener el token
+  const [loading, setLoading] = useState(false); // Estado para controlar la carga
   const [formData, setFormData] = useState({
     from_name: "",
     from_correo: "",
@@ -76,7 +78,7 @@ function FormContactComponent() {
 
     if (isFormValid) {
       setCheckForm(true);
-
+      setLoading(true); // Iniciar carga
       const token = await executeRecaptcha("submit_form");
       const fullFormData = {
         ...formData,
@@ -111,9 +113,11 @@ function FormContactComponent() {
               from_phone: "",
             });
             window.location.href = "/gracias";
+            setLoading(false);
           },
           (error) => {
             console.log(error.text);
+            setLoading(false); // Finalizar carga
           }
         );
     }
@@ -214,7 +218,7 @@ function FormContactComponent() {
               type="submit"
               disabled={!isFormValid} // Botón deshabilitado si el formulario no es válido
             >
-              Enviar
+              {loading ? <Loader /> : "ENVIAR"}
             </Button>
             <Link
               href="https://co.linkedin.com/company/companycreativa"

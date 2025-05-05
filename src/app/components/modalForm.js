@@ -12,6 +12,7 @@ import {
 } from "react-google-recaptcha-v3";
 
 import CubeButton from "./cubeButton";
+import Loader from "./SVGicons/loader";
 
 const ModalFormInt = () => {
   const { executeRecaptcha } = useGoogleReCaptcha(); // Hook para obtener el token
@@ -22,6 +23,7 @@ const ModalFormInt = () => {
     check: false,
     from_phone: "",
   });
+  const [loading, setLoading] = useState(false); // Estado para controlar la carga
   const [checkForm, setCheckForm] = useState(false);
   const [isFormValid, setIsFormValid] = useState(false); // Estado para controlar si el formulario es válido
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -57,7 +59,7 @@ const ModalFormInt = () => {
 
     if (isFormValid) {
       setCheckForm(true);
-
+      setLoading(true); // Iniciar carga
       const token = await executeRecaptcha("submit_form");
       const fullFormData = {
         ...formData,
@@ -92,9 +94,11 @@ const ModalFormInt = () => {
               from_phone: "",
             });
             window.location.href = "/gracias";
+            setLoading(false);
           },
           (error) => {
             console.log(error.text);
+            setLoading(false);
           }
         );
     }
@@ -194,11 +198,11 @@ const ModalFormInt = () => {
                 className={"text-white placeholder:text-white border-white"}
               />
               <Button
-                color={isFormValid ? "cream" : "disabled"}
+                color={isFormValid ? "border" : "disabled"}
                 type="submit"
                 disabled={!isFormValid} // Botón deshabilitado si el formulario no es válido
               >
-                Enviar
+                {loading ? <Loader /> : "Enviar"}
               </Button>
             </form>
           </motion.div>

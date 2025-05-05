@@ -23,9 +23,11 @@ import {
 } from "react-google-recaptcha-v3";
 import Image from "next/image";
 import Link from "next/link";
+import Loader from "./SVGicons/loader";
 
 function FormComponent() {
   const { executeRecaptcha } = useGoogleReCaptcha(); // Hook para obtener el token
+  const [loading, setLoading] = useState(false); // Estado para controlar la carga
   const [formData, setFormData] = useState({
     from_name: "",
     from_correo: "",
@@ -66,11 +68,18 @@ function FormComponent() {
 
   const sendEmail = async (e) => {
     e.preventDefault();
-
+    setLoading(true); // Iniciar carga
     if (isFormValid) {
-      setCheckForm(true);
-      const token = await executeRecaptcha("submit_form");
-      formData["g-recaptcha-response"] = token;
+      // Enviar al webhook de Make
+      fetch("https://hook.us1.make.com/ry6vrnkpnue5zaon13l8ozrp89akijkn", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      }).catch((error) => {
+        console.error("Error al enviar al webhook de Make:", error);
+      });
+
+      // Enviar con EmailJS
       emailjs
         .send(
           "service_r145bos",
@@ -79,7 +88,7 @@ function FormComponent() {
           "FWjbrvz8yv7lrOYwV"
         )
         .then(
-          (result) => {
+          () => {
             setFormData({
               from_name: "",
               from_correo: "",
@@ -89,9 +98,12 @@ function FormComponent() {
               from_company: "",
             });
             window.location.href = "/gracias";
+
+            setLoading(false); // Finalizar carga
           },
           (error) => {
             console.log(error.text);
+            setLoading(false); // Finalizar carga
           }
         );
     }
@@ -228,7 +240,7 @@ function FormComponent() {
             type="submit"
             disabled={!isFormValid} // Botón deshabilitado si el formulario no es válido
           >
-            Enviar
+            {loading ? <Loader /> : "Enviar"}
           </Button>
         </form>
       </div>

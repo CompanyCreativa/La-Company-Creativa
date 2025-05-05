@@ -79,7 +79,6 @@ export default function FormDigital() {
               from_correo: "",
               from_message: "",
               check: false,
-              from_phone: "",
               from_company: "",
             });
             window.location.href = "/gracias";
@@ -114,6 +113,14 @@ export default function FormDigital() {
           className="bg-[rgba(255,255,255,0.05)] p-3 rounded-md mb-4 border border-[#2BFFC3] border-opacity-[0.1]"
           name="from_correo"
           value={formData.from_correo}
+          onChange={handleInputChange}
+        />
+        <input
+          type="text"
+          placeholder="Empresa"
+          className="bg-[rgba(255,255,255,0.05)] p-3 rounded-md mb-4 border border-[#2BFFC3] border-opacity-[0.1]"
+          name="from_company"
+          value={formData.from_company}
           onChange={handleInputChange}
         />
         <textarea

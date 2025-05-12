@@ -12,29 +12,28 @@ export default function MainDigitalSection() {
   return (
     <div className="flex flex-col lg:flex-row lg:justify-between">
       <div className="flex flex-col justify-center items-center lg:items-start lg:w-[45%]">
-        <h2 className="max-w-[323px] md:max-w-[500px] lg:max-w-[800px] text-center lg:text-left text-[24px] md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-thin">
-          <span className="font-semibold  ">
+        <h1 className="max-w-[323px] md:max-w-[500px] lg:max-w-[800px] text-center lg:text-left text-[24px] md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-thin">
+          <span className=" ">
             Más clientes,
             <br className="hidden md:block" />
           </span>{" "}
-          <span className="">
-            más ventas y una agencia <br className="hidden md:block" /> de pauta
-            digital
+          <span className=" ">
+            más ventas y una{" "}
+            <span className="font-semibold">
+              agencia <br className="hidden md:block" /> de pauta digital
+            </span>
             <br className="hidden md:block" /> que
           </span>
           <span className="font-semibold text-companySalmon \">
             {" "}
             optimiza tu inversión
           </span>
+        </h1>
+        <h2 className="mt-4 mb-4 text-[14px] lg:text-[16px] text-center lg:text-left font-[300]">
+          <span className="font-[500]">Agencia experta</span> en estrategias de
+          pauta digital Menos desperdicio,{" "}
+          <span className="font-[500]">más resultados.</span>
         </h2>
-        <p className="mt-4 mb-4 text-[14px] lg:text-[16px] text-center lg:text-left font-[300]">
-          <span className="font-[500]">Potenciamos</span> tu negocio con
-          campañas pagas en{" "}
-          <span className="font-[500]">
-            motores de búsqueda y redes sociales
-          </span>{" "}
-          diseñadas para vender.
-        </p>
         <div className="w-full h-px bg-gradient-to-r from-transparent via-gray-500 to-transparent"></div>
         <Link
           className="flex items-center mt-7 mb-10 gap-2 text-[12px] uppercase tracking-[3px] bg-companySalmon py-4 px-7 font-thin hover:bg-[#B92A1D] transition-all duration-300"
@@ -81,16 +80,19 @@ export default function MainDigitalSection() {
               </motion.svg>
             </motion.div>
           </a>
-          <p className="robout font-[300] text-[16px] md:text-[18px] lg:text-[20px] xl:text-[22px] 2xl:text-[28px] lg:max-w-[600px] pl-8">
-            <span className="font-[500]">Expertos</span> en estrategias de pauta
-            digital Menos desperdicio,{" "}
-            <span className="font-[500]">más resultados.</span>
-          </p>
+          <h3 className="robout font-[300] text-[16px] md:text-[18px] lg:text-[20px] xl:text-[22px] 2xl:text-[28px] lg:max-w-[600px] pl-8">
+            <span className="font-[500]">Potenciamos</span> tu negocio con
+            campañas pagas en{" "}
+            <span className="font-[500]">
+              motores de búsqueda y redes sociales
+            </span>{" "}
+            diseñadas para vender.
+          </h3>
         </div>
       </div>
       <Image
         src={renderPc}
-        alt="render-pc"
+        alt="Agencia de pauta digital"
         priority
         className="w-full lg:w-1/2 lg:object-contain"
       />

@@ -4,7 +4,6 @@ import iconDigital1 from "/public/digital/icon-digital1.png";
 import iconDigital2 from "/public/digital/icon-digital2.png";
 import iconDigital3 from "/public/digital/icon-digital3.png";
 import iconDigital4 from "/public/digital/icon-digital4.png";
-import Link from "next/link";
 
 export default function WhyChooseUs({ children }) {
   const cards = [

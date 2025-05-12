@@ -188,6 +188,9 @@ export default function FrequentQuestions() {
           ))}
         </div>
       </div>
+      <h2 className="text-[38px] lg:text-[62px] 2xl:text-[52px] mt-14 lg:mt-30 2xl:mt-40 text-center font-semibold md:mb-[-80px]">
+        Preguntas Frecuentes
+      </h2>
       <div className="relative grid grid-cols-1 gap-x-16 pb-16 md:pb-32 lg:grid-cols-2 mt-14 lg:mt-30 2xl:mt-40">
         <div className="flex flex-col gap-4 overflow-hidden rounded-[7px] lg:rounded-[11px]">
           {contentAccordion1.map((item, index) => (

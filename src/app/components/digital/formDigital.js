@@ -153,7 +153,7 @@ export default function FormDigital() {
       </form>
       <div className="lg:w-[60%] flex flex-col justify-center lg:gap-10">
         <h2 className="text-[24px] lg:text-[32px] 2xl:text-[56px] font-regular text-companySalmon mt-10 lg:mt-0 text-center">
-          <span className="font-semibold">Expertos</span> en pauta digital
+          <span className="font-semibold">Agencia experta<br/></span> en pauta digital
         </h2>
         <div className="grid grid-cols-2 grid-rows-2 lg:flex mt-5 lg:mt-0 w-full justify-between">
           {platformsServices.map((item, index) => (

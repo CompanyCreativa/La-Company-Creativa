@@ -31,6 +31,7 @@ import brandFive from "/public/brandFive.png";
 import brandSix from "/public/brandSix.png";
 import Link from "next/link";
 import Loader from "./SVGicons/loader";
+import ZohoForm from "./form-formContact";
 
 function FormContactComponent() {
   const { executeRecaptcha } = useGoogleReCaptcha(); // Hook para obtener el token
@@ -166,7 +167,8 @@ function FormContactComponent() {
             />
           </div>
         </div>
-        <form
+        <ZohoForm />
+        {/* <form
           onSubmit={sendEmail}
           className="flex-1 w-[100%] lg:w-[50%] mt-10 flex flex-col gap-8 items-start lg:mt-0 lg:pb-16 px-5 lg:px-0"
           id="form_laco"
@@ -220,64 +222,9 @@ function FormContactComponent() {
             >
               {loading ? <Loader /> : "ENVIAR"}
             </Button>
-            <Link
-              href="https://co.linkedin.com/company/companycreativa"
-              target="_blank"
-              className="hidden lg:block"
-            >
-              <IconContainer className="border border-black h-7 w-7 flex justify-center items-center rounded-md">
-                <FontAwesomeIcon
-                  icon={faLinkedinIn}
-                  className="text-[16px] text-companySalmon"
-                />
-              </IconContainer>
-            </Link>
-            <Link
-              href="https://www.behance.net/lacompanycrea"
-              target="_blank"
-              className="hidden lg:block"
-            >
-              <IconContainer className="border border-black h-7 w-7 flex justify-center items-center rounded-md">
-                <FontAwesomeIcon
-                  icon={faBehance}
-                  className="text-[16px] text-companySalmon"
-                />
-              </IconContainer>
-            </Link>
-            <div className="hidden lg:block">
-              <IconContainer className="border border-black h-7 w-7 flex justify-center items-center rounded-md">
-                <FontAwesomeIcon
-                  icon={faWhatsapp}
-                  className="text-[16px] text-companySalmon"
-                />
-              </IconContainer>
-            </div>
-            <Link
-              href="https://www.instagram.com/lacompanycrea/?hl=es"
-              target="_blank"
-              className="hidden lg:block"
-            >
-              <IconContainer className="border border-black h-7 w-7 flex justify-center items-center rounded-md">
-                <FontAwesomeIcon
-                  icon={faInstagram}
-                  className="text-[16px] text-companySalmon"
-                />
-              </IconContainer>
-            </Link>
-            <Link
-              className="hidden lg:block"
-              href="https://www.facebook.com/lacompanycreativa"
-              target="_blank"
-            >
-              <IconContainer className="border border-black h-7 w-7 flex justify-center items-center rounded-md">
-                <FontAwesomeIcon
-                  icon={faFacebookF}
-                  className="text-[16px] text-companySalmon"
-                />
-              </IconContainer>
-            </Link>
+           
           </div>
-        </form>
+        </form> */}
       </div>
     </div>
   );
@@ -290,3 +237,60 @@ export default function FormContact() {
     </GoogleReCaptchaProvider>
   );
 }
+
+//  <Link
+//               href="https://co.linkedin.com/company/companycreativa"
+//               target="_blank"
+//               className="hidden lg:block"
+//             >
+//               <IconContainer className="border border-black h-7 w-7 flex justify-center items-center rounded-md">
+//                 <FontAwesomeIcon
+//                   icon={faLinkedinIn}
+//                   className="text-[16px] text-companySalmon"
+//                 />
+//               </IconContainer>
+//             </Link>
+//             <Link
+//               href="https://www.behance.net/lacompanycrea"
+//               target="_blank"
+//               className="hidden lg:block"
+//             >
+//               <IconContainer className="border border-black h-7 w-7 flex justify-center items-center rounded-md">
+//                 <FontAwesomeIcon
+//                   icon={faBehance}
+//                   className="text-[16px] text-companySalmon"
+//                 />
+//               </IconContainer>
+//             </Link>
+//             <div className="hidden lg:block">
+//               <IconContainer className="border border-black h-7 w-7 flex justify-center items-center rounded-md">
+//                 <FontAwesomeIcon
+//                   icon={faWhatsapp}
+//                   className="text-[16px] text-companySalmon"
+//                 />
+//               </IconContainer>
+//             </div>
+//             <Link
+//               href="https://www.instagram.com/lacompanycrea/?hl=es"
+//               target="_blank"
+//               className="hidden lg:block"
+//             >
+//               <IconContainer className="border border-black h-7 w-7 flex justify-center items-center rounded-md">
+//                 <FontAwesomeIcon
+//                   icon={faInstagram}
+//                   className="text-[16px] text-companySalmon"
+//                 />
+//               </IconContainer>
+//             </Link>
+//             <Link
+//               className="hidden lg:block"
+//               href="https://www.facebook.com/lacompanycreativa"
+//               target="_blank"
+//             >
+//               <IconContainer className="border border-black h-7 w-7 flex justify-center items-center rounded-md">
+//                 <FontAwesomeIcon
+//                   icon={faFacebookF}
+//                   className="text-[16px] text-companySalmon"
+//                 />
+//               </IconContainer>
+//             </Link>

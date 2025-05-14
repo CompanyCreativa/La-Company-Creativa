@@ -13,6 +13,7 @@ import {
 
 import CubeButton from "./cubeButton";
 import Loader from "./SVGicons/loader";
+import ZohoFormTwo from "./modalForm-form";
 
 const ModalFormInt = () => {
   const { executeRecaptcha } = useGoogleReCaptcha(); // Hook para obtener el token
@@ -108,7 +109,7 @@ const ModalFormInt = () => {
     <AnimatePresence>
       {isModalOpen ? (
         <motion.div
-          className="fixed right-0 left-0 top-0 h-screen z-50 w-full h-full flex items-center justify-end bg-[rgba(0,0,0,0.7)]  backdrop-blur-sm"
+          className="fixed right-0 left-0 top-0 h-screen z-50 w-full h-full flex items-center justify-end bg-[rgba(0,0,0,0.7)]  backdrop-blur-sm overflow-scroll"
           key={"blur"}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -116,15 +117,18 @@ const ModalFormInt = () => {
           transition={{ duration: 0.3 }}
         >
           <motion.div
-            className="max-w-[500px] border-1 w-full h-full flex flex-col justify-center bg-[#0C0A09] p-5"
+            className="max-w-[500px] border-1 w-full h-full flex flex-col justify-center bg-[#0C0A09] md:p-5"
             key={"form"}
             initial={{ x: 300 }}
             animate={{ x: 0 }}
             exit={{ x: 300 }}
           >
-            <CubeButton onClick={() => setIsModalOpen(false)} />
+            <CubeButton
+              onClick={() => setIsModalOpen(false)}
+              className={"absolute top-[-70px] right-0 md:top-[-60px] md:right-5"}
+            />
             <div>
-              <div className="flex flex-col gap-2 px-5 md:px-0 pt-5 md:pt-0">
+              <div className="flex flex-col gap-2 px-5 md:px-0 pt-0 md:pt-0">
                 <h1 className="text-[27px] lg:text-[35px] 2xl:text-[40px] SpaceGrotesk font-light tracking-wider text-white">
                   ¡Tenemos
                   <br className="hidden lg:block" /> más para <br />
@@ -142,69 +146,7 @@ const ModalFormInt = () => {
                 </span>
               </div>
             </div>
-            <form
-              onSubmit={sendEmail}
-              className="w-full flex flex-col gap-4 items-start lg:max-w-[438px] lg:mt-0 pb-16 px-5 md:px-0"
-              id="form_laco"
-            >
-              <Input
-                placeholder={"Nombre"}
-                type="text"
-                color="white"
-                name="from_name"
-                value={formData.from_name}
-                onChange={handleInputChange}
-                className={"text-white placeholder:text-white border-white"}
-              />
-              <Input
-                placeholder={"Email"}
-                type="email"
-                color="white"
-                name="from_correo"
-                value={formData.from_correo}
-                onChange={handleInputChange}
-                className={"text-white placeholder:text-white border-white"}
-              />
-              <Input
-                placeholder={"Num. telefónico"}
-                type="tel"
-                color="white"
-                name="from_phone"
-                value={formData.from_phone}
-                onChange={handleInputChange}
-                className={"text-white placeholder:text-white border-white"}
-              />
-              <Input
-                placeholder={"Empresa"}
-                type="text"
-                name="from_company"
-                value={formData.from_company}
-                onChange={handleInputChange}
-                className={"text-white placeholder:text-white border-white"}
-              />
-              <Input
-                placeholder={"Mensaje"}
-                type="textarea"
-                name="from_message"
-                value={formData.from_message}
-                onChange={handleInputChange}
-                className={"text-white placeholder:text-white border-white"}
-              />
-              <Input
-                type={"checkbox"}
-                name="from_check"
-                value={formData.check}
-                onClick={handleCheckboxChange}
-                className={"text-white placeholder:text-white border-white"}
-              />
-              <Button
-                color={isFormValid ? "border" : "disabled"}
-                type="submit"
-                disabled={!isFormValid} // Botón deshabilitado si el formulario no es válido
-              >
-                {loading ? <Loader /> : "Enviar"}
-              </Button>
-            </form>
+            <ZohoFormTwo />
           </motion.div>
         </motion.div>
       ) : null}

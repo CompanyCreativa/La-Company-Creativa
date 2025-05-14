@@ -1,0 +1,334 @@
+"use client";
+
+import { useState } from "react";
+
+export default function LeadForm() {
+  const [formData, setFormData] = useState({
+    "First Name": "",
+    "Last Name": "",
+    Company: "",
+    Mobile: "",
+    Email: "",
+    "Lead Source": "Sitio web",
+    "Lead Status": "Lead",
+  });
+
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
+  };
+
+  const validateEmail = () => {
+    const emailVal = formData["Email"];
+    if (emailVal.trim().length === 0) return true;
+
+    const atpos = emailVal.indexOf("@");
+    const dotpos = emailVal.lastIndexOf(".");
+    return !(atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= emailVal.length);
+  };
+
+  const checkMandatory = (e) => {
+    e.preventDefault();
+
+    if (!formData["Last Name"].trim()) {
+      alert("Apellidos no puede estar vacío.");
+      document.getElementById("Last_Name").focus();
+      return;
+    }
+
+    if (!formData["Email"].trim()) {
+      alert("Correo electrónico no puede estar vacío.");
+      document.getElementById("Email").focus();
+      return;
+    }
+
+    if (!formData["Mobile"].trim()) {
+      alert("Celular / WhatsApp no puede estar vacío.");
+      document.getElementById("Mobile").focus();
+      return;
+    }
+
+    if (!validateEmail()) {
+      alert("Introduzca una dirección de correo electrónico válida.");
+      document.getElementById("Email").focus();
+      return;
+    }
+
+    fetch("https://hook.us1.make.com/ry6vrnkpnue5zaon13l8ozrp89akijkn", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(formData),
+    }).catch((error) => {
+      console.error("Error al enviar al webhook de Make:", error);
+    });
+
+    setIsSubmitting(true);
+    document.getElementById("webform").submit();
+  };
+
+  return (
+    <div
+      id="crmWebToEntityForm"
+      className="bg-transparent"
+    >
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta httpEquiv="content-type" content="text/html;charset=UTF-8" />
+
+      <form
+        id="webform"
+        action="https://crm.zoho.com/crm/WebToLeadForm"
+        name="WebToLeads6724972000000743001"
+        method="POST"
+        onSubmit={checkMandatory}
+        acceptCharset="UTF-8"
+        className="justify-center w-full md:w-[400px]"
+      >
+        {/* Hidden fields */}
+        <input
+          type="text"
+          className="hidden"
+          name="xnQsjsdp"
+          value="cf67257341b10c86d9e9a9d29c29654da8689bf7932316a65cfd179b302d4d4c"
+        />
+        <input type="hidden" name="zc_gad" id="zc_gad" value="" />
+        <input
+          type="text"
+          className="hidden"
+          name="xmIwtLD"
+          value="0873aeffcc8d4bc6a74cc85b6051440396911feb235649fac83f594676b3e9189b20f57792fa4889ee110fe7c6fe27a2"
+        />
+        <input
+          type="text"
+          className="hidden"
+          name="actionType"
+          value="TGVhZHM="
+        />
+        <input
+          type="text"
+          className="hidden"
+          name="returnURL"
+          value="https://companycreativa.com/agencia-de-pauta-digital/gracias"
+        />
+
+        {/* Form fields */}
+        <div className="my-4 flex flex-col">
+          <div className="mr-2.5 mt-1 float-left">
+            <label
+              htmlFor="First_Name"
+              className="text-base font-calibri text-background"
+            >
+              Nombre
+            </label>
+          </div>
+          <div className="w-full float-left">
+            <input
+              type="text"
+              id="First_Name"
+              name="First Name"
+              maxLength="40"
+              value={formData["First Name"]}
+              onChange={handleChange}
+              className="bg-[rgba(255,255,255,0.05)] p-3 rounded-md border border-[#2BFFC3] border-opacity-[0.1] w-full text-background"
+            />
+          </div>
+          <div className="clear-both"></div>
+        </div>
+
+        <div className="my-4 flex flex-col">
+          <div className="w-[30%] mr-2.5 mt-1 float-left">
+            <label
+              htmlFor="Last_Name"
+              className="text-base font-calibri text-background"
+            >
+              Apellidos <span className="text-red-500">*</span>
+            </label>
+          </div>
+          <div className="w-full float-left">
+            <input
+              type="text"
+              id="Last_Name"
+              name="Last Name"
+              maxLength="80"
+              required
+              value={formData["Last Name"]}
+              onChange={handleChange}
+              className="bg-[rgba(255,255,255,0.05)] p-3 rounded-md border border-[#2BFFC3] border-opacity-[0.1] w-full text-background"
+            />
+          </div>
+          <div className="clear-both"></div>
+        </div>
+
+        <div className="my-4 flex flex-col">
+          <div className="w-[30%] mr-2.5 mt-1 float-left">
+            <label
+              htmlFor="Company"
+              className="text-base font-calibri text-background"
+            >
+              Empresa
+            </label>
+          </div>
+          <div className="w-full float-left">
+            <input
+              type="text"
+              id="Company"
+              name="Company"
+              maxLength="200"
+              value={formData["Company"]}
+              onChange={handleChange}
+              className="bg-[rgba(255,255,255,0.05)] p-3 rounded-md border border-[#2BFFC3] border-opacity-[0.1] w-full text-background"
+            />
+          </div>
+          <div className="clear-both"></div>
+        </div>
+
+        <div className="my-4 flex flex-col">
+          <div className="mr-2.5 mt-1 float-left">
+            <label
+              htmlFor="Mobile"
+              className="text-base font-calibri text-background"
+            >
+              Celular / WhatsApp <span className="text-red-500">*</span>
+            </label>
+          </div>
+          <div className="w-full float-left">
+            <input
+              type="text"
+              id="Mobile"
+              name="Mobile"
+              maxLength="30"
+              required
+              value={formData["Mobile"]}
+              onChange={handleChange}
+              className="bg-[rgba(255,255,255,0.05)] p-3 rounded-md border border-[#2BFFC3] border-opacity-[0.1] w-full text-background"
+            />
+          </div>
+          <div className="clear-both"></div>
+        </div>
+
+        <div className="my-4 flex flex-col">
+          <div className="mr-2.5 mt-1 float-left">
+            <label
+              htmlFor="Email"
+              className="text-base font-calibri text-background"
+            >
+              Correo electrónico <span className="text-red-500">*</span>
+            </label>
+          </div>
+          <div className="w-full float-left">
+            <input
+              type="email"
+              id="Email"
+              name="Email"
+              maxLength="100"
+              required
+              value={formData["Email"]}
+              onChange={handleChange}
+              className="bg-[rgba(255,255,255,0.05)] p-3 rounded-md  border border-[#2BFFC3] border-opacity-[0.1] w-full text-background"
+            />
+          </div>
+          <div className="clear-both"></div>
+        </div>
+
+        {/* Hidden selects */}
+        <div className="hidden">
+          <div className="my-4">
+            <div className="w-[30%] mr-2.5 mt-1 float-left">
+              <label htmlFor="Lead_Source" className="text-base font-calibri">
+                Fuente de Posible cliente
+              </label>
+            </div>
+            <div className="w-[68%] float-left">
+              <select
+                id="Lead_Source"
+                name="Lead Source"
+                value={formData["Lead Source"]}
+                onChange={handleChange}
+                className="w-[60%] border border-[#ccc] bg-white rounded-md text-base float-left py-0.5 px-1.5"
+              >
+                <option value="-None-">-None-</option>
+                <option value="Google orgánico">Google orgánico</option>
+                <option value="Google Pautas">Google Pautas</option>
+                <option value="Meta Pautas">Meta Pautas</option>
+                <option value="Meta orgánico">Meta orgánico</option>
+                <option value="Alianzas comerciales">
+                  Alianzas comerciales
+                </option>
+                <option value="Ferias y eventos">Ferias y eventos</option>
+                <option value="Referido">Referido</option>
+                <option value="Sitio web">Sitio web</option>
+                <option value="Cliente socios">Cliente socios</option>
+              </select>
+            </div>
+            <div className="clear-both"></div>
+          </div>
+
+          <div className="my-4">
+            <div className="w-[30%] mr-2.5 mt-1 float-left">
+              <label htmlFor="Lead_Status" className="text-base font-calibri">
+                Estado de Posible cliente
+              </label>
+            </div>
+            <div className="w-[68%] float-left">
+              <select
+                id="Lead_Status"
+                name="Lead Status"
+                value={formData["Lead Status"]}
+                onChange={handleChange}
+                className="w-[60%] border border-[#ccc] bg-white rounded-md text-base float-left py-0.5 px-1.5"
+              >
+                <option value="-None-">-None-</option>
+                <option value="Lead">Lead</option>
+                <option value="Primer contacto">Primer contacto</option>
+                <option value="No contesta">No contesta</option>
+                <option value="Reunión">Reunión</option>
+                <option value="Calificado">Calificado</option>
+                <option value="Descartado">Descartado</option>
+                <option value="Desperfilado">Desperfilado</option>
+              </select>
+            </div>
+            <div className="clear-both"></div>
+          </div>
+        </div>
+
+        <div className="my-4">
+          <div className="w-[30%] float-left"></div>
+          <div className="w-[68%] float-left">
+            <button
+              type="submit"
+              disabled={isSubmitting}
+              className="inline-flex max-w-max items-center gap-2 text-[12px] uppercase tracking-[3px] bg-companySalmon py-4 px-7 font-thin hover:bg-[#B92A1D] transition-all duration-300 text-white"
+            >
+              {isSubmitting ? "Enviando..." : "Enviar"}
+              <svg
+                width="12"
+                height="12"
+                viewBox="0 0 12 12"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M11.75 1C11.75 0.585787 11.4142 0.250001 11 0.250001L4.25 0.250001C3.83579 0.250001 3.5 0.585787 3.5 1C3.5 1.41421 3.83579 1.75 4.25 1.75H10.25V7.75C10.25 8.16421 10.5858 8.5 11 8.5C11.4142 8.5 11.75 8.16421 11.75 7.75L11.75 1ZM2.03033 11.0303L11.5303 1.53033L10.4697 0.469671L0.96967 9.96967L2.03033 11.0303Z"
+                  fill="#FFF8EA"
+                />
+                <path d="M1 1L11 1L11 11" stroke="#FFF8EA" strokeWidth="1.5" />
+              </svg>
+            </button>
+          </div>
+          <div className="clear-both"></div>
+        </div>
+      </form>
+
+      {/* Analytics Tracking */}
+      <script
+        id="wf_anal"
+        src="https://crm.zohopublic.com/crm/WebFormAnalyticsServeServlet?rid=d5462d7cbd48b91028387af126d03ed01f7df97a2a4324def239d487642218d5745462856761ec32776a585a1a3e2d69gide3de85587d35cb8de69f598bdeff2e45846caee51ae65e6878e11bc24d668c4agid9981eb3e32959f46a61fb5f16ed1a1de754e11a3c568d98206e00f329e32d2c4gidd2c64538a848ebb34b07692c2f82caa3d7b17c6174293179ac0365307700334f&tw=c306c2d365a3c62d4979426c1e4261812a350a1569aec8e442ca2063c9ac50f3"
+        strategy="beforeInteractive"
+      />
+    </div>
+  );
+}

@@ -24,6 +24,7 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 import Loader from "./SVGicons/loader";
+import ZohoForm from "./form-formContact";
 
 function FormComponent() {
   const { executeRecaptcha } = useGoogleReCaptcha(); // Hook para obtener el token
@@ -188,61 +189,7 @@ function FormComponent() {
             className="w-full"
           />
         </div>
-        <form
-          onSubmit={sendEmail}
-          className="w-full mt-10 flex flex-col gap-8 items-start lg:max-w-[438px] lg:mt-0 pb-16 px-5 md:px-0"
-          id="form_laco"
-        >
-          <Input
-            placeholder={"Nombre"}
-            type="text"
-            name="from_name"
-            value={formData.from_name}
-            onChange={handleInputChange}
-          />
-          <Input
-            placeholder={"Email"}
-            type="email"
-            name="from_correo"
-            value={formData.from_correo}
-            onChange={handleInputChange}
-          />
-          <Input
-            placeholder={"Num. telefónico"}
-            type="tel"
-            name="from_phone"
-            value={formData.from_phone}
-            onChange={handleInputChange}
-          />
-          <Input
-            placeholder={"Empresa"}
-            type="text"
-            name="from_company"
-            value={formData.from_company}
-            onChange={handleInputChange}
-            tooltip="El nombre de la empresa es opcional"
-          />
-          <Input
-            placeholder={"Mensaje"}
-            type="textarea"
-            name="from_message"
-            value={formData.from_message}
-            onChange={handleInputChange}
-          />
-          <Input
-            type={"checkbox"}
-            name="from_check"
-            value={formData.check}
-            onClick={handleCheckboxChange}
-          />
-          <Button
-            color={isFormValid ? "border" : "disabled"}
-            type="submit"
-            disabled={!isFormValid} // Botón deshabilitado si el formulario no es válido
-          >
-            {loading ? <Loader /> : "Enviar"}
-          </Button>
-        </form>
+        <ZohoForm />
       </div>
     </div>
   );

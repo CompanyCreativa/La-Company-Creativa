@@ -1,11 +1,12 @@
 import Image from "next/image";
-import { useEffect, useState } from "react";
-import emailjs from "emailjs-com";
+// import { useEffect, useState } from "react";
+// import emailjs from "emailjs-com";
 
 import logoGoogle from "/public/digital/logo-google.png";
 import logoMeta from "/public/digital/logo-meta.png";
 import logoTiktok from "/public/digital/logo-tiktok.png";
 import logoLinkedin from "/public/digital/logo-linkedin.png";
+import LeadForm from "./Form";
 
 export default function FormDigital() {
   const platformsServices = [
@@ -27,75 +28,75 @@ export default function FormDigital() {
     },
   ];
 
-  const [formData, setFormData] = useState({
-    from_name: "",
-    from_correo: "",
-    from_message: "",
-  });
+  // const [formData, setFormData] = useState({
+  //   from_name: "",
+  //   from_correo: "",
+  //   from_message: "",
+  // });
 
-  const [isFormValid, setIsFormValid] = useState(false);
+  // const [isFormValid, setIsFormValid] = useState(false);
 
-  useEffect(() => {
-    const isValid =
-      formData.from_name !== "" &&
-      formData.from_correo !== "" &&
-      formData.from_message !== "";
-    setIsFormValid(isValid);
-  }, [formData]);
+  // useEffect(() => {
+  //   const isValid =
+  //     formData.from_name !== "" &&
+  //     formData.from_correo !== "" &&
+  //     formData.from_message !== "";
+  //   setIsFormValid(isValid);
+  // }, [formData]);
 
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prevData) => ({
-      ...prevData,
-      [name]: value,
-    }));
-  };
+  // const handleInputChange = (e) => {
+  //   const { name, value } = e.target;
+  //   setFormData((prevData) => ({
+  //     ...prevData,
+  //     [name]: value,
+  //   }));
+  // };
 
-  const sendEmail = async (e) => {
-    e.preventDefault();
+  // const sendEmail = async (e) => {
+  //   e.preventDefault();
 
-    if (isFormValid) {
-      // Enviar al webhook de Make
-      fetch("https://hook.us1.make.com/ry6vrnkpnue5zaon13l8ozrp89akijkn", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
-      }).catch((error) => {
-        console.error("Error al enviar al webhook de Make:", error);
-      });
+  //   if (isFormValid) {
+  //     // Enviar al webhook de Make
+  //     fetch("https://hook.us1.make.com/ry6vrnkpnue5zaon13l8ozrp89akijkn", {
+  //       method: "POST",
+  //       headers: { "Content-Type": "application/json" },
+  //       body: JSON.stringify(formData),
+  //     }).catch((error) => {
+  //       console.error("Error al enviar al webhook de Make:", error);
+  //     });
 
-      // Enviar con EmailJS
-      emailjs
-        .send(
-          "service_r145bos",
-          "template_p5p51zs",
-          formData,
-          "FWjbrvz8yv7lrOYwV"
-        )
-        .then(
-          () => {
-            setFormData({
-              from_name: "",
-              from_correo: "",
-              from_message: "",
-              check: false,
-              from_company: "",
-            });
-            window.location.href = "/gracias";
-          },
-          (error) => {
-            console.log(error.text);
-          }
-        );
-    }
-  };
+  //     // Enviar con EmailJS
+  //     emailjs
+  //       .send(
+  //         "service_r145bos",
+  //         "template_p5p51zs",
+  //         formData,
+  //         "FWjbrvz8yv7lrOYwV"
+  //       )
+  //       .then(
+  //         () => {
+  //           setFormData({
+  //             from_name: "",
+  //             from_correo: "",
+  //             from_message: "",
+  //             check: false,
+  //             from_company: "",
+  //           });
+  //           window.location.href = "/gracias";
+  //         },
+  //         (error) => {
+  //           console.log(error.text);
+  //         }
+  //       );
+  //   }
+  // };
 
   return (
     <div
       id="contact"
       className="flex flex-col lg:flex-row mt-14 lg:mt-40  bg-gradient-to-b from-[rgba(255,255,255,0.05)] to-[rgba(255,255,255,0.02)] border border-[#2BFFC3] border-opacity-[0.1] rounded-b-[11px] rounded-[16px] w-full p-4 lg:p-10 lg:gap-20"
     >
-      <form
+      {/* <form
         className="flex flex-col gap-4 lg:gap-5 lg:w-[500px]"
         onSubmit={sendEmail}
       >
@@ -150,10 +151,16 @@ export default function FormDigital() {
             <path d="M1 1L11 1L11 11" stroke="#FFF8EA" strokeWidth="1.5" />
           </svg>
         </button>
-      </form>
+      </form> */}
+
+      <LeadForm />
       <div className="lg:w-[60%] flex flex-col justify-center lg:gap-10">
         <h2 className="text-[24px] lg:text-[32px] 2xl:text-[56px] font-regular text-companySalmon mt-10 lg:mt-0 text-center">
-          <span className="font-semibold">Agencia experta<br/></span> en pauta digital
+          <span className="font-semibold">
+            Agencia experta
+            <br />
+          </span>{" "}
+          en pauta digital
         </h2>
         <div className="grid grid-cols-2 grid-rows-2 lg:flex mt-5 lg:mt-0 w-full justify-between">
           {platformsServices.map((item, index) => (

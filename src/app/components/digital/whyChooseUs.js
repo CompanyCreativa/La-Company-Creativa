@@ -13,9 +13,9 @@ export default function WhyChooseUs({ children }) {
           <span className="font-semibold">Resultados</span> comprobados
         </>
       ),
-      description: "Estrategias a la medida",
+      description: "Resultados comprobados",
       image: iconDigital1,
-      imageAlt: "iconDigital1",
+      imageAlt: "Resultados comprobados",
     },
     {
       title: (
@@ -25,7 +25,7 @@ export default function WhyChooseUs({ children }) {
       ),
       description: "Estrategias a la medida",
       image: iconDigital2,
-      imageAlt: "iconDigital2",
+      imageAlt: "Estrategias a la medida",
     },
     {
       title: (
@@ -37,9 +37,9 @@ export default function WhyChooseUs({ children }) {
           </span>
         </>
       ),
-      description: "Estrategias a la medida",
+      description: "Equipo especialista",
       image: iconDigital3,
-      imageAlt: "iconDigital3",
+      imageAlt: "Equipo especialista",
     },
     {
       title: (
@@ -48,9 +48,9 @@ export default function WhyChooseUs({ children }) {
           campañas
         </>
       ),
-      description: "Estrategias a la medida",
+      description: "Experiencia en más de 1000 campañas",
       image: iconDigital4,
-      imageAlt: "iconDigital4",
+      imageAlt: "Experiencia en más de 1000 campañas",
     },
   ];
 
@@ -61,7 +61,11 @@ export default function WhyChooseUs({ children }) {
           <h3 className="text-3xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl">
             ¿Por qué <span className="font-semibold">elegirnos?</span>
           </h3>
-          <a className="w-[85%] lg:w-[80%] flex items-center justify-center mt-7 mb-10 gap-2 text-[12px] uppercase tracking-[3px] bg-[#666AAC] py-4 px-7 font-thin hover:bg-[#4E5295] transition-all duration-300 hidden lg:flex" href="https://wa.me/573148629805" target="_blank">
+          <a
+            className="w-[85%] lg:w-[80%] flex items-center justify-center mt-7 mb-10 gap-2 text-[12px] uppercase tracking-[3px] bg-[#666AAC] py-4 px-7 font-thin hover:bg-[#4E5295] transition-all duration-300 hidden lg:flex"
+            href="https://wa.me/573148629805"
+            target="_blank"
+          >
             Habla con un experto ahora{" "}
             <svg
               width="12"

@@ -26,6 +26,12 @@ import Campaña360Icon from "@/app/components/SVGicons/campaña360Icon";
 import ConceptualizacionIcon from "@/app/components/SVGicons/conceptualizacionIcon";
 import Head from "next/head";
 
+export const metadata = {
+  title: " El Dorado | Campaña 360 |  La Company",
+  description:
+    "En el Día Mundial de la Pasta, El Dorado premió el esfuerzo de sus seguidores convirtiendo calorías quemadas en gramos de pasta",
+};
+
 export default function Page() {
   return (
     <MainContainer className="-mt-[142px]">

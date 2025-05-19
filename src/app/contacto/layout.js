@@ -1,7 +1,7 @@
 import PublicLayout from "../components/publicLayout";
 
 export const metadata = {
-  title: "Contacto",
+  title: "Contacto | La Company Creativa",
   description: "¿Hablamos o seguimos siendo extraños digitales?",
 };
 

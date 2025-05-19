@@ -32,6 +32,12 @@ import promIdeo6 from "/public/ideoterapia/promIdeo6.png";
 import MainContainer from "@/app/components/mainContainer";
 import Head from "next/head";
 
+export const metadata = {
+  title: "Ideoterapia | Campaña 360 | La Company",
+  description: "En Ideo creamos terapias para reenamorarte de tu hogar. Porque después de la pandemia, muchos dejaron de sentirse bien en casa",
+};
+
+
 export default function page() {
   return (
     <MainContainer className="-mt-[142px]">

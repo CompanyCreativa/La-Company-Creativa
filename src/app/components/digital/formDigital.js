@@ -8,7 +8,7 @@ import logoTiktok from "/public/digital/logo-tiktok.png";
 import logoLinkedin from "/public/digital/logo-linkedin.png";
 import LeadForm from "./Form";
 
-export default function FormDigital() {
+export default function FormDigital({ city }) {
   const platformsServices = [
     {
       logo: logoGoogle,
@@ -157,7 +157,7 @@ export default function FormDigital() {
       <div className="lg:w-[60%] flex flex-col justify-center lg:gap-10">
         <h2 className="text-[24px] lg:text-[32px] 2xl:text-[56px] font-regular text-companySalmon mt-10 lg:mt-0 text-center">
           <span className="font-semibold">
-            Agencia experta
+            Agencia {city ? "en " + city : ""} experta
             <br />
           </span>{" "}
           en pauta digital

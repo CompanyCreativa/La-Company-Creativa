@@ -33,6 +33,12 @@ import gridImg6 from "/public/bigbang/gridImg6.png";
 import MainContainer from "@/app/components/mainContainer";
 import Head from "next/head";
 
+export const metadata = {
+  title: "Big Bang | Branding | La Company",
+  description:
+    "Redefinimos la consultoría con una marca en movimiento: flexible, expansiva y pensada para romper esquemas sin perder estrategia",
+};
+
 const GridChild = ({ children }) => {
   return <div className="flex justify-center items-start">{children}</div>;
 };
@@ -41,7 +47,6 @@ export default function page() {
   return (
     <MainContainer>
       <Head>
-      
         <meta name="robots" content="noindex, nofollow" />
       </Head>
       <div className="w-full">
@@ -49,7 +54,7 @@ export default function page() {
           src={bannerBigbangMobile}
           alt="Banner Paco"
           className="block lg:hidden"
-        />  
+        />
       </div>
       <Section>
         <div className="w-full hidden lg:block">

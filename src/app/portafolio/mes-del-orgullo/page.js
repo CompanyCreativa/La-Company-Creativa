@@ -26,6 +26,12 @@ import BtlIcon from "@/app/components/SVGicons/btlIcon";
 import ConceptualizacionIcon from "@/app/components/SVGicons/conceptualizacionIcon";
 import Head from "next/head";
 
+export const metadata = {
+  title: "Mes del Orgullo | Campaña | La Company",
+  description: "En IDEO celebramos el Mes del Orgullo con un espacio lleno de color, diversidad y amor, en alianza con marcas que creen en lo mismo",
+};
+
+
 export default function Page() {
   return (
     <MainContainer>

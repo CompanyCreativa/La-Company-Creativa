@@ -20,6 +20,12 @@ import Campaña360Icon from "@/app/components/SVGicons/campaña360Icon";
 import ConceptualizacionIcon from "@/app/components/SVGicons/conceptualizacionIcon";
 import Head from "next/head";
 
+export const metadata = {
+  title: "Casa Magna | Campaña 360 | La Company",
+  description:
+    "Una campaña que apagó los colores para mostrar su valor. En el Mes del Orgullo, demostramos que sin diversidad, todo pierde sabor y sentido.",
+};
+
 export default function Page() {
   return (
     <MainContainer className="-mt-[142px]">

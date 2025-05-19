@@ -21,6 +21,12 @@ import promImg4 from "/public/reflex/promImg4.png";
 import promImg5 from "/public/reflex/promImg5.png";
 import Head from "next/head";
 
+export const metadata = {
+  title: "Reflex | Campaña 360 | La Company",
+  description:
+    "Lanzamos Réflex, la nueva etapa de Flex Living: un concepto inmobiliario flexible que refleja la personalidad de quien lo habita",
+};
+
 export default function Page() {
   return (
     <MainContainer>

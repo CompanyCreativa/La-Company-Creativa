@@ -25,6 +25,12 @@ import gridImg3 from "/public/franca/gridImg3.png";
 import gridImg4 from "/public/franca/gridImg4.png";
 import Head from "next/head";
 
+export const metadata = {
+  title: "Franca & Co | Branding-Packaging | La Company",
+  description:
+    "Somos una compañía de frutas construida con transparencia, ética y honestidad. Así nace la marca más franca y confiable del sector",
+};
+
 export default function Page() {
   return (
     <MainContainer>

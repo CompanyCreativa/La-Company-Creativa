@@ -1,9 +1,6 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronLeft } from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
 
 import Section from "../../components/section";
-import PortfolioIcon from "../../components/SVGicons/portfolioIcon";
 import Form from "../../components/form";
 import PortfolioTitle from "../../components/portfolio/portfolioTitle";
 import PortfolioDescription from "../../components/portfolio/portfolioDescription";
@@ -22,6 +19,12 @@ import pacoProm from "/public/paco/pacoProm.png";
 import bannerDesktop from "/public/paco/pacoBannerDesktop.png";
 import Breadcrumbs from "@/app/components/breadcrumbs";
 import Head from "next/head";
+
+export const metadata = {
+  title: "Paco | Branding | La Company",
+  description:
+    "Descubre a Paco, la herramienta que optimiza tu trabajo y te devuelve el tiempo. Una marca creada para quienes sí conocen el futuro",
+};
 
 export default function Page() {
   return (

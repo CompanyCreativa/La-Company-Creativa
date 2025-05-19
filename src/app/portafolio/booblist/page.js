@@ -19,6 +19,12 @@ import nominacionImg from "/public/booblist/nominacionImg.png";
 import CounterText from "@/app/components/booblist/counterText";
 import Head from "next/head";
 
+export const metadata = {
+  title: "Booblist | Campaña 460 | La Company",
+  description:
+    "La Booblist: una playlist que salva vidas recordando a las personas hacerse el autoexamen contra el cáncer de mama, de forma creativa",
+};
+
 export default function Page() {
   return (
     <MainContainer>

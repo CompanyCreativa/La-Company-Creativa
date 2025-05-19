@@ -23,6 +23,12 @@ import ConceptualizacionIcon from "@/app/components/SVGicons/conceptualizacionIc
 import BtlIcon from "@/app/components/SVGicons/btlIcon";
 import Head from "next/head";
 
+export const metadata = {
+  title: "Navidad al trabajo | Campaña | La Company",
+  description:
+    "En Navidad, llevamos la alegría a quienes no podían estar con su familia. Una acción para acercar corazones, incluso en la distancia",
+};
+
 export default function Page() {
   return (
     <MainContainer>

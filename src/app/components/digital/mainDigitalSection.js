@@ -3,7 +3,7 @@ import renderPc from "/public/digital/render-pc.png";
 import { motion } from "motion/react";
 import Link from "next/link";
 
-export default function MainDigitalSection() {
+export default function MainDigitalSection({ city }) {
   const svgVariants = {
     initial: { rotate: -125, x: 30 },
     hover: { rotate: 0, x: 0 },
@@ -20,7 +20,8 @@ export default function MainDigitalSection() {
           <span className=" ">
             más ventas y una{" "}
             <span className="font-semibold">
-              agencia <br className="hidden md:block" /> de pauta digital
+              agencia <br className="hidden md:block" /> de pauta digital{" "}
+              {city ? "en " + city : ""}
             </span>
             <br className="hidden md:block" /> que
           </span>
@@ -30,8 +31,10 @@ export default function MainDigitalSection() {
           </span>
         </h1>
         <h2 className="mt-4 mb-4 text-[14px] lg:text-[16px] text-center lg:text-left font-[300]">
-          <span className="font-[500]">Agencia experta</span> en estrategias de
-          pauta digital Menos desperdicio,{" "}
+          <span className="font-[500]">
+            Agencia {city ? "en " + city : ""} experta
+          </span>{" "}
+          en estrategias de pauta digital Menos desperdicio,{" "}
           <span className="font-[500]">más resultados.</span>
         </h2>
         <div className="w-full h-px bg-gradient-to-r from-transparent via-gray-500 to-transparent"></div>
@@ -92,7 +95,7 @@ export default function MainDigitalSection() {
       </div>
       <Image
         src={renderPc}
-        alt="Agencia de pauta digital"
+        alt="Agencia de pauta digital en Medellín"
         priority
         className="w-full lg:w-1/2 lg:object-contain"
       />

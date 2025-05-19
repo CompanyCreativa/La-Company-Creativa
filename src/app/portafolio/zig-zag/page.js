@@ -20,10 +20,15 @@ import history2Img from "/public/zig-zag/history2.png";
 import history3Img from "/public/zig-zag/history3.png";
 import zigzagRender1 from "/public/zig-zag/zigzagRender1.png";
 import zigzagRender2 from "/public/zig-zag/zigzagRender2.png";
-
 import zigzagMockup from "/public/zig-zag/zigzagMockup.png";
 import ZigzagAltoSection from "@/app/components/zigzag/zigzagAltoSection";
 import Head from "next/head";
+
+export const metadata = {
+  title: "Zig Zag | Branding | La Company",
+  description:
+    "Es cambio constante. Es la flexibilidad de los espacios. Es arquitectura que se abre y se adapta al mundo",
+};
 
 export default function Page() {
   return (

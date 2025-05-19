@@ -8,17 +8,18 @@ import review4 from "/public/digital/review4.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 
-export default function Reviews() {
+export default function Reviews({ city }) {
   const reviews = [review1, review2, review3, review4];
 
   return (
     <div className="w-full flex flex-col justify-center items-center">
       <div className="w-full flex lg:flex-col justify-between items-end lg:items-center lg:gap-5">
         <h2 className="text-[24px] 2xl:text-[52px] leading-[30px] text-white">
-          Hemos <span className=" font-semibold">transformado</span>
+          {city ? "En " + city : ""} hemos{" "}
+          <span className=" font-semibold">transformado</span>
           <br className="lg:hidden" /> marcas como la tuya
         </h2>
-        <Image src={googleLogo} alt="google logo"/>
+        <Image src={googleLogo} alt="google logo" />
       </div>
       <div className="mt-4 p-5 bg-[#2BFFC3] bg-opacity-[0.02] rounded-[7px] border border-[#2BFFC3] border-opacity-[0.1]">
         <Swiper

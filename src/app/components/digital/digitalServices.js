@@ -4,11 +4,12 @@ export default function DigitalServices({
   city,
   stepsServices,
   platformsServices,
+  title,
 }) {
   return (
     <>
       <h2 className="mt-14 xl:mt-40 text-[24px] 2xl:text-[52px] leading-[30px] text-white font-semibold mb-20">
-        Servicios de Pauta Digital {city ? "en " + city : ""}
+        {title} {city ? "en " + city : ""}
       </h2>
       <div className="flex flex-col lg:flex-row gap-5  w-full md:pr-10 xl:pr-20 2xl:pr-44 mx-[-10] lg:mx-[-20] w-screen lg:justify-between">
         <div className="lg:w-[50%]">

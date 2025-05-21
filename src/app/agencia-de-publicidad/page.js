@@ -63,8 +63,8 @@ export default function page() {
 
   const weWorkPoints = [
     "Auditoría y análisis real de tu marca",
-    "Estrategia creativa y personalizada, no una más del montón",
-    "Implementación conectada entre canales: diseño, contenido, medios y más",
+    "Estrategia creativa y personalizada",
+    "Implementación conectada entre canales",
     "Optimización continua con foco en impacto",
     "Reportes que se entienden y planes que mejoran en serio",
   ];
@@ -80,8 +80,8 @@ export default function page() {
     {
       title: (
         <p>
-          ¿Por qué elegir a <strong>LaCompany Creativa?</strong> como tu agencia
-          de publicidad?
+          ¿Por qué elegir a LaCompany Creativa? como tu{" "}
+          <strong>agencia de publicidad?</strong>
         </p>
       ),
       description: (
@@ -93,17 +93,26 @@ export default function page() {
       ),
     },
     {
-      title: <p>¿Qué hace una agencia de publicidad hoy?</p>,
+      title: (
+        <p>
+          ¿Qué hace una <strong>agencia de publicidad</strong> hoy?
+        </p>
+      ),
       description: (
         <p>
-          Más que campañas. Una agencia de publicidad moderna piensa la marca
-          desde su esencia y la lleva a conectar con su audiencia desde todos
-          los frentes: digital, físico, estratégico y emocional.
+          Más que campañas. Una <strong>agencia de publicidad</strong> moderna
+          piensa la marca desde su esencia y la lleva a conectar con su
+          audiencia desde todos los frentes: digital, físico, estratégico y
+          emocional.
         </p>
       ),
     },
     {
-      title: <p>¿Qué servicios ofrece una agencia de publicidad?</p>,
+      title: (
+        <p>
+          ¿Qué servicios ofrece una <strong>agencia de publicidad?</strong>
+        </p>
+      ),
       description: (
         <p>
           Desde estrategia creativa, branding, diseño, contenido y social media,
@@ -118,8 +127,8 @@ export default function page() {
     {
       title: (
         <p>
-          ¿Qué diferencia a una agencia de publicidad como La Company de otras
-          agencias?
+          ¿Qué diferencia a una <strong>agencia de publicidad</strong> como La
+          Company de otras agencias?
         </p>
       ),
       description: (
@@ -132,7 +141,11 @@ export default function page() {
       ),
     },
     {
-      title: <p>¿Cómo sé si necesito una agencia de publicidad?</p>,
+      title: (
+        <p>
+          ¿Cómo sé si necesito una <strong>agencia de publicidad?</strong>
+        </p>
+      ),
       description: (
         <p>
           Si sientes que tu marca está haciendo mucho, pero conectando poco, o
@@ -142,7 +155,12 @@ export default function page() {
       ),
     },
     {
-      title: <p>¿Cuánto cuesta trabajar con una agencia de publicidad?</p>,
+      title: (
+        <p>
+          ¿Cuánto cuesta trabajar con una{" "}
+          <strong>agencia de publicidad?</strong>
+        </p>
+      ),
       description: (
         <p>
           Depende de tu necesidad y tu alcance. Pero lo que sí te prometemos:
@@ -183,7 +201,7 @@ export default function page() {
           }
           text={
             <>
-              campañas que Somos una agencia de{" "}
+              Somos una agencia de{" "}
               <span className="font-[500]">publicidad</span> que entiende que
               una buena idea solo funciona cuando tiene propósito, estrategia y
               alma.
@@ -194,6 +212,7 @@ export default function page() {
         <DigitalServices
           stepsServices={stepsServices}
           platformsServices={platformsServices}
+          title="Servicios destacados"
         />
         <HowWeWork
           weWorkPoints={weWorkPoints}

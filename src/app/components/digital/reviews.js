@@ -15,7 +15,7 @@ export default function Reviews({ city }) {
     <div className="w-full flex flex-col justify-center items-center">
       <div className="w-full flex lg:flex-col justify-between items-end lg:items-center lg:gap-5">
         <h2 className="text-[24px] 2xl:text-[52px] leading-[30px] text-white">
-          {city ? "En " + city : ""} hemos{" "}
+          {city ? "En " + city + " h" : "H"}emos{" "}
           <span className=" font-semibold">transformado</span>
           <br className="lg:hidden" /> marcas como la tuya
         </h2>

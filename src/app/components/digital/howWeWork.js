@@ -1,21 +1,15 @@
 import iconDigital5 from "/public/digital/icon-digital5.png";
 import Image from "next/image";
 
-export default function HowWeWork({ children }) {
-  const weWorkPoints = [
-    "Análisis inicial y auditoría de tu marca",
-    "Creación de una estrategia personalizada",
-    "Lanzamiento y optimización continua",
-    "Informe de resultados y plan de mejoras mes a mes",
-  ];
-
-  const forYouPoints = [
-    "Acompañamiento experto en cada paso.",
-    "Estrategias probadas.",
-    "Impacto real en tus resultados.",
-    "Optimización constante para mejorar tu inversión.",
-  ];
-
+export default function HowWeWork({
+  children,
+  weWorkPoints,
+  forYouPoints,
+  ctaPpal,
+  ctaSec,
+  quota,
+  title,
+}) {
   return (
     <div className="mt-14 w-full">
       <h3 className="text-[#FFF8EA] text-[32px] mb-5">
@@ -37,7 +31,7 @@ export default function HowWeWork({ children }) {
             className="inline-flex max-w-max items-center mt-2 gap-2 text-[12px] uppercase tracking-[3px] bg-companySalmon py-4 px-7 font-thin hover:bg-[#B92A1D] transition-all duration-300"
             href="#contact"
           >
-            Máximiza tus resultados{" "}
+            {ctaPpal}
             <svg
               width="12"
               height="12"
@@ -61,10 +55,10 @@ export default function HowWeWork({ children }) {
               className="w-7 h-7 2xl:w-10 2xl:h-10"
             />
             <h3 className="text-[#FFF8EA] text-[20px] 2xl:text-[32px] font-bold  ml-2 ">
-              No desperdicies más presupuesto
+              {title}
               <br />
               <span className="font-regular text-[16px] font-thin  italic opacity-50">
-                “Deja que los números hablen. Nosotros hacemos que crezcan.”
+                {quota}
               </span>
             </h3>
           </div>
@@ -99,7 +93,7 @@ export default function HowWeWork({ children }) {
             href="https://wa.me/573148629805"
             target="_blank"
           >
-            Diagnóstico gratuito{" "}
+            {ctaSec}
             <svg
               width="12"
               height="12"

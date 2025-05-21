@@ -3,7 +3,7 @@ import renderPc from "/public/digital/render-pc.png";
 import { motion } from "motion/react";
 import Link from "next/link";
 
-export default function MainDigitalSection({ city }) {
+export default function MainDigitalSection({ title, subtitle, text }) {
   const svgVariants = {
     initial: { rotate: -125, x: 30 },
     hover: { rotate: 0, x: 0 },
@@ -13,29 +13,10 @@ export default function MainDigitalSection({ city }) {
     <div className="flex flex-col lg:flex-row lg:justify-between">
       <div className="flex flex-col justify-center items-center lg:items-start lg:w-[45%]">
         <h1 className="max-w-[323px] md:max-w-[500px] lg:max-w-[800px] text-center lg:text-left text-[24px] md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-thin">
-          <span className=" ">
-            Más clientes,
-            <br className="hidden md:block" />
-          </span>{" "}
-          <span className=" ">
-            más ventas y una{" "}
-            <span className="font-semibold">
-              agencia <br className="hidden md:block" /> de pauta digital{" "}
-              {city ? "en " + city : ""}
-            </span>
-            <br className="hidden md:block" /> que
-          </span>
-          <span className="font-semibold text-companySalmon \">
-            {" "}
-            optimiza tu inversión
-          </span>
+          {title}
         </h1>
         <h2 className="mt-4 mb-4 text-[14px] lg:text-[16px] text-center lg:text-left font-[300]">
-          <span className="font-[500]">
-            Agencia {city ? "en " + city : ""} experta
-          </span>{" "}
-          en estrategias de pauta digital Menos desperdicio,{" "}
-          <span className="font-[500]">más resultados.</span>
+          {subtitle}
         </h2>
         <div className="w-full h-px bg-gradient-to-r from-transparent via-gray-500 to-transparent"></div>
         <Link
@@ -84,12 +65,7 @@ export default function MainDigitalSection({ city }) {
             </motion.div>
           </a>
           <h3 className="robout font-[300] text-[16px] md:text-[18px] lg:text-[20px] xl:text-[22px] 2xl:text-[28px] lg:max-w-[600px] pl-8">
-            <span className="font-[500]">Potenciamos</span> tu negocio con
-            campañas pagas en{" "}
-            <span className="font-[500]">
-              motores de búsqueda y redes sociales
-            </span>{" "}
-            diseñadas para vender.
+            {text}
           </h3>
         </div>
       </div>
@@ -116,9 +92,7 @@ export default function MainDigitalSection({ city }) {
           />
         </svg>
         <p className="robout text-[14px] tracking-wider md:text-2xl lg:text-3xl font-[300]">
-          <span className="font-[500]">Expertos</span> en estrategias de pauta
-          digital Menos desperdicio,{" "}
-          <span className="font-[500]">más resultados.</span>
+          {text}
         </p>
       </div>
     </div>

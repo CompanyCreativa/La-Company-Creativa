@@ -1,59 +1,10 @@
 import Image from "next/image";
 
-import logoGoogle from "/public/digital/logo-google.png";
-import logoMeta from "/public/digital/logo-meta.png";
-import logoTiktok from "/public/digital/logo-tiktok.png";
-import logoLinkedin from "/public/digital/logo-linkedin.png";
-
-export default function DigitalServices({ city }) {
-  const stepsServices = [
-    {
-      step: "01",
-      title: "Pauta digital en Meta Ads",
-      description:
-        "Aumenta tu visibilidad y multiplica tus ventas con campañas optimizadas para la generación de resultados.",
-    },
-    {
-      step: "02",
-      title: "Optimización y escalamiento de campañas",
-      description:
-        "No basta con lanzar anuncios, hay que hacerlos rentables. Analizamos y optimizamos cada campaña en Meta y Google Ads para reducir costos y aumentar conversiones.",
-    },
-    {
-      step: "03",
-      title: "Anuncios Creativos",
-      description:
-        "Disenamos y optimizamos anuncios creativos para aumentar la visibilidad de tu marca y aumentar tus ventas.",
-    },
-  ];
-
-  const platformsServices = [
-    {
-      logo: logoGoogle,
-      title: "Google Ads",
-      description:
-        "Lleva tu negocio a la audiencia correcta y maximiza tu ROI con campañas efectivas en Google Ads.",
-    },
-    {
-      logo: logoMeta,
-      title: "Meta Ads",
-      description:
-        "Aprovecha el poder de Meta Ads para conectar, convertir y fidelizar a tu audiencia en redes sociales.",
-    },
-    {
-      logo: logoLinkedin,
-      title: "Linkedin Ads",
-      description:
-        "Llega a los tomadores de decisión con campañas estratégicas en LinkedIn Ads que generan conexiones y oportunidades de negocio.",
-    },
-    {
-      logo: logoTiktok,
-      title: "Tiktok Ads",
-      description:
-        "Llega a los tomadores de decisión con campañas estratégicas en LinkedIn Ads que generan conexiones y oportunidades de negocio.",
-    },
-  ];
-
+export default function DigitalServices({
+  city,
+  stepsServices,
+  platformsServices,
+}) {
   return (
     <>
       <h2 className="mt-14 xl:mt-40 text-[24px] 2xl:text-[52px] leading-[30px] text-white font-semibold mb-20">

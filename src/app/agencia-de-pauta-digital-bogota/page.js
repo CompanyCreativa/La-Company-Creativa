@@ -70,6 +70,13 @@ export default function page() {
     },
   ];
 
+  const weWorkPoints = [
+    "Análisis inicial y auditoría de tu marca",
+    "Creación de una estrategia personalizada",
+    "Lanzamiento y optimización continua",
+    "Informe de resultados y plan de mejoras mes a mes",
+  ];
+
   const especialists = (
     <>
       <h3 className="text-companySalmon font-regular text-[24px] mt-2">
@@ -81,13 +88,6 @@ export default function page() {
       </p>
     </>
   );
-
-  const weWorkPoints = [
-    "Análisis inicial y auditoría de tu marca",
-    "Creación de una estrategia personalizada",
-    "Lanzamiento y optimización continua",
-    "Informe de resultados y plan de mejoras mes a mes",
-  ];
 
   const forYouPoints = [
     "Acompañamiento experto en cada paso.",
@@ -253,7 +253,8 @@ export default function page() {
               <span>
                 más ventas y una{" "}
                 <span className="font-semibold">
-                  agencia <br className="hidden md:block" /> de pauta digital
+                  agencia <br className="hidden md:block" /> de pauta digital en
+                  Bogotá
                 </span>
                 <br className="hidden md:block" /> que
               </span>
@@ -265,8 +266,8 @@ export default function page() {
           }
           subtitle={
             <>
-              <span className="font-[500]">Agencia experta</span> en estrategias
-              de pauta digital Menos desperdicio,{" "}
+              <span className="font-[500]">Agencia en Bogotá experta</span> en
+              estrategias de pauta digital Menos desperdicio,{" "}
               <span className="font-[500]">más resultados.</span>
             </>
           }
@@ -283,8 +284,10 @@ export default function page() {
         />
         <WhyChooseUs />
         <DigitalServices
+          city={"Bogotá"}
           stepsServices={stepsServices}
           platformsServices={platformsServices}
+          title="Servicios de pauta digital"
           especialists={especialists}
         />
         <HowWeWork
@@ -296,12 +299,12 @@ export default function page() {
           quota="“Deja que los números hablen. Nosotros hacemos que crezcan.”"
         />
         <Results />
-        <FormDigital icons={icons} title="pauta digital" />
+        <FormDigital city={"Bogotá"} title="pauta digital" icons={icons} />
         <FrequentQuestions
           contentAccordion1={contentAccordion1}
           contentAccordion2={contentAccordion2}
         />
-        <Reviews />
+        <Reviews city={"Bogotá"} />
         <FooterDigital />
         <a href="https://wa.me/573148629805" target="_blank">
           <Image

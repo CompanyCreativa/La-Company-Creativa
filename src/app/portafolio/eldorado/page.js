@@ -27,7 +27,7 @@ import ConceptualizacionIcon from "@/app/components/SVGicons/conceptualizacionIc
 import Head from "next/head";
 
 export const metadata = {
-  title: " El Dorado | Campaña 360 |  La Company",
+  title: " El Dorado | Campaña 360° | Agencia La Company Creativa",
   description:
     "En el Día Mundial de la Pasta, El Dorado premió el esfuerzo de sus seguidores convirtiendo calorías quemadas en gramos de pasta",
 };
@@ -84,6 +84,21 @@ export default function Page() {
         <Image src={promImg4Desktop} className="hidden lg:block" />
         <Image src={promImg5Desktop} className="hidden lg:block" />
       </section>
+      <TitleSection>
+        <p className="text-lg tracking-wider leading-10 text-left max-w-[620px] mx-auto mb-20">
+          Sí, regalamos pasta… pero con una razón poderosa (y divertida).
+          <br /> Para celebrar el Día Mundial de la Pasta, creamos una campaña
+          donde las calorías quemadas se transformaban en granos de pasta El
+          Dorado.
+          <br /> La mecánica era simple: entrenar, subir una foto desde tu app
+          de ejercicio y etiquetar a la marca.
+          <br /> Una acción pensada para generar interacción real y conectar con
+          una comunidad activa que ama la pasta que puso a la audiencia a
+          moverse (literalmente).
+          <br /> Porque cuando una marca celebra con propósito, se vuelve
+          inolvidable.
+        </p>
+      </TitleSection>
       <Section>
         <Breadcrumbs lastPage={"Portafolio"} currentPage={"El Dorado"} />
       </Section>

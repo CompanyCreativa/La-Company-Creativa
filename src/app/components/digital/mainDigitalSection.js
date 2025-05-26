@@ -1,17 +1,21 @@
 import Image from "next/image";
-import renderPc from "/public/digital/render-pc.png";
 import { motion } from "motion/react";
 import Link from "next/link";
 
-export default function MainDigitalSection({ title, subtitle, text }) {
+export default function MainDigitalSection({
+  title,
+  subtitle,
+  text,
+  imageMain,
+}) {
   const svgVariants = {
     initial: { rotate: -125, x: 30 },
     hover: { rotate: 0, x: 0 },
   };
 
   return (
-    <div className="flex flex-col lg:flex-row lg:justify-between">
-      <div className="flex flex-col justify-center items-center lg:items-start lg:w-[45%]">
+    <div className="flex flex-col lg:flex-row lg:justify-between w-full">
+      <div className="flex flex-col justify-center items-center lg:items-start lg:w-[45%] ">
         <h1 className="max-w-[323px] md:max-w-[500px] lg:max-w-[800px] text-center lg:text-left text-[24px] md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-thin">
           {title}
         </h1>
@@ -70,10 +74,10 @@ export default function MainDigitalSection({ title, subtitle, text }) {
         </div>
       </div>
       <Image
-        src={renderPc}
+        src={imageMain}
         alt="Agencia de pauta digital en Medellín"
         priority
-        className="w-full lg:w-1/2 lg:object-contain"
+        className=""
       />
       <div className="flex md:hidden justify-center items-center gap-4 px-4 ">
         <svg

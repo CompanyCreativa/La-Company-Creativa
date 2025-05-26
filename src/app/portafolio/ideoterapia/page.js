@@ -33,10 +33,10 @@ import MainContainer from "@/app/components/mainContainer";
 import Head from "next/head";
 
 export const metadata = {
-  title: "Ideoterapia | Campaña 360 | La Company",
-  description: "En Ideo creamos terapias para reenamorarte de tu hogar. Porque después de la pandemia, muchos dejaron de sentirse bien en casa",
+  title: "Ideoterapia | Campaña 360° | Agencia La Company Creativa",
+  description:
+    "En Ideo creamos terapias para reenamorarte de tu hogar. Porque después de la pandemia, muchos dejaron de sentirse bien en casa",
 };
-
 
 export default function page() {
   return (
@@ -109,6 +109,18 @@ export default function page() {
           </div>
         </div>
       </section>
+      <TitleSection>
+        <p className="text-lg tracking-wider leading-10 text-left max-w-[620px] mx-auto mb-20">
+          Ideoterapia fue nuestra manera de decir: tu casa también necesita
+          cariño.
+          <br /> Creamos una campaña para IDEO con un objetivo claro: volver a
+          enamorar a las personas de sus hogares.
+          <br /> Desde frases que abrazaban hasta terapias creativas para cada
+          espacio, invitamos a ver el cambio en casa como lo que es: una forma
+          de cuidarse.
+          <br /> Porque transformar el hogar también es terapia.
+        </p>
+      </TitleSection>
       <Section>
         <Breadcrumbs lastPage={"Portafolio"} currentPage={"Ideoterapia"} />
       </Section>

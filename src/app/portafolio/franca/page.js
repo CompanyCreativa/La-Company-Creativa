@@ -26,7 +26,7 @@ import gridImg4 from "/public/franca/gridImg4.png";
 import Head from "next/head";
 
 export const metadata = {
-  title: "Franca & Co | Branding-Packaging | La Company",
+  title: "Franca & Co | Branding-Packaging | Agencia La Company Creativa",
   description:
     "Somos una compañía de frutas construida con transparencia, ética y honestidad. Así nace la marca más franca y confiable del sector",
 };
@@ -130,10 +130,21 @@ export default function Page() {
           <ColorsGrid />
         </div>
       </div>
-
       <div className="w-full mt-16 lg:mt-0">
         <Image src={render3} alt="Franca Render" className="w-full" />
       </div>
+      <TitleSection>
+        <p className="text-lg tracking-wider leading-10 text-left max-w-[620px] mx-auto mb-20">
+          Franca nació para ser honesta desde su nombre hasta su empaque. <br />
+          Creamos la marca desde cero: concepto, identidad y diseño de empaque
+          para conectar con consumidores que valoran lo simple, natural y real.
+          <br />
+          Nos apoyamos en herramientas de inteligencia artificial para ilustrar
+          sus productos, combinando tecnología con intuición creativa.
+          <br /> Una marca hecha con intención, transparencia… y ese toque
+          moderno que la hace única en su categoría.
+        </p>
+      </TitleSection>
       <Section>
         <Breadcrumbs lastPage={"Portafolio"} currentPage={"Franca & Co"} />
       </Section>

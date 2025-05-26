@@ -24,7 +24,7 @@ import BtlIcon from "@/app/components/SVGicons/btlIcon";
 import Head from "next/head";
 
 export const metadata = {
-  title: "Navidad al trabajo | Campaña | La Company",
+  title: "Navidad al trabajo | Campaña | Agencia La Company Creativa",
   description:
     "En Navidad, llevamos la alegría a quienes no podían estar con su familia. Una acción para acercar corazones, incluso en la distancia",
 };
@@ -80,6 +80,19 @@ export default function Page() {
         <Image src={promImg2} />
         <Image src={promImg3} />
       </div>
+      <TitleSection>
+        <p className="text-lg tracking-wider leading-10 text-left max-w-[620px] mx-auto mb-20">
+          En Navidad, algunos no pueden estar en casa… así que llevamos la
+          Navidad hasta su trabajo.
+          <br /> Con esta campaña, Casa Magna quiso recordar que el hogar no
+          siempre es un lugar, a veces es un momento compartido.
+          <br /> Le organizamos una cena de Navidad al vigilante de IDEO, junto
+          a su esposa e hija, para que pudieran celebrar juntos esa noche
+          especial, en medio de turnos y deberes.
+          <br /> Una acción sencilla, pero cargada de sentido. Porque dar es la
+          mejor forma de habitar una marca.
+        </p>
+      </TitleSection>
       <Section>
         <Breadcrumbs
           lastPage={"Portafolio"}

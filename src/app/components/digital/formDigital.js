@@ -2,32 +2,9 @@ import Image from "next/image";
 // import { useEffect, useState } from "react";
 // import emailjs from "emailjs-com";
 
-import logoGoogle from "/public/digital/logo-google.png";
-import logoMeta from "/public/digital/logo-meta.png";
-import logoTiktok from "/public/digital/logo-tiktok.png";
-import logoLinkedin from "/public/digital/logo-linkedin.png";
 import LeadForm from "./Form";
 
-export default function FormDigital({ city }) {
-  const platformsServices = [
-    {
-      logo: logoGoogle,
-      title: "Google Ads",
-    },
-    {
-      logo: logoMeta,
-      title: "Meta Ads",
-    },
-    {
-      logo: logoLinkedin,
-      title: "Linkedin Ads",
-    },
-    {
-      logo: logoTiktok,
-      title: "Tik Tok Ads",
-    },
-  ];
-
+export default function FormDigital({ city, title, icons }) {
   // const [formData, setFormData] = useState({
   //   from_name: "",
   //   from_correo: "",
@@ -160,10 +137,10 @@ export default function FormDigital({ city }) {
             Agencia {city ? "en " + city : ""} experta
             <br />
           </span>{" "}
-          en pauta digital
+          en {title}
         </h2>
         <div className="grid grid-cols-2 grid-rows-2 lg:flex mt-5 lg:mt-0 w-full justify-between">
-          {platformsServices.map((item, index) => (
+          {icons?.map((item, index) => (
             <div
               className="flex flex-col items-center gap-2 mb-4 justify-between"
               key={index}
@@ -176,6 +153,7 @@ export default function FormDigital({ city }) {
               <p className="font-montserrat text-[16px] 2xl:text-[25px] font-semibold">
                 {item.title}
               </p>
+              {item.description ? <p className="">{item.description}</p> : null}
             </div>
           ))}
         </div>

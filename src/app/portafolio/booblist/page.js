@@ -20,7 +20,7 @@ import CounterText from "@/app/components/booblist/counterText";
 import Head from "next/head";
 
 export const metadata = {
-  title: "Booblist | Campaña 460 | La Company",
+  title: "Booblist | Campaña 360° | Agencia La Company Creativa",
   description:
     "La Booblist: una playlist que salva vidas recordando a las personas hacerse el autoexamen contra el cáncer de mama, de forma creativa",
 };
@@ -120,6 +120,18 @@ export default function Page() {
           </div>
         </div>
       </div>
+      <TitleSection>
+        <p className="text-lg tracking-wider leading-10 text-left max-w-[620px] mx-auto mb-20">
+          Booblist nació en un día de ideas, pero no se quedó ahí.
+          <br /> Creamos una campaña para incentivar el autoexamen a través de
+          canciones que te lo recordarán de forma cercana y cotidiana.
+          <br /> No fue un encargo: fue una iniciativa propia. La pensamos, la
+          desarrollamos y salimos a buscar quién se sumara.
+          <br /> La primera marca nos dijo que no. Pero eso no nos detuvo.{" "}
+          <br />
+          Porque cuando una idea nace con propósito, encuentra su camino.
+        </p>
+      </TitleSection>
       <Section>
         <Breadcrumbs lastPage={"Portafolio"} currentPage={"La Booblist"} />
       </Section>

@@ -19,6 +19,9 @@ import logoMeta from "/public/digital/logo-meta.png";
 import logoTiktok from "/public/digital/logo-tiktok.png";
 import logoLinkedin from "/public/digital/logo-linkedin.png";
 
+import renderPc from "/public/digital/render-pc.png";
+
+
 export default function page() {
   const stepsServices = [
     {
@@ -74,6 +77,18 @@ export default function page() {
     "Lanzamiento y optimización continua",
     "Informe de resultados y plan de mejoras mes a mes",
   ];
+
+  const especialists = (
+    <>
+      <h3 className="text-companySalmon font-regular text-[24px] mt-2">
+        Especialistas en pauta digital
+      </h3>
+      <p className="font-light font-montserrat text-[16px] text-[#FFF8EA] leading-[20px] tracking-large">
+        Tenemos mas de 10 años de experiencia generando campañas de pauta paga
+        rentables.
+      </p>
+    </>
+  );
 
   const forYouPoints = [
     "Acompañamiento experto en cada paso.",
@@ -204,12 +219,32 @@ export default function page() {
     },
   ];
 
+  const icons = [
+    {
+      logo: logoGoogle,
+      title: "Google Ads",
+    },
+    {
+      logo: logoMeta,
+      title: "Meta Ads",
+    },
+    {
+      logo: logoLinkedin,
+      title: "Linkedin Ads",
+    },
+    {
+      logo: logoTiktok,
+      title: "Tik Tok Ads",
+    },
+  ];
+
   return (
     <div className="relative min-h-screen overflow-hidden bg-noise-new mt-[-55px]">
       {/* Contenido */}
       <div className="flex flex-col justify-center items-center relative z-10 text-white px-6 md:px-10 xl:px-20 2xl:px-44">
         <DigitalHeader />
         <MainDigitalSection
+          imageMain={renderPc}
           title={
             <>
               <span>
@@ -253,6 +288,8 @@ export default function page() {
           city={"Medellín"}
           stepsServices={stepsServices}
           platformsServices={platformsServices}
+          title="Servicios de pauta digital"
+          especialists={especialists}
         />
         <HowWeWork
           weWorkPoints={weWorkPoints}
@@ -263,7 +300,7 @@ export default function page() {
           quota="“Deja que los números hablen. Nosotros hacemos que crezcan.”"
         />
         <Results />
-        <FormDigital city={"Medellín"} />
+        <FormDigital city={"Medellín"} title="pauta digital" icons={icons} />
         <FrequentQuestions
           contentAccordion1={contentAccordion1}
           contentAccordion2={contentAccordion2}

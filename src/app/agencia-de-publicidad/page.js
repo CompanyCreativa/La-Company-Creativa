@@ -17,6 +17,12 @@ import WppLogo from "/public/digital/wppLogo.webp";
 import pencilIcon from "/public/digital/paintpencil.png";
 import cameraIcon from "/public/digital/camera.png";
 import cellphoneIcon from "/public/digital/phone.png";
+import adobeLogo from "/public/digital/adobe.png";
+import figmaLogo from "/public/digital/figma.png";
+import metricoolLogo from "/public/digital/metricool.png";
+import makeLogo from "/public/digital/make.png";
+
+import hearthDigital from "/public/digital/hearthDigital.png";
 
 export default function page() {
   const stepsServices = [
@@ -170,12 +176,36 @@ export default function page() {
     },
   ];
 
+  const icons = [
+    {
+      logo: adobeLogo,
+      title: "Google Ads",
+      description: "(Diseño)",
+    },
+    {
+      logo: figmaLogo,
+      title: "Figma",
+      description: "(Diseño Web)",
+    },
+    {
+      logo: metricoolLogo,
+      title: "Metricool",
+      description: "(Redes Sociales)",
+    },
+    {
+      logo: makeLogo,
+      title: "Make",
+      description: "(Automatización de procesos)",
+    },
+  ];
+
   return (
     <div className="relative min-h-screen overflow-hidden bg-noise-new mt-[-55px]">
       {/* Contenido */}
       <div className="flex flex-col justify-center items-center relative z-10 text-white px-6 md:px-10 xl:px-20 2xl:px-44">
         <DigitalHeader />
         <MainDigitalSection
+          imageMain={hearthDigital}
           title={
             <>
               <span>
@@ -223,7 +253,7 @@ export default function page() {
           quota="“Hacemos que las ideas conecten con las personas y que cada peso invertido se traduzca en valor real.”"
         />
         <Results />
-        <FormDigital />
+        <FormDigital title="publicidad" icons={icons} />
         <FrequentQuestions
           contentAccordion1={contentAccordion1}
           contentAccordion2={contentAccordion2}

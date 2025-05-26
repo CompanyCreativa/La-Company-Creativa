@@ -5,6 +5,7 @@ export default function DigitalServices({
   stepsServices,
   platformsServices,
   title,
+  especialists,
 }) {
   return (
     <>
@@ -57,13 +58,7 @@ export default function DigitalServices({
               </p>
             </div>
           ))}
-          <h3 className="text-companySalmon font-regular text-[24px] mt-2">
-            Especialistas en pauta digital
-          </h3>
-          <p className="font-light font-montserrat text-[16px] text-[#FFF8EA] leading-[20px] tracking-large">
-            Tenemos mas de 10 años de experiencia generando campañas de pauta
-            paga rentables.
-          </p>
+          {especialists}
           <a
             className="inline-flex max-w-max items-center mt-2 gap-2 text-[12px] uppercase tracking-[3px] bg-companySalmon py-4 px-7 font-thin hover:bg-[#B92A1D] transition-all duration-300"
             href="#contact"

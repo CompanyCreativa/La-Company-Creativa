@@ -34,7 +34,7 @@ import MainContainer from "@/app/components/mainContainer";
 import Head from "next/head";
 
 export const metadata = {
-  title: "Big Bang | Branding | La Company",
+  title: "Big Bang | Branding | Agencia La Company Creativa",
   description:
     "Redefinimos la consultoría con una marca en movimiento: flexible, expansiva y pensada para romper esquemas sin perder estrategia",
 };
@@ -129,6 +129,18 @@ export default function page() {
           <Image src={img4} className="w-full" />
         </div>
       </section>
+      <TitleSection>
+        <p className="text-lg tracking-wider leading-10 text-left max-w-[620px] mx-auto mb-20">
+          Todo empezó con una explosión… de ideas.
+          <br /> Creamos la marca Big Bang desde el inicio: nombre, concepto,
+          identidad visual y narrativa.
+          <br /> Diseñamos un universo gráfico donde las ondas y el movimiento
+          son protagonistas, haciendo homenaje a su nombre y esencia: energía en
+          expansión.
+          <br /> Una marca pensada para resonar, crecer y hacerse notar desde el
+          primer impacto.
+        </p>
+      </TitleSection>
       <Section>
         <Breadcrumbs lastPage={"Portafolio"} currentPage={"Big Bang"} />
       </Section>

@@ -27,10 +27,10 @@ import ConceptualizacionIcon from "@/app/components/SVGicons/conceptualizacionIc
 import Head from "next/head";
 
 export const metadata = {
-  title: "Mes del Orgullo | Campaña | La Company",
-  description: "En IDEO celebramos el Mes del Orgullo con un espacio lleno de color, diversidad y amor, en alianza con marcas que creen en lo mismo",
+  title: "Mes del Orgullo | Campaña | Agencia La Company Creativa",
+  description:
+    "En IDEO celebramos el Mes del Orgullo con un espacio lleno de color, diversidad y amor, en alianza con marcas que creen en lo mismo",
 };
-
 
 export default function Page() {
   return (
@@ -82,6 +82,18 @@ export default function Page() {
         </div>
         <Image src={promImg3} />
       </div>
+      <TitleSection>
+        <p className="text-lg tracking-wider leading-10 text-left max-w-[620px] mx-auto mb-20">
+          En IDEO, le dimos lugar a la diversidad.
+          <br /> Creamos una campaña para el Mes del Orgullo donde celebramos
+          todas las formas de amor, identidad y expresión desde el lugar más
+          poderoso: el hogar.
+          <br /> Con mensajes cargados de color y sentido, transformamos los
+          espacios en símbolos de libertad y autenticidad.
+          <br /> Porque el orgullo también se vive en casa. Y toda historia
+          merece sentirse bienvenida.
+        </p>
+      </TitleSection>
       <Section>
         <Breadcrumbs lastPage={"Portafolio"} currentPage={"Mes del orgullo"} />
       </Section>

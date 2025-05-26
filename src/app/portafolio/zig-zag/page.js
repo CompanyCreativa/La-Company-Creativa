@@ -25,7 +25,7 @@ import ZigzagAltoSection from "@/app/components/zigzag/zigzagAltoSection";
 import Head from "next/head";
 
 export const metadata = {
-  title: "Zig Zag | Branding | La Company",
+  title: "Zig Zag | Branding | Agencia La Company Creativa",
   description:
     "Es cambio constante. Es la flexibilidad de los espacios. Es arquitectura que se abre y se adapta al mundo",
 };
@@ -117,6 +117,19 @@ export default function Page() {
         <div className="hidden lg:block">
           <ZigzagAltoSection />
         </div>
+        <TitleSection>
+          <p className="text-lg tracking-wider leading-10 text-left max-w-[620px] mx-auto mb-20">
+            Zig Zag nació con una idea clara y nosotros la convertimos en marca.{" "}
+            <br />
+            Creamos el concepto, la identidad visual, el tono y todo el universo
+            que le da vida a Zig Zag.
+            <br /> Desde el naming hasta el brandbook completo, construimos una
+            marca versátil, dinámica y con propósito, pensada para conectar con
+            su audiencia desde el primer trazo.
+            <br /> Una creación hecha con estrategia, diseño… y el toque
+            irreverente que no podía faltar.
+          </p>
+        </TitleSection>
         <div className="mt-2 hidden lg:block">
           <Breadcrumbs lastPage={"Portafolio"} currentPage={"Zig Zag"} />
         </div>
@@ -124,6 +137,7 @@ export default function Page() {
       <div className="-mt-10 lg:hidden">
         <ZigzagAltoSection />
       </div>
+
       <div className="px-8 pt-2 pb-8 lg:hidden">
         <Breadcrumbs lastPage={"Portafolio"} currentPage={"Zig Zag"} />
       </div>

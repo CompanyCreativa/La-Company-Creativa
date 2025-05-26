@@ -1,7 +1,7 @@
 import PublicLayout from "../components/publicLayout";
 
 export const metadata = {
-  title: "Portafolio",
+  title: "Nuestro portafolio | Agencia La Company Creativa",
   description: "Explora nuestras campañas más exitosas.",
 };
 

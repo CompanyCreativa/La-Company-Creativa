@@ -21,7 +21,7 @@ import Breadcrumbs from "@/app/components/breadcrumbs";
 import Head from "next/head";
 
 export const metadata = {
-  title: "Paco | Branding | La Company",
+  title: "Paco | Branding | Agencia La Company Creativa",
   description:
     "Descubre a Paco, la herramienta que optimiza tu trabajo y te devuelve el tiempo. Una marca creada para quienes sí conocen el futuro",
 };
@@ -117,6 +117,18 @@ export default function Page() {
           </div>
         </div>
       </div>
+      <TitleSection>
+        <p className="text-lg tracking-wider leading-10 text-left max-w-[620px] mx-auto mb-20">
+          Con PACO no solo hicimos un rebranding, le dimos una nueva
+          personalidad.
+          <br /> Rediseñamos la marca desde su esencia, construimos un concepto
+          renovado, creamos un personaje propio (el búho que hoy lo representa)
+          y rediseñamos la experiencia interna del dashboard para hacerla más
+          clara, intuitiva y cercana.
+          <br /> Cada decisión se pensó para que PACO hablara con más fuerza,
+          más coherencia y más corazón.
+        </p>
+      </TitleSection>
       <Section>
         <Breadcrumbs lastPage={"Portafolio"} currentPage={"Paco"} />
       </Section>

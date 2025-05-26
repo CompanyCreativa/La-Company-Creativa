@@ -22,7 +22,7 @@ import promImg5 from "/public/reflex/promImg5.png";
 import Head from "next/head";
 
 export const metadata = {
-  title: "Reflex | Campaña 360 | La Company",
+  title: "Reflex | Campaña 360° | Agencia La Company Creativa",
   description:
     "Lanzamos Réflex, la nueva etapa de Flex Living: un concepto inmobiliario flexible que refleja la personalidad de quien lo habita",
 };
@@ -94,6 +94,18 @@ export default function Page() {
       <div className="pt-10 lg:pt-20 lg:pb-7 lg:w-[91.5%] lg:max-w-[1760px] mx-auto">
         <Image src={promImg5} className="w-full" />
       </div>
+      <TitleSection>
+        <p className="text-lg tracking-wider leading-10 text-left max-w-[620px] mx-auto mb-20">
+          Reflex no fue solo un cambio de nombre. Fue un cambio de mirada.{" "}
+          <br />
+          Rediseñamos la marca desde su identidad visual hasta su narrativa,
+          apostando por una idea poderosa: no es solo dónde vives, es cómo lo
+          vives.
+          <br /> Creamos una imagen fresca, clara y emocional que recarga la
+          experiencia de vivir en Reflex. Una marca pensada para inspirar,
+          conectar y sentirse como en casa desde el primer vistazo.
+        </p>
+      </TitleSection>
       <Section>
         <Breadcrumbs lastPage={"Portafolio"} currentPage={"Réflex"} />
       </Section>

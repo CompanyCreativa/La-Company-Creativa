@@ -21,7 +21,7 @@ import ConceptualizacionIcon from "@/app/components/SVGicons/conceptualizacionIc
 import Head from "next/head";
 
 export const metadata = {
-  title: "Casa Magna | Campaña 360 | La Company",
+  title: "Casa Magna | Campaña 360° | Agencia La Company Creativa",
   description:
     "Una campaña que apagó los colores para mostrar su valor. En el Mes del Orgullo, demostramos que sin diversidad, todo pierde sabor y sentido.",
 };
@@ -128,6 +128,18 @@ export default function Page() {
           />
         </div>
       </section>
+      <TitleSection>
+        <p className="text-lg tracking-wider leading-10 text-left max-w-[620px] mx-auto mb-20">
+          A Casa Magna le quitamos los colores… para mostrar lo que se pierde
+          sin ellos.
+          <br /> Y luego los devolvimos, como debía ser: con una receta llena de
+          sabor, diversidad y vida. <br /> En un live especial por el Mes del
+          Orgullo, cocinamos una mesa colorida como símbolo de lo que ganamos
+          cuando celebramos todas las identidades.
+          <br /> Una forma distinta de hablar del orgullo: desde lo que se
+          siente cuando no está… y lo poderoso que es cuando vuelve.
+        </p>
+      </TitleSection>
       <Section>
         <Breadcrumbs lastPage={"Portafolio"} currentPage={"Casa Magna"} />
       </Section>

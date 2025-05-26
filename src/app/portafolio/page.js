@@ -32,6 +32,13 @@ export default function Page() {
             <br className="lg:hidden" /> hechas realidad!
           </h1>
           <span className="text-center mt-6 tracking-wider leading-7 font-light lg:text-lg">
+            Esto es una muestra de lo que sucede cuando una agencia de
+            publicidad trabaja con estrategia, creatividad, diseño y mucha
+            actitud. Desde campañas 360, branding, producción audiovisual,
+            experiencias de marca y contenido digital… cada proyecto refleja lo
+            que nos mueve: coraje, corazón y resultados que marcan.
+            <br />
+            <br />
             Cada proyecto es una oportunidad para romperla. Mira algunos de los
             trabajos que hemos hecho.
           </span>

@@ -18,7 +18,7 @@ import yenniImg from "/public/teamMembers/news/yenniImg.png";
 import dannitwoImg from "/public/teamMembers/news/danitwo.png";
 import andreaImg from "/public/teamMembers/news/andreaImg.png";
 import susanaImg from "/public/teamMembers/news/susanaImg.png";
-import ignacioImg from "/public/teamMembers/news/ignacioImg.png";
+import ignacioImg from "/public/teamMembers/news/IgnacioImg.png";
 
 export const teamMembers = [
   {

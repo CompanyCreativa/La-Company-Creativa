@@ -67,12 +67,12 @@ export default function Page() {
           <GridCard
             image={bigDesktop}
             title="Campaña de branding - Big Bang"
-            link="/portafolio/bigbang"
+            link="/portafolio/bigbang-branding"
           />
           <GridCard
             image={doradoDesktop}
             title="Campaña de branding - El Dorado"
-            link="/portafolio/eldorado"
+            link="/portafolio/pastas-el-dorado"
           />
           <GridCard
             image={terapiaDesktop}
@@ -92,7 +92,7 @@ export default function Page() {
           <GridCard
             image={casaDesktop}
             title="Mes del orgullo LGBTI - Casa Magna"
-            link="/portafolio/casaMagna"
+            link="/portafolio/casa-magna-electrodomesticos"
           />
           <div className="hidden lg:block">
             <GridCard

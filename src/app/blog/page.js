@@ -22,11 +22,6 @@ export default function page() {
           </h1>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-24 w-[95%] max-w-[1560px] mx-auto mt-24">
             <BlogCard />
-            <BlogCard />
-            <BlogCard />
-            <BlogCard />
-            <BlogCard />
-            <BlogCard />
           </div>
         </div>
       </Section>

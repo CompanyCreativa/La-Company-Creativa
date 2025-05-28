@@ -1,6 +1,5 @@
 import TeamMembersList from "../components/equipo/teamMembersList";
 import Form from "../components/form";
-import MainContainer from "../components/mainContainer";
 import Section from "../components/section";
 import Breadcrumbs from "../components/breadcrumbs";
 import Head from "next/head";

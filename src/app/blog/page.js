@@ -5,6 +5,18 @@ import Form from "../components/form";
 import Section from "../components/section";
 import Breadcrumbs from "../components/breadcrumbs";
 import Head from "next/head";
+import Link from "next/link";
+
+async function getPosts() {
+  const res = await fetch(
+    "https://jsonplaceholder.typicode.com/posts?_limit=10"
+  );
+  if (!res.ok) throw new Error("Error fetching posts");
+  return res.json();
+}
+
+
+const posts = await getPosts();
 
 export default function page() {
   return (
@@ -21,7 +33,15 @@ export default function page() {
             Aquí nuestro equipo escribe <strong>para ti</strong>
           </h1>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-24 w-[95%] max-w-[1560px] mx-auto mt-24">
-            <BlogCard />
+            {posts.map((post) => (
+              <Link
+                href={`/blog/${post.id}`}
+                key={post.id}
+                className="no-underline"
+              >
+                <BlogCard key={post.id} post={post} />
+              </Link>
+            ))}
           </div>
         </div>
       </Section>

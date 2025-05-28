@@ -1,13 +1,5 @@
-// blog/page.js
-import Link from "next/link";
-
-async function getPosts() {
-  const res = await fetch(
-    "https://jsonplaceholder.typicode.com/posts?_limit=10"
-  );
-  if (!res.ok) throw new Error("Error fetching posts");
-  return res.json();
-}
+// blog/[id]/page.js
+import React from "react";
 
 export async function generateStaticParams() {
   const res = await fetch(
@@ -20,19 +12,16 @@ export async function generateStaticParams() {
   }));
 }
 
-export default async function BlogPage() {
-  const posts = await getPosts();
+export default async function BlogPage({ params }) {
+  const { id } = params;
+
+  const res = await fetch(`https://jsonplaceholder.typicode.com/posts/${id}`);
+  const post = await res.json();
 
   return (
     <main style={{ padding: 20 }}>
-      <h1 className="mt-40">Blog</h1>
-      <ul>
-        {posts.map((post) => (
-          <li key={post.id}>
-            <Link href={`/blog/${post.id}`}>{post.title}</Link>
-          </li>
-        ))}
-      </ul>
+      <h1 className="mt-40">{post.title}</h1>
+      <p>{post.body}</p>
     </main>
   );
 }

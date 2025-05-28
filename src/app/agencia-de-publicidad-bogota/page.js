@@ -211,7 +211,8 @@ export default function page() {
               <span>
                 Somos la{" "}
                 <span className="font-semibold">
-                  agencia <br className="hidden md:block" /> de publicidad
+                  agencia <br className="hidden md:block" /> de publicidad en
+                  Bogotá
                 </span>
                 <br className="hidden md:block" /> que convierte
               </span>
@@ -223,8 +224,10 @@ export default function page() {
           }
           subtitle={
             <>
-              <span className="font-[500]">Diseñamos</span> estrategias
-              completas con coraje y corazón.
+              <span className="font-[500]">
+                Agencia en Medellín donde diseñamos
+              </span>{" "}
+              estrategias completas con coraje y corazón.
               <br /> Desde la idea creativa hasta la pauta...{" "}
               <span className="font-[500]">y mucho más.</span>
             </>
@@ -240,6 +243,7 @@ export default function page() {
         />
         <WhyChooseUs />
         <DigitalServices
+          city={"Bogotá"}
           stepsServices={stepsServices}
           platformsServices={platformsServices}
           title="Servicios destacados"
@@ -253,12 +257,12 @@ export default function page() {
           quota="“Hacemos que las ideas conecten con las personas y que cada peso invertido se traduzca en valor real.”"
         />
         <Results />
-        <FormDigital title="publicidad" icons={icons} />
+        <FormDigital city={"Bogotá"} title="publicidad" icons={icons} />
         <FrequentQuestions
           contentAccordion1={contentAccordion1}
           contentAccordion2={contentAccordion2}
         />
-        <Reviews />
+        <Reviews city={"Bogotá"} />
         <FooterDigital />
         <a href="https://wa.me/573148629805" target="_blank">
           <Image

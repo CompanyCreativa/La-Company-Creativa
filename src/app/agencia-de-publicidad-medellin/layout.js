@@ -1,9 +1,9 @@
 import PublicLayout from "../components/publicLayout";
 
 export const metadata = {
-  title: "Agencia de Publicidad  | La Company Creativa",
+  title: "Agencia de Publicidad en Medellín | La Company Creativa",
   description:
-    "Agencia de publicidad creativa que conecta ideas con resultados. Estrategia, diseño, contenido y pauta digital con impacto real.",
+    "Agencia de publicidad en medellín que conecta ideas con resultados. Estrategia, diseño, contenido y pauta digital con impacto real.",
 };
 
 export default function DigitalPage({ children }) {

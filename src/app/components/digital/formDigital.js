@@ -132,7 +132,7 @@ export default function FormDigital({ city, title, icons }) {
 
       <LeadForm />
       <div className="lg:w-[60%] flex flex-col justify-center lg:gap-10">
-        <h2 className="text-[24px] lg:text-[32px] 2xl:text-[56px] font-regular text-companySalmon mt-10 lg:mt-0 text-center">
+        <h2 className="text-[24px] lg:text-[40px] 2xl:text-[56px] font-regular text-companySalmon mt-10 lg:mt-0 text-center">
           <span className="font-semibold">
             Agencia {city ? "en " + city : ""} experta
             <br />

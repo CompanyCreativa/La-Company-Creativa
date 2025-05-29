@@ -15,15 +15,11 @@ async function getPosts() {
   return res.json();
 }
 
-
 const posts = await getPosts();
 
 export default function page() {
   return (
     <main className="min-h-screen ">
-      <Head>
-        <meta name="robots" content="noindex, nofollow" />
-      </Head>
       <Section>
         <div className="flex flex-col mt-[120px] lg:mt-[110px] pb-12 lg:pb-24">
           <div className="mb-10">

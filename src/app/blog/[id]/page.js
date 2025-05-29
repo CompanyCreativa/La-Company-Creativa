@@ -1,15 +1,15 @@
-// blog/[id]/page.js
-import React from "react";
+export const dynamic = "force-dynamic";
 
-export async function generateStaticParams() {
-  const res = await fetch(
-    "https://jsonplaceholder.typicode.com/posts?_limit=10"
-  );
-  const posts = await res.json();
+export async function generateMetadata({ params }) {
+  const { id } = params;
 
-  return posts.map((post) => ({
-    id: post.id.toString(),
-  }));
+  const res = await fetch(`https://jsonplaceholder.typicode.com/posts/${id}`);
+  const post = await res.json();
+
+  return {
+    title: post.title,
+    description: post.body.substring(0, 150), // corta a 150 caracteres para meta
+  };
 }
 
 export default async function BlogPage({ params }) {

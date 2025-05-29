@@ -1,12 +1,11 @@
 import React from "react";
-
 import BlogCard from "../components/blog/blogCard";
 import Form from "../components/form";
 import Section from "../components/section";
 import Breadcrumbs from "../components/breadcrumbs";
-import Head from "next/head";
 import Link from "next/link";
 
+// Función para traer posts
 async function getPosts() {
   const res = await fetch(
     "https://jsonplaceholder.typicode.com/posts?_limit=10"
@@ -15,11 +14,12 @@ async function getPosts() {
   return res.json();
 }
 
-const posts = await getPosts();
+// Componente principal (marcado como async)
+export default async function Page() {
+  const posts = await getPosts();
 
-export default function page() {
   return (
-    <main className="min-h-screen ">
+    <main className="min-h-screen">
       <Section>
         <div className="flex flex-col mt-[120px] lg:mt-[110px] pb-12 lg:pb-24">
           <div className="mb-10">
@@ -35,7 +35,7 @@ export default function page() {
                 key={post.id}
                 className="no-underline"
               >
-                <BlogCard key={post.id} post={post} />
+                <BlogCard post={post} />
               </Link>
             ))}
           </div>

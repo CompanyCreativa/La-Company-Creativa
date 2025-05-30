@@ -28,7 +28,9 @@ export default function Modal({ page, onClose }) {
         >
           Equipo
         </HeaderItem>
-        <HeaderItem link="/blog">Blog</HeaderItem>
+        <HeaderItem link="/blog" onClose={onClose} selected={page === "blog"}>
+          Blog
+        </HeaderItem>
         <HeaderItem
           selected={page === "contacto"}
           link="/contacto"

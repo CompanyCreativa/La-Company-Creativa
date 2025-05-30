@@ -76,8 +76,8 @@ export default function MainDigitalSection({
       <Image
         src={imageMain}
         alt="Agencia de pauta digital en Medellín"
+        className="md:w-[50%] h-auto object-contain"
         priority
-        className=""
       />
       <div className="flex md:hidden justify-center items-center gap-4 px-4 ">
         <svg

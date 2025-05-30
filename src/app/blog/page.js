@@ -3,20 +3,20 @@ import BlogCard from "../components/blog/blogCard";
 import Form from "../components/form";
 import Section from "../components/section";
 import Breadcrumbs from "../components/breadcrumbs";
-import Link from "next/link";
-
-// Función para traer posts
-async function getPosts() {
-  const res = await fetch(
-    "https://jsonplaceholder.typicode.com/posts?_limit=10"
-  );
-  if (!res.ok) throw new Error("Error fetching posts");
-  return res.json();
-}
+import Image from "next/image";
+import imagenBlog1 from "/public/blog/imagenblog1.png";
 
 // Componente principal (marcado como async)
 export default async function Page() {
-  const posts = await getPosts();
+  const posts = [
+    {
+      title:
+        "¿Qué es una estrategia 360 y cómo la aplicamos en La Company Creativa?",
+      date: "24 de Julio - 2024",
+      image: imagenBlog1,
+      link: "/blog/que-es-una-estrategia-360-y-como-la-aplicamos-en-la-company-creativa",
+    },
+  ];
 
   return (
     <main className="min-h-screen">
@@ -30,13 +30,7 @@ export default async function Page() {
           </h1>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-24 w-[95%] max-w-[1560px] mx-auto mt-24">
             {posts.map((post) => (
-              <Link
-                href={`/blog/${post.id}`}
-                key={post.id}
-                className="no-underline"
-              >
-                <BlogCard post={post} />
-              </Link>
+              <BlogCard post={post} />
             ))}
           </div>
         </div>

@@ -40,9 +40,9 @@ export default function Header({ page }) {
               <HeaderItem selected={page === "equipo"} link="/equipo">
                 Equipo
               </HeaderItem>
-              {/* <HeaderItem selected={page === "blog"} link="/blog">
+              <HeaderItem selected={page === "blog"} link="/blog">
                 Blog
-              </HeaderItem> */}
+              </HeaderItem>
               <HeaderItem selected={page === "contacto"} link="/contacto">
                 Contacto
               </HeaderItem>

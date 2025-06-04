@@ -1,25 +1,25 @@
 "use client";
 
 import { useState } from "react";
-
 import Link from "next/link";
 import Image from "next/image";
+
 import logo from "/public/logoCompany.svg";
 import HamburgerIcon from "./SVGicons/hamburgerIcon";
 import HeaderItem from "./headerItem";
 import Modal from "./modal";
 
 export default function Header({ page }) {
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isMenuMobileOpen, setIsMenuMobileOpen] = useState(false);
 
-  const handleCloseModal = () => {
-    setIsModalOpen(false);
+  const handleModal = () => {
+    setIsMenuMobileOpen((prev) => !prev);
   };
 
   return (
     <>
       <header
-        className={`bg-background min-h-[100px] px-4 lg:px-0 fixed top-0 z-30 w-full flex items-center shadow-md z-40`}
+        className={`flex w-full min-h-[100px] px-4 lg:px-0 fixed top-0 z-20 items-center bg-background shadow-md `}
       >
         <div className="max-w-[1760px] w-full lg:w-[91.5%] mx-auto flex justify-between items-center ">
           <Link href="/" className="cursor-pointer">
@@ -50,7 +50,7 @@ export default function Header({ page }) {
             <div className="block lg:hidden">
               <button
                 onClick={() => {
-                  setIsModalOpen(true);
+                  handleModal();
                 }}
               >
                 <HamburgerIcon />
@@ -59,7 +59,7 @@ export default function Header({ page }) {
           </div>
         </div>
       </header>
-      {isModalOpen && <Modal page={page} onClose={handleCloseModal} />}
+      {isMenuMobileOpen && <Modal page={page} onClose={handleModal} />}
     </>
   );
 }

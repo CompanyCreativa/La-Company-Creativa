@@ -162,6 +162,46 @@ body {
   background-color: #fff8ea;
 }
 
+
+/* Header styles */
+
+.active {
+  position: relative;
+}
+
+.active::after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  background-color: #363a3d;
+  height: 2px;
+}
+
+.header-item {
+  position: relative;
+}
+
+.header-item::after {
+  content: "";
+  width: 0%;
+  opacity: 0;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #363a3d;
+  height: 2px;
+  transition: all 0.2s ease-in;
+}
+
+.header-item:hover::after {
+  width: 100%;
+  opacity: 1;
+}
+
+
 /*Mover Recaptcha a la izquierda*/
 .grecaptcha-badge {
   width: 70px !important;
@@ -283,41 +323,6 @@ body {
   font-style: normal;
 }
 
-.active {
-  position: relative;
-}
-
-.active::after {
-  content: "";
-  width: 100%;
-  position: absolute;
-  bottom: -5px;
-  left: 0;
-  background-color: #363a3d;
-  height: 2px;
-}
-
-.header-item {
-  position: relative;
-}
-
-.header-item::after {
-  content: "";
-  width: 0%;
-  opacity: 0;
-  position: absolute;
-  bottom: -5px;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: #363a3d;
-  height: 2px;
-  transition: all 0.2s ease-in;
-}
-
-.header-item:hover::after {
-  width: 100%;
-  opacity: 1;
-}
 
 /* Swiper custom styles */
 

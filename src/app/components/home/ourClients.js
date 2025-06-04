@@ -17,7 +17,7 @@ import zigDesktop from "/public/portfolio/zigDesktop.png";
 
 export default function OurClients() {
   return (
-    <div className="bg-[#0C0C0C] w-full align-center items-center pt-12 pb-16 flex flex-col">
+    <div className="bg-[#0C0C0C] align-center items-center pt-12 pb-16 flex flex-col -mx-4 md:-mx-5 xl:-mx-10 px-4 md:px-5 xl:px-10">
       <Section>
         <div className="lg:mt-12">
           <h1 className="font-SpaceGrotesk font-normal text-white text-lg tracking-widest leading-7 lg:text-[32px] ">

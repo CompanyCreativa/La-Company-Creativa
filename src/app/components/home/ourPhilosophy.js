@@ -10,7 +10,7 @@ import Section from "../section";
 
 function OurPhilosophy() {
   return (
-    <Section className={"px-5 bg-transparent mt-20 w-full"}>
+    <Section className={"bg-transparent mt-20 w-full"}>
       <h1 className="md:ml-20 SpaceGrotesk text-[27px] md:text-[40px] mb-5 md:mb-10 tracking-widest font-semibold">
         Nuestra filosofía
       </h1>

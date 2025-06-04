@@ -111,7 +111,7 @@ function FormComponent() {
   };
 
   return (
-    <div className="mt-12 px-5">
+    <div className="mt-12">
       <div className="max-w-[1400px] mx-auto border bg-background flex flex-col md:px-5 lg:flex-row lg:justify-between lg:items-start lg:pl-[6%] lg:pt-[6%] lg:pr-[2%] overflow-hidden relative">
         <div>
           <div className="flex flex-col gap-7 px-5 md:px-0 pt-5 md:pt-0">

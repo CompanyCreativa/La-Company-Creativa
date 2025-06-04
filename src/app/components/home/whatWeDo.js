@@ -4,10 +4,9 @@ import Accordion from "../customAccordion";
 import arrow from "/public/arrow.png";
 import Image from "next/image";
 
-
 export default function WhatWeDo() {
   return (
-    <Section className="w-full">
+    <Section className="w-full md:px-20">
       <h1 className="text-[25px] md:text-[40px] md:ml-64 mt-24 mb-5 SpaceGrotesk font-semibold tracking-widest">
         Esto es lo que hacemos
       </h1>

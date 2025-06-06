@@ -35,7 +35,8 @@ export default function MainSection() {
           backgroundRepeat: "no-repeat",
         }}
       >
-        HOLA
+        <button>Hola</button>
+        <button>Hola</button>
       </div>
     </div>
   );

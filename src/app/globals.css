@@ -162,7 +162,6 @@ body {
   background-color: #fff8ea;
 }
 
-
 /* Header styles */
 
 .active {
@@ -200,7 +199,6 @@ body {
   width: 100%;
   opacity: 1;
 }
-
 
 /*Mover Recaptcha a la izquierda*/
 .grecaptcha-badge {
@@ -322,7 +320,6 @@ body {
   font-family: "Archivo", sans-serif;
   font-style: normal;
 }
-
 
 /* Swiper custom styles */
 
@@ -484,4 +481,46 @@ body {
   opacity: 0.2;
   z-index: 1;
   pointer-events: none;
+}
+
+@layer utilities {
+  .text-outline {
+    color: transparent;
+    background-color: transparent;
+    -webkit-text-stroke: 2px #23194f;
+  }
+}
+
+@layer utilities {
+  .text-rainbow {
+    background: repeating-linear-gradient(
+      300deg,
+      #f55548 0%,
+      #23194f 14.28%,
+      #f55548 28.56%,
+      #23194f 42.84%,
+      #f55548 57.12%,
+      #23194f 71.4%,
+      #f55548 85.68%,
+      #23194f 100%
+    );
+
+    background-size: 700% 100%; /* Tamaño horizontal igual al número de colores */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: rainbow-glow 10s linear infinite;
+  }
+
+  .text-outline {
+    color: transparent;
+  }
+
+  @keyframes rainbow-glow {
+    0% {
+      background-position: 0% 0%;
+    }
+    100% {
+      background-position: 100% 0%;
+    }
+  }
 }

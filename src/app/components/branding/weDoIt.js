@@ -51,7 +51,7 @@ export default function weDoIt() {
           </div>
         </div>
       </div>
-      <div className="w-full flex justify-center">
+      <div className="w-full flex gap-4 items-center justify-center mt-14">
         <Image src={yourBrand} />
         <p className="text-[24px] font-light text-[#23194F] SpaceGrotesk">
           Escuchamos tu <span className="font-medium">historia,</span>

@@ -104,7 +104,7 @@ export default function buildBrand() {
       </h3>
       <div className="grid grid-cols-4 justify-between w-full bg-[#23194F] p-[105px] gap-20">
         {services.map((service) => (
-          <div className="flex flex-col gap-3">
+          <div className="flex flex-col gap-3" key={service.title}>
             <Image src={service.image} alt={service.title} />
             <h3 className="text-[33px] font-semibold text-[#fff8ea] text-left mt-3 SpaceGrotesk ">
               {service.title}
@@ -116,7 +116,11 @@ export default function buildBrand() {
             </p>
           </div>
         ))}
-        <button>Hola</button>
+        <div className="flex flex-col gap-3 justify-end">
+          <button className="p-[20px] text-[13px] bg-[#FFF8EA] text-[#23194F] border border-x-[12px] border-y-[8px] border-companySalmon robout uppercase hover:bg-companySalmon hover:text-[#FFF8EA] transition-all duration-300">
+            Solicita diagnóstico gratuito
+          </button>
+        </div>
       </div>
     </section>
   );

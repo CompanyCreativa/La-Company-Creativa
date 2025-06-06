@@ -6,6 +6,6 @@ const nextConfig = {
     unoptimized: true,
   },
   // basePath: "/company",
-}; 
+};
 
 export default nextConfig;

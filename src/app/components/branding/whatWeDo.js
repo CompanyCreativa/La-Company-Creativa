@@ -3,6 +3,7 @@ import rebrandingIcon from "/public/branding/rebranding.png";
 import designSystemIcon from "/public/branding/design_system.png";
 import motionGraphicsIcon from "/public/branding/motion_graphics.png";
 import conceptualization from "/public/branding/conceptualization.png";
+import instagramVerified from "/public/branding/instagram_verified.png";
 
 export default function WhatWeDo() {
   const projects = [
@@ -52,7 +53,12 @@ export default function WhatWeDo() {
     },
     {
       url: "minipet.png",
-      title: "Pequeños envases para grandes marcas",
+      title: (
+        <>
+          Pequeños envases para
+          <br /> grandes marcas
+        </>
+      ),
       description: "Envases a la medida para marcas únicas",
       categories: [
         {
@@ -88,8 +94,8 @@ export default function WhatWeDo() {
             className="flex flex-col w-[560px] h-[806px] gap-2 border border-white border-[23px] shadow-[0_0_16px_rgba(0,0,0,0.25)] justify-end items-start p-[23px]"
             key={index}
           >
-            <h5 className="SpaceGrotesk text-[24px] text-[#FFF8EA] font-bold text-left">
-              {project.title}
+            <h5 className="flex items-start SpaceGrotesk text-[24px] text-[#FFF8EA] font-bold text-left gap-2">
+              {project.title} <Image src={instagramVerified} />
             </h5>
             <p className="text-[15px] text-[#FFF8EA] text-left tracking-wide">
               {project.description}
@@ -106,11 +112,16 @@ export default function WhatWeDo() {
                   <p className="text-[12px] text-[#FFF8EA] tracking-wider font-regular">
                     {category.title}
                   </p>
+
                   <Image src={category.icon} alt={category.title} />
                 </div>
               ))}
             </div>
-            <button>ver caso completo</button>
+            <div className="w-full flex justify-center mt-5">
+              <button className="px-[29px] py-[20px] text-[13px] robout uppercase tracking-wider bg-[#FFF8EA] hover:bg-companySalmon text-[#23194F]  hover:text-[#FFF8EA] transition-all duration-300">
+                Ver caso completo
+              </button>
+            </div>
           </div>
         ))}
       </div>

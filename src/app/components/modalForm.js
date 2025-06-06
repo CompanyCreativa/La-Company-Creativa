@@ -125,7 +125,9 @@ const ModalFormInt = () => {
           >
             <CubeButton
               onClick={() => setIsModalOpen(false)}
-              className={"absolute top-[-70px] right-0 md:top-[-60px] md:right-5"}
+              className={
+                "absolute top-[-70px] right-0 md:top-[-60px] md:right-5"
+              }
             />
             <div>
               <div className="flex flex-col gap-2 px-5 md:px-0 pt-0 md:pt-0">

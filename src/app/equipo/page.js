@@ -2,16 +2,12 @@ import TeamMembersList from "../components/equipo/teamMembersList";
 import Form from "../components/form";
 import Section from "../components/section";
 import Breadcrumbs from "../components/breadcrumbs";
-import Head from "next/head";
 import MainContainer from "../components/mainContainer";
 
 export default function page() {
   return (
     <MainContainer page="equipo">
-      <div className="min-h-screen mt-[115px]">
-        <Head>
-          <meta name="robots" content="noindex, nofollow" />
-        </Head>
+      <div className="min-h-screen">
         <Section>
           <div className="my-2">
             <Breadcrumbs lastPage="Inicio" currentPage="Equipo" />

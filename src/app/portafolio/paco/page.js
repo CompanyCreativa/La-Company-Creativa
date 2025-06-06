@@ -54,6 +54,7 @@ export default function Page() {
             <br className="hidden lg:block" /> que ayuda en todo eso que quita
             gran parte del tiempo que cada vez es más valioso.
           </PortfolioDescription>
+          
           <Image
             src={pacoLogoText}
             alt=""

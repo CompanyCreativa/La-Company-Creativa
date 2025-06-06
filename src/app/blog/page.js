@@ -23,8 +23,8 @@ export default async function Page() {
     <MainContainer page="blog">
       <main className="min-h-screen">
         <Section>
-          <div className="flex flex-col mt-[120px] lg:mt-[110px] pb-12 lg:pb-24">
-            <div className="mb-10">
+          <div className="flex flex-col pb-12 lg:pb-24">
+            <div className="my-2">
               <Breadcrumbs lastPage="Inicio" currentPage="Blog" />
             </div>
             <h1 className="text-[38px] lg:text-[62px] 2xl:text-[82px] text-center">

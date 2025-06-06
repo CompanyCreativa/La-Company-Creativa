@@ -239,7 +239,6 @@ export default function page() {
 
   return (
     <div className="relative min-h-screen overflow-hidden bg-noise-new mt-[-55px]">
-      {/* Contenido */}
       <div className="flex flex-col justify-center items-center relative z-10 text-white px-6 md:px-10 xl:px-20 2xl:px-44">
         <DigitalHeader />
         <MainDigitalSection

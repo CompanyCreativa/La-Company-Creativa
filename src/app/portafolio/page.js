@@ -22,7 +22,7 @@ import { GoogleReCaptchaProvider } from "react-google-recaptcha-v3";
 export default function Page() {
   return (
     <MainContainer>
-      <Section className="px-5">
+      <Section>
         <div className="my-2">
           <Breadcrumbs lastPage="Inicio" currentPage="Portafolio" />
         </div>

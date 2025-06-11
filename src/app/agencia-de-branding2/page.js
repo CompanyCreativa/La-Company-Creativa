@@ -12,7 +12,7 @@ export default function page() {
   return (
     <div>
       <BrandingHeader />
-      <div className="flex flex-col bg-[#F2F1ED] px-4 md:px-5 lg:px-10 xl:px-20 2xl:px-24 gap-[116px]">
+      <div className="flex flex-col bg-[#F2F1ED] px-8 lg:px-14 xl:px-20 2xl:px-24 gap-[116px]">
         <MainSection />
         <Logo />
         <WhatWeDo />

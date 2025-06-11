@@ -16,7 +16,7 @@ export default function weDoIt() {
       <h4 className="inline-block w-auto text-[24px] font-medium text-companySalmon uppercase text-center border border-companySalmon border-[1px] py-2 px-4 mx-auto rounded-full">
         Y funciona
       </h4>
-      <div className="w-full flex justify-center items-center gap-16">
+      <div className="w-full flex flex-col lg:flex-row justify-center items-center gap-16">
         <div className="flex flex-col gap-16">
           <div className="flex gap-4 items-center">
             <Image src={historia} />

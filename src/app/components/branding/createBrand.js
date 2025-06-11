@@ -10,8 +10,8 @@ export default function CreateBrand() {
       <h4 className="inline-block w-auto text-[24px] font-medium text-[#23194F] uppercase text-center border border-[#23194F] border-[1px] py-2 px-4 mx-auto rounded-full mb-[103px]">
         creamos marcas con alma
       </h4>
-      <div className="w-full flex justify-center items-center gap-16 mb-[72px]">
-        <p className="SpaceGrotesk text-[28px] text-[#fff] bg-[#23194F] p-4 text-center min-w-[500px] leading-[45px]">
+      <div className="w-full flex flex-col lg:flex-row justify-center items-center gap-16 mb-[72px]">
+        <p className="SpaceGrotesk text-[28px] text-[#fff] bg-[#23194F] p-4 text-center w-full lg:max-w-[500px] leading-[45px]">
           <span className="font-medium">Creatividad</span> con estrategia
           <br />
           nunca solo{" "}
@@ -19,7 +19,7 @@ export default function CreateBrand() {
             “bonito”
           </span>
         </p>
-        <p className="SpaceGrotesk text-[28px] text-[#fff] bg-[#23194F] p-4 text-center min-w-[500px] leading-[45px]">
+        <p className="SpaceGrotesk text-[28px] text-[#fff] bg-[#23194F] p-4 text-center w-full lg:max-w-[500px] leading-[45px]">
           <span className="font-medium">Branding realista,</span> aplicable
           <br />y pensado para{" "}
           <span className="text-[21px] text-companySalmon rounded-full border border-companySalmon border-[1px] uppercase py-[3px] px-[8px]">
@@ -27,15 +27,15 @@ export default function CreateBrand() {
           </span>
         </p>
       </div>
-      <div className="w-full flex justify-center items-center gap-16 mb-[103px]">
-        <p className="SpaceGrotesk text-[28px] text-[#fff] bg-[#23194F] p-4 text-center min-w-[500px] leading-[45px]">
+      <div className="w-full flex flex-col lg:flex-row justify-center items-center gap-16 mb-[103px]">
+        <p className="w-full lg:max-w-[500px] SpaceGrotesk text-[28px] text-[#fff] bg-[#23194F] p-4 text-center  leading-[45px]">
           Procesos claros, <br />
           <span className="font-medium">acompañamiento </span>
           <span className="text-[21px] text-companySalmon rounded-full border border-companySalmon border-[1px] uppercase py-[3px] px-[8px]">
             constante
           </span>
         </p>
-        <p className="SpaceGrotesk text-[28px] text-[#fff] bg-[#23194F] p-4 text-center min-w-[500px] leading-[45px]">
+        <p className="SpaceGrotesk text-[28px] text-[#fff] bg-[#23194F] p-4 text-center w-full lg:max-w-[500px] leading-[45px]">
           <span className="font-medium">Coraje</span> para proponer.
           <br />
           <span className="text-[21px] text-companySalmon rounded-full border border-companySalmon border-[1px] uppercase py-[3px] px-[8px]">

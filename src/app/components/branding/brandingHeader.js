@@ -5,7 +5,7 @@ import logo from "/public/logoCompany.svg";
 
 export default function BrandingHeader() {
   return (
-    <header className="flex flex-col justify-center  bg-[#F2F1ED] shadow-[0px_20px_4px_rgba(0,0,0,0.12)] p-[28px] z-10">
+    <header className="flex flex-col justify-center bg-[#f2f1ed]/80 backdrop-blur lg:bg-[#F2F1ED] shadow-[0px_4px_4px_rgba(0,0,0,0.12)] p-[16px] lg:p-[28px] sticky top-0 z-50">
       <Link href="/" className="flex justify-center">
         <Image
           src={logo}

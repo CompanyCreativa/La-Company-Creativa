@@ -95,18 +95,21 @@ export default function buildBrand() {
 
   return (
     <section className="flex flex-col justify-center gap-4">
-      <h4 className="inline-block w-auto text-[24px] font-medium text-companySalmon uppercase text-center border border-companySalmon border-[1px] py-2 px-4 mx-auto rounded-full">
+      <h4 className="inline-block w-auto text-[24px] xl:text-[20px] 2xl:text-[24px] font-medium text-companySalmon uppercase text-center border border-companySalmon border-[1px] px-2 py-1 xl:py-2 xl:px-4 mx-auto rounded-full">
         Branding
       </h4>
-      <h3 className="text-[33px] SpaceGrotesk font-bold text-[#23194F] uppercase text-center">
-        que construye marca,{" "}
+      <h3 className="text-[28px] xl:text-[29px] 2xl:text-[33px] SpaceGrotesk font-bold text-[#23194F] uppercase text-center">
+        que construye marca, <br className="lg:hidden" />
         <span className="font-light">no solo apariencia.</span>
       </h3>
-      <div className="grid grid-cols-4 justify-between w-full bg-[#23194F] p-[105px] gap-20">
+      <div className="flex flex-col lg:grid grid-cols-4 justify-between w-full bg-[#23194F] p-[42px] xl:p-[50px] 2xl:p-[105px] gap-5 xl:gap-10 2xl:gap-20">
         {services.map((service) => (
-          <div className="flex flex-col gap-3" key={service.title}>
-            <Image src={service.image} alt={service.title} />
-            <h3 className="text-[33px] font-semibold text-[#fff8ea] text-left mt-3 SpaceGrotesk ">
+          <div
+            className="flex flex-col gap-1 xl:gap-2 2xl:gap-3"
+            key={service.title}
+          >
+            <Image src={service.image} alt={service.title} className="w-[35px] xl:w-[40px] 2xl:w-auto"/>
+            <h3 className="text-[28px] xl:text-[29px] 2xl:text-[33px] font-semibold text-[#fff8ea] text-left mt-3 SpaceGrotesk ">
               {service.title}
               <span className="text-companySalmon font-bold">.</span>
             </h3>
@@ -117,7 +120,7 @@ export default function buildBrand() {
           </div>
         ))}
         <div className="flex flex-col gap-3 justify-end">
-          <button className="p-[20px] text-[13px] bg-[#FFF8EA] text-[#23194F] border border-x-[12px] border-y-[8px] border-companySalmon robout uppercase hover:bg-companySalmon hover:text-[#FFF8EA] transition-all duration-300">
+          <button className="p-[20px] text-[12px] 2xl:text-[13px] bg-[#FFF8EA] text-[#23194F] border border-x-[12px] border-y-[8px] border-companySalmon robout uppercase hover:bg-companySalmon hover:text-[#FFF8EA] transition-all duration-300">
             Solicita diagnóstico gratuito
           </button>
         </div>

@@ -76,7 +76,7 @@ export default function OurClients() {
               <GridCard
                 image={bigDesktop}
                 title="Campaña de branding - Big bang"
-                link="/portafolio/bigbang"
+                link="/portafolio/big-bang-branding/"
               />
             </div>
           </div>
@@ -84,7 +84,7 @@ export default function OurClients() {
             <GridCard
               image={doradoDesktop}
               title="Campaña de branding - El dorado"
-              link="/portafolio/eldorado"
+              link="/portafolio/pastas-el-dorado"
             />
             <div className="hidden lg:block">
               <GridCard

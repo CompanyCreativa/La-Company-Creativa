@@ -50,6 +50,7 @@ export default function Page() {
             alt="Banner Desktop"
             className="w-full lg:max-h-[410px] xl:max-h-[500px] 2xl:max-h-[717px] object-cover"
           />
+          
         </div>
         <Breadcrumbs lastPage={"Portafolio"} currentPage={"ZIG ZAG"} />
         <TitleSection>

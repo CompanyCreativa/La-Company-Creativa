@@ -1,6 +1,5 @@
 import { GoogleTagManager } from "@next/third-parties/google";
 import { Abel, Montserrat } from "next/font/google";
-import Head from "next/head";
 import "./globals.css";
 import Script from "next/script";
 

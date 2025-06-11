@@ -1,9 +1,10 @@
 import Image from "next/image";
 
-import imagenBlog1 from "/public/blog/imagenblog1.png";
 import Section from "@/app/components/section";
 import Breadcrumbs from "@/app/components/breadcrumbs";
 import Form from "@/app/components/form";
+
+import imageBlog1 from "/public/blog/imageblog1.png";
 
 export default async function Page() {
   return (
@@ -16,7 +17,7 @@ export default async function Page() {
           />
         </div>
         <Image
-          src={imagenBlog1}
+          src={imageBlog1}
           alt="estrategia 360"
           className="w-full h-auto rounded-lg mb-8 mx-auto"
         />

@@ -67,7 +67,7 @@ export default function Page() {
           <GridCard
             image={bigDesktop}
             title="Campaña de branding - Big Bang"
-            link="/portafolio/bigbang-branding"
+            link="/portafolio/big-bang-branding"
           />
           <GridCard
             image={doradoDesktop}
@@ -102,6 +102,11 @@ export default function Page() {
             />
           </div>
         </div>
+      </Section>
+      <Section>
+        <span className="text-center mt-6 tracking-wider leading-7 font-light lg:text-lg">
+          En La Company Creativa creemos que una agencia de publicidad no solo debe generar ideas, sino mover emociones, construir marcas sólidas y lograr resultados medibles. Cada campaña 360 que desarrollamos, cada proyecto de branding, cada pieza de contenido digital o producción audiovisual tiene un propósito claro: conectar a las marcas con las personas de forma auténtica y estratégica. Creamos experiencias de marca que marcan la diferencia y trabajamos con una visión integral que combina creatividad, diseño y estrategia en cada paso. Si estás buscando una agencia que entienda tu negocio y lo lleve al siguiente nivel con actitud, corazón y resultados, estás en el lugar correcto.
+        </span>
       </Section>
       <GoogleReCaptchaProvider reCaptchaKey="6LdvCVUqAAAAAFu4m6fcWmoaqH9ChXiuv4svye7d">
         <ModalForm />

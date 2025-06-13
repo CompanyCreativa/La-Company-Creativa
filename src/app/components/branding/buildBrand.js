@@ -102,13 +102,17 @@ export default function buildBrand() {
         que construye marca, <br className="lg:hidden" />
         <span className="font-light">no solo apariencia.</span>
       </h3>
-      <div className="flex flex-col lg:grid grid-cols-4 justify-between w-full bg-[#23194F] p-[42px] xl:p-[50px] 2xl:p-[105px] gap-5 xl:gap-10 2xl:gap-20">
+      <div className="flex flex-col lg:grid grid-cols-4 justify-between w-full bg-[#23194F] p-[42px] xl:p-[50px] 2xl:p-[105px] gap-10 2xl:gap-20">
         {services.map((service) => (
           <div
             className="flex flex-col gap-1 xl:gap-2 2xl:gap-3"
             key={service.title}
           >
-            <Image src={service.image} alt={service.title} className="w-[35px] xl:w-[40px] 2xl:w-auto"/>
+            <Image
+              src={service.image}
+              alt={service.title}
+              className="w-[35px] xl:w-[40px] 2xl:w-[50px]"
+            />
             <h3 className="text-[28px] xl:text-[29px] 2xl:text-[33px] font-semibold text-[#fff8ea] text-left mt-3 SpaceGrotesk ">
               {service.title}
               <span className="text-companySalmon font-bold">.</span>
@@ -120,7 +124,7 @@ export default function buildBrand() {
           </div>
         ))}
         <div className="flex flex-col gap-3 justify-end">
-          <button className="p-[20px] text-[12px] 2xl:text-[13px] bg-[#FFF8EA] text-[#23194F] border border-x-[12px] border-y-[8px] border-companySalmon robout uppercase hover:bg-companySalmon hover:text-[#FFF8EA] transition-all duration-300">
+          <button className="px-[13px] py-[20px] text-[14px] xl:text-[13px] bg-companySalmon xl:bg-[#FFF8EA] text-[#FFF8EA] xl:text-[#23194F] xl:border xl:border-x-[12px] xl:border-y-[8px] border-companySalmon robout uppercase hover:bg-companySalmon hover:text-[#FFF8EA] transition-all duration-300 SpaceGrotesk lg:robout">
             Solicita diagnóstico gratuito
           </button>
         </div>

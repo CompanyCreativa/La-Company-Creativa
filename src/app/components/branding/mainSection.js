@@ -3,7 +3,7 @@ import brandingMainImage from "/public/branding/branding_main_image.png";
 
 export default function MainSection() {
   return (
-    <div className="-mt-[88.64px] md:mt-[80px] -mx-8 flex justify-between">
+    <div className="-mt-[88.64px] md:mt-[80px] -mx-8 lg:mx-0 flex justify-between">
       <div className="2xl:pb-24 flex flex-col justify-center lg:justify-start">
         <div className="relative w-full z-0">
           <Image

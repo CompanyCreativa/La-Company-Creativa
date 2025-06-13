@@ -19,31 +19,31 @@ export default function weDoIt() {
       <div className="w-full flex flex-col lg:flex-row justify-center items-center gap-12 xl:gap-16">
         <div className="flex flex-col gap-12 xl:gap-16">
           <div className="flex  gap-4 items-center">
-            <Image src={historia} />
+            <Image src={historia} alt="Historia"/>
             <p className="text-[22px] xl:text-[20px] 2xl:text-[24px] font-light text-[#23194F] SpaceGrotesk">
               Escuchamos tu <span className="font-medium">historia,</span>
               <br /> mercado y propósito
             </p>
           </div>
           <div className="flex gap-4 items-center">
-            <Image src={competencia} />
+            <Image src={competencia} alt="Competencia"/>
             <p className="text-[22px] xl:text-[20px] 2xl:text-[24px] font-light text-[#23194F] SpaceGrotesk">
               Investigamos contexto, <br /> tendencias{" "}
               <span className="font-medium">y competencia</span>
             </p>
           </div>
         </div>
-        <Image src={decorationBranding} className="w-4/5 xl:w-auto" />
+        <Image src={decorationBranding} className="w-4/5 xl:w-auto" alt="Decoration"/>
         <div className="flex flex-col gap-16">
           <div className="flex gap-4 items-center">
-            <Image src={estrategico} />
+            <Image src={estrategico} alt="Estrategico"/>
             <p className="text-[22px] xl:text-[20px] 2xl:text-[24px] font-light text-[#23194F] SpaceGrotesk">
               Escuchamos tu <span className="font-medium">historia,</span>
               <br /> mercado y propósito
             </p>
           </div>
           <div className="flex gap-4 items-center">
-            <Image src={visual} />
+            <Image src={visual} alt="Visual"/>
             <p className="text-[22px] xl:text-[20px] 2xl:text-[24px] font-light text-[#23194F] SpaceGrotesk">
               Escuchamos tu <span className="font-medium">historia,</span>
               <br /> mercado y propósito
@@ -52,7 +52,7 @@ export default function weDoIt() {
         </div>
       </div>
       <div className="w-full flex gap-4 items-center justify-center mt-12 xl:mt-14">
-        <Image src={yourBrand} />
+        <Image src={yourBrand} alt="Your brand"/>
         <p className="text-[22px] xl:text-[20px] 2xl:text-[24px] font-light text-[#23194F] SpaceGrotesk">
           Escuchamos tu <span className="font-medium">historia,</span>
           <br /> mercado y propósito

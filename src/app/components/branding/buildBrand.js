@@ -106,11 +106,11 @@ export default function buildBrand() {
         {services.map((service) => (
           <div
             className="flex flex-col gap-1 xl:gap-2 2xl:gap-3"
-            key={service.title}
+            key={service.description}
           >
             <Image
               src={service.image}
-              alt={service.title}
+              alt={service.description}
               className="w-[35px] xl:w-[40px] 2xl:w-[50px]"
             />
             <h3 className="text-[28px] xl:text-[29px] 2xl:text-[33px] font-semibold text-[#fff8ea] text-left mt-3 SpaceGrotesk ">

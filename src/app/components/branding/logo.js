@@ -8,11 +8,16 @@ import tenemosLogo from "/public/branding/tenemos_logo.png";
 import noTenemos from "/public/branding/no_tenemos.png";
 import comunicacionNO from "/public/branding/comunicacion_no.png";
 import comoNosVen from "/public/branding/como_nos_ven.png";
+import tenemosLogoHover from "/public/branding/tenemos_logo_hover.png";
+import noTenemosHover from "/public/branding/no_tenemos_hover.png";
+import comunicacionNOHover from "/public/branding/comunicacion_no_hover.png";
+import comoNosVenHover from "/public/branding/como_nos_ven_hover.png";
 
 export default function Logo() {
   const phrases = [
     {
       icon: tenemosLogo,
+      iconHover: tenemosLogoHover,
       text: (
         <>
           “Tenemos logo...
@@ -23,6 +28,7 @@ export default function Logo() {
     },
     {
       icon: noTenemos,
+      iconHover: noTenemosHover,
       text: (
         <>
           “No tenemos
@@ -33,6 +39,7 @@ export default function Logo() {
     },
     {
       icon: comunicacionNO,
+      iconHover: comunicacionNOHover,
       text: (
         <>
           “Siento que nuestra
@@ -43,6 +50,7 @@ export default function Logo() {
     },
     {
       icon: comoNosVen,
+      iconHover: comoNosVenHover,
       text: (
         <>
           “No sé cómo nos ven
@@ -121,7 +129,12 @@ export default function Logo() {
             <Image
               src={phrase.icon}
               alt="Icon"
-              className="z-10 transition duration-500 group-hover:brightness-200 w-[35px] lg:w-auto"
+              className="z-10 transition duration-500  group-hover:opacity-0 group-hover:hidden w-[35px] lg:w-auto"
+            />
+            <Image
+              src={phrase.iconHover}
+              alt="Icon"
+              className="opacity-0 hidden  z-10 transition duration-500 group-hover:opacity-100 group-hover:block w-[35px] lg:w-auto"
             />
             <h3 className="z-10 text-[18px] xl:text-[24px] 2xl:text-[32px] font-semibold text-[#23194F] transition-colors duration-500 group-hover:text-white mr-auto">
               {phrase.text}
@@ -130,10 +143,7 @@ export default function Logo() {
               className="lg:hidden z-10 transition-colors duration-500 group-hover:text-white w-[25px] 2xl:w-auto"
               color="#F55548"
             />
-            <ArrowTopRight
-              className="hidden lg:block z-10 transition-colors duration-500 group-hover:text-white w-[25px] 2xl:w-auto"
-              color="#23194F"
-            />
+            <ArrowTopRight className="hidden lg:block z-10 w-[25px] 2xl:w-auto transition-colors duration-500 text-[#23194F] group-hover:text-white" />
           </div>
         ))}
       </div>

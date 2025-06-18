@@ -107,7 +107,6 @@ export default function WhatWeDo() {
           }}
           autoplay={{
             delay: 0.1,
-            disableOnInteraction: true,
           }}
           breakpoints={{
             1024: {

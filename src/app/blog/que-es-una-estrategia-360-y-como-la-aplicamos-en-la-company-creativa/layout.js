@@ -1,8 +1,7 @@
 import PublicLayout from "../../components/publicLayout";
 
 export const metadata = {
-  title:
-    "¿Qué es una estrategia 360 en La Company?",
+  title: "¿Qué es una estrategia 360 en La Company?",
   description:
     "Descubre qué es una estrategia 360 (de verdad) y como la convertimos en ideas con sentido en La Company Creativa. Y no, no es solo hacer “de todo un poquito”.",
 };

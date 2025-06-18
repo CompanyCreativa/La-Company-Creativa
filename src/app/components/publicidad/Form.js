@@ -79,7 +79,7 @@ export default function LeadForm() {
       <form
         id="webform"
         action="https://crm.zoho.com/crm/WebToLeadForm"
-        name="WebToLeads6724972000000743001"
+        name="WebToLeads6724972000001254013"
         method="POST"
         onSubmit={checkMandatory}
         acceptCharset="UTF-8"

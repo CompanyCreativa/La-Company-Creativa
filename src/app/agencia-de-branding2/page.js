@@ -7,6 +7,7 @@ import CreateBrand from "../components/branding/createBrand";
 import FrequentQuestions from "../components/branding/frequentQuestions";
 import FormBranding from "../components/branding/formBranding";
 import BrandingHeader from "../components/branding/brandingHeader";
+import FooterBranding from "../components/branding/footerBranding";
 
 export default function page() {
   return (
@@ -21,6 +22,7 @@ export default function page() {
         <CreateBrand />
         <FrequentQuestions />
         <FormBranding />
+        <FooterBranding />
       </div>
     </div>
   );

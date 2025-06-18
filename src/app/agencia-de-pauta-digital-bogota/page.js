@@ -8,7 +8,7 @@ import WhyChooseUs from "../components/digital/whyChooseUs";
 import DigitalServices from "../components/digital/digitalServices";
 import HowWeWork from "../components/digital/howWeWork";
 import Results from "../components/digital/Results";
-import FormDigital from "../components/digital/formDigital";
+import FormPublicidad from "../components/publicidad/formPublicidad";
 import FrequentQuestions from "../components/digital/frequentQuestions";
 import Reviews from "../components/digital/reviews";
 import FooterDigital from "../components/digital/footerDigital";
@@ -299,7 +299,7 @@ export default function page() {
           quota="“Deja que los números hablen. Nosotros hacemos que crezcan.”"
         />
         <Results />
-        <FormDigital city={"Bogotá"} title="pauta digital" icons={icons} />
+        <FormPublicidad city={"Bogotá"} title="pauta digital" icons={icons} />
         <FrequentQuestions
           contentAccordion1={contentAccordion1}
           contentAccordion2={contentAccordion2}

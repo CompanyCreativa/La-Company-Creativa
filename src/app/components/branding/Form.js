@@ -79,7 +79,7 @@ export default function LeadForm() {
       <form
         id="webform"
         action="https://crm.zoho.com/crm/WebToLeadForm"
-        name="WebToLeads6724972000000743001"
+        name=" WebToLeads6724972000001254034"
         method="POST"
         onSubmit={checkMandatory}
         acceptCharset="UTF-8"
@@ -117,7 +117,7 @@ export default function LeadForm() {
           <div className="mr-2.5 mt-1 float-left">
             <label
               htmlFor="First_Name"
-              className="text-base font-calibri text-background"
+              className="text-base font-calibri text-[#23194F]"
             >
               Nombre
             </label>
@@ -130,7 +130,7 @@ export default function LeadForm() {
               maxLength="40"
               value={formData["First Name"]}
               onChange={handleChange}
-              className="bg-[rgba(255,255,255,0.05)] p-3 rounded-md border border-[#2BFFC3] border-opacity-[0.1] w-full text-background"
+              className="bg-transparent p-3 border border-[#23194F]  w-full text-background text-black"
             />
           </div>
           <div className="clear-both"></div>
@@ -140,7 +140,7 @@ export default function LeadForm() {
           <div className="w-[30%] mr-2.5 mt-1 float-left">
             <label
               htmlFor="Last_Name"
-              className="text-base font-calibri text-background"
+              className="text-base font-calibri text-[#23194F]"
             >
               Apellidos <span className="text-red-500">*</span>
             </label>
@@ -154,7 +154,7 @@ export default function LeadForm() {
               required
               value={formData["Last Name"]}
               onChange={handleChange}
-              className="bg-[rgba(255,255,255,0.05)] p-3 rounded-md border border-[#2BFFC3] border-opacity-[0.1] w-full text-background"
+              className="bg-transparent p-3 border border-[#23194F]  w-full text-background text-black"
             />
           </div>
           <div className="clear-both"></div>
@@ -164,7 +164,7 @@ export default function LeadForm() {
           <div className="w-[30%] mr-2.5 mt-1 float-left">
             <label
               htmlFor="Company"
-              className="text-base font-calibri text-background"
+              className="text-base font-calibri text-[#23194F]"
             >
               Empresa
             </label>
@@ -177,7 +177,7 @@ export default function LeadForm() {
               maxLength="200"
               value={formData["Company"]}
               onChange={handleChange}
-              className="bg-[rgba(255,255,255,0.05)] p-3 rounded-md border border-[#2BFFC3] border-opacity-[0.1] w-full text-background"
+              className="bg-transparent p-3 border border-[#23194F]  w-full text-background text-black"
             />
           </div>
           <div className="clear-both"></div>
@@ -187,7 +187,7 @@ export default function LeadForm() {
           <div className="mr-2.5 mt-1 float-left">
             <label
               htmlFor="Mobile"
-              className="text-base font-calibri text-background"
+              className="text-base font-calibri text-[#23194F]"
             >
               Celular / WhatsApp <span className="text-red-500">*</span>
             </label>
@@ -201,7 +201,7 @@ export default function LeadForm() {
               required
               value={formData["Mobile"]}
               onChange={handleChange}
-              className="bg-[rgba(255,255,255,0.05)] p-3 rounded-md border border-[#2BFFC3] border-opacity-[0.1] w-full text-background"
+              className="bg-transparent p-3 border border-[#23194F] w-full text-background text-black"
             />
           </div>
           <div className="clear-both"></div>
@@ -211,7 +211,7 @@ export default function LeadForm() {
           <div className="mr-2.5 mt-1 float-left">
             <label
               htmlFor="Email"
-              className="text-base font-calibri text-background"
+              className="text-base font-calibri text-[#23194F]"
             >
               Correo electrónico <span className="text-red-500">*</span>
             </label>
@@ -225,7 +225,7 @@ export default function LeadForm() {
               required
               value={formData["Email"]}
               onChange={handleChange}
-              className="bg-[rgba(255,255,255,0.05)] p-3 rounded-md  border border-[#2BFFC3] border-opacity-[0.1] w-full text-background"
+              className="bg-transparent p-3 border border-[#23194F] w-full text-background text-black"
             />
           </div>
           <div className="clear-both"></div>

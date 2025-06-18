@@ -8,7 +8,7 @@ import WhyChooseUs from "../components/digital/whyChooseUs";
 import DigitalServices from "../components/digital/digitalServices";
 import HowWeWork from "../components/digital/howWeWork";
 import Results from "../components/digital/Results";
-import FormDigital from "../components/digital/formDigital";
+import FormPublicidad from "../components/publicidad/formPublicidad";
 import FrequentQuestions from "../components/digital/frequentQuestions";
 import Reviews from "../components/digital/reviews";
 import FooterDigital from "../components/digital/footerDigital";
@@ -253,7 +253,7 @@ export default function page() {
           quota="“Hacemos que las ideas conecten con las personas y que cada peso invertido se traduzca en valor real.”"
         />
         <Results />
-        <FormDigital title="publicidad" icons={icons} />
+        <FormPublicidad title="publicidad" icons={icons} />
         <FrequentQuestions
           contentAccordion1={contentAccordion1}
           contentAccordion2={contentAccordion2}

@@ -35,9 +35,6 @@ export const metadata = {
 export default function Page() {
   return (
     <MainContainer>
-      <Head>
-        <meta name="robots" content="noindex, nofollow" />
-      </Head>
       <div className="w-full">
         <Image
           src={bannerMobile}

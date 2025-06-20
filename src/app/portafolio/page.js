@@ -1,6 +1,12 @@
 "use client";
+import { GoogleReCaptchaProvider } from "react-google-recaptcha-v3";
+
 import Section from "../components/section";
 import Form from "../components/form";
+import GridCard from "../components/gridCard";
+import MainContainer from "../components/mainContainer";
+import Breadcrumbs from "../components/breadcrumbs";
+import ModalForm from "../components/modalForm";
 
 import pacoDesktop from "/public/portfolio/pacoPortfolio.png";
 import bobListImg from "/public/portfolio/bobListImg.png";
@@ -13,11 +19,8 @@ import casaDesktop from "/public/portfolio/casaDesktop.png";
 import bigDesktop from "/public/portfolio/bigDesktop.png";
 import loveDesktop from "/public/portfolio/loveDesktop.png";
 import navidadDesktop from "/public/portfolio/navidadDesktop.png";
-import GridCard from "../components/gridCard";
-import MainContainer from "../components/mainContainer";
-import Breadcrumbs from "../components/breadcrumbs";
-import ModalForm from "../components/modalForm";
-import { GoogleReCaptchaProvider } from "react-google-recaptcha-v3";
+import minipet from "/public/portfolio/minipet.png";
+import retiroAlto from "/public/portfolio/retiro_alto.png";
 
 export default function Page() {
   return (
@@ -80,6 +83,11 @@ export default function Page() {
             link="/portafolio/ideoterapia"
           />
           <GridCard
+            image={retiroAlto}
+            title="Villas campestres - Retiro Alto"
+            link="/portafolio/retiro-alto"
+          />
+          <GridCard
             image={reflexDesktop}
             title="Campaña de lanzamiento - Réflex"
             link="/portafolio/reflex"
@@ -101,11 +109,25 @@ export default function Page() {
               link="/portafolio/navidad-al-trabajo"
             />
           </div>
+          <GridCard
+            image={minipet}
+            title="Envases a la medida - Minipet"
+            link="/portafolio/minipet"
+          />
         </div>
       </Section>
       <Section>
         <span className="text-center mt-6 tracking-wider leading-7 font-light lg:text-lg">
-          En La Company Creativa creemos que una agencia de publicidad no solo debe generar ideas, sino mover emociones, construir marcas sólidas y lograr resultados medibles. Cada campaña 360 que desarrollamos, cada proyecto de branding, cada pieza de contenido digital o producción audiovisual tiene un propósito claro: conectar a las marcas con las personas de forma auténtica y estratégica. Creamos experiencias de marca que marcan la diferencia y trabajamos con una visión integral que combina creatividad, diseño y estrategia en cada paso. Si estás buscando una agencia que entienda tu negocio y lo lleve al siguiente nivel con actitud, corazón y resultados, estás en el lugar correcto.
+          En La Company Creativa creemos que una agencia de publicidad no solo
+          debe generar ideas, sino mover emociones, construir marcas sólidas y
+          lograr resultados medibles. Cada campaña 360 que desarrollamos, cada
+          proyecto de branding, cada pieza de contenido digital o producción
+          audiovisual tiene un propósito claro: conectar a las marcas con las
+          personas de forma auténtica y estratégica. Creamos experiencias de
+          marca que marcan la diferencia y trabajamos con una visión integral
+          que combina creatividad, diseño y estrategia en cada paso. Si estás
+          buscando una agencia que entienda tu negocio y lo lleve al siguiente
+          nivel con actitud, corazón y resultados, estás en el lugar correcto.
         </span>
       </Section>
       <GoogleReCaptchaProvider reCaptchaKey="6LdvCVUqAAAAAFu4m6fcWmoaqH9ChXiuv4svye7d">

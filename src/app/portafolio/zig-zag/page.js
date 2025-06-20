@@ -50,7 +50,6 @@ export default function Page() {
             alt="Banner Desktop"
             className="w-full lg:max-h-[410px] xl:max-h-[500px] 2xl:max-h-[717px] object-cover"
           />
-          
         </div>
         <Breadcrumbs lastPage={"Portafolio"} currentPage={"ZIG ZAG"} />
         <TitleSection>
@@ -80,7 +79,12 @@ export default function Page() {
         />
       </div>
       <ZigzagGrid />
-      <div className="bg-zigzagBg flex flex-col gap-10 justify-between px-12 py-24 -mt-1 lg:flex-row lg:gap-0 lg:px-32 lg:pt-32 lg:pb-24">
+      <div
+        className="flex flex-col gap-10 justify-between px-12 py-24 -mt-1 lg:flex-row lg:gap-0 lg:px-32 lg:pt-32 lg:pb-24"
+        style={{
+          backgroundImage: `url("/zig-zag/grid-bg.png")`,
+        }}
+      >
         <Image
           src={history1Img}
           alt="Historia destacada de Zig-zag"

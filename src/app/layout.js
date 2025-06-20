@@ -3,7 +3,6 @@ import { Abel, Montserrat } from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
 
-
 const abel = Abel({
   subsets: ["latin"],
   variable: "--font-abel",

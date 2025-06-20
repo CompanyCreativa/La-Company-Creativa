@@ -99,7 +99,10 @@ export default function Page() {
         >
           <source src="/booblist/video2.mp4" type="video/mp4" />
         </video>
-        <div className="bg-booblist bg-top w-full flex items-center justify-center py-10 mt-20 lg:mt-12 px-5">
+        <div
+          className="bg-top w-full flex items-center justify-center py-10 mt-20 lg:mt-12 px-5"
+          style={{ backgroundImage: " url('/booblist/Rectangle.png'" }}
+        >
           <div className="w-full max-w-[1300px] mx-auto">
             <div className="grid gap-2 lg:gap-20 border-b border-white pb-10 grid-cols-3">
               <CounterText number="+12.7k" description="Cuentas alcanzadas" />

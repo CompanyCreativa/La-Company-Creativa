@@ -262,7 +262,7 @@ export default function page() {
           contentAccordion1={contentAccordion1}
           contentAccordion2={contentAccordion2}
         />
-        <Reviews city={"Medellín"}/>
+        <Reviews city={"Medellín"} />
         <FooterDigital />
         <a href="https://wa.me/573148629805" target="_blank">
           <Image

@@ -17,7 +17,7 @@ export default async function Page() {
         "¿Qué es una estrategia 360 y cómo la aplicamos en La Company Creativa?",
       date: "24 de Julio - 2024",
       image: imageBlog1,
-      link: "/blog/que-es-una-estrategia-360-y-como-la-aplicamos-en-la-company-creativa",
+      link: "/blog/que-es-una-estrategia-360-la-company-creativa",
     },
     {
       title: "La pauta digital: como llegarle a la gente correcta (sin gritar)",
@@ -50,7 +50,7 @@ export default async function Page() {
             </h2>
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-24 w-[95%] max-w-[1560px] mx-auto mt-24">
               {posts.map((post) => (
-                <BlogCard post={post} key={post.title}/>
+                <BlogCard post={post} key={post.title} />
               ))}
             </div>
           </div>

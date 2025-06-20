@@ -105,9 +105,6 @@ export default function WhatWeDo() {
             nextEl: ".next-swiper-button",
             prevEl: ".prev-swiper-button",
           }}
-          autoplay={{
-            delay: 0.1,
-          }}
           breakpoints={{
             1024: {
               slidesPerView: 2,

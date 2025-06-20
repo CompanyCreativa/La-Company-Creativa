@@ -21,7 +21,7 @@ export default function FormBranding() {
           className="rounded-2xl xl:w-[500px] 2xl:w-auto"
         />
       </div>
-      <div className="mt-[42px] xl:mt-0 flex items-center justify-center flex-col gap-4 mr-[60px]">
+      <div className="mt-[42px] xl:mt-0 flex items-center justify-center flex-col gap-4 lg:mr-[60px]">
         <h3 className="text-[24px] xl:text-[33px] text-center lg:text-start SpaceGrotesk font-bold text-companySalmon uppercase">
           ¡TENEMOS MÁS PARA
           <br className="md:hidden" /> CONTARTE!

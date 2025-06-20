@@ -18,6 +18,7 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Fuente Robout */
 @font-face {
   font-family: "Robout";
   src: url("assets/fonts/Robout-Light.ttf") format("truetype");
@@ -104,6 +105,7 @@ html {
   font-style: normal;
 }
 
+/* Fuente Mosk */
 @font-face {
   font-family: "Mosk";
   src: url("assets/fonts/Mosk\ Light\ 300.ttf") format("truetype");
@@ -118,6 +120,7 @@ html {
   font-style: normal;
 }
 
+/* Fuente SpaceGrotesk */
 @font-face {
   font-family: "SpaceGrotesk";
   src: url("assets/fonts/SpaceGrotesk-Regular.ttf") format("truetype");
@@ -163,7 +166,6 @@ body {
 }
 
 /* Header styles */
-
 .active {
   position: relative;
 }
@@ -528,4 +530,3 @@ body {
     }
   }
 }
-

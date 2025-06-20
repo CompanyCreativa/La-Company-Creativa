@@ -21,7 +21,6 @@ import logoLinkedin from "/public/digital/logo-linkedin.png";
 
 import renderPc from "/public/digital/render-pc.png";
 
-
 export default function page() {
   const stepsServices = [
     {

@@ -32,19 +32,21 @@ export default function FrequentQuestions() {
 
   return (
     <div className="flex flex-col items-center">
-      <h2></h2>
-      <div className="max-w-[1200px] w-full flex flex-col gap-12">
+      <h2 className="text-3xl xl:text-4xl 2xl:text-5xl SpaceGrotesk font-bold text-[#23194F] uppercase text-center mb-12">
+        Preguntas frecuentes
+      </h2>
+      <div className="xl:max-w-[1000px] 2xl:max-w-[1200px] w-full flex flex-col gap-8">
         {questions.map((question, index) => (
-          <Accordion className="bg-[#fff] shadow-[0px_0px_16px_rgba(0,0,0,0.25)] ">
+          <Accordion className="bg-[#fff] shadow-[0px_0px_16px_rgba(0,0,0,0.25)]">
             <AccordionSummary
               expandIcon={
                 <ExpandMoreIcon className="text-[30px] md:text-[40px] xl:text-[50px] text-companySalmon" />
               }
-              className="SpaceGrotesk font-medium text-companySalmon transition-colors duration-300 ease-in-out [&.Mui-expanded]:text-red-500 tracking-wider text-[16px] xl:text-[18px] 2xl:text-[32px] p-[15px]"
+              className="SpaceGrotesk font-medium text-companySalmon transition-colors duration-300 ease-in-out [&.Mui-expanded]:text-red-500 tracking-wider text-[16px] xl:text-2xl 2xl:text-3xl px-3 xl:py-4 xl:px-8 2xl:py-5 2xl:px-10"
             >
               {question.question}
             </AccordionSummary>
-            <AccordionDetails className="text-[#23194F] text-[18px] -mt-[30px] px-[30px]">
+            <AccordionDetails className="text-[#23194F] text-md xl:text-lg 2xl:text-2xl xl:-mt-[30px] px-[30px]">
               {question.answer}
             </AccordionDetails>
           </Accordion>

@@ -18,8 +18,6 @@ import section21 from "/public/retiro-alto/section21.png";
 import section22 from "/public/retiro-alto/section22.png";
 import section3 from "/public/retiro-alto/section3.png";
 import section5 from "/public/retiro-alto/section5.png";
-import section3Mobile1 from "/public/minipet/section3_mobile1.png";
-import section3Mobile2 from "/public/minipet/section3_mobile2.png";
 
 export const metadata = {
   title: "Retiro Alto | Campaña | Agencia La Company Creativa",

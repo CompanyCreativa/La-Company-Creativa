@@ -17,9 +17,9 @@ export default function MainSection() {
           <span className="font-semibold">¿Tu marca se ve,</span> pero no se
           siente?
         </h2>
-        <h1 className="relative mt-[24px] md:mt-[0px] text-[58px] md:text-[65px] xl:text-[85px] 2xl:text-[110px] text-[#23194F] font-semibold text-center 2xl:text-end z-10">
+        <h1 className="relative mt-[24px] md:mt-[0px] text-[58px] md:text-[65px] xl:text-[85px] 2xl:text-[110px] text-[#23194F] font-semibold text-center 2xl:text-end z-10 SpaceGrotesk">
           AGENCIA DE <br />
-          <span className="xl:mr-[-115px] px-10 border-[2px] text-outline border-[#23194F] rounded-full ">
+          <span className="SpaceGrotesk xl:mr-[-115px] px-10 inline-block border border-[2px] text-outline border-[#23194F] rounded-full text-center">
             BRANDING
           </span>
           <br />
@@ -33,7 +33,7 @@ export default function MainSection() {
           <span className="font-semibold">Creamos marcas</span> que no solo se
           ven bien:
         </h2>
-        <h3 className="mt-[14px] text-[20px] inline-block w-auto text-companySalmon border border-companySalmon border-[1px] py-1 px-4 mx-auto lg:mr-auto lg:mx-0 rounded-full">
+        <h3 className="SpaceGrotesk mt-[14px] text-[20px] inline-block w-auto text-companySalmon border border-companySalmon border-[1px] py-1 px-4 mx-auto lg:mr-auto lg:mx-0 rounded-full font-regular">
           Se entienden, se recuerdan,{" "}
           <span className="font-semibold">se eligen</span>
         </h3>

@@ -10,16 +10,15 @@ import Breadcrumbs from "@/app/components/breadcrumbs";
 import MotionGraphicsIcon from "@/app/components/SVGicons/motionGraphicsIcon";
 import RebrandingIcon from "@/app/components/SVGicons/rebrandingIcon";
 
-import bannerDesktop from "/public/retiro-alto/bannerDesktop.png";
+import bannerDesktop from "/public/distrito-florida/bannerDesktop.png";
 import bannerMobile from "/public/retiro-alto/bannerMobile.png";
-import logo from "/public/retiro-alto/logo.png";
-import section1 from "/public/retiro-alto/section1.png";
-import section21 from "/public/retiro-alto/section21.png";
-import section22 from "/public/retiro-alto/section22.png";
-import section3 from "/public/retiro-alto/section3.png";
-import section5 from "/public/retiro-alto/section5.png";
-import section3Mobile1 from "/public/minipet/section3_mobile1.png";
-import section3Mobile2 from "/public/minipet/section3_mobile2.png";
+import logo from "/public/distrito-florida/logo.png";
+import section1 from "/public/distrito-florida/section1.png";
+import section2 from "/public/distrito-florida/section2.png";
+import section3 from "/public/distrito-florida/section3.png";
+import section41 from "/public/distrito-florida/section4-1.png";
+import section42 from "/public/distrito-florida/section4-2.png";
+import section5 from "/public/distrito-florida/section5.png";
 
 export const metadata = {
   title: "Retiro Alto | Campaña | Agencia La Company Creativa",
@@ -28,6 +27,64 @@ export const metadata = {
 };
 
 export default function Page() {
+  const colors = [
+    {
+      name: (
+        <>
+          Naranja <br />
+          Desarrollo
+        </>
+      ),
+      hex: "#C65445",
+      cm: "C:4M:79",
+      yk: "Y:73 K:0",
+    },
+    {
+      name: (
+        <>
+          Verde <br />
+          Florida
+        </>
+      ),
+      hex: "#164239",
+      cm: "C:100M:42",
+      yk: "Y:72K:57",
+    },
+    {
+      name: (
+        <>
+          Verde <br />
+          Volador
+        </>
+      ),
+      hex: "#C0D16D",
+      cm: "C:35M:0",
+      yk: "Y:72K:0",
+    },
+    {
+      name: (
+        <>
+          Azul <br />
+          Evolución
+        </>
+      ),
+      hex: "#9BBFDE",
+      cm: "C:49M:12",
+      yk: "Y:7K:0",
+    },
+    {
+      name: (
+        <>
+          Morado <br />
+          Vital
+        </>
+      ),
+      hex: "#4D3C8A",
+      cm: "C:83M:87",
+      yk: "Y:1K:0",
+    },
+  ];
+
   return (
     <MainContainer>
       <div className="w-full">
@@ -46,8 +103,8 @@ export default function Page() {
           currentPage={"Navidad al trabajo"}
         />
         <TitleSection>
-          <PortfolioTitle textColor="text-[#4299A2]">
-            Retiro Alto
+          <PortfolioTitle textColor="text-[#FB6B58]">
+            Distrito Florida
           </PortfolioTitle>
           <div className="mt-5 relative pr-5">
             <span className="text-lg tracking-wider leading-8">
@@ -75,33 +132,38 @@ export default function Page() {
       <div className="w-full flex flex-col justify-center items-center gap-16">
         <Image src={section1} />
       </div>
-      <div className="w-full flex flex-col lg:flex-row gap-16 lg:gap-32 mt-16">
-        <video
-          loop
-          playsInline
-          webkit-playsinline="true"
-          autoPlay
-          className="w-full sm:w-[47%] h-auto"
-        >
-          <source src="/retiro-alto/section2.mp4" type="video/mp4" />
-        </video>
-        <div className="lg:w-1/2 gap-16 lg:gap-0 flex flex-col justify-between">
-          <Image src={section21} className="" />
-          <Image src={section22} className="" />
-        </div>
+      <div className="w-full flex flex-col justify-center items-center gap-16">
+        <Image src={section2} />
       </div>
       <Image src={section3} className="mt-16 w-full" />
-      <video
-        loop
-        playsInline
-        webkit-playsinline
-        autoPlay
-        style={{ width: "100%", height: "100%" }}
-        className="mt-16"
-      >
-        <source src="/retiro-alto/section4.mp4" type="video/mp4" />
-      </video>
-      <Section className="bg-[#263A4B] flex justify-center items-center p-8 lg:p-16 lg:pb-14 mt-16">
+      <div className="mt-16 flex lg:flex-row flex-col justify-around">
+        {colors.map((color, index) => (
+          <div className="w-[290px] flex flex-col justify-center items-center">
+            <div
+              className={`w-[290px] h-[290px] flex items-end p-6`}
+              style={{ backgroundColor: color.hex }}
+            >
+              <p className="text-background text-2xl font-semibold uppercase">
+                {color.name}
+              </p>
+            </div>
+            <div className="w-full mt-8">
+              <p className="text-[#164239] text-2xl font-semibold">
+                {color.hex}
+              </p>
+              <span className="text-[#164239] text-xl mr-6 mt-2">
+                {color.cm}
+              </span>
+              <span className="text-[#164239] text-xl">{color.yk}</span>
+            </div>
+          </div>
+        ))}
+      </div>
+      <div className="w-full flex justify-center items-center gap-16">
+        <Image src={section41} className="mt-16 w-full" />
+        <Image src={section42} className="mt-16 w-full" />
+      </div>
+      <Section className="bg-[#FB6B58] flex justify-center items-center p-8 lg:p-16 lg:pb-14 mt-16">
         <p className="text-[#FFFFFF] mosk leading-8 xl:leading-6 2xl:leading-10 text-md xl:text-xl 2xl:text-2xl font-light">
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad

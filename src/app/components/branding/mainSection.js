@@ -17,9 +17,9 @@ export default function MainSection() {
           <span className="font-semibold">¿Tu marca se ve,</span> pero no se
           siente?
         </h2>
-        <h1 className="relative mt-[24px] md:mt-[0px] text-[58px] md:text-[65px] xl:text-[85px] 2xl:text-[110px] xl:leading-[125px] 2xl:leading-[140px] text-[#23194F] font-semibold text-center 2xl:text-end z-10">
+        <h1 className="relative mt-[24px] md:mt-[0px] text-[58px] md:text-[65px] xl:text-[85px] 2xl:text-[110px] text-[#23194F] font-semibold text-center 2xl:text-end z-10">
           AGENCIA DE <br />
-          <span className="xl:mr-[-115px] px-10 border-[2px] text-outline border-[#23194F] rounded-full pt-3">
+          <span className="xl:mr-[-115px] px-10 border-[2px] text-outline border-[#23194F] rounded-full ">
             BRANDING
           </span>
           <br />

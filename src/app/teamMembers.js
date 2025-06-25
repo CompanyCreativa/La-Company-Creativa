@@ -100,12 +100,7 @@ export const teamMembers = [
     profesion: "Creativa Gráfica",
     position: 12,
   },
-  {
-    img: sebasImg,
-    name: "Sebastían Salavarrieta",
-    profesion: "Community Manager",
-    position: 14,
-  },
+
   {
     img: dannitwoImg,
     name: "Daniela Soto",

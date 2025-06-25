@@ -114,6 +114,11 @@ export default function Page() {
             title="Envases a la medida - Minipet"
             link="/portafolio/minipet"
           />
+          <GridCard
+            image={minipet}
+            title="Envases a la medida - Minipet"
+            link="/portafolio/distrito-florida"
+          />
         </div>
       </Section>
       <Section>

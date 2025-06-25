@@ -139,11 +139,7 @@ export default function Logo() {
             <h3 className="z-10 text-[18px] xl:text-[24px] 2xl:text-[32px] font-semibold text-[#23194F] transition-colors duration-500 group-hover:text-white mr-auto">
               {phrase.text}
             </h3>
-            <ArrowTopRight
-              className="lg:hidden z-10 transition-colors duration-500 group-hover:text-white w-[25px] 2xl:w-auto"
-              color="#F55548"
-            />
-            <ArrowTopRight className="hidden lg:block z-10 w-[25px] 2xl:w-auto transition-colors duration-500 text-[#23194F] group-hover:text-white" />
+            <ArrowTopRight className="hidden lg:block z-10 w-[25px] 2xl:w-auto transition-colors duration-500  text-[#23194F] group-hover:text-white" />
           </div>
         ))}
       </div>

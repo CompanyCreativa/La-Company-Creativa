@@ -1,7 +1,7 @@
 import Image from "next/image";
 import brandingMainImage from "/public/branding/branding_main_image.png";
 
-export default function MainSection() {
+export default function MainSection({ city }) {
   return (
     <div className="-mt-[88.64px] md:mt-[80px] -mx-8 lg:mx-0 flex justify-between">
       <div className="2xl:pb-24 flex flex-col justify-center lg:justify-start">
@@ -17,13 +17,13 @@ export default function MainSection() {
           <span className="font-semibold">¿Tu marca se ve,</span> pero no se
           siente?
         </h2>
-        <h1 className="relative mt-[24px] md:mt-[0px] text-[58px] md:text-[65px] xl:text-[85px] 2xl:text-[110px] text-[#23194F] font-semibold text-center 2xl:text-end z-10 SpaceGrotesk">
+        <h1 className="relative mt-[24px] md:mt-[0px] text-[58px] md:text-[65px] xl:text-[85px] 2xl:text-[110px] text-[#23194F] font-semibold text-center 2xl:text-end z-10 SpaceGrotesk uppercase">
           AGENCIA DE <br />
           <span className="SpaceGrotesk xl:mr-[-115px] px-10 inline-block border border-[2px] text-outline border-[#23194F] rounded-full text-center">
             BRANDING
           </span>
           <br />
-          EN MEDELLÍN
+          EN {city}
         </h1>
         <h2 className="hidden lg:block 2xl:mt-[-14px] text-[24px] 2xl:text-[32px] text-companySalmon">
           <span className="font-semibold">¿Tu marca</span> se ve, pero no se

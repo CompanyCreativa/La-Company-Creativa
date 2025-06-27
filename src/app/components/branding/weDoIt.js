@@ -7,11 +7,14 @@ import visual from "/public/branding/visual.png";
 import yourBrand from "/public/branding/your_brand.png";
 import decorationBranding from "/public/branding/decoration_branding.png";
 
-export default function weDoIt() {
+export default function weDoIt({ city }) {
   return (
     <div>
-      <h3 className="text-[28px] xl:text-[29px] 2xl:text-[33px] SpaceGrotesk font-bold text-[#23194F] uppercase text-center mb-4">
-        Agencia experta en branding en medellin
+      <h3 className="text-3xl 2xl:text-5xl font-bold text-[#23194F] uppercase text-center mb-8 2xl:mb-4">
+        <span className="text-companySalmon font-light">
+          Agencia de branding
+        </span>{" "}
+        en {city}
       </h3>
       <div className="flex flex-col justify-center xl:bg-[#FFFFFF] xl:shadow-[0px_0px_16px_rgba(0,0,0,0.25)] xl:p-[42px] 2xl:p-[92px] gap-4">
         <h3 className="text-[28px] xl:text-[29px] 2xl:text-[33px] SpaceGrotesk font-bold text-[#23194F] uppercase text-center">
@@ -46,15 +49,17 @@ export default function weDoIt() {
             <div className="flex gap-4 items-center">
               <Image src={estrategico} alt="Estrategico" />
               <p className="text-[22px] xl:text-[20px] 2xl:text-[24px] font-light text-[#23194F] SpaceGrotesk">
-                Escuchamos tu <span className="font-medium">historia,</span>
-                <br /> mercado y propósito
+                Definimos el concepto
+                <span className="font-medium">
+                  <br /> estratégico
+                </span>
               </p>
             </div>
             <div className="flex gap-4 items-center">
               <Image src={visual} alt="Visual" />
               <p className="text-[22px] xl:text-[20px] 2xl:text-[24px] font-light text-[#23194F] SpaceGrotesk">
-                Escuchamos tu <span className="font-medium">historia,</span>
-                <br /> mercado y propósito
+                Diseñamos todo <span className="font-medium">el universo</span>
+                <br /> visual y verbal
               </p>
             </div>
           </div>
@@ -62,8 +67,10 @@ export default function weDoIt() {
         <div className="w-full flex gap-4 items-center justify-center mt-12 xl:mt-14">
           <Image src={yourBrand} alt="Your brand" />
           <p className="text-[22px] xl:text-[20px] 2xl:text-[24px] font-light text-[#23194F] SpaceGrotesk">
-            Escuchamos tu <span className="font-medium">historia,</span>
-            <br /> mercado y propósito
+            Entregamos <span className="font-medium">herramientas</span> claras
+            para
+            <br /> aplicar<span className="font-medium"> tu marca</span> con
+            coherencia
           </p>
         </div>
       </div>

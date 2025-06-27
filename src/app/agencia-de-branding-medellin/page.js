@@ -1,4 +1,4 @@
-import MainSection from "../components/realstate/mainSection";
+import MainSection from "../components/branding/mainSection";
 import WhatWeDo from "../components/branding/whatWeDo";
 import BuildBrand from "../components/branding/buildBrand";
 import WeDoIt from "../components/branding/weDoIt";
@@ -13,12 +13,12 @@ export default function page() {
   return (
     <div>
       <BrandingHeader />
-      <div className="flex flex-col bg-[#F2F1ED] px-8 lg:px-14 xl:px-20 2xl:px-16 gap-[116px]">
-        <MainSection />
+      <div className="flex flex-col bg-[#F2F1ED] px-8 lg:px-14 xl:px-20 2xl:px-24 gap-[116px]">
+        <MainSection city="Medellín" />
         <Logo />
         <WhatWeDo />
-        <BuildBrand city="Bogotá" />
-        <WeDoIt city="Bogotá" />
+        <BuildBrand city={"Medellín"}/>
+        <WeDoIt city={"Medellín"}/>
         <CreateBrand />
         <FrequentQuestions />
         <FormBranding />

@@ -8,7 +8,7 @@ import brandbook from "/public/branding/brandbook.png";
 import voz from "/public/branding/voz.png";
 import aplicaciones from "/public/branding/aplicaciones.png";
 
-export default function buildBrand() {
+export default function buildBrand({ city }) {
   const services = [
     {
       image: naming,
@@ -96,7 +96,7 @@ export default function buildBrand() {
   return (
     <section className="flex flex-col justify-center gap-4">
       <h4 className="inline-block w-auto text-[24px] xl:text-[20px] 2xl:text-[24px] font-medium text-companySalmon uppercase text-center border border-companySalmon border-[1px] px-2 py-1 xl:py-2 xl:px-4 mx-auto rounded-full SpaceGrotesk">
-        Agencia de branding
+        agencia de Branding en {city}
       </h4>
       <h3 className="text-[28px] xl:text-[29px] 2xl:text-[33px] SpaceGrotesk font-bold text-[#23194F] uppercase text-center">
         que construye marca, <br className="lg:hidden" />
@@ -123,8 +123,8 @@ export default function buildBrand() {
             </p>
           </div>
         ))}
-        <div className="flex flex-col gap-3 justify-end">
-          <button className="px-[13px] py-[20px] text-[14px] xl:text-[13px] bg-companySalmon xl:bg-[#FFF8EA] text-[#FFF8EA] xl:text-[#23194F] xl:border xl:border-x-[12px] xl:border-y-[8px] border-companySalmon robout uppercase hover:bg-companySalmon hover:text-[#FFF8EA] transition-all duration-300 SpaceGrotesk lg:robout">
+        <div className="flex flex-col gap-3 justify-center">
+          <button className="px-[13px] py-[20px] text-[14px] xl:text-[13px] bg-companySalmon xl:bg-[#FFF8EA] text-[#FFF8EA] xl:text-[#23194F] xl:border xl:border-x-[12px] xl:border-y-[8px] border-companySalmon robout uppercase hover:bg-companySalmon hover:text-[#FFF8EA] transition-all duration-300  lg:robout">
             Solicita diagnóstico gratuito
           </button>
         </div>

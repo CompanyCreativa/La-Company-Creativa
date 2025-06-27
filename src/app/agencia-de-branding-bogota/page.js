@@ -14,11 +14,11 @@ export default function page() {
     <div>
       <BrandingHeader />
       <div className="flex flex-col bg-[#F2F1ED] px-8 lg:px-14 xl:px-20 2xl:px-24 gap-[116px]">
-        <MainSection />
+        <MainSection city="Bogotá"/>
         <Logo />
         <WhatWeDo />
-        <BuildBrand />
-        <WeDoIt />
+        <BuildBrand city="Bogotá"/>
+        <WeDoIt city="Bogotá"/>
         <CreateBrand />
         <FrequentQuestions />
         <FormBranding />

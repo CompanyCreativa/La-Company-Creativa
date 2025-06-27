@@ -1,9 +1,9 @@
 import PublicLayout from "../components/publicLayout";
 
 export const metadata = {
-  title: "Agencia de Branding | La Company Creativa",
+  title: "Agencia de Branding en Medellín | La Company Creativa",
   description:
-    "Agencia especialista en Pauta Digital en Colombia, experta en campañas que venden. Creamos estrategias digitales en Meta y Google.",
+    "En La Company Creativa somos especialistas en branding en Medellín. Creamos marcas con propósito, diseño estratégico y diferenciación real.",
 };
 
 export default function BrandingPage({ children }) {

@@ -7,5 +7,5 @@ export const metadata = {
 };
 
 export default function BrandingPage({ children }) {
-  return <PublicLayout page="proyectos-inmobiliarios">{children}</PublicLayout>;
+  return <PublicLayout page="real-estate">{children}</PublicLayout>;
 }

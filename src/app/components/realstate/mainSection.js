@@ -1,54 +1,56 @@
 import Image from "next/image";
-import brandingMainImage from "/public/branding/branding_main_image.png";
+
 import realStateMainBanner from "/public/realstate/realstate-main-banner.png";
 
 export default function MainSection({ city }) {
   return (
-    <div className="-mt-[88.64px] md:mt-[40px] -mx-8 lg:mx-0 flex justify-between w-full">
-      <div className="w-3/5 2xl:pb-24 flex flex-col justify-center lg:justify-center">
-        <div className="relative w-full  z-0">
-          <Image
-            src={brandingMainImage}
-            alt="branding image"
-            className="lg:hidden w-full object-cover"
-          />
-          <div className="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-black/50 to-transparent pointer-events-none" />
-        </div>
-        <h2 className="lg:hidden z-10 relative text-[21px] -mt-[40px] text-center text-[#F2F1ED]">
-          <span className="font-semibold">¿Tu marca se ve,</span> pero no se s
-        </h2>
-        <h1 className="relative mt-[24px] md:mt-[0px] text-[58px] md:text-[65px] xl:text-[85px] 2xl:text-8xl text-companySalmon font-semibold 2xl:text-start z-10 SpaceGrotesk uppercase">
+    <div className="-mt-[88.64px] md:mt-[40px] lg:mx-0 flex justify-between w-full">
+      <div className="lg:w-1/2 mt-20 flex flex-col justify-center lg:justify-center">
+        <h1 className="relative mt-[24px] md:mt-[0px] text-5xl md:text-[65px] xl:text-6xl 2xl:text-8xl text-companySalmon font-semibold 2xl:text-start z-10 SpaceGrotesk uppercase">
           Conectamos <br />
-          <span className="SpaceGrotesk text-start 2xl:text-7xl text-[#23194F] font-light">
+          <span className="hidden lg:block SpaceGrotesk text-start xl:text-5xl 2xl:text-7xl text-[#23194F] font-light">
             proyectos&nbsp;inmobiliarios
             <br />
-            con{" "}
-            <span className="2xl:text-7xl SpaceGrotesk font-semibold">
-              compradores reales
+            con&nbsp;
+            <span className=" SpaceGrotesk font-semibold">
+              compradores&nbsp;reales
             </span>
           </span>
+          <span className="block lg:hidden SpaceGrotesk text-4xl text-start text-[#23194F] font-light leading-[1.2]">
+            proyectos inmobiliarios con
+            <strong className="leading-[1.2] SpaceGrotesk font-semibold">
+              {" "}
+              compradores reales
+            </strong>
+          </span>
         </h1>
-        <h2 className="hidden lg:block text-xl text-[#23194F]">
+        <h4 className="hidden lg:block xl:text-md 2xl:text-xl text-[#23194F]">
           Somos especialistas en{" "}
           <span className="font-semibold"> publicidad y mercadeo </span>
           para inmobiliarias.
-        </h2>
-        <h2 className="mt-[16px] text-[20px] 2xl:text-[32px] text-[#23194F] text-center lg:text-left">
-          <span className="font-semibold">Creamos marcas</span> que no solo se
-          ven bien:
-        </h2>
-        <h3 className="SpaceGrotesk mt-[14px] text-[20px] inline-block w-auto text-companySalmon border border-companySalmon border-[1px] py-1 px-4 mx-auto lg:mr-auto lg:mx-0 rounded-full font-regular">
-          Se entienden, se recuerdan,{" "}
-          <span className="font-semibold">se eligen</span>
-        </h3>
-        <button className="SpaceGrotesk lg:hidden p-[20px] mt-[24px] mx-6 text-[18px] bg-companySalmon text-[#F2F1ED] robout uppercase font-semibold">
-          Solicita diagnóstico gratuito
-        </button>
-        <button className="SpaceGrotesk lg:hidden p-[20px] mt-[24px] mx-6 text-[18px] bg-[#F2F1ED] border border-companySalmon border-[1px] text-companySalmon robout uppercase font-semibold">
-          Ver proyectos de branding
+        </h4>
+        <div className="flex justify-start">
+          <button className="inline-block robout px-6 py-3 mt-4 2xl:mt-6 text-sm 2xl:text-lg font-semibold bg-companySalmon hover:bg-[#23194F] text-[#FFF8EA] transition duration-300 ease-in-out">
+            Solicita diagnóstico gratuito
+          </button>
+        </div>
+        <div
+          className="relative flex flex-col md:flex-row lg:items-end justify-end lg:justify-around gap-6 px-4 xl:px-10 py-4 xl:py-10 2xl:py-16 mt-10 bg-no-repeat bg-center bg-cover min-h-[207px] xl:min-h-[308px] 2xl:min-h-[400px] 2xl:mt-auto rounded-2xl lg:rounded-0
+             bg-[url('/realstate/decoration1Mobile.png')] md:bg-[url('/realstate/decoration1.png')]"
+        >
+          <h3 className="text-2xl 2xl:text-3xl text-[#FFF8EA] font-light robout text-start max-w-lg">
+            Somos expertos <br />
+            en comunicación <span className="font-semibold">inmobiliaria</span>
+          </h3>
+          <button className="hidden md:flex w-auto inline-block robout px-6 py-3 text-sm 2xl:text-lg font-semibold bg-companySalmon hover:bg-[#23194F] text-[#FFF8EA] transition duration-300 ease-in-out">
+            Ver casos de éxito
+          </button>
+        </div>
+        <button className="lg:hidden w-auto inline-block robout px-6 py-3 text-sm 2xl:text-lg font-semibold bg-companySalmon hover:bg-[#23194F] text-[#FFF8EA] transition duration-300 ease-in-out mt-6">
+          Ver casos de éxito
         </button>
       </div>
-      <div className="w-2/5 flex justify-end">
+      <div className="hidden lg:block w-1/2 flex justify-end">
         <Image
           src={realStateMainBanner}
           alt="realstate image"

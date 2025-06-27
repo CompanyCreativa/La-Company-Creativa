@@ -2,22 +2,23 @@ import MainSection from "../components/realstate/mainSection";
 import WhatWeDo from "../components/branding/whatWeDo";
 import BuildBrand from "../components/branding/buildBrand";
 import WeDoIt from "../components/branding/weDoIt";
-import Logo from "../components/branding/logo";
 import CreateBrand from "../components/branding/createBrand";
 import FrequentQuestions from "../components/branding/frequentQuestions";
 import FormBranding from "../components/branding/formBranding";
 import BrandingHeader from "../components/branding/brandingHeader";
 import FooterBranding from "../components/branding/footerBranding";
+import Pains from "../components/realstate/pains";
+import StepsWork from "../components/realstate/stepsWork";
 
 export default function page() {
   return (
-    <div>
+    <div className="bg-[#F2F1ED]">
       <BrandingHeader />
-      <div className="flex flex-col bg-[#F2F1ED] px-8 lg:px-14 xl:px-20 2xl:px-16 gap-[116px]">
+      <div className="flex flex-col  px-7 lg:px-14 xl:px-12 2xl:px-16 gap-[116px] max-w-[1920px] mx-auto">
         <MainSection />
-        <Logo />
+        <Pains />
         <WhatWeDo />
-        <BuildBrand city="Bogotá" />
+        <StepsWork city="Bogotá" />
         <WeDoIt city="Bogotá" />
         <CreateBrand />
         <FrequentQuestions />

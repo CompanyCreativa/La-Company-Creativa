@@ -17,7 +17,7 @@ export default async function Page() {
         "¿Qué es una estrategia 360 y cómo la aplicamos en La Company Creativa?",
       date: "24 de Julio - 2024",
       image: imageBlog1,
-      link: "/blog/que-es-una-estrategia-360-la-company-creativa",
+      link: "/blog/que-es-una-estrategia-360-en-la-company-creativa",
     },
     {
       title: "La pauta digital: como llegarle a la gente correcta (sin gritar)",

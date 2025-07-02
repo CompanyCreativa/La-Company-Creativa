@@ -8,6 +8,8 @@ import FooterBranding from "../components/branding/footerBranding";
 import Pains from "../components/realstate/pains";
 import StepsWork from "../components/realstate/stepsWork";
 import Services from "../components/realstate/services";
+import PurchaseDecision from "../components/realstate/purchaseDecision";
+import Proyects from "../components/realstate/proyects";
 
 export default function page() {
   return (
@@ -17,6 +19,8 @@ export default function page() {
         <MainSection />
         <Pains />
         <Services />
+        <PurchaseDecision />
+        <Proyects />
         <StepsWork city="Bogotá" />
         <WeDoIt city="Bogotá" />
         <CreateBrand />

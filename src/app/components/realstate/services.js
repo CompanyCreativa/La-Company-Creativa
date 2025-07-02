@@ -132,7 +132,7 @@ export default function Services({ city }) {
   ];
 
   return (
-    <section className="flex flex-col justify-center gap-10 bg-[url('/realstate/backgroundSection2.png')] bg-no-repeat bg-cover p-[42px] xl:p-10 2xl:p-16 2xl:pb-[24px] rounded-3xl">
+    <section className="flex flex-col justify-center gap-10 bg-[url('/realstate/backgroundSection2.png')] bg-no-repeat bg-cover p-8 xl:p-10 2xl:p-16 2xl:pb-[24px] rounded-3xl">
       <h2 className="SpaceGrotesk text-[22px] xl:text-4xl 2xl:text-5xl mb-4 uppercase font-light text-white xl:text-center">
         <span className="SpaceGrotesk font-semibold text-companySalmon">
           No hacemos
@@ -162,56 +162,60 @@ export default function Services({ city }) {
           </div>
         ))}
       </div>
-      <Swiper
-        modules={[Navigation, Autoplay]}
-        loop={true}
-        speed={2500}
-        autoplay={{
-          delay: 0,
-          disableOnInteraction: false,
-        }}
-        spaceBetween={30}
-        navigation={{
-          nextEl: ".next-swiper-button",
-          prevEl: ".prev-swiper-button",
-        }}
-        breakpoints={{
-          1024: {
-            slidesPerView: 2,
-          },
-          1440: {
-            slidesPerView: 3,
-          },
-        }}
-      >
-        {services.map((service) => (
-          <SwiperSlide key={service.description}>
-            <div className="flex flex-col gap-1 xl:gap-2 2xl:gap-3">
-              {service.image}
-              <h3 className="text-[28px] xl:text-xl 2xl:text-2xl font-semibold text-[#fff8ea] text-left mt-3 SpaceGrotesk">
-                {service.title}
-                <span className="text-companySalmon font-bold">.</span>
-              </h3>
-              <div className="w-full h-[1px] bg-[#fff8ea] mt-2"></div>
-              <p className="xl:text-md 2xl:text-lg font-light text-[#fff8ea] text-left mt-2">
-                {service.description}
-              </p>
-            </div>
-          </SwiperSlide>
-        ))}
-      </Swiper>
-
+      <div className="lg:hidden">
+        <Swiper
+          modules={[Navigation, Autoplay]}
+          loop={true}
+          speed={2500}
+          autoplay={{
+            delay: 0,
+            disableOnInteraction: false,
+          }}
+          spaceBetween={30}
+          navigation={{
+            nextEl: ".next-swiper-button",
+            prevEl: ".prev-swiper-button",
+          }}
+          breakpoints={{
+            1024: {
+              slidesPerView: 2,
+            },
+            1440: {
+              slidesPerView: 3,
+            },
+          }}
+        >
+          {services.map((service) => (
+            <SwiperSlide key={service.description}>
+              <div className="flex flex-col gap-1 bg-white/10 backdrop-blur-md p-4 rounded-2xl">
+                {service.image}
+                <h3 className="text-lg font-semibold text-[#fff8ea] text-left mt-3 SpaceGrotesk">
+                  {service.title}
+                  <span className="text-companySalmon font-bold">.</span>
+                </h3>
+                <div className="w-full h-[1px] bg-[#fff8ea] mt-2"></div>
+                <p className="text-sm font-light text-[#fff8ea] text-left mt-2">
+                  {service.description}
+                </p>
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
       <div className="flex justify-center">
         <button className="inline-block robout px-10 py-5 mt-4 2xl:mt-6 text-sm 2xl:text-lg bg-companySalmon hover:bg-[#FFF8EA] text-[#FFF8EA] hover:text-companySalmon transition duration-300 ease-in-out">
           Contactar a un asesor
         </button>
       </div>
-      <p className="text-center xl:text-md 2xl:text-lg font-light text-[#fff8ea]">
+      <p className="hidden lg:block text-center xl:text-md 2xl:text-lg font-light text-[#fff8ea]">
         Somos la agencia que entiende el{" "}
         <span className="font-semibold">negocio inmobiliario:</span> creamos
         estrategia, producimos contenido
         <br /> y activamos campañas que{" "}
         <span className="font-semibold">venden de verdad.</span>
+      </p>
+      <p className="text-sm lg:hidden text-center font-light text-[#fff8ea]">
+        Damos forma, voz y alcance a <span className="font-semibold">tu proyecto</span>
       </p>
     </section>
   );

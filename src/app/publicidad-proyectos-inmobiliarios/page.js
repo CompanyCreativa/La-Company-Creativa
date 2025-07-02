@@ -1,6 +1,4 @@
 import MainSection from "../components/realstate/mainSection";
-import WhatWeDo from "../components/branding/whatWeDo";
-import BuildBrand from "../components/branding/buildBrand";
 import WeDoIt from "../components/branding/weDoIt";
 import CreateBrand from "../components/branding/createBrand";
 import FrequentQuestions from "../components/branding/frequentQuestions";
@@ -9,6 +7,7 @@ import BrandingHeader from "../components/branding/brandingHeader";
 import FooterBranding from "../components/branding/footerBranding";
 import Pains from "../components/realstate/pains";
 import StepsWork from "../components/realstate/stepsWork";
+import Services from "../components/realstate/services";
 
 export default function page() {
   return (
@@ -17,7 +16,7 @@ export default function page() {
       <div className="flex flex-col  px-7 lg:px-14 xl:px-12 2xl:px-16 gap-[116px] max-w-[1920px] mx-auto">
         <MainSection />
         <Pains />
-        <WhatWeDo />
+        <Services />
         <StepsWork city="Bogotá" />
         <WeDoIt city="Bogotá" />
         <CreateBrand />

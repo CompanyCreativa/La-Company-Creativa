@@ -12,6 +12,7 @@ import InvoiceCheck from "../SVGicons/invoiceCheck";
 import SuspensionCheck from "../SVGicons/suspensionCheck";
 import CartCheck from "../SVGicons/cartCheck";
 import TouchScreen from "../SVGicons/touchScreen";
+import Cicle from "../SVGicons/cicle";
 
 export default function Pains() {
   const points = [

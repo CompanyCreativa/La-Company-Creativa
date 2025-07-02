@@ -30,7 +30,7 @@ export default function MainSection({ city }) {
           para inmobiliarias.
         </h4>
         <div className="flex justify-start">
-          <button className="inline-block robout px-6 py-3 mt-4 2xl:mt-6 text-sm 2xl:text-lg font-semibold bg-companySalmon hover:bg-[#23194F] text-[#FFF8EA] transition duration-300 ease-in-out">
+          <button className="inline-block robout px-6 py-3 mt-4 2xl:mt-6 text-sm 2xl:text-lg bg-companySalmon hover:bg-[#23194F] text-[#FFF8EA] transition duration-300 ease-in-out">
             Solicita diagnóstico gratuito
           </button>
         </div>
@@ -42,11 +42,11 @@ export default function MainSection({ city }) {
             Somos expertos <br />
             en comunicación <span className="font-semibold">inmobiliaria</span>
           </h3>
-          <button className="hidden md:flex w-auto inline-block robout px-6 py-3 text-sm 2xl:text-lg font-semibold bg-companySalmon hover:bg-[#23194F] text-[#FFF8EA] transition duration-300 ease-in-out">
+          <button className="hidden md:flex w-auto inline-block robout px-6 py-3 text-sm 2xl:text-lg bg-companySalmon hover:bg-[#23194F] text-[#FFF8EA] transition duration-300 ease-in-out">
             Ver casos de éxito
           </button>
         </div>
-        <button className="lg:hidden w-auto inline-block robout px-6 py-3 text-sm 2xl:text-lg font-semibold bg-companySalmon hover:bg-[#23194F] text-[#FFF8EA] transition duration-300 ease-in-out mt-6">
+        <button className="lg:hidden w-auto inline-block robout px-6 py-3 text-sm 2xl:text-lg bg-companySalmon hover:bg-[#23194F] text-[#FFF8EA] transition duration-300 ease-in-out mt-6">
           Ver casos de éxito
         </button>
       </div>

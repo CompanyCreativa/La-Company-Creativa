@@ -7,6 +7,7 @@ import sistema from "/public/branding/sistema.png";
 import brandbook from "/public/branding/brandbook.png";
 import voz from "/public/branding/voz.png";
 import aplicaciones from "/public/branding/aplicaciones.png";
+import Link from "next/link";
 
 export default function buildBrand({ city }) {
   const services = [
@@ -124,9 +125,13 @@ export default function buildBrand({ city }) {
           </div>
         ))}
         <div className="flex flex-col gap-3 justify-center">
-          <button className="px-[13px] py-[20px] text-[14px] xl:text-[13px] bg-companySalmon xl:bg-[#FFF8EA] text-[#FFF8EA] xl:text-[#23194F] xl:border xl:border-x-[12px] xl:border-y-[8px] border-companySalmon robout uppercase hover:bg-companySalmon hover:text-[#FFF8EA] transition-all duration-300  lg:robout">
+          <Link
+            className="px-[13px] py-[20px] text-[14px] xl:text-[13px] bg-companySalmon xl:bg-[#FFF8EA] text-[#FFF8EA] xl:text-[#23194F] xl:border xl:border-x-[12px] xl:border-y-[8px] border-companySalmon robout uppercase hover:bg-companySalmon hover:text-[#FFF8EA] transition-all duration-300 lg:robout text-center"
+            href="https://wa.link/pemtg8"
+            target="_blank"
+          >
             Solicita diagnóstico gratuito
-          </button>
+          </Link>
         </div>
       </div>
     </section>

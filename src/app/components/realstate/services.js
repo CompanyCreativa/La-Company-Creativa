@@ -14,6 +14,7 @@ import { Autoplay, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/autoplay";
+import Link from "next/link";
 
 export default function Services({ city }) {
   const services = [
@@ -203,9 +204,13 @@ export default function Services({ city }) {
         </Swiper>
       </div>
       <div className="flex justify-center">
-        <button className="inline-block robout px-10 py-5 mt-4 2xl:mt-6 text-sm 2xl:text-lg bg-companySalmon hover:bg-[#FFF8EA] text-[#FFF8EA] hover:text-companySalmon transition duration-300 ease-in-out">
+        <Link
+          className="inline-block robout px-10 py-5 mt-4 2xl:mt-6 text-sm 2xl:text-lg bg-companySalmon hover:bg-[#FFF8EA] text-[#FFF8EA] hover:text-companySalmon transition duration-300 ease-in-out"
+          href="https://wa.link/pemtg8"
+          target="_blank"
+        >
           Contactar a un asesor
-        </button>
+        </Link>
       </div>
       <p className="hidden lg:block text-center xl:text-md 2xl:text-lg font-light text-[#fff8ea]">
         Somos la agencia que entiende el{" "}
@@ -215,7 +220,8 @@ export default function Services({ city }) {
         <span className="font-semibold">venden de verdad.</span>
       </p>
       <p className="text-sm lg:hidden text-center font-light text-[#fff8ea]">
-        Damos forma, voz y alcance a <span className="font-semibold">tu proyecto</span>
+        Damos forma, voz y alcance a{" "}
+        <span className="font-semibold">tu proyecto</span>
       </p>
     </section>
   );

@@ -1,7 +1,7 @@
 import PublicLayout from "../components/publicLayout";
 
 export const metadata = {
-  title: "Agencia de Branding | La Company Creativa",
+  title: "Publicidad para proyectos inmobiliarios | La Company Creativa",
   description:
     "Agencia especialista en Pauta Digital en Colombia, experta en campañas que venden. Creamos estrategias digitales en Meta y Google.",
 };

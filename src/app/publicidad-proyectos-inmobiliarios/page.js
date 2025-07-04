@@ -1,15 +1,13 @@
 import MainSection from "../components/realstate/mainSection";
-import WeDoIt from "../components/branding/weDoIt";
-import CreateBrand from "../components/branding/createBrand";
-import FrequentQuestions from "../components/branding/frequentQuestions";
-import FormBranding from "../components/branding/formBranding";
+import FrequentQuestions from "../components/realstate/frequentQuestions";
 import BrandingHeader from "../components/branding/brandingHeader";
 import FooterBranding from "../components/branding/footerBranding";
 import Pains from "../components/realstate/pains";
-import StepsWork from "../components/realstate/stepsWork";
 import Services from "../components/realstate/services";
 import PurchaseDecision from "../components/realstate/purchaseDecision";
 import Proyects from "../components/realstate/proyects";
+import Experience from "../components/branding/experience";
+import FormRealstate from "../components/realstate/formRealstate";
 
 export default function page() {
   return (
@@ -21,11 +19,9 @@ export default function page() {
         <Services />
         <PurchaseDecision />
         <Proyects />
-        <StepsWork city="Bogotá" />
-        <WeDoIt city="Bogotá" />
-        <CreateBrand />
+        <Experience />
         <FrequentQuestions />
-        <FormBranding />
+        <FormRealstate />
         <FooterBranding />
       </div>
     </div>

@@ -10,9 +10,7 @@ import "swiper/css/pagination";
 
 import rebrandingIcon from "/public/branding/rebranding.png";
 import designSystemIcon from "/public/branding/design_system.png";
-import motionGraphicsIcon from "/public/branding/motion_graphics.png";
 import conceptualization from "/public/branding/conceptualization.png";
-import instagramVerified from "/public/branding/instagram_verified.png";
 import logoRetiroAlto from "/public/retiro-alto/logoWhite.png";
 import logoDistritoFlorida from "/public/distrito-florida/distritoFloridaLogo-Vive.png";
 import logoZigzag from "/public/zig-zag/zigzagLogo.png";
@@ -92,12 +90,14 @@ export default function Proyects() {
   ];
 
   return (
-    <section className="flex flex-col justify-center">
-      <h3 className="text-[28px] xl:text-[29px] 2xl:text-[33px] SpaceGrotesk text-[#23194F] uppercase text-center">
-        <span className="font-semibold SpaceGrotesk">Esto es lo que pasa</span>{" "}
+    <section className="flex flex-col justify-center" id="proyects">
+      <h3 className="text-xl xl:text-4xl 2xl:text-5xl SpaceGrotesk text-[#23194F] uppercase text-start lg:text-center">
+        <span className="text-4xl 2xl:text-5xl font-semibold SpaceGrotesk">
+          Esto es lo que pasa
+        </span>{" "}
         cuando se hace con estrategia
       </h3>
-      <h3 className="text-[28px] xl:text-[29px] 2xl:text-[33px] SpaceGrotesk font-bold text-companySalmon uppercase text-center">
+      <h3 className="text-xl xl:text-4xl xl:text-4xl 2xl:text-5xl SpaceGrotesk font-bold text-companySalmon uppercase text-start lg:text-center">
         (Y con alma)
       </h3>
       <Swiper

@@ -3,17 +3,13 @@ import Image from "next/image";
 import decoration3 from "/public/branding/decoration3_branding.png";
 import Form from "./form";
 
-export default function FormBranding() {
+export default function FormRealstate() {
   return (
-    <div className="flex flex-col lg:flex-row px-[24px] justify-between gap-8 pt-[99px] pb-[85px] bg-[#fff] shadow-[0px_0px_16px_rgba(0,0,0,0.25)] 2xl:px-[120px]" id="contact-branding">
+    <div className="flex flex-col lg:flex-row px-[24px] justify-between gap-8 pt-[99px] pb-[85px] bg-[#fff] shadow-[0px_0px_16px_rgba(0,0,0,0.25)] 2xl:px-[120px]">
       <div className="flex flex-col gap-8">
         <h2 className="z-10 text-center md:text-start text-[31px] md:text-[52px] 2xl:text-[66px]  SpaceGrotesk text-companySalmon font-semibold uppercase">
           Hablemos <br />
-          <span className="text-[#23194F]">podemos hacerlo</span>
-          <br />
-          <span className="md:mr-[-115px] text-outline border-[#23194F] border-[2px] rounded-full px-10 ml-[0px] xl:ml-[200px] 2xl:ml-[300px] SpaceGrotesk">
-            juntos
-          </span>
+          <span className="text-[#23194F] font-light">podemos hacerlo juntos</span>
         </h2>
         <Image
           src={decoration3}

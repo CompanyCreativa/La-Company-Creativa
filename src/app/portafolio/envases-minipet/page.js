@@ -16,9 +16,9 @@ import section3Mobile1 from "/public/minipet/section3_mobile1.png";
 import section3Mobile2 from "/public/minipet/section3_mobile2.png";
 
 export const metadata = {
-  title: "Navidad al trabajo | Campaña | Agencia La Company Creativa",
+  title: "Envases Minipet | Campaña | Agencia La Company Creativa",
   description:
-    "En Navidad, llevamos la alegría a quienes no podían estar con su familia. Una acción para acercar corazones, incluso en la distancia",
+    "Inspirados en la forma y propósito de Minipet, construimos una marca sostenible con un rebranding que resalta su versatilidad e identidad visual.",
 };
 
 export default function Page() {
@@ -38,7 +38,7 @@ export default function Page() {
         </div>
         <Breadcrumbs
           lastPage={"Portafolio"}
-          currentPage={"Navidad al trabajo"}
+          currentPage={"Envases Minipet"}
         />
         <TitleSection>
           <PortfolioTitle textColor="text-[#4299A2]">Minipet</PortfolioTitle>
@@ -79,13 +79,14 @@ export default function Page() {
       <Image src={section2} className="mt-16 w-full" />
       <Section className="bg-[#4299A2] flex justify-center items-center p-8 lg:p-16 lg:pb-14 mt-16">
         <p className="text-[#FFFFFF] mosk leading-8 xl:leading-6 2xl:leading-10 text-md xl:text-xl 2xl:text-2xl font-light">
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum."{" "}
+          Nuestro trabajo con Minipet demuestra cómo una estrategia de branding
+          sólida puede resolver retos reales de posicionamiento y percepción.
+          Más allá de crear un nuevo logotipo, desarrollamos una identidad que
+          comunica su verdadero valor: innovación, transformación y compromiso
+          con el medio ambiente. En La Company Creativa entendemos que el
+          branding no es solo diseño, es una herramienta poderosa para alinear
+          negocios sostenibles con su audiencia, construir confianza y
+          diferenciarse en el mercado.
         </p>
       </Section>
       <Image src={section3} className="mt-16 w-full hidden lg:block" />
@@ -105,7 +106,7 @@ export default function Page() {
       <Section>
         <Breadcrumbs
           lastPage={"Portafolio"}
-          currentPage={"Navidad al trabajo"}
+          currentPage={"Envases Minipet"}
         />
       </Section>
       <div className="-mt-12 lg:mt-0">

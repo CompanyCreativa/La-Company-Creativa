@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 import realStateMainBanner from "/public/realstate/realstate-main-banner.png";
+import Link from "next/link";
 
 export default function MainSection({ city }) {
   return (
@@ -30,9 +31,13 @@ export default function MainSection({ city }) {
           para inmobiliarias.
         </h4>
         <div className="flex justify-start">
-          <button className="inline-block robout px-6 py-3 mt-4 2xl:mt-6 text-sm 2xl:text-lg bg-companySalmon hover:bg-[#23194F] text-[#FFF8EA] transition duration-300 ease-in-out">
+          <Link
+            className="inline-block robout px-6 py-3 mt-4 2xl:mt-6 text-sm 2xl:text-lg bg-companySalmon hover:bg-[#23194F] text-[#FFF8EA] transition duration-300 ease-in-out"
+            href="https://wa.link/pemtg8"
+            target="_blank"
+          >
             Solicita diagnóstico gratuito
-          </button>
+          </Link>
         </div>
         <div
           className="relative flex flex-col md:flex-row lg:items-end justify-end lg:justify-around gap-6 px-4 xl:px-10 py-4 xl:py-10 2xl:py-16 mt-10 bg-no-repeat bg-center bg-cover min-h-[207px] xl:min-h-[308px] 2xl:min-h-[400px] 2xl:mt-auto rounded-2xl lg:rounded-0
@@ -42,13 +47,19 @@ export default function MainSection({ city }) {
             Somos expertos <br />
             en comunicación <span className="font-semibold">inmobiliaria</span>
           </h3>
-          <button className="hidden md:flex w-auto inline-block robout px-6 py-3 text-sm 2xl:text-lg bg-companySalmon hover:bg-[#23194F] text-[#FFF8EA] transition duration-300 ease-in-out">
+          <Link
+            className="hidden md:flex w-auto inline-block robout px-6 py-3 text-sm 2xl:text-lg bg-companySalmon hover:bg-[#FFF8EA] hover:text-companySalmon text-[#FFF8EA] transition duration-300 ease-in-out"
+            href="#proyects"
+          >
             Ver casos de éxito
-          </button>
+          </Link>
         </div>
-        <button className="lg:hidden w-auto inline-block robout px-6 py-3 text-sm 2xl:text-lg bg-companySalmon hover:bg-[#23194F] text-[#FFF8EA] transition duration-300 ease-in-out mt-6">
+        <Link
+          className="lg:hidden w-auto inline-block robout px-6 py-3 text-sm 2xl:text-lg bg-companySalmon hover:bg-[#FFF8EA] hover:text-companySalmon transition duration-300 ease-in-out mt-6"
+          href="#proyects"
+        >
           Ver casos de éxito
-        </button>
+        </Link>
       </div>
       <div className="hidden lg:block w-1/2 flex justify-end">
         <Image

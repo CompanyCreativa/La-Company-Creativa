@@ -21,6 +21,7 @@ import loveDesktop from "/public/portfolio/loveDesktop.png";
 import navidadDesktop from "/public/portfolio/navidadDesktop.png";
 import minipet from "/public/portfolio/minipet.png";
 import retiroAlto from "/public/portfolio/retiro_alto.png";
+import distritoFlorida from "/public/portfolio/distritoFlorida.png";
 
 export default function Page() {
   return (
@@ -112,11 +113,11 @@ export default function Page() {
           <GridCard
             image={minipet}
             title="Envases a la medida - Minipet"
-            link="/portafolio/minipet"
+            link="/portafolio/envases-minipet"
           />
           <GridCard
-            image={minipet}
-            title="Envases a la medida - Minipet"
+            image={distritoFlorida}
+            title="Vive la transformación - Distrito Florida"
             link="/portafolio/distrito-florida"
           />
         </div>

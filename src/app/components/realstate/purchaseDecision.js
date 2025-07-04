@@ -9,6 +9,7 @@ import StarFallMinimalistic from "../SVGicons/StarFallMinimalistic";
 import EyeScan from "../SVGicons/EyeScan";
 import Global from "../SVGicons/Global";
 import SmartHome from "../SVGicons/SmartHome";
+import Link from "next/link";
 
 export default function PurchaseDecision() {
   const points = [
@@ -107,9 +108,13 @@ export default function PurchaseDecision() {
             </div>
           ))}
           <div className="flex justify-center lg:justify-start ">
-            <button className="inline-block robout  px-6 py-3 mt-auto text-sm 2xl:text-lg bg-companySalmon hover:bg-[#23194F] text-[#FFF8EA] transition duration-300 ease-in-out">
+            <Link
+              className="inline-block robout  px-6 py-3 mt-auto text-sm 2xl:text-lg bg-companySalmon hover:bg-[#23194F] text-[#FFF8EA] transition duration-300 ease-in-out"
+              href="https://wa.link/pemtg8"
+              target="_blank"
+            >
               Solicita diagnóstico gratuito
-            </button>
+            </Link>
           </div>
         </div>
       </div>

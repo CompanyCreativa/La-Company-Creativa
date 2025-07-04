@@ -1,5 +1,6 @@
 import Image from "next/image";
 import brandingMainImage from "/public/branding/branding_main_image.png";
+import Link from "next/link";
 
 export default function MainSection({ city }) {
   return (
@@ -37,12 +38,20 @@ export default function MainSection({ city }) {
           Se entienden, se recuerdan,{" "}
           <span className="font-semibold">se eligen</span>
         </h3>
-        <button className="SpaceGrotesk lg:hidden p-[20px] mt-[24px] mx-6 text-[18px] bg-companySalmon text-[#F2F1ED] robout uppercase font-semibold">
+        <Link
+          className="SpaceGrotesk lg:hidden p-[20px] mt-[24px] mx-6 text-[18px] bg-companySalmon text-[#F2F1ED] robout uppercase font-semibold"
+          href="https://wa.link/pemtg8"
+          target="_blank"
+        >
           Solicita diagnóstico gratuito
-        </button>
-        <button className="SpaceGrotesk lg:hidden p-[20px] mt-[24px] mx-6 text-[18px] bg-[#F2F1ED] border border-companySalmon border-[1px] text-companySalmon robout uppercase font-semibold">
+        </Link>
+        <Link
+          className="SpaceGrotesk lg:hidden p-[20px] mt-[24px] mx-6 text-[18px] bg-[#F2F1ED] border border-companySalmon border-[1px] text-companySalmon robout uppercase font-semibold"
+          href="
+        #whatWeDo"
+        >
           Ver proyectos de branding
-        </button>
+        </Link>
       </div>
       <div className="hidden lg:block relative w-1/2 rounded-2xl overflow-hidden">
         {/* Imagen de fondo */}
@@ -61,12 +70,20 @@ export default function MainSection({ city }) {
 
         {/* Contenido (botones) */}
         <div className="w-full flex justify-around absolute z-10 px-4 py-10 text-white bottom-0">
-          <button className="p-[20px] text-[12px] 2xl:text-[13px] bg-[#FFF8EA] text-[#23194F] border border-x-[12px] border-y-[8px] border-companySalmon robout uppercase hover:bg-companySalmon hover:text-[#FFF8EA] transition-all duration-300">
+          <Link
+            className="p-[20px] text-[12px] 2xl:text-[13px] bg-[#FFF8EA] text-[#23194F] border border-x-[12px] border-y-[8px] border-companySalmon robout uppercase hover:bg-companySalmon hover:text-[#FFF8EA] transition-all duration-300"
+            href="https://wa.link/pemtg8"
+            target="_blank"
+          >
             Solicita diagnóstico gratuito
-          </button>
-          <button className="xl:p-[19px] 2xl:p-[20px] text-[12px] 2xl:text-[13px] bg-[#FFF8EA] text-[#23194F] border border-x-[12px] border-y-[8px] border-companySalmon robout uppercase hover:bg-companySalmon hover:text-[#FFF8EA] transition-all duration-300">
+          </Link>
+          <Link
+            className="xl:p-[19px] 2xl:p-[20px] text-[12px] 2xl:text-[13px] bg-[#FFF8EA] text-[#23194F] border border-x-[12px] border-y-[8px] border-companySalmon robout uppercase hover:bg-companySalmon hover:text-[#FFF8EA] transition-all duration-300"
+            href="
+        #whatWeDo"
+          >
             Ver proyectos de branding
-          </button>
+          </Link>
         </div>
       </div>
     </div>

@@ -13,6 +13,7 @@ import designSystemIcon from "/public/branding/design_system.png";
 import motionGraphicsIcon from "/public/branding/motion_graphics.png";
 import conceptualization from "/public/branding/conceptualization.png";
 import instagramVerified from "/public/branding/instagram_verified.png";
+import Link from "next/link";
 
 export default function WhatWeDo() {
   const projects = [
@@ -39,26 +40,7 @@ export default function WhatWeDo() {
           title: "Motion Graphics",
         },
       ],
-    },
-    {
-      url: "comfama_habitat.png",
-      title: "Crea, vive, conecta",
-      description:
-        "Bodega Hábitat es un proyecto de vivienda y talleres comerciales ubicado en el corazón del Perpetuo Socorro",
-      categories: [
-        {
-          icon: rebrandingIcon,
-          title: "branding",
-        },
-        {
-          icon: conceptualization,
-          title: "Conceptualización",
-        },
-        {
-          icon: designSystemIcon,
-          title: "Design System",
-        },
-      ],
+      link: "/portafolio/paco",
     },
     {
       url: "minipet.png",
@@ -83,6 +65,7 @@ export default function WhatWeDo() {
           title: "Design System",
         },
       ],
+      link: "/portafolio/envases-minipet",
     },
     {
       url: "zig_zag.png",
@@ -99,6 +82,7 @@ export default function WhatWeDo() {
           title: "Conceptualización",
         },
       ],
+      link: "/portafolio/zig-zag",
     },
     {
       url: "franca_co.png",
@@ -115,6 +99,7 @@ export default function WhatWeDo() {
           title: "Conceptualización",
         },
       ],
+      link: "/portafolio/franca",
     },
     {
       url: "retiro_alto.png",
@@ -134,11 +119,12 @@ export default function WhatWeDo() {
           title: "Diseño web",
         },
       ],
+      link: "/portafolio/retiro-alto",
     },
   ];
 
   return (
-    <section className="flex flex-col justify-center gap-4">
+    <section className="flex flex-col justify-center gap-4" id="whatWeDo">
       <h3 className="text-[28px] xl:text-[29px] 2xl:text-[33px] SpaceGrotesk font-bold text-[#23194F] uppercase text-center">
         Lo que hacemos, se ve
       </h3>
@@ -213,9 +199,13 @@ export default function WhatWeDo() {
                   ))}
                 </div>
                 <div className="w-full flex justify-center mt-5">
-                  <button className="px-[19px] py-[12px] 2xl:px-[29px] 2xl:py-[20px] text-[13px] uppercase tracking-wider bg-[#FFF8EA] hover:bg-companySalmon text-[#23194F] hover:text-[#FFF8EA] transition-all duration-300">
+                  <Link
+                    className="px-[19px] py-[12px] 2xl:px-[29px] 2xl:py-[20px] text-[13px] uppercase tracking-wider bg-[#FFF8EA] hover:bg-companySalmon text-[#23194F] hover:text-[#FFF8EA] transition-all duration-300"
+                    href={project.link} 
+                    target="_blank"
+                  >
                     Ver caso completo
-                  </button>
+                  </Link>
                 </div>
               </div>
             </div>

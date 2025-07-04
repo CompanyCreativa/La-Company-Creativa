@@ -12,6 +12,7 @@ import tenemosLogoHover from "/public/branding/tenemos_logo_hover.png";
 import noTenemosHover from "/public/branding/no_tenemos_hover.png";
 import comunicacionNOHover from "/public/branding/comunicacion_no_hover.png";
 import comoNosVenHover from "/public/branding/como_nos_ven_hover.png";
+import Link from "next/link";
 
 export default function Logo() {
   const phrases = [
@@ -144,9 +145,12 @@ export default function Logo() {
               <h3 className="z-10 text-[18px] xl:text-2xl 2xl:text-3xl font-semibold text-[#23194F] transition-colors duration-500 group-hover:text-white mr-auto">
                 {phrase.text}
               </h3>
-              <button className="hidden lg:block robout border border-transparent z-10 px-6 py-3 text-sm 2xl:text-lg font-semibold text-transparent hover:bg-companySalmon hover:text-[#23194F] transition-colors duration-500 group-hover:border-white group-hover:text-white">
+              <Link
+                className="hidden lg:block robout border border-transparent z-10 px-6 py-3 text-sm 2xl:text-lg font-semibold text-transparent hover:bg-companySalmon hover:text-[#23194F] transition-colors duration-500 group-hover:border-white group-hover:text-white"
+                href="#contact-branding"
+              >
                 Empezar Ahora
-              </button>
+              </Link>
               <ArrowTopRight className="z-10 w-[25px] 2xl:w-auto transition duration-500  text-[#23194F] group-hover:text-companySalmon group-hover:-rotate-180" />
             </div>
             <button className="lg:hidden robout border border-transparent z-10 px-6 py-3 text-sm 2xl:text-lg font-semibold text-transparent hover:bg-companySalmon hover:text-[#23194F] transition-colors duration-500 group-hover:border-white group-hover:text-white">

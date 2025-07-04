@@ -2,6 +2,7 @@ import Image from "next/image";
 
 import zigzagBanner from "/public/zigzag.gif";
 import zigzagBannerMobile from "/public/zigzagMobile.gif";
+import Link from "next/link";
 
 export default function CreateBrand() {
   return (
@@ -58,9 +59,13 @@ export default function CreateBrand() {
           alt="Banner Paco"
           className="block lg:hidden h-[290px] object-cover"
         />
-        <button className="absolute w-5/6 lg:w-auto bottom-3 xl:bottom-1 left-1/2 transform -translate-x-1/2 lg:-translate-y-1/2 p-[13px] lg:p-[20px]  text-[14px] xl:text-[13px] bg-companySalmon xl:bg-[#FFF8EA] text-[#FFF8EA] lg:text-[#23194F] xl:border xl:border-x-[12px] xl:border-y-[8px] xl:border-companySalmon robout uppercase xl:hover:bg-companySalmon xl:hover:text-[#FFF8EA] transition-all duration-300 ">
+        <Link
+          className="absolute w-5/6 lg:w-auto bottom-3 xl:bottom-1 left-1/2 transform -translate-x-1/2 lg:-translate-y-1/2 p-[13px] lg:p-[20px]  text-[14px] xl:text-[13px] bg-companySalmon xl:bg-[#FFF8EA] text-[#FFF8EA] lg:text-[#23194F] xl:border xl:border-x-[12px] xl:border-y-[8px] xl:border-companySalmon robout uppercase xl:hover:bg-companySalmon xl:hover:text-[#FFF8EA] transition-all duration-300"
+          href="https://wa.link/pemtg8"
+          target="_blank"
+        >
           Agenda una llamada con el equipo
-        </button>
+        </Link>
       </div>
     </div>
   );

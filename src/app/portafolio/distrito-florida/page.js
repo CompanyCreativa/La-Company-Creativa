@@ -21,9 +21,9 @@ import section42 from "/public/distrito-florida/section4-2.png";
 import section5 from "/public/distrito-florida/section5.png";
 
 export const metadata = {
-  title: "Retiro Alto | Campaña | Agencia La Company Creativa",
+  title: "Distrito Florida | Campaña | Agencia La Company Creativa",
   description:
-    "En Navidad, llevamos la alegría a quienes no podían estar con su familia. Una acción para acercar corazones, incluso en la distancia",
+    "Descubre cómo construimos la marca de Distrito Florida: un proyecto inmobiliario con propósito, identidad sólida y visión de ciudad desde el branding.",
 };
 
 export default function Page() {
@@ -100,7 +100,7 @@ export default function Page() {
         </div>
         <Breadcrumbs
           lastPage={"Portafolio"}
-          currentPage={"Navidad al trabajo"}
+          currentPage={"Distrito Florida"}
         />
         <TitleSection>
           <PortfolioTitle textColor="text-[#FB6B58]">
@@ -108,16 +108,19 @@ export default function Page() {
           </PortfolioTitle>
           <div className="mt-5 relative pr-5">
             <span className="text-lg tracking-wider leading-8">
-              Minipet diseña envases PET recliclados para grandes marcas. Su
-              nombre suele
-              <br className="hidden lg:block" /> confundirse con productos para
-              mascotas, por eso nos inspiramos en la rosca
-              <br className="hidden lg:block" /> de la tapa y en el estado
-              maleable del plástico antes del soplado, para crear
-              <br className="hidden lg:block" /> una identidad visual que
-              refleja su capacidad de transformarse en cualquier
-              <br className="hidden lg:block" /> forma. Una marca clara,
-              versátil y comprometida con la sostenibilidad.
+              Distrito Florida es mucho más que un proyecto inmobiliario; es el
+              punto de partida de algo grande.
+              <br className="hidden lg:block" /> Una marca pensada para crecer
+              con la ciudad, para conectar a las personas con un nuevo estilo
+              <br className="hidden lg:block" /> de vida y transformar el
+              territorio desde lo cotidiano. Desde el nombre hasta la campaña,
+              <br className="hidden lg:block" />
+              todo fue construido con intención: hablarle a quienes sueñan con
+              invertir, habitar o simplemente ser parte
+              <br className="hidden lg:block" /> de un cambio real. Porque aquí
+              no se trata solo de vender apartamentos. Se trata de crear
+              <br className="hidden lg:block" /> una marca que represente lo que
+              viene: movimiento, desarrollo y ciudad
             </span>
           </div>
         </TitleSection>
@@ -165,20 +168,24 @@ export default function Page() {
       </div>
       <Section className="bg-[#FB6B58] flex justify-center items-center p-8 lg:p-16 lg:pb-14 mt-16">
         <p className="text-[#FFFFFF] mosk leading-8 xl:leading-6 2xl:leading-10 text-md xl:text-xl 2xl:text-2xl font-light">
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum."
+          En la creación de Distrito Florida aplicamos una estrategia de marca
+          que combina naming, storytelling, key visual y un plan de comunicación
+          multicanal pensado para cautivar tanto a usuarios finales como a
+          inversionistas. A través de un enfoque estratégico que mezcla
+          marketing inmobiliario, creatividad aplicada al territorio y branding
+          emocional, logramos traducir una oportunidad urbanística en una marca
+          con peso, credibilidad y sentido de pertenencia. Cada pieza desde la
+          campaña digital hasta la activación en puntos físicos como Florida
+          Parque Comercial fue diseñada para ser parte de una narrativa potente.
+          En este caso, no hablamos solo de vender apartamentos, sino de
+          construir una marca inmobiliaria con visión de ciudad.
         </p>
       </Section>
       <Image src={section5} className="mt-16 w-full hidden lg:block" />
       <Section>
         <Breadcrumbs
           lastPage={"Portafolio"}
-          currentPage={"Navidad al trabajo"}
+          currentPage={"Distrito Florida"}
         />
       </Section>
       <div className="-mt-12 lg:mt-0">

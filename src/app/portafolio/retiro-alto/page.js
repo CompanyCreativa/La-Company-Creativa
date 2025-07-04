@@ -22,7 +22,7 @@ import section5 from "/public/retiro-alto/section5.png";
 export const metadata = {
   title: "Retiro Alto | Campaña | Agencia La Company Creativa",
   description:
-    "En Navidad, llevamos la alegría a quienes no podían estar con su familia. Una acción para acercar corazones, incluso en la distancia",
+    "Retiro Alto refleja una propuesta de vivienda simple, cercana y estratégica para habitar el oriente antioqueño con propósito y estilo.",
 };
 
 export default function Page() {
@@ -41,7 +41,7 @@ export default function Page() {
         </div>
         <Breadcrumbs
           lastPage={"Portafolio"}
-          currentPage={"Navidad al trabajo"}
+          currentPage={"Retiro Alto"}
         />
         <TitleSection>
           <PortfolioTitle textColor="text-[#4299A2]">
@@ -49,16 +49,21 @@ export default function Page() {
           </PortfolioTitle>
           <div className="mt-5 relative pr-5">
             <span className="text-lg tracking-wider leading-8">
-              Minipet diseña envases PET recliclados para grandes marcas. Su
-              nombre suele
-              <br className="hidden lg:block" /> confundirse con productos para
-              mascotas, por eso nos inspiramos en la rosca
-              <br className="hidden lg:block" /> de la tapa y en el estado
-              maleable del plástico antes del soplado, para crear
-              <br className="hidden lg:block" /> una identidad visual que
-              refleja su capacidad de transformarse en cualquier
-              <br className="hidden lg:block" /> forma. Una marca clara,
-              versátil y comprometida con la sostenibilidad.
+              Retiro Alto es más que un proyecto inmobiliario, es una nueva
+              forma de habitar el Oriente Antioqueño.
+              <br className="hidden lg:block" /> Creamos una identidad y
+              estrategia de comunicación centradas en un mensaje claro: vivir
+              como soñaste
+              <br className="hidden lg:block" /> no tiene por qué ser costoso,
+              complicado ni inalcanzable. Desde el diseño conceptual hasta los
+              contenidos <br className="hidden lg:block" />
+              clave, trabajamos para posicionar a Retiro Alto como una marca
+              cercana, humana y sin pretensiones,
+              <br className="hidden lg:block" /> donde el bienestar, la
+              tranquilidad y la buena inversión se encuentran. Un branding que
+              conecta con quienes
+              <br className="hidden lg:block" /> buscan desconectarse del ruido,
+              sin renunciar al diseño, la ubicación ni el respaldo.
             </span>
           </div>
         </TitleSection>
@@ -101,20 +106,23 @@ export default function Page() {
       </video>
       <Section className="bg-[#263A4B] flex justify-center items-center p-8 lg:p-16 lg:pb-14 mt-16">
         <p className="text-[#FFFFFF] mosk leading-8 xl:leading-6 2xl:leading-10 text-md xl:text-xl 2xl:text-2xl font-light">
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum."
+          Para Retiro Alto desarrollamos un enfoque de marketing y branding
+          estratégico que traduce su valor diferencial en mensajes claros,
+          cercanos y memorables. Desde el naming y la identidad visual hasta los
+          contenidos digitales y piezas para redes sociales, construimos una
+          marca coherente que rompe con los clichés del sector. Aplicamos
+          herramientas de posicionamiento de marca, tono de voz emocional y
+          diseño de contenido pensado para conectar con audiencias reales que
+          sueñan con una vivienda propia en el oriente antioqueño. Una propuesta
+          de comunicación inmobiliaria que combina diseño, propósito y
+          estrategia comercial.
         </p>
       </Section>
       <Image src={section5} className="mt-16 w-full hidden lg:block" />
       <Section>
         <Breadcrumbs
           lastPage={"Portafolio"}
-          currentPage={"Navidad al trabajo"}
+          currentPage={"Retiro Alto"}
         />
       </Section>
       <div className="-mt-12 lg:mt-0">

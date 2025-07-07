@@ -69,6 +69,33 @@ export default function LeadForm() {
 
     setIsSubmitting(true);
     document.getElementById("webform").submit();
+
+    emailjs
+      .send(
+        "service_r145bos",
+        "template_p5p51zs",
+        formData,
+        "FWjbrvz8yv7lrOYwV"
+      )
+      .then(
+        () => {
+          setFormData({
+            from_name: "",
+            from_correo: "",
+            from_message: "",
+            check: false,
+            from_phone: "",
+            from_company: "",
+          });
+          window.location.href = "/gracias";
+
+          setLoading(false); // Finalizar carga
+        },
+        (error) => {
+          console.log(error.text);
+          setLoading(false); // Finalizar carga
+        }
+      );
   };
 
   return (

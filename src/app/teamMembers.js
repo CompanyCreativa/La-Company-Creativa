@@ -9,9 +9,8 @@ import manuImg from "/public/teamMembers/news/manuImg.png";
 import mileImg from "/public/teamMembers/news/mileImg.png";
 import moniImg from "/public/teamMembers/news/moniImg.png";
 import saraImg from "/public/teamMembers/news/saraImg.png";
-import sebasImg from "/public/teamMembers/news/sebasImg.png";
 import tomasImg from "/public/teamMembers/news/tomasImg.png";
-import mateoImg from "/public/teamMembers/news/mateoImg.png";
+import edwinImg from "/public/teamMembers/news/edwinImg.png";
 import federicoImg from "/public/teamMembers/news/federicoImg.png";
 import kellyImg from "/public/teamMembers/news/kellyImg.png";
 import yenniImg from "/public/teamMembers/news/yenniImg.png";
@@ -19,11 +18,12 @@ import dannitwoImg from "/public/teamMembers/news/danitwo.png";
 import andreaImg from "/public/teamMembers/news/andreaImg.png";
 import susanaImg from "/public/teamMembers/news/susanaImg.png";
 import ignacioImg from "/public/teamMembers/news/IgnacioImg.png";
+import isabelImg from "/public/teamMembers/news/isabelImg.png";
 
 export const teamMembers = [
   {
-    img: mateoImg,
-    name: "Mateo Morales",
+    img: edwinImg,
+    name: "Edwin Atehortúa",
     profesion: "Director Creativo",
     position: 1,
   },
@@ -100,7 +100,12 @@ export const teamMembers = [
     profesion: "Creativa Gráfica",
     position: 12,
   },
-
+  {
+    img: isabelImg,
+    name: "Isabel Benavides",
+    profesion: "Community manager",
+    position: 13,
+  },
   {
     img: dannitwoImg,
     name: "Daniela Soto",
@@ -111,6 +116,12 @@ export const teamMembers = [
     name: "Susana Cano",
     profesion: "Creativa Gráfica",
     position: 15,
+  },
+  {
+    img: andreaImg,
+    name: "Andrea Suaza",
+    profesion: "Ejecutiva de cuentas",
+    position: 22,
   },
   {
     img: emmaImg,
@@ -135,11 +146,5 @@ export const teamMembers = [
     name: "Mónica Arias",
     profesion: "Coordinadora de RH",
     position: 21,
-  },
-  {
-    img: andreaImg,
-    name: "Andrea Suaza",
-    profesion: "Ejecutiva de cuentas",
-    position: 22,
   },
 ];

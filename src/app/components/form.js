@@ -97,6 +97,7 @@ function FormComponent() {
               check: false,
               from_phone: "",
               from_company: "",
+              
             });
             window.location.href = "/gracias";
 

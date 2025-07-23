@@ -9,6 +9,7 @@ export default function ZohoForm() {
     Company: "",
     Mobile: "",
     Email: "",
+    Description: "",
     "Lead Source": "Sitio web",
     "Lead Status": "Lead",
   });
@@ -237,6 +238,24 @@ export default function ZohoForm() {
               maxLength="100"
               required
               value={formData["Email"]}
+              onChange={handleChange}
+              className="w-full text-lg bg-transparent border border-black px-4 py-2 text-black placeholder-black z-30"
+            />
+          </div>
+        </div>
+        <div className="my-4 clear-both  flex flex-col">
+          <div className=" mr-[10px] mt-[5px] float-left">
+            <label htmlFor="Description" className="text-base font-calibri">
+              Mensaje <span className="text-red-500">*</span>
+            </label>
+          </div>
+          <div className=" float-left">
+            <textarea
+              id="Description"
+              name="Description"
+              maxLength="1000"
+              required
+              value={formData["Description"]}
               onChange={handleChange}
               className="w-full text-lg bg-transparent border border-black px-4 py-2 text-black placeholder-black z-30"
             />

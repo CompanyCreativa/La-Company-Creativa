@@ -14,7 +14,7 @@ export default function EditorialHeader() {
           alt="Logo"
         />
       </Link>
-      <ButtonEditorial text="Hablemos" />
+      <ButtonEditorial text="Hablemos" className="hidden md:flex" />
     </header>
   );
 }

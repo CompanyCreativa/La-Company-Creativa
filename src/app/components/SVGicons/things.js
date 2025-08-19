@@ -15,22 +15,22 @@ const Things = ({ className }) => {
         height="11"
         fill="currentColor"
         stroke="currentColor"
-        stroke-width="2.75001"
+        strokeWidth="2.75001"
       />
       <path
         d="M1.375 19.25V26.125V33"
         stroke="currentColor"
-        stroke-width="2.75001"
+        strokeWidth="2.75001"
       />
       <path
         d="M6.875 19.25V26.125V33"
         stroke="currentColor"
-        stroke-width="2.75001"
+        strokeWidth="2.75001"
       />
       <path
         d="M12.375 19.25V26.125V33"
         stroke="currentColor"
-        stroke-width="2.75001"
+        strokeWidth="2.75001"
       />
       <path
         d="M27.5 3.55566L30.0146 1.04102L31.959 2.98633L29.4453 5.5H33V8.25H29.4453L31.959 10.7637L30.0146 12.708L27.5 10.1934V13.75H24.75V10.1953L22.2363 12.709L20.292 10.7646L22.8066 8.25H19.25V5.5H22.8066L20.292 2.98535L22.2363 1.04102L24.75 3.55469V0H27.5V3.55566Z"
@@ -42,7 +42,7 @@ const Things = ({ className }) => {
         r="5.50002"
         fill="currentColor"
         stroke="currentColor"
-        stroke-width="2.75001"
+        strokeWidth="2.75001"
       />
     </svg>
   );

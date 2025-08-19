@@ -19,22 +19,22 @@ const Papers = ({ className }) => {
       <path
         d="M7.03544 5.0354H2V32.7303H7.03544"
         stroke="currentColor"
-        stroke-width="3.77658"
+        strokeWidth="3.77658"
       />
       <path
         d="M15.8474 12.5886H24.6594"
         stroke="currentColor"
-        stroke-width="2.51772"
+        strokeWidth="2.51772"
       />
       <path
         d="M15.8474 17.624H28.436"
         stroke="currentColor"
-        stroke-width="2.51772"
+        strokeWidth="2.51772"
       />
       <path
         d="M15.8474 22.6594H22.1417"
         stroke="currentColor"
-        stroke-width="2.51772"
+        strokeWidth="2.51772"
       />
     </svg>
   );

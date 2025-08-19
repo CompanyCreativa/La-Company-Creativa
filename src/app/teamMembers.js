@@ -8,7 +8,6 @@ import guilleImg from "/public/teamMembers/news/guilleImg.png";
 import manuImg from "/public/teamMembers/news/manuImg.png";
 import mileImg from "/public/teamMembers/news/mileImg.png";
 import moniImg from "/public/teamMembers/news/moniImg.png";
-import saraImg from "/public/teamMembers/news/saraImg.png";
 import tomasImg from "/public/teamMembers/news/tomasImg.png";
 import edwinImg from "/public/teamMembers/news/edwinImg.png";
 import federicoImg from "/public/teamMembers/news/federicoImg.png";
@@ -16,9 +15,12 @@ import kellyImg from "/public/teamMembers/news/kellyImg.png";
 import yenniImg from "/public/teamMembers/news/yenniImg.png";
 import dannitwoImg from "/public/teamMembers/news/danitwo.png";
 import andreaImg from "/public/teamMembers/news/andreaImg.png";
-import susanaImg from "/public/teamMembers/news/susanaImg.png";
 import ignacioImg from "/public/teamMembers/news/IgnacioImg.png";
 import isabelImg from "/public/teamMembers/news/isabelImg.png";
+
+import alejoImg from "/public/teamMembers/news/alejoImg.webp";
+import tatianaImg from "/public/teamMembers/news/tatianaImg.webp";
+import danielCaroImg from "/public/teamMembers/news/danielCaroImg.webp";
 
 export const teamMembers = [
   {
@@ -70,11 +72,18 @@ export const teamMembers = [
     position: 8,
   },
   {
+    img: federicoImg,
+    name: "Federico López",
+    profesion: "Desarrollador Web",
+    position: 11,
+  },
+  {
     img: daniImg,
     name: "Daniel Zapata",
     profesion: "Diseñador UI UX",
     position: 9,
   },
+
   {
     img: yenniImg,
     name: "Yenifer Cadavid",
@@ -89,15 +98,9 @@ export const teamMembers = [
     position: 16,
   },
   {
-    img: federicoImg,
-    name: "Federico López",
-    profesion: "Desarrollador Web",
-    position: 11,
-  },
-  {
-    img: saraImg,
-    name: "Sara López",
-    profesion: "Creativa Gráfica",
+    img: alejoImg,
+    name: "Alejo Cardona",
+    profesion: "Creativo Gráfica",
     position: 12,
   },
   {
@@ -112,9 +115,9 @@ export const teamMembers = [
     profesion: "Creativa Copy",
   },
   {
-    img: susanaImg,
-    name: "Susana Cano",
-    profesion: "Creativa Gráfica",
+    img: danielCaroImg,
+    name: "Daniel Caro",
+    profesion: "Creativo Gráfica",
     position: 15,
   },
   {
@@ -145,6 +148,12 @@ export const teamMembers = [
     img: moniImg,
     name: "Mónica Arias",
     profesion: "Coordinadora de RH",
+    position: 21,
+  },
+  {
+    img: tatianaImg,
+    name: "Tati Cadavid",
+    profesion: "Prácticante",
     position: 21,
   },
 ];

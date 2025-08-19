@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Image from "next/image";
 
 import imgSlider1 from "/public/editorial/imgSlider1.webp";
@@ -24,9 +24,21 @@ export default function FanDeckCarousel() {
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [isMobile, setIsMobile] = useState(false);
   const total = images.length;
 
-  // Función para calcular el desplazamiento más corto entre dos índices en un carrusel circular
+  // Detectar si es mobile o desktop
+  useEffect(() => {
+    const media = window.matchMedia("(max-width: 768px)");
+    setIsMobile(media.matches);
+
+    const listener = (e) => setIsMobile(e.matches);
+    media.addEventListener("change", listener);
+
+    return () => media.removeEventListener("change", listener);
+  }, []);
+
+  // Desplazamiento circular
   const getCircularOffset = (i) => {
     let offset = i - currentIndex;
     if (offset > total / 2) offset -= total;
@@ -34,13 +46,16 @@ export default function FanDeckCarousel() {
     return offset;
   };
 
+  // Estilos de cada tarjeta
   const getCardStyle = (i) => {
     const offset = getCircularOffset(i);
-    const rotate = offset * 40; // inclinación por posición
-    const translateX = offset * 400; // solapado horizontal
-    const translateY = Math.abs(offset) * 200; // altura relativa
-    const scale = offset === 0 ? 1.1 : 1; // más grande la activa
-    const zIndex = total - Math.abs(offset); // en frente la activa
+
+    // Ajustes distintos para mobile y desktop
+    const rotate = offset * (isMobile ? 20 : 40);
+    const translateX = offset * (isMobile ? 150 : 400);
+    const translateY = Math.abs(offset) * (isMobile ? 80 : 200);
+    const scale = offset === 0 ? 1.1 : 1;
+    const zIndex = total - Math.abs(offset);
 
     return {
       transform: `translateX(${translateX}px) translateY(${translateY}px) rotate(${rotate}deg) scale(${scale})`,
@@ -56,17 +71,24 @@ export default function FanDeckCarousel() {
     setCurrentIndex((prev) => (prev + 1) % total);
   };
 
+  // Autoplay cada 5s
+  useEffect(() => {
+    const interval = setInterval(() => {
+      next();
+    }, 5000);
+
+    return () => clearInterval(interval);
+  }, [total]);
+
   return (
-    <div className="flex flex-col items-center gap-6 py-10">
-      <div className="relative w-[500px] h-[500px] flex justify-center items-center ml-52 rotate-[10deg]">
+    <div className="flex flex-col items-center mx-auto gap-6 py-10">
+      <div className="relative w-[250px] h-[250px] md:w-[418px] md:h-[418px] xl:w-[500px] xl:h-[500px] flex justify-center items-center md:ml-52 md:rotate-[10deg]">
         {images.map((src, i) => (
           <div
             key={i}
             onClick={() => setCurrentIndex(i)}
-            className="absolute w-40 h-56 md:w-[418px] md:h-[418px] rounded-lg overflow-hidden shadow-lg cursor-pointer border-2 border-transparent transition-all duration-500"
-            style={{
-              ...getCardStyle(i),
-            }}
+            className="absolute w-[250px] h-[250px] md:w-[418px] md:h-[418px] rounded-lg overflow-hidden shadow-lg cursor-pointer border-2 border-transparent transition-all duration-500"
+            style={getCardStyle(i)}
           >
             <Image
               src={src}

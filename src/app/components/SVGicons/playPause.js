@@ -15,7 +15,7 @@ const PlayPause = ({ className }) => {
       <path
         d="M3.86328 5.62817L15.5635 16.0286L16.6572 17.0002L15.5635 17.9719L3.86328 28.3713L1.7002 30.2952V3.70532L3.86328 5.62817Z"
         stroke="currentColor"
-        stroke-width="2.6"
+        strokeWidth="2.6"
       />
       <rect
         x="23.8001"
@@ -24,7 +24,7 @@ const PlayPause = ({ className }) => {
         height="28.6"
         fill="currentColor"
         stroke="currentColor"
-        stroke-width="2.6"
+        strokeWidth="2.6"
       />
     </svg>
   );

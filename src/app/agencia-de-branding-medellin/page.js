@@ -17,8 +17,8 @@ export default function page() {
         <MainSection city="Medellín" />
         <Logo />
         <WhatWeDo />
-        <BuildBrand city={"Medellín"}/>
-        <WeDoIt city={"Medellín"}/>
+        <BuildBrand city={"Medellín"} />
+        <WeDoIt city={"Medellín"} />
         <CreateBrand />
         <FrequentQuestions />
         <FormBranding />

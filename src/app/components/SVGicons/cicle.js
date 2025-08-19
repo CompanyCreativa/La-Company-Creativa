@@ -21,7 +21,7 @@ const Cicle = ({ className }) => {
       <path
         d="M12.5652 34.6526H17"
         stroke="currentColor"
-        stroke-width="2.95654"
+        strokeWidth="2.95654"
       />
       <path
         d="M17 9.52173L11.087 5.08695L17 0.652163L17 9.52173Z"
@@ -30,7 +30,7 @@ const Cicle = ({ className }) => {
       <path
         d="M15.522 5.08716H21.435"
         stroke="currentColor"
-        stroke-width="2.95654"
+        strokeWidth="2.95654"
       />
       <circle cx="17.0002" cy="19.8698" r="5.91304" fill="currentColor" />
     </svg>

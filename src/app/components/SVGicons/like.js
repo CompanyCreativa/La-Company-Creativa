@@ -15,8 +15,8 @@ const Like = ({ className }) => {
         fill="currentColor"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M34.1775 14.1942C33.5255 14.1661 32.967 14.6566 32.9108 15.3068L31.3319 33.5662C31.2305 34.7391 32.1544 35.75 33.3341 35.75C34.4453 35.75 35.3438 34.8485 35.3438 33.7395L35.3438 15.4118C35.3438 14.7592 34.8296 14.2223 34.1775 14.1942Z"
         fill="currentColor"
       />

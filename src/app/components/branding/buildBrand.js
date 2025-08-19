@@ -20,7 +20,7 @@ export default function buildBrand({ city }) {
           creativo
         </>
       ),
-      description: "Creamos nombres que resuenan Tu marca, inolvidable.",
+      description: "Creamos nombres que resuenan",
     },
     {
       image: concepto,
@@ -31,7 +31,7 @@ export default function buildBrand({ city }) {
           estratégico
         </>
       ),
-      description: "La idea maestra de tu marca. Impactante y memorable.",
+      description: "La idea maestra de tu marca.",
     },
     {
       image: identidad,
@@ -55,7 +55,7 @@ export default function buildBrand({ city }) {
         </>
       ),
       description:
-        "Reglas claras, impacto visual impecable. Tu marca, siempre profesional y reconocible.",
+        "Dejemos las reglas claras para lograr un impacto visual impecable.",
     },
     {
       image: brandbook,
@@ -67,7 +67,7 @@ export default function buildBrand({ city }) {
         </>
       ),
       description:
-        "La guía maestra de tu marca. Aseguramos la coherencia y el impacto en cada aplicación.",
+        "La guía maestra de tu marca. con la que aseguramos la coherencia en cada aplicación",
     },
     {
       image: voz,
@@ -79,7 +79,7 @@ export default function buildBrand({ city }) {
         </>
       ),
       description:
-        "Definimos cómo suena tu marca. Una voz única que conecta y resuena con tu audiencia.",
+        "Definimos cómo suena tu marca. Una voz única que conecta con tu audiencia.",
     },
     {
       image: aplicaciones,
@@ -90,7 +90,8 @@ export default function buildBrand({ city }) {
           de marca
         </>
       ),
-      description: "papelería, redes, empaques, espacios",
+      description:
+        "Papelería, redes, empaques, espacios y todo lo que necesites para amplificarla.",
     },
   ];
 

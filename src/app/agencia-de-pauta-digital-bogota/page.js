@@ -37,9 +37,9 @@ export default function page() {
     },
     {
       step: "03",
-      title: "Anuncios Creativos",
+      title: "Anuncios creativos",
       description:
-        "Disenamos y optimizamos anuncios creativos para aumentar la visibilidad de tu marca y aumentar tus ventas.",
+        "Diseñamos y optimizamos anuncios creativos para aumentar la visibilidad de tu marca y aumentar tus ventas.",
     },
   ];
 
@@ -58,13 +58,13 @@ export default function page() {
     },
     {
       logo: logoLinkedin,
-      title: "Linkedin Ads",
+      title: "LinkedIn Ads",
       description:
         "Llega a los tomadores de decisión con campañas estratégicas en LinkedIn Ads que generan conexiones y oportunidades de negocio.",
     },
     {
       logo: logoTiktok,
-      title: "Tiktok Ads",
+      title: "TikTok Ads",
       description:
         "Llega a los tomadores de decisión con campañas estratégicas en LinkedIn Ads que generan conexiones y oportunidades de negocio.",
     },
@@ -100,7 +100,7 @@ export default function page() {
     {
       title: (
         <p>
-          ¿Por qué elegir a <strong>LaCompany Creativa?</strong>
+          ¿Por qué elegir a <strong>La Company Creativa?</strong>
         </p>
       ),
       description: (
@@ -114,7 +114,7 @@ export default function page() {
       ),
     },
     {
-      title: <p>¿Que es pauta digital?</p>,
+      title: <p>¿Qué es pauta digital?</p>,
       description: (
         <p>
           La publicidad pagada que se realiza en plataformas como Google Ads,
@@ -229,11 +229,11 @@ export default function page() {
     },
     {
       logo: logoLinkedin,
-      title: "Linkedin Ads",
+      title: "LinkedIn Ads",
     },
     {
       logo: logoTiktok,
-      title: "Tik Tok Ads",
+      title: "TikTok Ads",
     },
   ];
 
@@ -267,7 +267,7 @@ export default function page() {
           subtitle={
             <>
               <span className="font-[500]">Agencia en Bogotá experta</span> en
-              estrategias de pauta digital Menos desperdicio,{" "}
+              estrategias de pauta digital. Menos desperdicio,{" "}
               <span className="font-[500]">más resultados.</span>
             </>
           }
@@ -296,7 +296,6 @@ export default function page() {
           ctaPpal="Máximiza tus resultados"
           ctaSec="Diagnóstico gratuito"
           title="No desperdicies más presupuesto"
-          quota="“Deja que los números hablen. Nosotros hacemos que crezcan.”"
         />
         <Results />
         <FormPublicidad city={"Bogotá"} title="pauta digital" icons={icons} />

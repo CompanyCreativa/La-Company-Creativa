@@ -74,7 +74,7 @@ export default function PurchaseDecision() {
         <h3 className="SpaceGrotesk text-4xl 2xl:text-5xl uppercase text-companySalmon font-light">
           Así llevamos
           <span className="SpaceGrotesk font-semibold"> tu proyecto </span>
-          del plano...
+          del plano
         </h3>
         <h2 className="SpaceGrotesk text-[#23194F] text-2xl xl:text-6xl 2xl:text-7xl uppercase">
           A la decisión

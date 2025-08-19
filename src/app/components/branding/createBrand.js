@@ -12,13 +12,13 @@ export default function CreateBrand() {
         <br className="xl:hidden" /> marcas.
       </h3>
       <h4 className="inline-block w-auto text-[20px] xl:text-[20px] 2xl:text-[24px] font-medium text-[#23194F] uppercase text-center border border-[#23194F] border-[1px] px-2 py-1 xl:py-2 xl:px-4 mx-auto rounded-full mb-[42px] SpaceGrotesk">
-        creamos marcas con alma
+        las creamos con alma
       </h4>
       <div className="w-full flex flex-col lg:flex-row justify-center items-center gap-16 mb-[72px]">
         <p className="SpaceGrotesk text-[22px] xl:text-[24px] 2xl:text-[28px] text-[#fff] bg-[#23194F] p-4 text-center w-full lg:max-w-[500px] leading-[45px]">
           <span className="font-medium">Creatividad</span> con estrategia
           <br />
-          nunca solo{" "}
+          nunca es solo{" "}
           <span className="text-[16px] xl:text-[18px] 2xl:text-[21px] text-companySalmon rounded-full border border-companySalmon border-[1px] uppercase py-[3px] px-[8px] SpaceGrotesk">
             “bonito”
           </span>
@@ -42,10 +42,10 @@ export default function CreateBrand() {
         <p className="SpaceGrotesk text-[22px] xl:text-[24px] 2xl:text-[28px] text-[#fff] bg-[#23194F] p-4 text-center w-full lg:max-w-[500px] leading-[45px]">
           <span className="font-medium">Coraje</span> para proponer.
           <br />
+          corazón para{" "}
           <span className="text-[16px] xl:text-[18px] 2xl:text-[21px] text-companySalmon rounded-full border border-companySalmon border-[1px] uppercase py-[3px] px-[8px] SpaceGrotesk">
-            crecer
-          </span>{" "}
-          para conectar
+            conectar
+          </span>
         </p>
       </div>
       <div className="relative lg:block mt-[-42px] xl:mt-0">

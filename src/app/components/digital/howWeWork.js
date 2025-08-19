@@ -13,7 +13,7 @@ export default function HowWeWork({
   return (
     <div className="mt-14 w-full">
       <h3 className="text-[#FFF8EA] text-[32px] mb-5">
-        Como <span className="font-semibold">trabajamos:</span>
+        Así <span className="font-semibold">trabajamos:</span>
       </h3>
       <div className="flex flex-col lg:flex-row gap-4 lg:justify-between">
         <div className="flex flex-col lg:w-[50%] items-start gap-4  p-4 xl:p-6 2xl:p-8 rounded-[11px] bg-gradient-to-b from-[rgba(255,255,255,0.05)] to-[rgba(255,255,255,0.02)] ">
@@ -57,9 +57,6 @@ export default function HowWeWork({
             <h3 className="text-[#FFF8EA] text-[20px] 2xl:text-[32px] font-bold  ml-2 ">
               {title}
               <br />
-              <span className="font-regular text-[16px] font-thin  italic opacity-50">
-                {quota}
-              </span>
             </h3>
           </div>
           <div className="w-full h-[0.6px] bg-[#FFF8EA]"></div>

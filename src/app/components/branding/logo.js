@@ -74,13 +74,14 @@ export default function Logo() {
         </h2>
         <div className="mt-16">
           <p className="text-[18px] 2xl:text-[22px] text-[#23194F]">
-            Muchas marcas se ven <span className="font-semibold">bonitas,</span>
+            Muchas marcas se ven{" "}
+            <span className="font-semibold">
+              bonitas, pero no dicen nada. Otras tienen algo
+              <br /> que decir, pero no saben cómo
+            </span>
           </p>
           <p className="text-[18px] 2xl:text-[22px] text-[#23194F] text-end mr-4 mt-8 lg:mt-16">
-            pero no dicen nada. Otras tienen
-            <br />
-            algo que decir,{" "}
-            <span className="font-semibold">pero no saben cómo</span>
+            <br /> <span className="font-semibold"></span>
           </p>
         </div>
         <div className="w-full flex flex-col items-start lg:items-end mt-12 lg:mt-24">

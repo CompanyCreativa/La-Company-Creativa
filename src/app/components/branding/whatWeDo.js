@@ -19,7 +19,7 @@ export default function WhatWeDo() {
   const projects = [
     {
       url: "paco_branding.png",
-      title: "Eso que te abogia paco lo hace",
+      title: "Eso que te abogia Paco lo hace",
       description: (
         <>
           Los que piensan que el trabajo debe ser difícil

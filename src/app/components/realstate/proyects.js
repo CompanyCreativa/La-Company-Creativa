@@ -14,6 +14,7 @@ import conceptualization from "/public/branding/conceptualization.png";
 import logoRetiroAlto from "/public/retiro-alto/logoWhite.png";
 import logoDistritoFlorida from "/public/distrito-florida/distritoFloridaLogo-Vive.png";
 import logoZigzag from "/public/zig-zag/zigzagLogo.png";
+import Link from "next/link";
 
 export default function Proyects() {
   const projects = [
@@ -41,6 +42,7 @@ export default function Proyects() {
           title: "Pauta digital",
         },
       ],
+      link: "/portafolio/retiro-alto",
     },
     {
       url: "distritoFloridaCard.png",
@@ -65,6 +67,7 @@ export default function Proyects() {
           title: "Pauta digital",
         },
       ],
+      link: "/portafolio/distrito-florida",
     },
     {
       url: "zigzagCard.png",
@@ -86,6 +89,7 @@ export default function Proyects() {
           title: "Conceptualización",
         },
       ],
+      link: "/portafolio/zig-zag",
     },
   ];
 
@@ -159,9 +163,12 @@ export default function Proyects() {
                   ))}
                 </div>
                 <div className="w-full flex justify-center mt-5">
-                  <button className="px-[19px] py-[12px] 2xl:px-[29px] 2xl:py-[20px] text-[13px] uppercase tracking-wider bg-[#FFF8EA] hover:bg-companySalmon text-[#23194F] hover:text-[#FFF8EA] transition-all duration-300 robout">
+                  <Link
+                    href={project.link}
+                    className="px-[19px] py-[12px] 2xl:px-[29px] 2xl:py-[20px] text-[13px] uppercase tracking-wider bg-[#FFF8EA] hover:bg-companySalmon text-[#23194F] hover:text-[#FFF8EA] transition-all duration-300 robout"
+                  >
                     Ver caso completo
-                  </button>
+                  </Link>
                 </div>
               </div>
             </div>

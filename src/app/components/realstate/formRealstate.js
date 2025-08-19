@@ -8,7 +8,7 @@ export default function FormRealstate() {
     <div className="flex flex-col lg:flex-row px-[24px] justify-between gap-8 pt-[99px] pb-[85px] bg-[#fff] shadow-[0px_0px_16px_rgba(0,0,0,0.25)] 2xl:px-[120px]">
       <div className="flex flex-col gap-8">
         <h2 className="z-10 text-center md:text-start text-[31px] md:text-[52px] 2xl:text-[66px]  SpaceGrotesk text-companySalmon font-semibold uppercase">
-          Hablemos <br />
+          Hablemos, <br />
           <span className="text-[#23194F] font-light">podemos hacerlo juntos</span>
         </h2>
         <Image

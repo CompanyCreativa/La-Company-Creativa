@@ -12,7 +12,6 @@ import InvoiceCheck from "../SVGicons/invoiceCheck";
 import SuspensionCheck from "../SVGicons/suspensionCheck";
 import CartCheck from "../SVGicons/cartCheck";
 import TouchScreen from "../SVGicons/touchScreen";
-import Cicle from "../SVGicons/cicle";
 
 export default function Pains() {
   const points = [
@@ -72,14 +71,14 @@ export default function Pains() {
           <span className="SpaceGrotesk font-semibold">
             ¿Tu proyecto inmobiliario
           </span>{" "}
-          está en redes, en portales...pero no en la mente{" "}
+          está en redes, en portales, pero no en la mente{" "}
           <span className="SpaceGrotesk font-semibold">
             del&nbsp;comprador?
           </span>
         </h2>
         <p className="text-[#23194F] 2xl:text-lg">
           <span className="font-semibold">Tranquilo, no eres el único.</span>{" "}
-          Muchos proyectos imobiliarios se ven bien pero no logran conectar. A
+          Muchos proyectos inmobiliarios se ven bien pero no logran conectar. A
           veces el problema no es el producto, sino la estrategia (o la falta de
           ella).{" "}
           <span className="font-semibold">

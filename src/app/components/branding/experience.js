@@ -40,7 +40,7 @@ export default function Experience({ city }) {
             <div className="flex  gap-4 items-center">
               <TaskAdd className="text-companySalmon  w-10 md:w-auto" />
               <p className="text-[22px] xl:text-[20px] 2xl:text-2xl font-light text-[#23194F] SpaceGrotesk">
-                Sabemos de pauta...
+                Sabemos de pauta,
                 <br /> pero también
                 <span className="font-medium SpaceGrotesk"> de cierres</span>
               </p>

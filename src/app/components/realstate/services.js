@@ -71,7 +71,7 @@ export default function Services({ city }) {
           <br />y activaciones
         </>
       ),
-      description: "Virtuales inmersivos venden propiedades, no solo fotos.",
+      description: "El contenido inmersivo sí vende propiedades.",
     },
     {
       image: <Things className={"text-companySalmon"} />,
@@ -117,7 +117,7 @@ export default function Services({ city }) {
           exterior
         </>
       ),
-      description: "Genera impacto, llevando tráfico a tus salas de ventas.",
+      description: "Genera impacto llevando tráfico a tu sala de ventas.",
     },
     {
       image: <TrashCan className={"text-companySalmon"} />,

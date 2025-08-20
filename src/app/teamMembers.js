@@ -100,7 +100,7 @@ export const teamMembers = [
   {
     img: alejoImg,
     name: "Alejo Cardona",
-    profesion: "Creativo Gráfica",
+    profesion: "Creativo Gráfico",
     position: 12,
   },
   {
@@ -117,7 +117,7 @@ export const teamMembers = [
   {
     img: danielCaroImg,
     name: "Daniel Caro",
-    profesion: "Creativo Gráfica",
+    profesion: "Creativo Gráfico",
     position: 15,
   },
   {

@@ -2,14 +2,15 @@
 import { useState } from "react";
 import Image from "next/image";
 
-import AccordionOne from "/public/editorial/accordionOne.webp";
-import AccordionTwo from "/public/editorial/accordionTwo.webp";
-import AccordionThree from "/public/editorial/accordionThree.webp";
-import AccordionFour from "/public/editorial/accordionFour.webp";
-import AccordionFive from "/public/editorial/accordionFive.webp";
-import AccordionSix from "/public/editorial/accordionSix.webp";
-import AccordionSeven from "/public/editorial/accordionSeven.webp";
-import AccordionEight from "/public/editorial/accordionEight.webp";
+import accordionUCC from "/public/editorial/accordionUCC.webp";
+import accordionMensula from "/public/editorial/accordionMensula.webp";
+import accordionJardinBotanico from "/public/editorial/accordionJardinBotanico.webp";
+import accordionAdoquinar from "/public/editorial/accordionAdoquinar.webp";
+import accordionLafargeHolcim from "/public/editorial/accordionLafargeHolcim.webp";
+import accordionQuarzzo from "/public/editorial/accordionQuarzzo.webp";
+import accordionCristar from "/public/editorial/accordionCristar.webp";
+import accordionDiamante from "/public/editorial/accordionDiamante.webp";
+
 import Arrow from "../SVGicons/arrow";
 
 export default function Projects() {
@@ -18,36 +19,44 @@ export default function Projects() {
 
   const projects = [
     {
-      img: AccordionOne,
+      img: accordionUCC,
       title: "UCC",
+      description: "Informe de sostenibilidad",
     },
     {
-      img: AccordionTwo,
+      img: accordionMensula,
       title: "Ménsula",
+      description: "Brochure proyectos arquitectónicos",
     },
     {
-      img: AccordionThree,
-      title: "Jardín Botánico",
+      img: accordionJardinBotanico,
+      title: <>Jardín&nbsp;Botánico</>,
+      description: "Informe de gestión",
     },
     {
-      img: AccordionFour,
+      img: accordionAdoquinar,
       title: "Adoquinar",
+      description: "Revista Imaginaria",
     },
     {
-      img: AccordionFive,
-      title: "Cultura",
+      img: accordionLafargeHolcim,
+      title: <>Lafarge&nbsp;Holcim</>,
+      description: "Libro conmemorativo",
     },
     {
-      img: AccordionSix,
-      title: "Cultura",
+      img: accordionQuarzzo,
+      title: "Quarzzo",
+      description: "Brochure de proyecto",
     },
     {
-      img: AccordionSeven,
-      title: "Cultura",
+      img: accordionCristar,
+      title: "Cristar",
+      description: "Catálogo de venta",
     },
     {
-      img: AccordionEight,
-      title: "Cultura",
+      img: accordionDiamante,
+      title: "Diamante",
+      description: "Catálogo de venta",
     },
   ];
 
@@ -67,7 +76,7 @@ export default function Projects() {
       <div className="h-[653px] flex gap-4">
         {projects.map((project, index) => (
           <div
-            className={`relative h-full rounded-2xl overflow-hidden cursor-pointer transition-all ease-in-out duration-500 ${
+            className={`group relative h-full rounded-2xl overflow-hidden cursor-pointer transition-all ease-in-out duration-500 ${
               index === activeIndex ? "w-full" : "w-40"
             }`}
             key={index}
@@ -75,17 +84,42 @@ export default function Projects() {
           >
             <Image
               src={project.img}
-              className="h-full object-cover w-full object-center"
+              className="h-full object-cover w-full object-center "
             />
             <div className="absolute z-10 bottom-4 right-1/2 translate-x-1/2">
-              <p className="transform -rotate-90 text-[#FFFFFF] text-md mb-10">
-                {project.title}
-              </p>
-              <div className=" bg-[#FFFFFF]/30 p-2 rounded-full border-2 border-[#FFFFFF] w-10">
-                <Arrow className="text-[#FFFFFF]  -rotate-90" />
+              <div className="absolute bottom-16 right-1/2 translate-x-1/2  -rotate-90 w-full">
+                <p
+                  className={`text-[#FFFFFF] text-lg text-start transition-all duration-300 ease-in-out ${
+                    index === activeIndex ? "opacity-0" : "opacity-100"
+                  }`}
+                >
+                  {project.title}
+                </p>
+              </div>
+              <div
+                className={`relative bg-[#FFFFFF]/30 p-2 rounded-full border border-[#FFFFFF] group-hover:border-none w-10 h-10 flex items-center justify-center transition-all duration-300 ease-in-out ${
+                  index === activeIndex ? "opacity-0" : "opacity-100 "
+                }`}
+              >
+                <Arrow className="text-[#FFFFFF] -rotate-90 z-10" />
+                <div className="absolute w-0 h-0 group-hover:w-full bg-companySalmon transition-all duration-500 ease-in-out group-hover:h-full rounded-full"></div>
               </div>
             </div>
-            <div className="absolute h-1/3 bottom-0 w-full bg-gradient-to-t from-[#252525] to-[#252525]/0"></div>
+            <div
+              className={`absolute h-1/3 bottom-0 w-full bg-gradient-to-t from-[#252525] to-[#252525]/0  transition-all duration-300 ease-in-out pointer-events-none ${
+                index === activeIndex
+                  ? ""
+                  : "group-hover:h-2/3 group-hover:from-[#000000]/70"
+              }`}
+            ></div>
+            <div
+              className={`absolute bottom-10 w-full left-10 text-white transition-all duration-200 ease-in-out ${
+                index === activeIndex ? "opacity-100" : "opacity-0"
+              }`}
+            >
+              <h5 className="robout text-5xl mb-2">{project.title}</h5>
+              <p className="text-xl">{project.description}</p>
+            </div>
           </div>
         ))}
       </div>

@@ -117,7 +117,7 @@ export default function page() {
       title: <p>¿Qué es pauta digital?</p>,
       description: (
         <p>
-          La publicidad pagada que se realiza en plataformas como Google Ads,
+          La publicidad pagada que se realyariza en plataformas como Google Ads,
           Meta Ads (Facebook e Instagram Ads), TikTok Ads y LinkedIn Ads se
           conoce como pauta digital. Esta publicidad permite optimizar los
           anuncios para llegar a audiencias específicas y generar tráfico,

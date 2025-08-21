@@ -2,14 +2,9 @@ import EditorialHeader from "../components/editorial/editorialHeader";
 import MainSection from "../components/editorial/mainSection";
 import BuildExperience from "../components/editorial/buildExperience";
 import WhatWeDo from "../components/editorial/whatWeDo";
-
-import FrequentQuestions from "../components/realstate/frequentQuestions";
-import FooterBranding from "../components/branding/footerBranding";
-import PurchaseDecision from "../components/realstate/purchaseDecision";
-import Proyects from "../components/realstate/proyects";
-import Experience from "../components/branding/experience";
-import FormRealstate from "../components/realstate/formRealstate";
 import Projects from "../components/editorial/projects";
+import FormEditorial from "../components/editorial/formEditorial";
+import FooterEditorial from "../components/editorial/footerEditorial";
 
 export default function page() {
   return (
@@ -20,11 +15,8 @@ export default function page() {
         <BuildExperience />
         <WhatWeDo />
         <Projects />
-        <Proyects />
-        <Experience />
-        <FrequentQuestions />
-        <FormRealstate />
-        <FooterBranding />
+        <FormEditorial />
+        <FooterEditorial />
       </div>
     </div>
   );

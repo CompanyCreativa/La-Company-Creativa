@@ -8,13 +8,16 @@ export default function TeamMembersList() {
   );
 
   return (
-    <div className=" w-[95%] max-w-[1560px] md:mr-0 mr-[-5%] mx-auto mt-10 lg:mt-16">
-      <div className="w-full flex-col lg:flex-row lg:flex-wrap hidden lg:flex">
+    <div className="max-w-[1500px] ml-10 self-center mt-10 lg:mt-10">
+      <div
+        className="w-full flex-col justify-between gap-5 
+       lg:flex-row lg:flex-wrap hidden lg:flex"
+      >
         {teamMembers.map((teamMember, index) => {
           let className;
 
           if (teamMember.profesion === "Estratega Digital") {
-            className = "relative left-[-8%] top-[1.5%]";
+            className = "relative left-[-10%] top-[1.5%]";
           }
 
           return (
@@ -28,7 +31,7 @@ export default function TeamMembersList() {
           );
         })}
       </div>
-      <div className="w-full flex flex-col lg:flex-row lg:flex-wrap lg:hidden overflow-x-hidden">
+      <div className="w-full flex flex-col lg:hidden overflow-x-visible ">
         {orderedMembers.map((teamMember, index) => {
           let className;
 

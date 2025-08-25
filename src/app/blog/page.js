@@ -8,6 +8,8 @@ import MainContainer from "../components/mainContainer";
 
 import imageBlog1 from "/public/blog/imageblog1.png";
 import imageBlog2 from "/public/blog/imageblog2.png";
+import imageBlog3 from "/public/blog/imageblog3.webp";
+import imageBlog4 from "/public/blog/imageblog4.webp";
 
 // Componente principal (marcado como async)
 export default async function Page() {
@@ -24,6 +26,18 @@ export default async function Page() {
       date: "09 de Junio - 2025",
       image: imageBlog2,
       link: "/blog/pauta-digital-como-llegarle-a-la-gente-correcta-sin-gritar",
+    },
+    {
+      title: "¿Qué puede hacer la IA por tu marca? (Y qué no debería)",
+      date: "25 de Agosto - 2025",
+      image: imageBlog3,
+      link: "/blog/IA+creatividad-el-nuevo-combo-para-marcas-con-sentido",
+    },
+    {
+      title: "Conceptos clave de la pauta digital",
+      date: "25 de Agosto - 2025",
+      image: imageBlog4,
+      link: "/blog/conceptos-esenciales-para-entender-la-pauta-digital",
     },
   ];
 

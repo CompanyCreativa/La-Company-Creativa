@@ -55,7 +55,7 @@ export const teamMembers = [
   {
     img: ignacioImg,
     name: "Ignacio Restrepo",
-    profesion: "Fundador / Gerente administrativo",
+    profesion: "Fundador / Gerente Administrativo",
     position: 7,
   },
   {
@@ -98,14 +98,14 @@ export const teamMembers = [
   },
   {
     img: alejoImg,
-    name: "Alejo Cardona",
+    name: "Alejandro Cardona",
     profesion: "Creativo Gráfico",
     position: 12,
   },
   {
     img: isabelImg,
     name: "Isabel Benavides",
-    profesion: "Community manager",
+    profesion: "Community Manager",
     position: 13,
   },
   {
@@ -122,13 +122,13 @@ export const teamMembers = [
   {
     img: andreaImg,
     name: "Andrea Suaza",
-    profesion: "Ejecutiva de cuentas",
+    profesion: "Ejecutiva de Cuentas",
     position: 22,
   },
   {
     img: emmaImg,
     name: "Emma Villareal",
-    profesion: "Ejecutiva de cuentas / Producción",
+    profesion: "Ejecutiva de Cuentas / Producción",
     position: 18,
   },
   {
@@ -151,8 +151,8 @@ export const teamMembers = [
   },
   {
     img: tatianaImg,
-    name: "Tati Cadavid",
-    profesion: "Prácticante",
+    name: "Tatiana Cadavid",
+    profesion: "Practicante",
     position: 21,
   },
 ];

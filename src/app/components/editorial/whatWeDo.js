@@ -135,7 +135,11 @@ export default function WhatWeDo({ city }) {
         </Swiper>
       </div>
       <div className="flex justify-center">
-        <ButtonEditorial text={"Contacta a un asesor"} />
+        <ButtonEditorial
+          text={"Contacta a un asesor"}
+          action={"https://wa.link/103gx5"}
+          newTab
+        />
       </div>
     </section>
   );

@@ -1,9 +1,28 @@
+"use client";
+
+import { useRouter } from "next/navigation";
+
 import Arrow from "../SVGicons/arrow";
-export default function ButtonEditorial({ text, action, className }) {
+
+export default function ButtonEditorial({ text, action, className, newTab  }) {
+  const router = useRouter();
+
+  const handleClick = () => {
+    if (typeof action === "string") {
+      if (newTab) {
+        window.open(action, "_blank"); // 👉 abre en otra pestaña
+      } else {
+        router.push(action);
+      }
+    } else if (typeof action === "function") {
+      action();
+    }
+  };
+
   return (
     <button
       className={`flex text-sm md:text-base 2xl:text-lg font-light  items-center gap-5 robout text-[#302F32] bg-white px-4 py-2 rounded-full group ${className}`}
-      onClick={action}
+      onClick={handleClick}
     >
       <p className="flex-1 ml-5 text-center">{text}</p>
       <div className="relative bg-[#302F32] w-8 h-8 flex items-center justify-center rounded-full ">

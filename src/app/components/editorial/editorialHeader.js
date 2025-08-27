@@ -14,7 +14,12 @@ export default function EditorialHeader() {
           alt="Logo"
         />
       </Link>
-      <ButtonEditorial text="Hablemos" className="hidden md:flex" />
+      <ButtonEditorial
+        text="Hablemos"
+        className="hidden md:flex"
+        action={"https://wa.link/103gx5"}
+        newTab
+      />
     </header>
   );
 }

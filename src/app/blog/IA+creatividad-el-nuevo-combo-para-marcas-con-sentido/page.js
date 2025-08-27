@@ -8,7 +8,7 @@ import Link from "next/link";
 
 export default async function Page() {
   return (
-    <main className="min-h-screen ">
+    <main className="min-h-screen bg-pattern">
       <div className="flex flex-col mt-[120px] lg:mt-[110px] px-[20px] xl:px-[200px] 2xl:px-[300px]">
         <div className="mb-10">
           <Breadcrumbs

@@ -10,6 +10,7 @@ import imageBlog1 from "/public/blog/imageblog1.png";
 import imageBlog2 from "/public/blog/imageblog2.png";
 import imageBlog3 from "/public/blog/imageblog3.webp";
 import imageBlog4 from "/public/blog/imageblog4.webp";
+import imageBlog5 from "/public/blog/imageblog5.webp";
 
 // Componente principal (marcado como async)
 export default async function Page() {
@@ -38,6 +39,12 @@ export default async function Page() {
       date: "25 de Agosto - 2025",
       image: imageBlog4,
       link: "/blog/conceptos-esenciales-para-entender-la-pauta-digital",
+    },
+    {
+      title: "Top agencias de publicidad en Medellín - Ranking 2025",
+      date: "27 de Agosto - 2025",
+      image: imageBlog5,
+      link: "/blog/top-agencias-de-publicidad-en-medellin-ranking-2025",
     },
   ];
 

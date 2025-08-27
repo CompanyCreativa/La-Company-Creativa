@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import imageBlog2 from "/public/blog/imageblog2.png";
+import imageBlog5 from "/public/blog/imageblog5.webp";
 import Section from "@/app/components/section";
 import Breadcrumbs from "@/app/components/breadcrumbs";
 import Form from "@/app/components/form";
@@ -8,7 +8,7 @@ import Link from "next/link";
 
 export default async function Page() {
   return (
-    <main className="min-h-screen ">
+    <main className="min-h-screen bg-pattern">
       <div className="flex flex-col mt-[120px] lg:mt-[110px] px-[20px] xl:px-[200px] 2xl:px-[300px]">
         <div className="mb-10">
           <Breadcrumbs
@@ -17,7 +17,7 @@ export default async function Page() {
           />
         </div>
         <Image
-          src={imageBlog2}
+          src={imageBlog5}
           alt="estrategia 360"
           className="w-full h-auto rounded-lg mb-8 mx-auto"
         />
@@ -49,165 +49,149 @@ export default async function Page() {
               </p>
               <br />
               <h2 className="text-[24px] lg:text-3xl 2xl:text-4xl text-left font-semibold">
-                Pero primero ¿qué es la pauta digital?
+                1. La Company Creativa - Agencia con coraje, corazón y mucha
+                estrategia
               </h2>
               <br />
               <p className="text-left text-sm lg:text-base 2xl:text-lg leading-8">
-                La pauta digital es como alquilar una vitrina en internet. Le
-                pagas a las plataformas (Meta, Google, TikTok, etc.) para que le
-                muestren tu contenido a las personas correctas. Pero si no sabes
-                qué mostrar, cómo segmentar o qué medir, lo más probable es que
-                botes dinero sin ver resultados.
+                Especialidades: branding, pauta digital, estrategia 360, diseño,
+                conceptualización de campañas.
                 <br />
                 <br />
-                Por eso muchas marcas trabajan con una agencia de pauta, no para
-                hacer más, sino para hacerlo bien.
+                Por qué está en el #1: <br />
+                La Company combina una visión estratégica muy bien pensada con
+                un tono creativo, humano y actual.
+                <br /> No solo crea campañas, crea conexiones reales entre
+                marcas y personas. <br />
+                Su diferencial está en su mirada profunda: entienden el negocio
+                del cliente, diseñan ideas con propósito y ejecutan con una
+                estética impecable.
+                <br /> <br />
+                Además, tienen un sello único: coraje y corazón. <br />
+                Eso se siente en todo lo que hacen, desde marcas nuevas hasta
+                campañas de impacto social o experiencias de retail. <br />
+                <br />
+                Clientes destacados: Ideo, Casa Magna, Comfama, Colpatria,
+                CORONA, Autolarte, entre otros…
+                <br /> <br />
+                Sitio web:{" "}
+                <Link
+                  href="companycreativa.com"
+                  target="_blank"
+                  className="underline hover:text-blue-500"
+                >
+                  companycreativa.com
+                </Link>
+                <br />
               </p>
               <br />
               <h2 className="text-[24px] lg:text-3xl 2xl:text-4xl text-left font-semibold">
-                Empecemos con los conceptos clave:
-              </h2>
-              <br />
-              <h3 className="text-left text-sm lg:text-base 2xl:text-lg font-semibold">
-                Segmentación
-              </h3>
-              <p className="text-left text-sm lg:text-base 2xl:text-lg">
-                Es elegir bien a quién le hablas.
-                <br /> Con la segmentación, defines edades, gustos, ubicaciones
-                y hasta comportamientos para conectar con quien realmente podría
-                enamorarse de tu producto.
-              </p>
-              <br />
-              <h3 className="text-left text-sm lg:text-base 2xl:text-lg font-semibold">
-                Impresiones
-              </h3>
-              <p className="text-left text-sm lg:text-base 2xl:text-lg">
-                Son las veces que se muestra tu anuncio.
-                <br /> Eso no significa que lo hayan leído o que haya gustado,
-                solo que apareció por ahí.
-                <br /> Por eso, más que impresionar, lo importante es conectar.
-              </p>
-              <br />
-              <h3 className="text-left text-sm lg:text-base 2xl:text-lg font-semibold">
-                Alcance
-              </h3>
-              <p className="text-left text-sm lg:text-base 2xl:text-lg">
-                Es cuántas personas únicas vieron tu anuncio. <br />
-                Si tu anuncio lo vio una persona 10 veces, son 10 impresiones,
-                pero solo 1 de alcance.
-                <br /> Y si lo haces bien, con 1 vez puede bastar para que te
-                recuerden.
-              </p>
-              <br />
-              <h3 className="text-left text-sm lg:text-base 2xl:text-lg font-semibold">
-                CPC (Costo por clic)
-              </h3>
-              <p className="text-left text-sm lg:text-base 2xl:text-lg">
-                Lo que pagas cada vez que alguien hace clic en tu anuncio.
-                <br /> Este número ayuda a entender si el anuncio está siendo
-                efectivo.
-                <br /> Y si no lo es, no pasa nada, se analiza, se aprende y se
-                mejora (de eso nos encargamos en la agencia de pauta).
-              </p>
-              <br />
-              <h3 className="text-left text-sm lg:text-base 2xl:text-lg font-semibold">
-                CTR (Click Through Rate)
-              </h3>
-              <p className="text-left text-sm lg:text-base 2xl:text-lg">
-                Es el porcentaje de personas que hicieron clic en tu anuncio
-                frente al número total de veces que se mostró.
-                <br /> ¿Bajo CTR? Puede que el mensaje no esté resonando o que
-                la audiencia no sea la correcta.
-              </p>
-              <br />
-              <h3 className="text-left text-sm lg:text-base 2xl:text-lg font-semibold">
-                Conversión
-              </h3>
-              <p className="text-left text-sm lg:text-base 2xl:text-lg">
-                Es cuando el clic se transforma en una acción real, como una
-                compra, un formulario lleno, una descarga, lo que tú quieras
-                lograr. Una campaña bien pensada no se queda en likes, sino que
-                convierte.
-              </p>
-              <br />
-              <h3 className="text-left text-sm lg:text-base 2xl:text-lg font-semibold">
-                Retargeting
-              </h3>
-              <p className="text-left text-sm lg:text-base 2xl:text-lg">
-                Es volverle a hablar a quien ya te vio.
-                <br />
-                Como ese “Oye, aún estás a tiempo” que todos necesitamos a
-                veces. ¿Te metiste a una tienda y no compraste? Luego te aparece
-                ese mismo producto, eso es el retargeting tratando de
-                convencerte.
-                <br /> Inteligente y oportuno.
-              </p>
-              <br />
-              <h3 className="text-left text-sm lg:text-base 2xl:text-lg font-semibold">
-                Creatividades
-              </h3>
-              <p className="text-left text-sm lg:text-base 2xl:text-lg">
-                Son los textos, imágenes o videos de tus anuncios.
-                <br /> Porque no todo es estrategia: la forma como lo cuentas
-                también enamora (o espanta).
-                <br /> Aquí es donde entra la magia del diseño, el copy y el
-                corazón que le ponemos en cada campaña.
-              </p>
-              <br />
-              <h3 className="text-left text-sm lg:text-base 2xl:text-lg font-semibold">
-                Funnel o embudo
-              </h3>
-              <p className="text-left text-sm lg:text-base 2xl:text-lg">
-                Es ese camino que va desde “conozco tu marca” hasta “me
-                convierto en cliente fiel”.
-                <br /> Y cada paso necesita su propio mensaje, tono y formato.
-                <br />
-                No le hablas igual a alguien que recién te conoce que a alguien
-                que ya te tiene en su carrito.
-              </p>
-              <br />
-              <h3 className="text-left text-sm lg:text-base 2xl:text-lg font-semibold">
-                Pauta en redes sociales
-              </h3>
-              <p className="text-left text-sm lg:text-base 2xl:text-lg">
-                Es la pauta pensada especialmente para plataformas como
-                Instagram, Facebook, TikTok o LinkedIn. <br />
-                Cada red tiene su lenguaje, sus tiempos y su estilo. <br />Y lo
-                que funciona en una, puede no funcionar en otra. Por eso hay que
-                pensar bien antes de darle al botón de “publicar”.
-              </p>
-              <br />
-              <p className="text-left text-sm lg:text-base 2xl:text-lg">
-                Y todo esto lo maneja una agencia de pauta digital, como La
-                Company:
-              </p>
-              <br />
-              <ul className="list-disc pl-5 text-left text-sm lg:text-base 2xl:text-lg">
-                <li>Elegir la estrategia adecuada.</li>
-                <li>Segmentar bien.</li>
-                <li>Escribir mensajes que conecten.</li>
-                <li>Diseñar creatividades que enamoren.</li>
-                <li>Optimizar cada campaña con cabeza, corazón y coraje.</li>
-              </ul>
-              <br />
-              <p className="text-left text-sm lg:text-base 2xl:text-lg">
-                Creamos campañas que le hacen bien a tu marca.
-              </p>
-              <br />
-              <h2 className="text-2xl lg:text-3xl 2xl:text-4xl text-left font-semibold">
-                ¿Listo para pautar con propósito?
+                2. Branch Agencia
               </h2>
               <br />
               <p className="text-left text-sm lg:text-base 2xl:text-lg">
-                Queremos que tu marca deje de pasar desapercibida. <br />
-                Que aparezca donde tiene que estar. <br />
-                Que no te preocupes por los tecnicismos, sino por disfrutar los
-                resultados, nosotros te damos toda la asesoría y te lo
-                explicamos todo. <br /> <br />
-                Escríbenos. <br />
-                Nos encantaría ayudarte a llegar más lejos (y más cerquita del
-                corazón de tu público).
+                Branch es una agencia de marketing digital enfocada en SEO, SEM
+                y publicidad online. Su fuerte es generar leads y crear
+                comunidades que conectan de verdad con las marcas, impulsando
+                conversaciones auténticas y bidireccionales. <br />
+                <br /> Sitio web:{" "}
+                <Link
+                  href="https://branch.com.co/"
+                  target="_blank"
+                  className="underline hover:text-blue-500"
+                >
+                  https://branch.com.co/
+                </Link>
               </p>
+              <br />
+              <h2 className="text-[24px] lg:text-3xl 2xl:text-4xl text-left font-semibold">
+                3. BRM Medellín
+              </h2>
+              <br />
+              <p className="text-left text-sm lg:text-base 2xl:text-lg">
+                Especialidades: automatización, CRM, experiencia de cliente.{" "}
+                <br />
+                <br />
+                Más que una agencia creativa, BRM se posiciona como una
+                consultora de customer experience. Son expertos en transformar
+                datos en decisiones. <br />
+                Ideales para marcas que necesitan una visión más técnica y de
+                performance. <br /> <br />
+                Sitio web:{" "}
+                <Link
+                  href="https://www.brm.com.co/ "
+                  target="_blank"
+                  className="underline hover:text-blue-500"
+                >
+                  https://www.brm.com.co/
+                </Link>
+              </p>
+              <br />
+              <h2 className="text-[24px] lg:text-3xl 2xl:text-4xl text-left font-semibold">
+                4. AMD Agencia
+              </h2>
+              <br />
+              <p className="text-left text-sm lg:text-base 2xl:text-lg">
+                AMD Agencia, con sede en Bogotá, cuenta con más de 13 años de
+                experiencia en marketing digital y diseño web. Su propuesta
+                combina creatividad, análisis y tecnología para ofrecer
+                servicios como social media, SEO, publicidad digital y
+                desarrollo de sitios web que marcan la diferencia.
+                <br />
+                <br />
+                Sitio web:{" "}
+                <Link
+                  href="https://agenciadigitalamd.com/"
+                  target="_blank"
+                  className="underline hover:text-blue-500"
+                >
+                  https://agenciadigitalamd.com/
+                </Link>
+              </p>
+              <br />
+              <h2 className="text-[24px] lg:text-3xl 2xl:text-4xl text-left font-semibold">
+                5. Drimset
+              </h2>
+              <br />
+              <p className="text-left text-sm lg:text-base 2xl:text-lg">
+                Drimset se especializa en ofrecer estrategias digitales
+                personalizadas para negocios B2B. Su expertise está en
+                herramientas como Mi Negocio Google, Google Shopping y Google
+                Ads, potenciando la presencia de las marcas en el ecosistema
+                digital. <br /> <br />
+                Su promesa se centra en conectar a las marcas con clientes de
+                manera más eficiente y estratégica, optimizando la inversión en
+                publicidad digital y logrando resultados medibles.
+                <br />
+                <br />
+                Sitio web:{" "}
+                <Link
+                  href="https://drimset.com/"
+                  target="_blank"
+                  className="underline hover:text-blue-500"
+                >
+                  https://drimset.com/
+                </Link>
+              </p>
+              <br />
+              <h2 className="text-[24px] lg:text-3xl 2xl:text-4xl text-left font-semibold">
+                En resumen...
+              </h2>
+              <br />
+              <p className="text-left text-sm lg:text-base 2xl:text-lg">
+                No existe una fórmula única ni una agencia perfecta para todos.
+                La elección depende de lo que tu marca busque: conexión,
+                estrategia, diseño, resultados medibles o todo lo anterior
+                junto.
+                <br /> <br />
+                Lo importante es tener claro que, con el aliado correcto, una
+                campaña puede pasar de ser “una más” a convertirse en una
+                experiencia que la gente recuerde. Este ranking no es un
+                veredicto final, sino un punto de partida para que explores y
+                elijas el camino que mejor haga clic contigo y con lo que
+                quieres lograr.
+              </p>
+              <br />
             </div>
           </div>
         </Section>

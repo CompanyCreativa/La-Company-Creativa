@@ -27,7 +27,7 @@ export default function FooterEditorial() {
   ];
 
   return (
-    <div className="flex flex-col justify-center items-center gap-5  bg-[#262626] md:px-20 xl:px-32 2xl:px-52 md:-mx-20 xl:-px-32 xl:-mx-32 2xl:-mx-52 pt-10">
+    <div className="flex flex-col justify-center items-center gap-5  bg-[#262626] md:px-20 xl:px-32 2xl:px-52 -mx-2 md:-mx-20 xl:-px-32 xl:-mx-32 2xl:-mx-52 pt-10">
       <div className="flex flex-col lg:flex-row lg:gap-20 gap-10 justify-center items-center">
         <Image src={companyWhiteLogo} alt="companyWhiteLogo" />
         <div className="flex gap-5 items-center justify-center">

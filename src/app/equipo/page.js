@@ -12,7 +12,7 @@ export default function page() {
           <div className="my-2">
             <Breadcrumbs lastPage="Inicio" currentPage="Equipo" />
           </div>
-          <div className="flex flex-col pb-24 mr-[-40px] md:mr-0">
+          <div className="flex flex-col pb-24 md:mr-0">
             <div className="mt-16 flex flex-col justify-center items-center gap-5 lg:gap-2 SpaceGrotesk">
               <h1 className="text-[38px] lg:text-[55px] xl:text-[70px] 2xl:text-[80px] text-center SpaceGrotesk">
                 Conoce a nuestro{" "}

@@ -130,6 +130,7 @@ export default function buildBrand({ city }) {
             className="px-[13px] py-[20px] text-[14px] xl:text-[13px] bg-companySalmon xl:bg-[#FFF8EA] text-[#FFF8EA] xl:text-[#23194F] xl:border xl:border-x-[12px] xl:border-y-[8px] border-companySalmon robout uppercase hover:bg-companySalmon hover:text-[#FFF8EA] transition-all duration-300 lg:robout text-center"
             href="https://wa.link/pemtg8"
             target="_blank"
+            id="botonwp-branding"
           >
             Solicita diagnóstico gratuito
           </Link>

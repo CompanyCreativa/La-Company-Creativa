@@ -9,7 +9,7 @@ import manuImg from "/public/teamMembers/news/manuImg.png";
 import mileImg from "/public/teamMembers/news/mileImg.png";
 import moniImg from "/public/teamMembers/news/moniImg.png";
 import tomasImg from "/public/teamMembers/news/tomasImg.png";
-import edwinImg from "/public/teamMembers/news/edwinImg.png";
+import edwinImg from "/public/teamMembers/news/edwinImg.webp";
 import federicoImg from "/public/teamMembers/news/federicoImg.png";
 import kellyImg from "/public/teamMembers/news/kellyImg.png";
 import yenniImg from "/public/teamMembers/news/yenniImg.png";
@@ -17,7 +17,6 @@ import dannitwoImg from "/public/teamMembers/news/danitwo.png";
 import andreaImg from "/public/teamMembers/news/andreaImg.png";
 import ignacioImg from "/public/teamMembers/news/IgnacioImg.png";
 import isabelImg from "/public/teamMembers/news/isabelImg.png";
-
 import alejoImg from "/public/teamMembers/news/alejoImg.webp";
 import tatianaImg from "/public/teamMembers/news/tatianaImg.webp";
 import danielCaroImg from "/public/teamMembers/news/danielCaroImg.webp";
@@ -56,7 +55,7 @@ export const teamMembers = [
   {
     img: ignacioImg,
     name: "Ignacio Restrepo",
-    profesion: "Fundador / Gerente administrativo",
+    profesion: "Fundador / Gerente Administrativo",
     position: 7,
   },
   {
@@ -99,14 +98,14 @@ export const teamMembers = [
   },
   {
     img: alejoImg,
-    name: "Alejo Cardona",
+    name: "Alejandro Cardona",
     profesion: "Creativo Gráfico",
     position: 12,
   },
   {
     img: isabelImg,
     name: "Isabel Benavides",
-    profesion: "Community manager",
+    profesion: "Community Manager",
     position: 13,
   },
   {
@@ -123,13 +122,13 @@ export const teamMembers = [
   {
     img: andreaImg,
     name: "Andrea Suaza",
-    profesion: "Ejecutiva de cuentas",
+    profesion: "Ejecutiva de Cuentas",
     position: 22,
   },
   {
     img: emmaImg,
     name: "Emma Villareal",
-    profesion: "Ejecutiva de cuentas / Producción",
+    profesion: "Ejecutiva de Cuentas / Producción",
     position: 18,
   },
   {
@@ -152,8 +151,8 @@ export const teamMembers = [
   },
   {
     img: tatianaImg,
-    name: "Tati Cadavid",
-    profesion: "Prácticante",
+    name: "Tatiana Cadavid",
+    profesion: "Practicante",
     position: 21,
   },
 ];

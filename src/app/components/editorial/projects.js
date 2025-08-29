@@ -66,7 +66,7 @@ export default function Projects() {
   };
 
   return (
-    <div className="flex flex-col space-between gap-4 md:px-20 xl:px-32 2xl:px-52 md:-mx-20 xl:-px-32 xl:-mx-32 2xl:-mx-52 md:bg-[#262626] py-12">
+    <div className="flex flex-col space-between gap-4 md:px-20 xl:px-32 2xl:px-52 md:-mx-20 xl:-px-32 xl:-mx-32 2xl:-mx-52 md:bg-[#262626] py-12" id="projects">
       <h2 className="text-3xl md:text-4xl 2xl:text-5xl SpaceGrotesk font-light uppercase text-[#F7F7F7] text-start md:text-center mb-4 md:mb-8 tracking-wide">
         Página que cuentan{" "}
         <span className="SpaceGrotesk font-medium text-companySalmon">
@@ -76,10 +76,10 @@ export default function Projects() {
       <div className="md:h-[653px] flex flex-col md:flex-row gap-4">
         {projects.map((project, index) => (
           <div
-            className={`group relative h-full rounded-2xl overflow-hidden cursor-pointer transition-all ease-in-out duration-500 ${
+            className={`group relative rounded-2xl overflow-hidden cursor-pointer transition-all ease-in-out duration-500 ${
               index === activeIndex
-                ? "w-full h-[303px] md:h-auto"
-                : "md:w-40 h-[88px] md:h-auto"
+                ? "w-full h-[303px] md:h-full"
+                : "md:w-40 h-[88px] md:h-full "
             }`}
             key={index}
             onClick={() => toggleAccordion(index)}

@@ -2,24 +2,22 @@ import Image from "next/image";
 
 export default function TeamMember({ img, name, profesion, className }) {
   return (
-    <div className={`flex justify-center w-full lg:w-[31%] w-[87%] mx-auto `}>
-      <div>
+    <div className={`flex justify-between`}>
+      <div className="">
         <Image
           src={img}
           alt="miembro del equipo de la company creativa"
-          className={`lg:h-[32.5vw] xl:h-[28vw] 2xl:max-h-[509px] mt-10 object-cover  ${
+          className={`w-[340px] xl:w-[400px] 2xl:w-[450px] mt-10   ${
             className ? className : ""
           }`}
         />
-        <div className={`relative mt-5 ml-14 w-fit  py-1 text-[#11190c]`}>
-          <h3 className="text-xl lg:text-[17px] 2xl:text-[30px] font-bold SpaceGrotesk">
+        <div className={`mt-2 w-full py-1 text-[#11190c]`}>
+          <h3 className="text-xl lg:text-2xl 2xl:text-3xl text-center font-bold SpaceGrotesk mr-8 xl:mr-14 2xl:mr-16">
             {name}
           </h3>
-          <p className="border-t border-[#11190c] border-b mt-2 w-fit font-montserrat text-sm lg:text-[15px] 2xl:text-lg font-light">
+          <p className="mt-1 text-center font-montserrat text-sm lg:text-base 2xl:text-lg font-light mr-8 xl:mr-14 2xl:mr-16">
             {profesion}
           </p>
-          <span></span>
-          <span></span>
         </div>
       </div>
     </div>

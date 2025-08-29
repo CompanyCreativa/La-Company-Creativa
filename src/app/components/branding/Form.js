@@ -9,6 +9,7 @@ export default function LeadForm() {
     Company: "",
     Mobile: "",
     Email: "",
+    Description: "",
     "Lead Source": "Sitio web",
     "Lead Status": "Lead",
   });
@@ -257,7 +258,27 @@ export default function LeadForm() {
           </div>
           <div className="clear-both"></div>
         </div>
-
+        <div className="my-4 flex flex-col">
+          <div className="mr-2.5 mt-1 float-left">
+            <label
+              htmlFor="Description"
+              className="text-base font-calibri text-[#23194F]"
+            >
+              Mensaje <span className="text-red-500">*</span>
+            </label>
+          </div>
+          <div className="w-full float-left">
+            <textarea
+              id="Description"
+              name="Description"
+              maxLength="1000"
+              required
+              value={formData["Description"]}
+              onChange={handleChange}
+              className="bg-transparent p-3 border border-[#23194F] w-full text-[#23194F]"
+            />
+          </div>
+        </div>
         {/* Hidden selects */}
         <div className="hidden">
           <div className="my-4">

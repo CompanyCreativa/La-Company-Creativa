@@ -223,7 +223,21 @@ export default function LeadForm() {
           </div>
           <div className="clear-both"></div>
         </div>
-
+        <div className="my-4 flex flex-col">
+          <div className="w-full float-left">
+            <textarea
+              id="Description"
+              name="Description"
+              maxLength="32000"
+              rows="4"
+              value={formData["Description"]}
+              onChange={handleChange}
+              className="bg-transparent p-3 rounded-xl border border-[#fff]  w-full text-background text-white"
+              placeholder="Mensaje"
+            ></textarea>
+          </div>
+          <div className="clear-both"></div>
+        </div>
         {/* Hidden selects */}
         <div className="hidden">
           <div className="my-4">

@@ -63,6 +63,7 @@ export default function CreateBrand() {
           className="absolute w-5/6 lg:w-auto bottom-3 xl:bottom-1 left-1/2 transform -translate-x-1/2 lg:-translate-y-1/2 p-[13px] lg:p-[20px]  text-[14px] xl:text-[13px] bg-companySalmon xl:bg-[#FFF8EA] text-[#FFF8EA] lg:text-[#23194F] xl:border xl:border-x-[12px] xl:border-y-[8px] xl:border-companySalmon robout uppercase xl:hover:bg-companySalmon xl:hover:text-[#FFF8EA] transition-all duration-300"
           href="https://wa.link/pemtg8"
           target="_blank"
+          id="botonwp-branding"
         >
           Agenda una llamada con el equipo
         </Link>

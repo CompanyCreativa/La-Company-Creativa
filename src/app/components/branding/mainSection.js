@@ -38,6 +38,7 @@ export default function MainSection({ city }) {
             className="p-[20px] text-[12px] 2xl:text-[13px] bg-[#FFF8EA] text-[#23194F] border border-x-[12px] border-y-[8px] border-companySalmon robout uppercase hover:bg-companySalmon hover:text-[#FFF8EA] transition-all duration-300"
             href="https://wa.link/pemtg8"
             target="_blank"
+            id="botonwp-branding"
           >
             Solicita diagnóstico gratuito
           </Link>
@@ -53,6 +54,7 @@ export default function MainSection({ city }) {
           className="SpaceGrotesk lg:hidden p-[20px] mt-[24px] mx-6 text-[18px] bg-companySalmon text-[#F2F1ED] robout uppercase font-semibold text-center"
           href="https://wa.link/pemtg8"
           target="_blank"
+          id="botonwp-branding"
         >
           Solicita diagnóstico gratuito
         </Link>

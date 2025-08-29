@@ -30,12 +30,15 @@ export default function MainSection({ city }) {
           <ButtonEditorial
             className="w-full"
             text="Ver ejemplos de nuestro trabajo"
+            action="#projects"
           />
         </div>
         <div className="w-full">
           <ButtonEditorial
             className="w-full"
             text="Solicita una propuesta editorial"
+            action={"https://wa.link/103gx5"}
+            newTab
           />
         </div>
       </div>

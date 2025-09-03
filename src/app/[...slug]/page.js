@@ -56,6 +56,13 @@ export async function generateStaticParams() {
     { slug: ["gracias"] },
     { slug: ["agencia-de-branding-medellin", "gracias"] },
     { slug: ["agencia-de-branding-bogota", "gracias"] },
+    { slug: ["agencia-de-pauta-digital", "gracias"] },
+    { slug: ["agencia-de-pauta-digital-medellin", "gracias"] },
+    { slug: ["agencia-de-pauta-digital-bogota", "gracias"] },
+    { slug: ["agencia-de-publicidad", "gracias"] },
+    { slug: ["agencia-de-publicidad-bogota", "gracias"] },
+    { slug: ["agencia-de-publicidad-medellin", "gracias"] },
+    { slug: ["publicidad-proyectos-inmobiliarios", "gracias"] },
     { slug: ["otra", "ruta", "gracias"] },
   ];
 }

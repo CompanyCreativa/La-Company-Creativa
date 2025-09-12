@@ -1,5 +1,5 @@
 import { notFound } from "next/navigation";
-import React from "react";
+import React, { useEffect } from "react";
 import Image from "next/image";
 import LogoCompany from "../../../public/logoCompany.svg";
 import MainContainer from "../components/mainContainer";
@@ -9,15 +9,20 @@ import decorationThanks from "../../../public/decorationThanks.png";
 export default function Gracias({ params }) {
   const slug = params.slug || [];
   const last = slug[slug.length - 1];
-  const redirect = () => {
-    window.location.href = "/";
-  };
 
   if (last !== "gracias") return notFound();
 
-  return (
-    // * Modal de gracias por llenar el formulario y enviarlo.
+  // 🚀 Dispara el evento de GA4 cuando carga la página de gracias
+  useEffect(() => {
+    if (typeof window !== "undefined" && typeof window.gtag === "function") {
+      window.gtag("event", "generated_lead", {
+        form_id: slug.join("/"), // opcional: saber desde qué ruta vino el form
+        status: "success",
+      });
+    }
+  }, [slug]);
 
+  return (
     <MainContainer>
       <div className="h-screen inset-0 z-50 flex items-center justify-center bg-pattern bg-repeat">
         <div className="border lg:px-[175px] lg:pb-[100px] lg:pt-[250px] rounded-2xl text-center flex flex-col gap-5  relative lg:max-w-[1000px] md:max-w-[800px] md:px-20 md:py-16 px-4 py-20 max-w-[370px] bg-background">

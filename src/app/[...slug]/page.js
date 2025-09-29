@@ -1,5 +1,5 @@
 import { notFound } from "next/navigation";
-import React, { useEffect } from "react";
+import React from "react";
 import Image from "next/image";
 import LogoCompany from "../../../public/logoCompany.svg";
 import MainContainer from "../components/mainContainer";
@@ -13,14 +13,14 @@ export default function Gracias({ params }) {
   if (last !== "gracias") return notFound();
 
   // 🚀 Dispara el evento de GA4 cuando carga la página de gracias
-  useEffect(() => {
-    if (typeof window !== "undefined" && typeof window.gtag === "function") {
-      window.gtag("event", "generated_lead", {
-        form_id: slug.join("/"), // opcional: saber desde qué ruta vino el form
-        status: "success",
-      });
-    }
-  }, [slug]);
+  //useEffect(() => {
+  //if (typeof window !== "undefined" && typeof window.gtag === "function") {
+  //window.gtag("event", "generated_lead", {
+  //form_id: slug.join("/"), // opcional: saber desde qué ruta vino el form
+  // status: "success",
+  // });
+  // }
+  //}, [slug]);
 
   return (
     <MainContainer>

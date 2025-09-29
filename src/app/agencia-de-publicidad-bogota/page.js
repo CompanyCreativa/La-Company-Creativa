@@ -180,22 +180,22 @@ export default function page() {
     {
       logo: adobeLogo,
       title: "Suite de Adobe",
-      description: "(Diseño)",
+      description: "Diseño",
     },
     {
       logo: figmaLogo,
       title: "Figma",
-      description: "(Diseño Web)",
+      description: "Diseño Web",
     },
     {
       logo: metricoolLogo,
       title: "Metricool",
-      description: "(Redes Sociales)",
+      description: "Redes Sociales",
     },
     {
       logo: makeLogo,
       title: "Make",
-      description: "(Automatización de procesos)",
+      description: "Automatización de procesos",
     },
   ];
 
@@ -225,7 +225,7 @@ export default function page() {
           subtitle={
             <>
               <span className="font-[500]">
-                Agencia en Medellín donde diseñamos
+                Agencia en Bogotá donde diseñamos
               </span>{" "}
               estrategias completas con coraje y corazón.
               <br /> Desde la idea creativa hasta la pauta...{" "}

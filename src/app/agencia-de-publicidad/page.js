@@ -180,22 +180,22 @@ export default function page() {
     {
       logo: adobeLogo,
       title: "Suite de Adobe",
-      description: "(Diseño)",
+      description: "Diseño",
     },
     {
       logo: figmaLogo,
       title: "Figma",
-      description: "(Diseño Web)",
+      description: "Diseño Web",
     },
     {
       logo: metricoolLogo,
       title: "Metricool",
-      description: "(Redes Sociales)",
+      description: "Redes Sociales",
     },
     {
       logo: makeLogo,
       title: "Make",
-      description: "(Automatización de procesos)",
+      description: "Automatización de procesos",
     },
   ];
 

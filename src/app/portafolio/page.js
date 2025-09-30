@@ -13,14 +13,12 @@ import bobListImg from "/public/portfolio/bobListImg.png";
 import francaImg from "/public/portfolio/francaPortfolio.png";
 import zigDesktop from "/public/portfolio/zigDesktop.png";
 import terapiaDesktop from "/public/portfolio/terapiasDesktop.png";
-import reflexDesktop from "/public/portfolio/reflexDesktop.png";
 import doradoDesktop from "/public/portfolio/doradoDesktop.png";
 import casaDesktop from "/public/portfolio/casaDesktop.png";
 import bigDesktop from "/public/portfolio/bigDesktop.png";
 import loveDesktop from "/public/portfolio/loveDesktop.png";
 import navidadDesktop from "/public/portfolio/navidadDesktop.png";
 import minipet from "/public/portfolio/minipet.png";
-import retiroAlto from "/public/portfolio/retiro_alto.png";
 import distritoFlorida from "/public/portfolio/distritoFlorida.png";
 
 export default function Page() {
@@ -82,16 +80,6 @@ export default function Page() {
             image={terapiaDesktop}
             title="Ideoterapias - Ideo"
             link="/portafolio/ideoterapia"
-          />
-          <GridCard
-            image={retiroAlto}
-            title="Villas campestres - Retiro Alto"
-            link="/portafolio/retiro-alto"
-          />
-          <GridCard
-            image={reflexDesktop}
-            title="Campaña de lanzamiento - Réflex"
-            link="/portafolio/reflex"
           />
           <GridCard
             image={loveDesktop}

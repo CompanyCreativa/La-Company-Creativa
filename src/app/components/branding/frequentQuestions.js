@@ -4,7 +4,7 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 export default function FrequentQuestions() {
   const questions = [
     {
-      question: "¿Que incluye un proceso de branding completo?",
+      question: "¿Qué incluye un proceso de branding completo?",
       answer:
         "Todo lo necesario para que tu marca hable claro y con estilo: nombre (si lo necesitas), concepto estratégico, identidad visual, sistema gráfico, brandbook y aplicaciones clave.",
     },

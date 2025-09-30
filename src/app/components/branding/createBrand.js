@@ -42,7 +42,7 @@ export default function CreateBrand() {
         <p className="SpaceGrotesk text-[22px] xl:text-[24px] 2xl:text-[28px] text-[#fff] bg-[#23194F] p-4 text-center w-full lg:max-w-[500px] leading-[45px]">
           <span className="font-medium">Coraje</span> para proponer.
           <br />
-          corazón para{" "}
+          Corazón para{" "}
           <span className="text-[16px] xl:text-[18px] 2xl:text-[21px] text-companySalmon rounded-full border border-companySalmon border-[1px] uppercase py-[3px] px-[8px] SpaceGrotesk">
             conectar
           </span>

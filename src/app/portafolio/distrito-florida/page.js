@@ -11,7 +11,7 @@ import MotionGraphicsIcon from "@/app/components/SVGicons/motionGraphicsIcon";
 import RebrandingIcon from "@/app/components/SVGicons/rebrandingIcon";
 
 import bannerDesktop from "/public/distrito-florida/bannerDesktop.png";
-import bannerMobile from "/public/retiro-alto/bannerMobile.png";
+import bannerMobile from "/public/distrito-florida/bannerMobile.webp";
 import logo from "/public/distrito-florida/logo.png";
 import section1 from "/public/distrito-florida/section1.png";
 import section2 from "/public/distrito-florida/section2.png";
@@ -98,10 +98,7 @@ export default function Page() {
         <div className="w-full hidden lg:block">
           <Image src={bannerDesktop} alt="Banner Desktop" className=" w-full" />
         </div>
-        <Breadcrumbs
-          lastPage={"Portafolio"}
-          currentPage={"Distrito Florida"}
-        />
+        <Breadcrumbs lastPage={"Portafolio"} currentPage={"Distrito Florida"} />
         <TitleSection>
           <PortfolioTitle textColor="text-[#FB6B58]">
             Distrito Florida
@@ -183,10 +180,7 @@ export default function Page() {
       </Section>
       <Image src={section5} className="mt-16 w-full hidden lg:block" />
       <Section>
-        <Breadcrumbs
-          lastPage={"Portafolio"}
-          currentPage={"Distrito Florida"}
-        />
+        <Breadcrumbs lastPage={"Portafolio"} currentPage={"Distrito Florida"} />
       </Section>
       <div className="-mt-12 lg:mt-0">
         <Form />

@@ -10,20 +10,12 @@ export default function Results() {
         alt="iconDigital1"
         className="w-full  lg:hidden"
       />
-      <div className="flex flex-col lg:h-full gap-4 px-6 py-4 lg:py-10 bg-gradient-to-b from-[rgba(255,255,255,0.05)] to-[rgba(255,255,255,0.02)] border border-[#2BFFC3] lg:border-none lg:bg-none border-opacity-[0.1] rounded-b-[11px] border-t-0 lg:items-center">
-        <h3 className="flex items-center gap-2 text-[24px] lg:text-[32px] 2xl:text-[43px] mb-auto">
-          <Image
-            src={iconDigital6}
-            alt="iconDigital1"
-            className="w-7 h-7 2xl:w-14 2xl:h-14"
-          />{" "}
-          Resultados o <span className="font-semibold">no pagas:</span>
-        </h3>
+      <div className="flex flex-col lg:h-full gap-4 px-6 py-4 lg:py-10 bg-gradient-to-b from-[rgba(255,255,255,0.05)] to-[rgba(255,255,255,0.02)] border border-[#2BFFC3] lg:border-none lg:bg-none border-opacity-[0.1] rounded-b-[11px] border-t-0 lg:items-center justify-end">
         <p className="text-[17px] lg:text-[16px] 2xl:text-[24px] font-montserrat font-thin lg:text-center">
-          Si en 60 días no ves mejoras en ventas o leads (siguiendo nuestras
-          recomendaciones
-          <br className="hidden lg:block" /> estratégicas), te devolvemos el{" "}
-          <span className="font-semibold">50% de tu dinero.</span>
+          Si buscas una agencia de publicidad que no trabaje en automático
+          <br className="hidden lg:block" /> sino que piense contigo, cuestione
+          contigo y cree contigo…{" "}
+          <span className="font-semibold">estás en el lugar correcto.</span>
         </p>
         <a
           className="inline-flex max-w-max items-center gap-2 text-[12px] uppercase tracking-[3px] bg-companySalmon py-4 px-7 font-thin hover:bg-[#B92A1D] transition-all duration-300"

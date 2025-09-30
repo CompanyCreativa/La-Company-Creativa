@@ -11,39 +11,13 @@ import "swiper/css/pagination";
 import rebrandingIcon from "/public/branding/rebranding.png";
 import designSystemIcon from "/public/branding/design_system.png";
 import conceptualization from "/public/branding/conceptualization.png";
-import logoRetiroAlto from "/public/retiro-alto/logoWhite.png";
+
 import logoDistritoFlorida from "/public/distrito-florida/distritoFloridaLogo-Vive.png";
 import logoZigzag from "/public/zig-zag/zigzagLogo.png";
 import Link from "next/link";
 
 export default function Proyects() {
   const projects = [
-    {
-      url: "retiroAltoCard.png",
-      logo: logoRetiroAlto,
-      description: (
-        <>
-          Bodega Hábitat es un proyecto de vivienda y talleres comerciales
-          ubicado
-          <br className="hidden lg:block" /> en el corazón del Perpetuo Socorro
-        </>
-      ),
-      categories: [
-        {
-          icon: rebrandingIcon,
-          title: "branding",
-        },
-        {
-          icon: conceptualization,
-          title: "Conceptualización",
-        },
-        {
-          icon: designSystemIcon,
-          title: "Pauta digital",
-        },
-      ],
-      link: "/portafolio/retiro-alto",
-    },
     {
       url: "distritoFloridaCard.png",
       logo: logoDistritoFlorida,

@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 import Section from "../section";
 import Button from "../button";
 import GridCard from "../gridCard";
@@ -12,7 +10,6 @@ import bigDesktop from "/public/portfolio/bigDesktop.png";
 import doradoDesktop from "/public/portfolio/doradoDesktop.png";
 import francaImg from "/public/portfolio/francaPortfolio.png";
 import terapiaDesktop from "/public/portfolio/terapiasDesktop.png";
-import reflexDesktop from "/public/portfolio/reflexDesktop.png";
 import zigDesktop from "/public/portfolio/zigDesktop.png";
 
 export default function OurClients() {
@@ -86,13 +83,6 @@ export default function OurClients() {
               title="Campaña de branding - El dorado"
               link="/portafolio/pastas-el-dorado"
             />
-            <div className="hidden lg:block">
-              <GridCard
-                image={reflexDesktop}
-                title="Campaña de lanzamiento - Réflex"
-                link="/portafolio/reflex"
-              />
-            </div>
             <GridCard
               image={terapiaDesktop}
               title="Ideoterapias Ideo"

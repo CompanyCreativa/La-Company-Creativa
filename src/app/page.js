@@ -6,6 +6,7 @@ import OurClients from "./components/home/ourClients";
 import WhatWeDo from "./components/home/whatWeDo";
 import Form from "./components/form";
 import ModalForm from "./components/modalForm";
+import Services from "./components/home/services";
 
 // * Metadatos para SEO: título y descripción de la página principal
 export const metadata = {
@@ -21,6 +22,7 @@ export default function Home() {
         <HomeMainBanner />
         <ModalForm />
         <OurPhilosophy />
+        <Services />
         <OurClients />
         <WhatWeDo />
         <Form />

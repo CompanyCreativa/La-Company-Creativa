@@ -9,12 +9,15 @@ export default function PublicLayout({ children, page = "" }) {
       {page !== "digital" &&
         page !== "branding" &&
         page !== "real-estate" &&
-        page !== "editorial" && <Header page={page} />}
+        page !== "editorial" &&
+        page !== "web" && <Header page={page} />}
+
       {children}
       {page !== "digital" &&
         page !== "branding" &&
         page !== "real-estate" &&
-        page !== "editorial" && <Footer page={page} />}
+        page !== "editorial" &&
+        page !== "web" && <Footer page={page} />}
     </>
   );
 }

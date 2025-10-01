@@ -7,5 +7,5 @@ export const metadata = {
 };
 
 export default function DigitalPage({ children }) {
-  return <PublicLayout page="desarrollo-web">{children}</PublicLayout>;
+  return <PublicLayout page="web">{children}</PublicLayout>;
 }

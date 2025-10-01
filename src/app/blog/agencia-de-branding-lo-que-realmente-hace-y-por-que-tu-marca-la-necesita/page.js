@@ -1,10 +1,9 @@
 import Image from "next/image";
 
-import imageBlog4 from "/public/blog/imageblog4.webp";
+import imageBlog6 from "/public/blog/imageblog6.webp";
 import Section from "@/app/components/section";
 import Breadcrumbs from "@/app/components/breadcrumbs";
 import Form from "@/app/components/form";
-import Link from "next/link";
 
 export default async function Page() {
   return (
@@ -17,7 +16,7 @@ export default async function Page() {
           />
         </div>
         <Image
-          src={imageBlog4}
+          src={imageBlog6}
           alt="estrategia 360"
           className="w-full h-auto rounded-lg mb-8 mx-auto"
         />

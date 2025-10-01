@@ -28,11 +28,11 @@ export default function MainSection() {
           <span className="font-poppins text-[#E5E7EB] pl-28 xl:pl-72">
             que venden
           </span>
-          <StarSVG className="text-[#F55548] w-[80px] h-[80px] xl:w-[110px] xl:h-[110px] absolute top-[-30px] xl:top-[0px] right-[30px] xl:left-[700px] z-20" />
-          <div className="absolute bottom-[-10px] xl:bottom-[0px] left-[-20px] flex items-center justify-center">
-            <CircleDotSVG className="text-[#F55548] xl:w-[150px] xl:h-[150px] w-[80px] h-[80px]" />
-            <CircleDotSVG className="text-[#F55548] rotate-[-240deg] absolute top-0 left-[45px] xl:left-[70px] xl:w-[150px] xl:h-[150px] w-[80px] h-[80px]" />
-            <div className="w-[70px] h-[1px] bg-[#E5E7EB] absolute top-0 top-1/2 right-[-130px] hidden xl:block"></div>
+          <StarSVG className="text-[#F55548] w-[80px] h-[80px] xl:w-[110px] xl:h-[110px] absolute top-[-30px] xl:top-[-10px] right-[30px] xl:left-[700px] z-20" />
+          <div className="absolute bottom-[-10px] xl:bottom-[10px] left-[-20px] flex items-center justify-center">
+            <CircleDotSVG className="text-[#F55548] xl:w-[120px] xl:h-[120px] w-[80px] h-[80px]" />
+            <CircleDotSVG className="text-[#F55548] rotate-[-240deg] absolute top-0 left-[45px] xl:left-[70px] xl:w-[120px] xl:h-[120px] w-[80px] h-[80px]" />
+            <div className="w-[90px] h-[1px] bg-[#E5E7EB] absolute top-0 top-1/2 right-[-170px] hidden xl:block"></div>
           </div>
         </h1>
       </div>

@@ -11,6 +11,7 @@ import imageBlog2 from "/public/blog/imageblog2.png";
 import imageBlog3 from "/public/blog/imageblog3.webp";
 import imageBlog4 from "/public/blog/imageblog4.webp";
 import imageBlog5 from "/public/blog/imageblog5.webp";
+import imageBlog6 from "/public/blog/imageblog6.webp";
 
 // Componente principal (marcado como async)
 export default async function Page() {
@@ -45,6 +46,13 @@ export default async function Page() {
       date: "27 de Agosto - 2025",
       image: imageBlog5,
       link: "/blog/top-agencias-de-publicidad-en-medellin-ranking-2025",
+    },
+    {
+      title:
+        "Agencia de branding: lo que realmente hace y por qué tu marca la necesita",
+      date: "1 de Octubre - 2025",
+      image: imageBlog6,
+      link: "/blog/agencia-de-branding-lo-que-realmente-hace-y-por-que-tu-marca-la-necesita",
     },
   ];
 

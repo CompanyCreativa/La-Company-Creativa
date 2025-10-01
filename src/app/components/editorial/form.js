@@ -105,7 +105,8 @@ export default function LeadForm() {
       <meta httpEquiv="content-type" content="text/html;charset=UTF-8" />
 
       <form
-        id="webform"
+        id="editorialform"
+        
         action="https://crm.zoho.com/crm/WebToLeadForm"
         name=" WebToLeads6724972000001254034"
         method="POST"

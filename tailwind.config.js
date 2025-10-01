@@ -15,6 +15,7 @@ module.exports = {
       fontFamily: {
         montserrat: ["var(--font-montserrat)"],
         abel: ["var(--font-abel)"],
+        poppins: ["var(--font-poppins)"],
       },
       backgroundImage: {
         header:

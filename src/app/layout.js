@@ -1,8 +1,7 @@
 import { GoogleTagManager } from "@next/third-parties/google";
-import { Abel, Montserrat } from "next/font/google";
+import { Abel, Montserrat, Poppins } from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
-
 
 const abel = Abel({
   subsets: ["latin"],
@@ -16,9 +15,18 @@ const montserrat = Montserrat({
   weight: "400",
 });
 
+const poppins = Poppins({
+  subsets: ["latin"],
+  variable: "--font-poppins",
+  weight: ["400", "600", "700", "800", "900"],
+});
+
 export default function RootLayout({ children }) {
   return (
-    <html lang="es" className={`${abel.variable} ${montserrat.variable}`}>
+    <html
+      lang="es"
+      className={`${abel.variable} ${montserrat.variable} ${poppins.variable}`}
+    >
       <head>
         {/* Meta Pixel Code con Script */}
         <Script id="facebook-pixel" strategy="afterInteractive">

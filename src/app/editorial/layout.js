@@ -1,9 +1,9 @@
 import PublicLayout from "../components/publicLayout";
 
 export const metadata = {
-  title: "Editorial | La Company Creativa",
+  title: "Diseño editorial ⎪La Company Creativa",
   description:
-    "Agencia especialista en Pauta Digital en Colombia, experta en campañas que venden. Creamos estrategias digitales en Meta y Google.",
+    "En La Company diseñamos publicaciones digitales e impresas con claridad, estilo y estrategia. Haz que tu público sí quiera leer.",
 };
 
 export default function EditorialPage({ children }) {

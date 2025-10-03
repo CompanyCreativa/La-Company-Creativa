@@ -6,6 +6,9 @@ import ButtonEditorial from "./buttonEditorial";
 import CircularCarousel from "./CircularCarousel";
 
 export default function MainSection({ city }) {
+
+  
+
   return (
     <div className="relative mt-10 bg-[#262626] flex flex-col items-start md:items-center overflow-hidden rounded-2xl p-8 md:p-16 pb-0">
       <h1 className="text-3xl md:text-4xl xl:text-5xl 2xl:text-6xl text-[#fff] font-semibold SpaceGrotesk uppercase  md:text-center">

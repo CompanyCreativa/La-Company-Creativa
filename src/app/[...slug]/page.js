@@ -68,6 +68,7 @@ export async function generateStaticParams() {
     { slug: ["agencia-de-publicidad-bogota", "gracias"] },
     { slug: ["agencia-de-publicidad-medellin", "gracias"] },
     { slug: ["publicidad-proyectos-inmobiliarios", "gracias"] },
+    { slug: ["editorial", "gracias"] },
     { slug: ["otra", "ruta", "gracias"] },
   ];
 }

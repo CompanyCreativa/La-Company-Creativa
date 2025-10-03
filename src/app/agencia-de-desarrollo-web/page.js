@@ -3,6 +3,7 @@ import Header from "../components/web/header";
 import Services from "../components/web/services";
 import MainSection from "../components/web/mainSection";
 import Skills from "../components/web/skills";
+import Projects from "../components/web/projects";
 
 export default function page() {
   return (
@@ -11,6 +12,7 @@ export default function page() {
       <MainSection />
       <Services />
       <Skills />
+      <Projects />
     </div>
   );
 }

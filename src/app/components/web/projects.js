@@ -2,7 +2,7 @@ import Image from "next/image";
 import ButtonWeb from "./buttonWeb";
 import decorationSix from "/public/web/decorationSix.webp";
 
-export default function Skills({ children }) {
+export default function Projects({ children }) {
   const skills = [
     {
       title: "WordPress",

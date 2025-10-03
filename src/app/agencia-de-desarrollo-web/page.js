@@ -4,6 +4,7 @@ import Services from "../components/web/services";
 import MainSection from "../components/web/mainSection";
 import Skills from "../components/web/skills";
 import Projects from "../components/web/projects";
+import Testimonials from "../components/web/testimonials";
 
 export default function page() {
   return (
@@ -13,6 +14,7 @@ export default function page() {
       <Services />
       <Skills />
       <Projects />
+      <Testimonials />
     </div>
   );
 }

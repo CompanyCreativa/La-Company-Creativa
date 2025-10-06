@@ -5,6 +5,9 @@ import MainSection from "../components/web/mainSection";
 import Skills from "../components/web/skills";
 import Projects from "../components/web/projects";
 import Testimonials from "../components/web/testimonials";
+import VideoWeb from "../components/web/videoWeb";
+import Questions from "../components/web/questions";
+import Footer from "../components/web/footer";
 
 export default function page() {
   return (
@@ -15,6 +18,9 @@ export default function page() {
       <Skills />
       <Projects />
       <Testimonials />
+      <VideoWeb />
+      <Questions />
+      <Footer />
     </div>
   );
 }

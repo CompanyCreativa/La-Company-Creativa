@@ -1,40 +1,7 @@
-import Image from "next/image";
 import ButtonWeb from "./buttonWeb";
-import decorationSix from "/public/web/decorationSix.webp";
 import SwiperProjects from "./swiperProjects";
 
 export default function Projects({ children }) {
-  const skills = [
-    {
-      title: "WordPress",
-      progress: "100%",
-    },
-    {
-      title: "Integraciones CRM",
-      progress: "95%",
-    },
-    {
-      title: "WooCommerce",
-      progress: "100%",
-    },
-    {
-      title: "SEO técnico y on-page",
-      progress: "100%",
-    },
-    {
-      title: "Shopify",
-      progress: "95%",
-    },
-    {
-      title: "Diseño UX/UI (Figma)",
-      progress: "100%",
-    },
-    {
-      title: "JS / React, Next.js",
-      progress: "100%",
-    },
-  ];
-
   return (
     <div className="flex flex-col-reverse md:flex-row w-full max-w-[1300px] 2xl:max-w-[1500px] px-5 py-20 justify-between gap-10">
       <div className="flex  justify-start md:hidden mt-10">
@@ -64,7 +31,7 @@ export default function Projects({ children }) {
           web sea rápida, segura y escalable.
         </p>
         <div className="flex items-end justify-end hidden md:block">
-          <ButtonWeb text="Ver portafolio completo" />
+          <ButtonWeb text="Ver portafolio completo" action={"/portafolio"} />
         </div>
       </div>
     </div>

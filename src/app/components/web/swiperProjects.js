@@ -15,6 +15,25 @@ import Image from "next/image";
 import ButtonWeb from "./buttonWeb";
 
 export default function SwiperProjects() {
+  const projects = [
+    {
+      image: sliderProjectOne,
+      link: "https://ryr.ideocreo.co/",
+    },
+    {
+      image: sliderProjectTwo,
+      link: "https://adoquinar.ideocreo.co/",
+    },
+    {
+      image: sliderProjectThree,
+      link: "https://proyectomoss.com/",
+    },
+    {
+      image: sliderProjectFour,
+      link: "https://sescopoweramerica.com/",
+    },
+  ];
+
   return (
     <div className="w-full max-w-3xl relative">
       <Swiper
@@ -32,29 +51,18 @@ export default function SwiperProjects() {
         }}
         className="rounded-2xl"
       >
-        <SwiperSlide>
-          <div className="flex items-center justify-center  text-white text-2xl font-bold">
-            <Image src={sliderProjectOne} alt="sliderProjectOne" />
-          </div>
-        </SwiperSlide>
-
-        <SwiperSlide>
-          <div className="flex items-center justify-center text-white text-2xl font-bold">
-            <Image src={sliderProjectTwo} alt="sliderProjectOne" />
-          </div>
-        </SwiperSlide>
-
-        <SwiperSlide>
-          <div className="flex items-center justify-center text-white text-2xl font-bold">
-            <Image src={sliderProjectThree} alt="sliderProjectOne" />
-          </div>
-        </SwiperSlide>
-
-        <SwiperSlide>
-          <div className="flex items-center justify-center  text-white text-2xl font-bold">
-            <Image src={sliderProjectFour} alt="sliderProjectOne" />
-          </div>
-        </SwiperSlide>
+        {projects.map((project, index) => (
+          <SwiperSlide key={index}>
+            <a
+              className="flex items-center justify-center  text-white text-2xl font-bold"
+              href={project.link}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image src={project.image} alt="sliderProjectOne" />
+            </a>
+          </SwiperSlide>
+        ))}
       </Swiper>
 
       {/* Botones de navegación */}

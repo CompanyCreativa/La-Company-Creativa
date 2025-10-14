@@ -1,13 +1,15 @@
 import { useState } from "react";
 import Arrow from "../SVGicons/arrow";
 
-export default function AccordionWeb({ answer, title }) {
+export default function AccordionWeb({ answer, title, className = "" }) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <div className="">
       {" "}
-      <div className="bg-[#2A2626] px-5 py-1 rounded-3xl max-w-[700px]">
+      <div
+        className={`bg-[#2A2626] px-5 py-1 rounded-3xl max-w-[700px] ${className}`}
+      >
         <button
           onClick={() => setIsOpen(!isOpen)}
           className="w-full flex justify-between items-center py-4 text-left "

@@ -156,6 +156,28 @@ html {
   font-style: normal;
 }
 
+/* Fuente Grift */
+@font-face {
+  font-family: "Grift";
+  src: url("assets/fonts/Grift-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Grift";
+  src: url("assets/fonts/Grift-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Grift";
+  src: url("assets/fonts/Grift-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
 * {
   font-family: "Cooper", sans-serif;
   line-height: normal;
@@ -315,6 +337,10 @@ body {
 
 .mangiola {
   font-family: "Mangiola", sans-serif;
+}
+
+.grift {
+  font-family: "Grift", sans-serif;
 }
 
 .mosk {

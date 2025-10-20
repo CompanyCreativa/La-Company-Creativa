@@ -35,7 +35,7 @@ export default function Skills({ children }) {
   ];
 
   return (
-    <div className="flex flex-col md:flex-row w-full max-w-[1300px] 2xl:max-w-[1500px] mx-auto items-end px-5">
+    <div className="flex flex-col md:flex-row w-full max-w-[1300px] 2xl:max-w-[1500px] mx-auto items-end px-5 pb-20">
       <div className="flex flex-col ]  pt-20 ">
         <div className="flex items-center gap-2">
           <p className="font-poppins text-[#E5E7EB] mb-2">
@@ -68,7 +68,12 @@ export default function Skills({ children }) {
           web sea rápida, segura y escalable.
         </p>
         <div className="mt-10 mb-20">
-          <ButtonWeb text="Contáctanos" className="w-auto" />
+          <ButtonWeb
+            text="Contáctanos"
+            className="w-auto"
+            action={"https://wa.link/103gx5"}
+            newTab
+          />
         </div>
         <div className="border border-[#343232] rounded-xl p-5 xl:p-8 2xl:p-10 max-w-[700px]">
           <h3 className="text-3xl 2xl:text-2xl font-bold text-[#F55548] font-poppins ">

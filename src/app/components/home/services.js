@@ -18,28 +18,29 @@ export default function Services() {
   const projects = [
     {
       img: brandingImage,
-      title: <>Página&nbsp;de&nbsp;Branding</>,
-      description: "Aquí hacemos branding",
+      title: <>Branding</>,
+      description: "Tu marca con una identidad clara y creativa.",
     },
     {
       img: webImage,
       title: <>Páginas&nbsp;web</>,
-      description: "Que venden",
+      description: "Más que un sitio, convierte clics en clientes.",
     },
     {
       img: editorialImage,
-      title: <>Página&nbsp;de&nbsp;Editorial</>,
-      description: "Público que si quiere leer",
+      title: <>Página&nbsp;Editorial</>,
+      description:
+        "Piezas editoriales que cuentan historias con una gran experiencia.",
     },
     {
       img: inmobiliariaImage,
-      title: <>Página&nbsp;de&nbsp;Inmobiliaria</>,
-      description: "Proyectos inmobiliarios",
+      title: <>Proyectos&nbsp;inmobiliarios</>,
+      description: "Estrategia que vende espacios.",
     },
     {
       img: pautaImage,
-      title: <>Página&nbsp;de&nbsp;pauta</>,
-      description: "Libro conmemorativo",
+      title: <>Pauta&nbsp;digital</>,
+      description: "Anuncios que convierten de verdad.",
     },
   ];
 
@@ -51,11 +52,9 @@ export default function Services() {
   return (
     <Section className={"bg-transparent w-full"}>
       <div className="flex flex-col space-between gap-4" id="projects">
-        <h2 className="text-3xl md:text-4xl 2xl:text-5xl SpaceGrotesk font-light uppercase text-companySalmon text-start md:text-center mb-4 md:mb-8 tracking-wide">
-          Página que cuentan{" "}
-          <span className="SpaceGrotesk font-medium text-companySalmon">
-            historias
-          </span>
+        <h2 className="text-3xl md:text-4xl 2xl:text-5xl font-light uppercase text-[#11190C] text-start md:text-center mb-4 md:mb-8 tracking-wide">
+          <span className="font-bold text-[#11190C]">Explora </span>
+          nuestros servicios
         </h2>
         <div className="md:h-[653px] flex flex-col md:flex-row gap-4">
           {projects.map((project, index) => (

@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import decoration3 from "/public/branding/decoration3_branding.png";
+import decoration3 from "/public/realstate/decoration3_realstate.webp";
 import Form from "./form";
 
 export default function FormRealstate() {
@@ -9,7 +9,9 @@ export default function FormRealstate() {
       <div className="flex flex-col gap-8">
         <h2 className="z-10 text-center md:text-start text-[31px] md:text-[52px] 2xl:text-[66px]  SpaceGrotesk text-companySalmon font-semibold uppercase">
           Hablemos, <br />
-          <span className="text-[#23194F] font-light">podemos hacerlo juntos</span>
+          <span className="text-[#23194F] font-light">
+            podemos hacerlo juntos
+          </span>
         </h2>
         <Image
           src={decoration3}

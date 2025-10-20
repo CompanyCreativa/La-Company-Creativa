@@ -21,27 +21,33 @@ export default function MainSection() {
         <div className="w-[10px] h-[10px] bg-[#E5E7EB] rounded-full mb-2 hidden xl:block"></div>
         <div className="w-[10px] h-[10px] bg-[#E5E7EB] rounded-full mb-2 hidden xl:block"></div>
       </div>
-      <div>
-        <h1 className="font-poppins text-4xl md:text-6xl xl:text-8xl relative items-center justify-start uppercase font-[700] z-10">
-          Páginas web
-          <br />{" "}
-          <span className="font-poppins text-[#E5E7EB] pl-28 xl:pl-72">
-            que venden
-          </span>
-          <StarSVG className="text-[#F55548] w-[80px] h-[80px] xl:w-[110px] xl:h-[110px] absolute top-[-30px] xl:top-[-10px] right-[30px] xl:left-[700px] z-20" />
-          <div className="absolute bottom-[-10px] xl:bottom-[10px] left-[-20px] flex items-center justify-center">
-            <CircleDotSVG className="text-[#F55548] xl:w-[120px] xl:h-[120px] w-[80px] h-[80px]" />
-            <CircleDotSVG className="text-[#F55548] rotate-[-240deg] absolute top-0 left-[45px] xl:left-[70px] xl:w-[120px] xl:h-[120px] w-[80px] h-[80px]" />
-            <div className="w-[90px] h-[1px] bg-[#E5E7EB] absolute top-0 top-1/2 right-[-170px] hidden xl:block"></div>
-          </div>
-        </h1>
+
+      <h1 className="font-poppins text-4xl md:text-6xl xl:text-8xl relative items-center justify-start uppercase font-[700] z-10">
+        Páginas web
+        <br />{" "}
+        <span className="font-poppins text-[#E5E7EB] pl-28 xl:pl-72">
+          que venden
+        </span>
+        <StarSVG className="text-[#F55548] w-[80px] h-[80px] xl:w-[110px] xl:h-[110px] absolute top-[-30px] xl:top-[-10px] right-[30px] xl:left-[700px] z-20" />
+        <div className="absolute bottom-[-10px] xl:bottom-[10px] left-[-20px] flex items-center justify-center">
+          <CircleDotSVG className="text-[#F55548] xl:w-[120px] xl:h-[120px] w-[80px] h-[80px]" />
+          <CircleDotSVG className="text-[#F55548] rotate-[-240deg] absolute top-0 left-[45px] xl:left-[70px] xl:w-[120px] xl:h-[120px] w-[80px] h-[80px]" />
+          <div className="w-[90px] h-[1px] bg-[#E5E7EB] absolute top-0 top-1/2 right-[-170px] hidden xl:block"></div>
+        </div>
+      </h1>
+      <div className="md:hidden mb-40">
+        <ButtonWeb text="Hablemos" action={"https://wa.link/103gx5"} newTab />
       </div>
-      <p className="SpaceGrotesk text-lg font-light max-w-[900px] z-10">
+      <p className="SpaceGrotesk text-lg font-light max-w-[900px] z-10 hidden md:block">
         En La Company sabemos que una página web no es un adorno digital: es la
         vitrina más poderosa de tu marca. Por eso diseñamos y desarrollamos
         páginas web que comunican, inspiran confianza y convierten visitas en
         clientes reales. Desde un landing page ágil hasta un ecommerce robusto,
         tu sitio web será mucho más que un link: será tu mejor vendedor.
+      </p>
+      <p className="SpaceGrotesk font-light z-10 md:hidden ">
+        En La Company transformamos tu web en el mejorvendedor de tu marca:
+        clara, confiable y lista para convertir visitas en clientes.
       </p>
       <ButtonWeb
         text="Quiero mi página web ahora"
@@ -75,7 +81,11 @@ export default function MainSection() {
           </div>
         </Marquee>
       </div>
-      <Image src={decoration} alt="Decoration" className="absolute right-0" />
+      <Image
+        src={decoration}
+        alt="Decoration"
+        className="absolute right-0 top-72 md:top-0 w-1/2 md:w-auto"
+      />
     </div>
   );
 }

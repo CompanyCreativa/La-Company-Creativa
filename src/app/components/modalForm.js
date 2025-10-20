@@ -4,15 +4,12 @@ import React, { useState, useEffect } from "react";
 import emailjs from "emailjs-com";
 import { motion, AnimatePresence } from "framer-motion";
 
-import Input from "./input";
-import Button from "./button";
 import {
   GoogleReCaptchaProvider,
   useGoogleReCaptcha,
 } from "react-google-recaptcha-v3";
 
 import CubeButton from "./cubeButton";
-import Loader from "./SVGicons/loader";
 import ZohoFormTwo from "./modalForm-form";
 
 const ModalFormInt = () => {

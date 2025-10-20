@@ -497,6 +497,11 @@ body {
   }
 }
 
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  content: none !important; /* quita la flecha default */
+}
+
 @layer utilities {
   .text-rainbow {
     background: repeating-linear-gradient(

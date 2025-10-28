@@ -561,3 +561,7 @@ body {
     }
   }
 }
+
+.text-dodge {
+  mix-blend-mode: color-dodge;
+}

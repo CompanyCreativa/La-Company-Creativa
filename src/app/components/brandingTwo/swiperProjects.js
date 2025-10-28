@@ -4,7 +4,7 @@
 import React from "react";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Autoplay } from "swiper";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import swiperBrandingOne from "/public/branding/swiperBrandingOne.webp";
 import swiperBrandingTwo from "/public/branding/swiperBrandingTwo.webp";
 import swiperBrandingThree from "/public/branding/swiperBrandingThree.webp";
@@ -27,7 +27,7 @@ export default function SwiperProjects() {
   ];
 
   return (
-    <div className="w-full max-w-4xl mx-auto">
+    <div className="w-full max-w-4xl mx-auto border border-[#E5E7EB]">
       <Swiper
         modules={[Pagination, Autoplay]}
         pagination={{ clickable: true }}
@@ -35,10 +35,11 @@ export default function SwiperProjects() {
         loop={true}
         spaceBetween={16}
         slidesPerView={1}
+        className=""
       >
         {images.map((img, i) => (
           <SwiperSlide key={img.alt}>
-            <div className="relative w-full h-64 md:h-96 rounded-xl overflow-hidden">
+            <div className="relative w-full h-64 md:h-[500px] rounded-xl overflow-hidden">
               <Image
                 src={img.src}
                 alt={img.alt ?? `slide-${i}`}

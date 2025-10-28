@@ -12,7 +12,7 @@ export default function AccordionWeb({ answer, title, className = "" }) {
       >
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="w-full flex justify-between items-center py-4 text-left "
+          className="w-full flex justify-between items-center py-4 text-left"
         >
           <span className="font-medium text-[#E5E7EB] font-poppins text-xl 2xl:text-2xl">
             {title}

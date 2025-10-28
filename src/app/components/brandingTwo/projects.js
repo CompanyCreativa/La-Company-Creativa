@@ -61,7 +61,7 @@ export default function Projects() {
   ];
 
   return (
-    <div className="w-full flex flex-col justify-center relative xl:max-w-[1300px] 2xl:max-w-[1500px]">
+    <div className="w-full flex flex-col justify-center relative xl:max-w-[1300px] 2xl:max-w-[1500px] px-4">
       <h3 className="w-full flex justify-between">
         <span className="SpaceGrotesk font-bold">
           El problema y la oportunidad
@@ -69,14 +69,14 @@ export default function Projects() {
         <span className="SpaceGrotesk font-bold"> (02)</span>
       </h3>
       <div className="w-full h-[1px] bg-[#353535] mt-1 mb-5"></div>
-      <h2 className="font-montserrat text-7xl font-bold tracking-wide uppercase">
+      <h2 className="font-montserrat text-4xl xl:text-7xl font-bold xl:tracking-wide uppercase">
         Lo que hacemos, <br />
         se ve y se siente
       </h2>
-      <div className="grid grid-cols-2 mt-20 gap-10">
+      <div className="flex flex-col xl:grid grid-cols-2 mt-20 gap-10">
         {projects.map((project, index) => (
           <Link
-            className="w-full h-[600px] relative overflow-hidden group rounded-lg"
+            className="w-full h-[400px] xl:h-[600px] relative overflow-hidden group rounded-lg"
             key={index}
             href={project.link}
           >
@@ -86,9 +86,9 @@ export default function Projects() {
                 backgroundImage: `url(/branding/${project.imageBackground}.webp)`,
               }}
             ></div>
-            <div className="relative flex justify-between flex-col h-full px-10 py-8">
+            <div className="relative flex justify-between flex-col h-full px-4 py-4 xl:px-10 xl:py-8">
               <div className="w-full flex justify-between">
-                <span className="font-montserrat tracking-wide text-2xl uppercase text-[#E5E7EB]">
+                <span className="font-montserrat tracking-wide text-sm xl:text-2xl uppercase text-[#E5E7EB]">
                   <span className="font-montserrat font-bold">
                     {project.name}
                   </span>{" "}
@@ -104,10 +104,10 @@ export default function Projects() {
                 alt={project.name}
                 className="self-center"
               />
-              <div className="flex gap-5">
+              <div className="flex gap-2 xl:gap-5">
                 {project.categories.map((category, index) => (
                   <span
-                    className="bg-[#D9D9D9]/40 backdrop-blur-sm py-3 px-4 rounded-full font-montserrat font-bold tracking-wider text-[#FFFFFF] uppercase"
+                    className="bg-[#D9D9D9]/40 backdrop-blur-sm py-1 px-2 xl:py-3 xl:px-4 rounded-full font-montserrat xl:font-bold tracking-wider text-[#FFFFFF] uppercase text-[10px] xl:text-md"
                     key={index}
                   >
                     {category}

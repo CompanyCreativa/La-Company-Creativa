@@ -27,7 +27,7 @@ export default function SwiperProjects() {
   ];
 
   return (
-    <div className="w-full max-w-4xl mx-auto border border-[#E5E7EB]">
+    <div className="w-full xl:max-w-4xl xl:mx-auto border border-[#E5E7EB]">
       <Swiper
         modules={[Pagination, Autoplay]}
         pagination={{ clickable: true }}
@@ -39,7 +39,7 @@ export default function SwiperProjects() {
       >
         {images.map((img, i) => (
           <SwiperSlide key={img.alt}>
-            <div className="relative w-full h-64 md:h-[500px] rounded-xl overflow-hidden">
+            <div className="relative w-full mt-10 xl:mt-0 h-[500px] rounded-xl overflow-hidden">
               <Image
                 src={img.src}
                 alt={img.alt ?? `slide-${i}`}

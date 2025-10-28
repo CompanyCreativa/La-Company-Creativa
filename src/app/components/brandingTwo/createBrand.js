@@ -8,22 +8,22 @@ export default function CreateBrand() {
 
   const className = "";
   return (
-    <div className="w-full xl:max-w-[1300px] 2xl:max-w-[1500px] flex flex-col justify-center items-start relative bg-[#F2F1ED]">
-      <h3 className="w-1/3 flex justify-between">
+    <div className="w-full xl:max-w-[1300px] 2xl:max-w-[1500px] flex flex-col justify-center items-start relative bg-[#F2F1ED] px-4">
+      <h3 className="w-full xl:w-1/3 flex justify-between">
         <span className="SpaceGrotesk font-bold text-[#1D1D1D]">
           ¿Por qué elegirnos?
         </span>
         <span className="SpaceGrotesk font-bold text-[#1D1D1D]"> (05)</span>
       </h3>
-      <div className="w-1/3 h-[1px]  mt-1 mb-5 bg-[#1D1D1D]"></div>
+      <div className="w-full xl:w-1/3 h-[1px]  mt-1 mb-5 bg-[#1D1D1D]"></div>
       <h4 className="font-montserrat text-2xl font-bold uppercase text-companySalmon">
         No solo diseñamos marca
       </h4>
-      <h2 className="font-montserrat text-7xl font-bold tracking-wide uppercase text-[#1D1D1D]">
+      <h2 className="font-montserrat text-4xl xl:text-7xl font-bold tracking-wide uppercase text-[#1D1D1D]">
         creamos marca <br />
         con alma
       </h2>
-      <div className="w-full grid grid-cols-4 grid-rows-1 justify-center items-center gap-10 xl:gap-10 mt-16 mx-[8px]">
+      <div className="w-full flex flex-col xl:grid grid-cols-4 grid-rows-1 justify-center items-center gap-10 xl:gap-10 mt-16 lg:mx-[8px]">
         <p className="font-montserrat text-[22px] xl:text-xl text-[#fff] bg-[#1D1D1D] py-6 px-3 text-center w-full lg:max-w-[500px] leading-[45px] border border-[#F2F1ED] border-[1px] outline outline-[#1D1D1D] outline-[8px] rounded-md">
           <span className="font-bold font-montserrat">Creatividad </span>
           con estrategia <br /> nunca solo{" "}

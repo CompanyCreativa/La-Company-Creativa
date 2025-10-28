@@ -93,7 +93,7 @@ export default function Services() {
   const className = "";
 
   return (
-    <div className="w-full flex flex-col justify-center items-center relative bg-[#1D1D1D]">
+    <div className="w-full flex flex-col justify-center items-center relative bg-[#1D1D1D] px-4">
       <Image
         src={texture}
         alt="texture"
@@ -105,21 +105,21 @@ export default function Services() {
         className="w-[22%] absolute bottom-0 left-0"
       />
       <div className="xl:max-w-[1300px] 2xl:max-w-[1500px] w-full flex flex-col my-20">
-        <h3 className="w-1/3 flex justify-between">
+        <h3 className="xl:w-1/3 flex justify-between">
           <span className="SpaceGrotesk font-bold text-[#F2F1ED]">
             ¿Qué hacemos en branding?
           </span>
           <span className="SpaceGrotesk font-bold text-[#F2F1ED]"> (03)</span>
         </h3>
-        <div className="w-1/3 h-[1px] mt-1 mb-5 bg-[#F2F1ED]"></div>
-        <h4 className="font-montserrat text-2xl font-bold uppercase text-companySalmon">
+        <div className="xl:w-1/3 h-[1px] mt-1 mb-5 bg-[#F2F1ED]"></div>
+        <h4 className="font-montserrat text-3xl font-bold uppercase text-companySalmon">
           Agencia de branding en Medellín
         </h4>
-        <h2 className="font-montserrat text-7xl font-bold tracking-wide uppercase text-[#F2F1ED]">
+        <h2 className="hidden xl:block font-montserrat text-7xl font-bold tracking-wide uppercase text-[#F2F1ED]">
           Que CONSTRUYE MARCA, <br />
           NO SOLO APARIENCIA
         </h2>
-        <div className="mx-[10px] grid grid-cols-4 gap-20 mt-20">
+        <div className="mx-[10px] flex flex-col xl:grid grid-cols-4 gap-20 mt-20">
           {projects.map((project, index) => {
             // Si es el cuarto elemento (index = 3)
             if (index === 4) {

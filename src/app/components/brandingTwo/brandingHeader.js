@@ -13,8 +13,8 @@ export default function BrandingHeader() {
   const className = "";
 
   return (
-    <header className="flex justify-center  lg:bg-[#1D1D1D] shadow-[0px_4px_4px_rgba(0,0,0,0.12)] p-[16px] lg:p-[28px] sticky top-0 z-50">
-      <div className="flex w-full justify-between items-center gap-5 max-w-[1300px] 2xl:max-w-[1500px]">
+    <header className="flex justify-center bg-[#1D1D1D] shadow-[0px_4px_4px_rgba(0,0,0,0.12)] p-[16px] lg:p-[28px] sticky top-0 z-50">
+      <div className="flex w-full justify-center xl:justify-between items-center gap-5 max-w-[1300px] 2xl:max-w-[1500px]">
         <Link href="/" className="flex justify-center">
           <Image
             src={logo}
@@ -23,7 +23,7 @@ export default function BrandingHeader() {
           />
         </Link>
         <button
-          className={`flex text-sm md:text-base 2xl:text-lg font-light items-center gap-5 robout text-[#302F32] bg-[#fff] px-4 py-2 rounded-full group ${className} overflow-hidden border border-white/10  shadow-[0_12px_40px_rgba(8,15,30,0.55)] relative `}
+          className={`flex text-sm md:text-base 2xl:text-lg font-light items-center gap-5 robout text-[#302F32] bg-[#fff] px-4 py-4 xl:py-2 rounded-full group ${className} overflow-hidden border border-white/10  shadow-[0_12px_40px_rgba(8,15,30,0.55)] relative hidden lg:flex`}
           onClick={handleClick}
         >
           <p className="flex-1 ml-5 text-center font-[400]">Hablemos</p>

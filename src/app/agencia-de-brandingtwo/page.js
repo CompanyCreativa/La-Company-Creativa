@@ -14,7 +14,7 @@ export default function page() {
   return (
     <div>
       <BrandingHeader />
-      <div className="flex flex-col bg-[#F2F1ED] justify-center items-center gap-[116px]">
+      <div className="flex flex-col bg-[#F2F1ED] justify-center items-center gap-[86px] xl:gap-[116px]">
         <MainSection city="Medellín" />
         <Logo />
         <Projects />

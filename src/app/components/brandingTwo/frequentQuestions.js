@@ -30,9 +30,9 @@ export default function FrequentQuestions() {
     },
   ];
   return (
-    <div className="bg-[#1D1D1D] w-full">
+    <div className="bg-[#1D1D1D] w-full px-4">
       <div className="flex flex-col w-full max-w-[1300px] 2xl:max-w-[1500px] mx-auto items-center py-32 gap-5 bg-[#1D1D1D] rounded-lg">
-        <h2 className="text-3xl xl:text-4xl 2xl:text-6xl font-bold uppercase font-montserrat text-[#F2F1ED] leading-2">
+        <h2 className="text-3xl xl:text-4xl 2xl:text-6xl font-bold uppercase font-montserrat text-[#F2F1ED] leading-2 text-center xl:text-start">
           preguntas frecuentes
         </h2>
         <div className="flex flex-col md:grid grid-cols-2 gap-5">

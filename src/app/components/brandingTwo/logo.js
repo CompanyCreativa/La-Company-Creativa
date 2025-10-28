@@ -66,30 +66,33 @@ export default function Logo() {
   const className = "";
 
   return (
-    <div className="w-full flex items-center justify-center relative xl:max-w-[1300px] 2xl:max-w-[1500px]">
-      <div>
-        <h3 className="w-1/2 flex justify-between">
+    <div className="w-full flex flex-col md:flex-row items-center justify-center relative xl:max-w-[1300px] 2xl:max-w-[1500px] ">
+      <div className="mx-4">
+        <h3 className="2xl:w-1/2 flex justify-between">
           <span className="SpaceGrotesk font-bold">
             El problema y la oportunidad
           </span>
-
-          <span className="SpaceGrotesk font-bold"> (01)</span>
+          <span className=" SpaceGrotesk font-bold"> (01)</span>
         </h3>
-        <div className="w-1/2 h-[1px] bg-[#353535] mt-1 mb-5"></div>
-        <h2 className="font-montserrat text-7xl font-bold tracking-wide uppercase">
+        <div className="2xl:w-1/2 h-[1px] bg-[#353535] mt-1 mb-5"></div>
+        <h2 className="font-montserrat text-4xl xl:text-7xl font-bold 2xl:tracking-wide uppercase">
           ¿Y si el problema <br /> no es el logo... <br /> sino lo que no dice?
         </h2>
-        <p className="font-montserrat uppercase mt-10">
+        <p className="text-sm xl:text-base font-montserrat uppercase mt-10">
           Muchas marcas se ven bonitas, pero no dicen nada.{" "}
-          <span className="font-montserrat font-bold">Otras tienen algo que decir,</span>{" "}
+          <span className="font-montserrat font-bold">
+            Otras tienen algo que decir,
+          </span>{" "}
           pero no saben cómo.{" "}
-          <span className="font-montserrat font-bold">en la company</span> resolvemos eso:
-          traducimos la esencia de tu negocio en una identidad que hable por ti
-          con estrategia,{" "}
-          <span className="font-montserrat font-bold">creatividad y propósito.</span>
+          <span className="font-montserrat font-bold">en la company</span>{" "}
+          resolvemos eso: traducimos la esencia de tu negocio en una identidad
+          que hable por ti con estrategia,{" "}
+          <span className="font-montserrat font-bold">
+            creatividad y propósito.
+          </span>
         </p>
         <button
-          className={`flex text-sm md:text-base 2xl:text-lg font-light items-center gap-5 robout text-[#FFFFFF] bg-[#1D1D1D] px-4 py-2 rounded-full group ${className} overflow-hidden border border-white/10 relative mt-40`}
+          className={`flex text-sm md:text-base 2xl:text-lg font-light items-center gap-5 robout text-[#FFFFFF] bg-[#1D1D1D] px-4 py-2 rounded-full group ${className} overflow-hidden border border-white/10 relative mt-40 hidden xl:flex`}
           onClick={handleClick}
         >
           <p className="flex-1 ml-5 text-center font-[400]">Hablemos</p>
@@ -99,7 +102,7 @@ export default function Logo() {
           </div>
         </button>
       </div>
-      <div className="w-[456px]">
+      <div className="w-full xl:w-[456px]">
         <SwiperProjects />
       </div>
     </div>

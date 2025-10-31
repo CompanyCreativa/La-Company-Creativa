@@ -46,7 +46,7 @@ export default function Footer() {
       <p className="mt-14 mb-14 text-[#FFFFFF]">
         Copyright © 2025 |{" "}
         <Link href={"/"} className="underline">
-          LA COMPANY CREATIVA
+          La Company Creativa
         </Link>{" "}
         | Todos los derechos reservados | Política de protección de datos
         personales

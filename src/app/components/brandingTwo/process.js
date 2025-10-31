@@ -11,15 +11,15 @@ import decorationBranding from "/public/branding/decoration_branding.webp";
 
 export default function Process() {
   return (
-    <div className="w-full xl:max-w-[1300px] 2xl:max-w-[1500px] flex flex-col justify-center items-start xl:items-center relative bg-[#F2F1ED] px-4">
+    <div className="w-full xl:max-w-[1300px] 2xl:max-w-[1500px] flex flex-col justify-center items-start relative bg-[#F2F1ED] px-4 ">
       <h3 className="w-full xl:w-1/3 flex justify-between">
         <span className="SpaceGrotesk font-bold text-[#1D1D1D]">
-          ¿Qué hacemos en branding?
+          Agencia de Branding en medellín
         </span>
         <span className="SpaceGrotesk font-bold text-[#1D1D1D]"> (04)</span>
       </h3>
       <div className="w-full xl:w-1/3 h-[1px]  mt-1 mb-5 bg-[#1D1D1D]"></div>
-      <h2 className="font-montserrat text-3xl xl:text-7xl font-bold tracking-wide uppercase text-[#1D1D1D]">
+      <h2 className="font-montserrat text-3xl xl:text-7xl font-bold tracking-wide uppercase text-[#1D1D1D] mb-12 xl:mb-16">
         ASÍ LO HACEMOS
       </h2>
       <div className="w-full flex flex-col lg:flex-row justify-center items-start xl:items-center gap-12 xl:gap-16">

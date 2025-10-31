@@ -23,22 +23,22 @@ export default function CreateBrand() {
         creamos marca <br />
         con alma
       </h2>
-      <div className="w-full flex flex-col xl:grid grid-cols-4 grid-rows-1 justify-center items-center gap-10 xl:gap-10 mt-16 lg:mx-[8px]">
-        <p className="font-montserrat text-[22px] xl:text-xl text-[#fff] bg-[#1D1D1D] py-6 px-3 text-center w-full lg:max-w-[500px] leading-[45px] border border-[#F2F1ED] border-[1px] outline outline-[#1D1D1D] outline-[8px] rounded-md">
-          <span className="font-bold font-montserrat">Creatividad </span>
+      <div className="w-full flex flex-col xl:grid grid-cols-4 grid-rows-1 justify-center items-center gap-10 xl:gap-6 mt-16 lg:mx-[8px]">
+        <p className="font-montserrat 2xl:text-lg text-[#fff] bg-[#1D1D1D] py-6 px-3 text-center w-full lg:max-w-[500px] leading-[35px] 2xl:leading-[45px] border border-[#F2F1ED] border-[1px] outline outline-[#1D1D1D] outline-[8px] rounded-md">
+          <span className="font-bold fnt-montserrat">Creatividad </span>
           con estrategia <br /> nunca solo{" "}
           <span className="text-[16px] xl:text-[18px] 2xl:text-lg text-companySalmon rounded-full border border-companySalmon border-[1px] uppercase py-[3px] px-[8px] SpaceGrotesk">
-            bonito
+            bonitoy
           </span>
         </p>
-        <p className="font-montserrat text-[22px] xl:text-xl text-[#fff] bg-[#1D1D1D] py-6 px-3 text-center w-full lg:max-w-[500px] leading-[45px] border border-[#F2F1ED] border-[1px] outline outline-[#1D1D1D] outline-[8px] rounded-md">
+        <p className="font-montserrat 2xl:text-lg text-[#fff] bg-[#1D1D1D] py-6 px-3 text-center w-full lg:max-w-[500px] leading-[35px] 2xl:leading-[45px] border border-[#F2F1ED] border-[1px] outline outline-[#1D1D1D] outline-[8px] rounded-md">
           <span className="font-bold font-montserrat">Branding realista, </span>
           aplicable <br /> y pensado para{" "}
           <span className="text-[16px] xl:text-[18px] 2xl:text-lg text-companySalmon rounded-full border border-companySalmon border-[1px] uppercase py-[3px] px-[8px] SpaceGrotesk">
             crecer
           </span>
         </p>
-        <p className="font-montserrat text-[22px] xl:text-xl text-[#fff] bg-[#1D1D1D] py-6 px-3 text-center w-full lg:max-w-[500px] leading-[45px] border border-[#F2F1ED] border-[1px] outline outline-[#1D1D1D] outline-[8px] rounded-md">
+        <p className="font-montserrat 2xl:text-lg text-[#fff] bg-[#1D1D1D] py-6 px-3 text-center w-full lg:max-w-[500px] leading-[35px] 2xl:leading-[45px] border border-[#F2F1ED] border-[1px] outline outline-[#1D1D1D] outline-[8px] rounded-md">
           Procesos claros, <br />
           <span className="font-bold font-montserrat">acompañamiento </span>
           <span className="text-[16px] xl:text-[18px] 2xl:text-lg text-companySalmon rounded-full border border-companySalmon border-[1px] uppercase py-[3px] px-[8px] SpaceGrotesk">
@@ -46,7 +46,7 @@ export default function CreateBrand() {
           </span>
         </p>
 
-        <p className="font-montserrat text-[22px] xl:text-xl text-[#fff] bg-[#1D1D1D] py-6 px-3 text-center w-full lg:max-w-[500px] leading-[45px] border border-[#F2F1ED] border-[1px] outline outline-[#1D1D1D] outline-[8px] rounded-md">
+        <p className="font-montserrat 2xl:text-xl text-[#fff] bg-[#1D1D1D] py-6 px-3 text-center w-full lg:max-w-[500px] leading-[35px] 2xl:leading-[45px] border border-[#F2F1ED] border-[1px] outline outline-[#1D1D1D] outline-[8px] rounded-md">
           <span className="font-bold font-montserrat">Coraje </span>
           para proponer <br />{" "}
           <span className="text-[16px] xl:text-[18px] 2xl:text-lg text-companySalmon rounded-full border border-companySalmon border-[1px] uppercase py-[3px] px-[8px] SpaceGrotesk">

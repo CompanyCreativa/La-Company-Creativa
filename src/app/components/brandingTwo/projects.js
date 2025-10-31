@@ -63,9 +63,7 @@ export default function Projects() {
   return (
     <div className="w-full flex flex-col justify-center relative xl:max-w-[1300px] 2xl:max-w-[1500px] px-4">
       <h3 className="w-full flex justify-between">
-        <span className="SpaceGrotesk font-bold">
-          El problema y la oportunidad
-        </span>
+        <span className="SpaceGrotesk font-bold">Casos de éxito</span>
         <span className="SpaceGrotesk font-bold"> (02)</span>
       </h3>
       <div className="w-full h-[1px] bg-[#353535] mt-1 mb-5"></div>

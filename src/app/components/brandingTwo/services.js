@@ -156,15 +156,15 @@ export default function Services() {
                   }`}
                 >
                   {/* Frente */}
-                  <div className="absolute w-full h-full backface-hidden bg-[#F2F1ED] outline outline-[8px] outline-[#F2F1ED] border border-[#1D1D1D] rounded-lg shadow-lg flex flex-col items-center justify-center">
+                  <div className="absolute w-full h-full backface-hidden bg-[#F2F1ED] outline outline-[8px] outline-[#F2F1ED] border border-[#1D1D1D] rounded-lg shadow-lg flex flex-col items-center justify-center overflow-hidden group">
                     <div className="flex gap-8 px-6 ">
                       <project.icon className="w-12 h-12 self-center" />
                       <h5 className="text-2xl font-montserrat font-bold">
                         {project.name}
                       </h5>
                     </div>
-                    <div className="absolute bottom-2 right-2">
-                      <Return className="text-[#1D1D1D]" />
+                    <div className="absolute bottom-0 right-0 bg-[#F2F1ED] pt-4 pb-2 pl-4 pr-2 rounded-tl-full group-hover:bg-[#1D1D1D] group-hover:text-[#F2F1ED] text-[#1D1D1D] transition-ease duration-300">
+                      <Return className="" />
                     </div>
                   </div>
 

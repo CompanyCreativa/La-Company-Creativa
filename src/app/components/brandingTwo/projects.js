@@ -85,8 +85,8 @@ export default function Projects() {
               }}
             ></div>
             <div className="relative flex justify-between flex-col h-full px-4 py-4 xl:px-10 xl:py-8">
-              <div className="w-full flex justify-between">
-                <span className="font-montserrat tracking-wide text-sm xl:text-2xl uppercase text-[#E5E7EB]">
+              <div className="w-full flex justify-between items-center">
+                <span className="font-montserrat tracking-wide text-sm xl:text-lg 2xl:text-2xl uppercase text-[#E5E7EB]">
                   <span className="font-montserrat font-bold">
                     {project.name}
                   </span>{" "}

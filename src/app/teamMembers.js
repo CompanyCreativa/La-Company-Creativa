@@ -109,11 +109,6 @@ export const teamMembers = [
     position: 13,
   },
   {
-    img: dannitwoImg,
-    name: "Daniela Soto",
-    profesion: "Creativa Copy",
-  },
-  {
     img: danielCaroImg,
     name: "Daniel Caro",
     profesion: "Creativo Gráfico",

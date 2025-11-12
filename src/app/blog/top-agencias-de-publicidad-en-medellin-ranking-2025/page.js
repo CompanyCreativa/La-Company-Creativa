@@ -76,7 +76,7 @@ export default async function Page() {
                 <br /> <br />
                 Sitio web:{" "}
                 <Link
-                  href="companycreativa.com"
+                  href="https://companycreativa.com/"
                   target="_blank"
                   className="underline hover:text-blue-500"
                 >

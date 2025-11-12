@@ -28,7 +28,7 @@ export default function CreateBrand() {
           <span className="font-bold fnt-montserrat">Creatividad </span>
           con estrategia <br /> nunca solo{" "}
           <span className="text-[16px] xl:text-[18px] 2xl:text-lg text-companySalmon rounded-full border border-companySalmon border-[1px] uppercase py-[3px] px-[8px] SpaceGrotesk">
-            bonitoy
+            bonito
           </span>
         </p>
         <p className="font-montserrat 2xl:text-lg text-[#fff] bg-[#1D1D1D] py-6 px-3 text-center w-full lg:max-w-[500px] leading-[35px] 2xl:leading-[45px] border border-[#F2F1ED] border-[1px] outline outline-[#1D1D1D] outline-[8px] rounded-md">

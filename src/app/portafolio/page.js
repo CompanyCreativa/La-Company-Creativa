@@ -20,6 +20,8 @@ import loveDesktop from "/public/portfolio/loveDesktop.png";
 import navidadDesktop from "/public/portfolio/navidadDesktop.png";
 import minipet from "/public/portfolio/minipet.png";
 import distritoFlorida from "/public/portfolio/distritoFlorida.png";
+import alkosto from "/public/portfolio/alkosto.webp";
+import importadorasAsociadas from "/public/portfolio/importadorasAsociadas.webp";
 
 export default function Page() {
   return (
@@ -107,6 +109,16 @@ export default function Page() {
             image={distritoFlorida}
             title="Vive la transformación - Distrito Florida"
             link="/portafolio/distrito-florida"
+          />
+          <GridCard
+            image={alkosto}
+            title="Carne en paz - Alkosto"
+            link="/portafolio/alkosto"
+          />
+          <GridCard
+            image={importadorasAsociadas}
+            title="Importadoras asociadas"
+            link="/portafolio/importadoras-asociadas"
           />
         </div>
       </Section>

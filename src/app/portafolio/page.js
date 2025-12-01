@@ -19,7 +19,7 @@ import bigDesktop from "/public/portfolio/bigDesktop.png";
 import loveDesktop from "/public/portfolio/loveDesktop.png";
 import navidadDesktop from "/public/portfolio/navidadDesktop.png";
 import minipet from "/public/portfolio/minipet.png";
-import distritoFlorida from "/public/portfolio/distritoFlorida.png";
+import distritoFlorida from "/public/portfolio/distritoFlorida.webp";
 import alkosto from "/public/portfolio/alkosto.webp";
 import importadorasAsociadas from "/public/portfolio/importadorasAsociadas.webp";
 
@@ -48,6 +48,31 @@ export default function Page() {
           </span>
         </div>
         <div className="mt-16 lg:mt-20 grid grid-cols-1 gap-6 lg:grid-cols-3 lg:justify-center lg:items-center w-full lg:pb-10">
+          <GridCard
+            image={alkosto}
+            title="Moss Country Living"
+            link="/portafolio/moss-country-living"
+          />
+          <GridCard
+            image={alkosto}
+            title="Carne en paz - Alkosto"
+            link="/portafolio/alkosto"
+          />
+          <GridCard
+            image={importadorasAsociadas}
+            title="Importadoras asociadas"
+            link="/portafolio/importadoras-asociadas"
+          />
+          <GridCard
+            image={minipet}
+            title="Envases a la medida - Minipet"
+            link="/portafolio/envases-minipet"
+          />
+          <GridCard
+            image={distritoFlorida}
+            title="Vive la transformación - Distrito Florida"
+            link="/portafolio/distrito-florida"
+          />
           <GridCard
             image={pacoDesktop}
             title="Rebranding - Paco"
@@ -100,26 +125,6 @@ export default function Page() {
               link="/portafolio/navidad-al-trabajo"
             />
           </div>
-          <GridCard
-            image={minipet}
-            title="Envases a la medida - Minipet"
-            link="/portafolio/envases-minipet"
-          />
-          <GridCard
-            image={distritoFlorida}
-            title="Vive la transformación - Distrito Florida"
-            link="/portafolio/distrito-florida"
-          />
-          <GridCard
-            image={alkosto}
-            title="Carne en paz - Alkosto"
-            link="/portafolio/alkosto"
-          />
-          <GridCard
-            image={importadorasAsociadas}
-            title="Importadoras asociadas"
-            link="/portafolio/importadoras-asociadas"
-          />
         </div>
       </Section>
       <Section>

@@ -21,6 +21,7 @@ import navidadDesktop from "/public/portfolio/navidadDesktop.png";
 import minipet from "/public/portfolio/minipet.png";
 import distritoFlorida from "/public/portfolio/distritoFlorida.webp";
 import alkosto from "/public/portfolio/alkosto.webp";
+import moss from "/public/portfolio/moss.webp";
 import importadorasAsociadas from "/public/portfolio/importadorasAsociadas.webp";
 
 export default function Page() {
@@ -49,7 +50,7 @@ export default function Page() {
         </div>
         <div className="mt-16 lg:mt-20 grid grid-cols-1 gap-6 lg:grid-cols-3 lg:justify-center lg:items-center w-full lg:pb-10">
           <GridCard
-            image={alkosto}
+            image={moss}
             title="Moss Country Living"
             link="/portafolio/moss-country-living"
           />

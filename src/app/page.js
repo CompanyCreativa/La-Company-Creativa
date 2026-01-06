@@ -1,7 +1,6 @@
 import PublicLayout from "./components/publicLayout";
 import MainContainer from "./components/mainContainer";
 import HomeMainBanner from "./components/Swiper/homeMainBanner";
-import OurPhilosophy from "./components/home/ourPhilosophy";
 import OurClients from "./components/home/ourClients";
 import WhatWeDo from "./components/home/whatWeDo";
 import Form from "./components/form";
@@ -21,7 +20,6 @@ export default function Home() {
       <MainContainer>
         <HomeMainBanner />
         <ModalForm />
-        <OurPhilosophy />
         <Services />
         <OurClients />
         <WhatWeDo />

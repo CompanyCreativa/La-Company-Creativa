@@ -11,7 +11,7 @@ export default function Testimonials({ children }) {
         alt="decoration"
         className="absolute bottom-[-450px] left-0"
       />
-      <div className="flex flex-col md:flex-row w-full max-w-[1300px] 2xl:max-w-[1500px] mx-auto items-start px-5 py-20 gap-10">
+      <div className="flex flex-col md:flex-row w-full max-w-[1300px] 2xl:max-w-[1500px] mx-auto items-start px-5 py-10 xl:py-20 gap-10">
         <div className="flex flex-col">
           <div className="flex">
             <h2 className="text-3xl xl:text-4xl 2xl:text-6xl text-[#E5E7EB] font-bold font-poppins mb-10 text-[#F55548] xl:text-[#FF8F87] leading-2">

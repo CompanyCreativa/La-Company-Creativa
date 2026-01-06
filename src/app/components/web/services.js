@@ -43,7 +43,7 @@ export default function Services({ children }) {
   ];
 
   return (
-    <div className="w-full flex flex-col max-w-[1366px] 2xl:max-w-[1500px] mx-auto py-20 px-5">
+    <div className="w-full flex flex-col max-w-[1366px] 2xl:max-w-[1500px] mx-auto py-10 xl:py-20 px-5">
       <div className="flex items-center gap-2">
         <p className="font-poppins text-[#E5E7EB] mb-2">
           Soluciones digitales modernas que impulsan tu marca que tu marca se

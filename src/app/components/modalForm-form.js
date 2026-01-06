@@ -5,7 +5,6 @@ import { useState } from "react";
 export default function ZohoFormTwo() {
   const [formData, setFormData] = useState({
     "First Name": "",
-    "Last Name": "",
     Company: "",
     Mobile: "",
     Email: "",
@@ -34,13 +33,6 @@ export default function ZohoFormTwo() {
 
   const checkMandatory = (e) => {
     e.preventDefault();
-
-    // Validar campos obligatorios
-    if (!formData["Last Name"].trim()) {
-      alert("Apellidos no puede estar vacío.");
-      document.getElementById("Last_Name").focus();
-      return false;
-    }
 
     if (!formData["Email"].trim()) {
       alert("Correo electrónico no puede estar vacío.");
@@ -137,29 +129,6 @@ export default function ZohoFormTwo() {
               value={formData["First Name"]}
               onChange={handleChange}
               className="w-full text-lg bg-transparent border border-white px-4 py-2 text-white placeholder-black z-30"
-            />
-          </div>
-        </div>
-
-        <div className="my-4 clear-both  flex flex-col">
-          <div className="w-[30%] mr-[10px] mt-[5px] float-left">
-            <label
-              htmlFor="Last_Name"
-              className="text-base font-calibri text-white"
-            >
-              Apellidos <span className="text-red-500">*</span>
-            </label>
-          </div>
-          <div className="float-left">
-            <input
-              type="text"
-              id="Last_Name"
-              name="Last Name"
-              maxLength="80"
-              required
-              value={formData["Last Name"]}
-              onChange={handleChange}
-              className="w-full text-lg bg-transparent border border-white px-4 py-2 text-black placeholder-black z-30 text-white"
             />
           </div>
         </div>

@@ -583,3 +583,31 @@ body {
 .rotate-y-180 {
   transform: rotateY(180deg);
 }
+
+.swiper-projects .swiper-pagination {
+  position: absolute;
+  bottom: 400px;
+  margin-block-end: 40px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+}
+
+/* Dot individual */
+.swiper-projects .swiper-pagination-bullet {
+  width: 4px;
+  height: 4px;
+  border-radius: 999px;
+  background-color: #cbd5e1;
+  opacity: 1;
+  margin: 0;
+  transition: all 0.3s ease;
+}
+
+/* Dot activo */
+.swiper-projects .swiper-pagination-bullet-active {
+  width: 28px;
+  background-color: #020617;
+}

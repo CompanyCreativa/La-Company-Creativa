@@ -3,7 +3,7 @@ import SwiperProjects from "./swiperProjects";
 
 export default function Projects({ children }) {
   return (
-    <div className="flex flex-col-reverse md:flex-row w-full max-w-[1300px] 2xl:max-w-[1500px] px-5 py-20 justify-between gap-10">
+    <div className="flex flex-col-reverse md:flex-row w-full max-w-[1300px] 2xl:max-w-[1500px] px-5 py-10 xl:py-20 justify-between gap-10">
       <div className="flex  justify-start md:hidden mt-10">
         <ButtonWeb text="Ver portafolio completo" />
       </div>

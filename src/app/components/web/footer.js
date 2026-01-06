@@ -27,7 +27,7 @@ export default function Footer() {
   ];
 
   return (
-    <div className="flex flex-col justify-center items-center gap-5 mt-10 lg:mt-30 bg-[#272020] w-full py-10">
+    <div className="flex flex-col justify-center items-center gap-5 mt-10 lg:mt-30 bg-[#272020] w-full py-10 px-5">
       <div className="flex flex-col lg:flex-row lg:gap-20 gap-10 justify-center items-center">
         <Image src={companyWhiteLogo} alt="companyWhiteLogo" />
         <div className="flex gap-5 items-center justify-center">

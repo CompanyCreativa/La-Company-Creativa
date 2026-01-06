@@ -35,7 +35,7 @@ export default function SwiperProjects() {
         loop={true}
         spaceBetween={16}
         slidesPerView={1}
-        className=""
+        className="swiper-projects"
       >
         {images.map((img, i) => (
           <SwiperSlide key={img.alt}>

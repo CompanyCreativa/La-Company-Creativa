@@ -35,8 +35,8 @@ export default function Skills({ children }) {
   ];
 
   return (
-    <div className="flex flex-col md:flex-row w-full max-w-[1300px] 2xl:max-w-[1500px] mx-auto items-end px-5 pb-20">
-      <div className="flex flex-col ]  pt-20 ">
+    <div className="flex flex-col md:flex-row w-full max-w-[1300px] 2xl:max-w-[1500px] mx-auto items-end px-5 pb-10 xl:pb-20">
+      <div className="flex flex-col ] pt-10 xl:pt-20 ">
         <div className="flex items-center gap-2">
           <p className="font-poppins text-[#E5E7EB] mb-2">
             Impulsamos tu web con tecnología de punta

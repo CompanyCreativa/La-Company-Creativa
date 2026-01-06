@@ -142,7 +142,7 @@ export default function Services() {
 
         <div className="mx-[10px] flex flex-col xl:grid grid-cols-4 gap-20 mt-20">
           {projects.map((project, index) => {
-            if (index === 4) return <div key={index}></div>;
+            if (index === 4) return <div key={index} className="-mt-20"></div>;
 
             return (
               <div

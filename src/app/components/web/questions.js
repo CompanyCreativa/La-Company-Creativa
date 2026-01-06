@@ -34,7 +34,7 @@ export default function Questions({ children }) {
     },
   ];
   return (
-    <div className="flex flex-col w-full max-w-[1300px] 2xl:max-w-[1500px] mx-auto items-center px-5 py-20 gap-5">
+    <div className="flex flex-col w-full max-w-[1300px] 2xl:max-w-[1500px] mx-auto items-center px-5 py-10 xl:py-20 gap-5">
       <h2 className="text-3xl xl:text-4xl 2xl:text-6xl text-[#E5E7EB] font-bold font-poppins text-[#F55548] leading-2">
         ¿Tienes dudas?
       </h2>

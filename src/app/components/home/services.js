@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 import brandingImage from "/public/branding.webp";
 import webImage from "/public/web.webp";
@@ -14,33 +15,39 @@ import Section from "../section";
 export default function Services() {
   const [isOpen, setIsOpen] = useState(false);
   const [activeIndex, setActiveIndex] = useState(3);
+  const router = useRouter();
 
   const projects = [
     {
       img: brandingImage,
       title: <>Branding</>,
       description: "Tu marca con una identidad clara y creativa.",
+      link: "agencia-de-branding",
     },
     {
       img: webImage,
       title: <>Páginas&nbsp;web</>,
       description: "Más que un sitio, convierte clics en clientes.",
+      link: "agencia-de-desarrollo-web",
     },
     {
       img: editorialImage,
       title: <>Página&nbsp;Editorial</>,
       description:
         "Piezas editoriales que cuentan historias con una gran experiencia.",
+      link: "editorial",
     },
     {
       img: inmobiliariaImage,
       title: <>Proyectos&nbsp;inmobiliarios</>,
       description: "Estrategia que vende espacios.",
+      link: "publicidad-proyectos-inmobiliarios",
     },
     {
       img: pautaImage,
       title: <>Pauta&nbsp;digital</>,
       description: "Anuncios que convierten de verdad.",
+      link: "agencia-de-pauta-digital",
     },
   ];
 
@@ -49,10 +56,19 @@ export default function Services() {
     setIsOpen(!isOpen);
   };
 
+  const handleClick = (index) => {
+    if (index === activeIndex) {
+      router.push(`/${projects[index].link}`);
+      return;
+    }
+
+    toggleAccordion(index);
+  };
+
   return (
     <Section className={"bg-transparent w-full"}>
       <div className="flex flex-col space-between gap-4" id="projects">
-        <h2 className="text-3xl md:text-4xl 2xl:text-5xl font-light uppercase text-[#11190C] text-start md:text-center mb-4 md:mb-8 tracking-wide">
+        <h2 className="text-3xl md:text-4xl 2xl:text-5xl font-light uppercase text-[#11190C] text-start md:text-center mb-4 md:mb-8 tracking-wide mt-20">
           <span className="font-bold text-[#11190C]">Explora </span>
           nuestros servicios
         </h2>
@@ -65,7 +81,7 @@ export default function Services() {
                   : "md:w-40 h-[88px] md:h-full "
               }`}
               key={index}
-              onClick={() => toggleAccordion(index)}
+              onClick={() => handleClick(index)}
             >
               <Image
                 src={project.img}

@@ -27,8 +27,8 @@ export default function Footer() {
   ];
 
   return (
-    <div className="flex flex-col justify-center items-center gap-5  bg-[#1D1D1D] w-full py-10 -mt-32 border-t-2 border-white">
-      <div className="flex flex-col lg:flex-row lg:gap-20 gap-10 justify-center items-center">
+    <div className="flex flex-col justify-center items-center gap-5  bg-[#1D1D1D] w-full py-10 -mt-32 border-t-2 border-white px-5">
+      <div className="flex flex-col lg:flex-row lg:gap-20 gap-10 justify-center items-center ">
         <Image src={companyWhiteLogo} alt="companyWhiteLogo" />
         <div className="flex gap-5 items-center justify-center">
           {socials.map((social, index) => (
@@ -43,7 +43,7 @@ export default function Footer() {
           ))}
         </div>
       </div>
-      <p className="mt-14 mb-14 text-[#FFFFFF]">
+      <p className="mt-14 mb-14 text-[#FFFFFF] ">
         Copyright © 2025 |{" "}
         <Link href={"/"} className="underline">
           La Company Creativa

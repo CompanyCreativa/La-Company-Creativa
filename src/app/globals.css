@@ -587,7 +587,8 @@ body {
 .swiper-projects .swiper-pagination {
   position: absolute;
   bottom: 400px;
-  margin-block-end: 40px;
+  margin-block-end: -0px;
+  z-index: 4;
   left: 0;
   width: 100%;
   display: flex;
@@ -610,4 +611,8 @@ body {
 .swiper-projects .swiper-pagination-bullet-active {
   width: 28px;
   background-color: #020617;
+}
+
+.swiper-projects {
+  padding: 30px !important;
 }

@@ -27,19 +27,19 @@ export default function SwiperProjects() {
   ];
 
   return (
-    <div className="w-full xl:max-w-4xl xl:mx-auto border border-[#E5E7EB]">
+    <div className="w-full xl:max-w-4xl xl:mx-auto  rounded-xl">
       <Swiper
         modules={[Pagination, Autoplay]}
         pagination={{ clickable: true }}
         autoplay={{ delay: 4000, disableOnInteraction: false }}
         loop={true}
-        spaceBetween={16}
+        spaceBetween={60}
         slidesPerView={1}
         className="swiper-projects"
       >
         {images.map((img, i) => (
           <SwiperSlide key={img.alt}>
-            <div className="relative w-full mt-10 xl:mt-0 h-[500px] rounded-xl overflow-hidden">
+            <div className="relative w-full mt-10 xl:mt-0 h-[500px] rounded-xl overflow-hidden shadow-[4px_4px_24px_0px_rgba(0,0,0,0.25)]">
               <Image
                 src={img.src}
                 alt={img.alt ?? `slide-${i}`}

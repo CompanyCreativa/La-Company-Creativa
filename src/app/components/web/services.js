@@ -87,6 +87,8 @@ export default function Services({ children }) {
               <div className="w-full justify-center mt-20 hidden md:flex">
                 <ButtonWeb
                   text="Mas información"
+                  action={"https://wa.link/omjp5g"}
+                  newTab
                   className="group-hover/card:bg-[#E5E7EB] opacity-0 group-hover/card:opacity-100 transition-all duration-300 ease-in-out"
                 />
               </div>

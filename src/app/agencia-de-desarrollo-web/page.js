@@ -8,6 +8,7 @@ import Testimonials from "../components/web/testimonials";
 import VideoWeb from "../components/web/videoWeb";
 import Questions from "../components/web/questions";
 import Footer from "../components/web/footer";
+import ModalForm from "../components/modalForm";
 
 export default function page() {
   return (

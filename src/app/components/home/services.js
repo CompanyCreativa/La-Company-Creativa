@@ -11,6 +11,7 @@ import pautaImage from "/public/pauta.webp";
 
 import Arrow from "../SVGicons/arrow";
 import Section from "../section";
+import ModalForm from "../modalForm";
 
 export default function Services() {
   const [isOpen, setIsOpen] = useState(false);

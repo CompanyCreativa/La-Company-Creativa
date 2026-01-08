@@ -7,6 +7,9 @@ import Footer from "../components/brandingTwo/footer";
 import Projects from "../components/brandingTwo/projects";
 import Services from "../components/brandingTwo/services";
 import Process from "../components/brandingTwo/process";
+import BeforeAfterSlider from "../components/brandingTwo/BeforeAfterSlider";
+import AfterImportadorasAsociadas from "/public/branding/afterImportadorasAsociadas.webp";
+import BeforeImportadorasAsociadas from "/public/branding/beforeImportadorasAsociadas.webp";
 
 export default function page() {
   return (
@@ -15,6 +18,11 @@ export default function page() {
       <div className="flex flex-col bg-[#F2F1ED] justify-center items-center gap-[86px] xl:gap-[116px]">
         <MainSection city="Medellín" />
         <Logo />
+        <BeforeAfterSlider
+          after={AfterImportadorasAsociadas}
+          before={BeforeImportadorasAsociadas}
+          aspect="16 / 9"
+        />
         <Projects />
         <Services />
         <Process />

@@ -13,7 +13,6 @@ import edwinImg from "/public/teamMembers/news/edwinImg.webp";
 import federicoImg from "/public/teamMembers/news/federicoImg.png";
 import kellyImg from "/public/teamMembers/news/kellyImg.png";
 import yenniImg from "/public/teamMembers/news/yenniImg.png";
-import andreaImg from "/public/teamMembers/news/andreaImg.png";
 import ignacioImg from "/public/teamMembers/news/IgnacioImg.png";
 import isabelImg from "/public/teamMembers/news/isabelImg.png";
 import alejoImg from "/public/teamMembers/news/alejoImg.webp";
@@ -112,12 +111,6 @@ export const teamMembers = [
     name: "Daniel Caro",
     profesion: "Creativo Gráfico",
     position: 15,
-  },
-  {
-    img: andreaImg,
-    name: "Andrea Suaza",
-    profesion: "Ejecutiva de Cuentas",
-    position: 22,
   },
   {
     img: emmaImg,

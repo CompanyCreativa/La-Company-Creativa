@@ -10,7 +10,7 @@ export default function TeamMembersList() {
   return (
     <div className="max-w-[1500px] ml-10 self-center mt-10 lg:mt-10">
       <div
-        className="w-full flex-col justify-between gap-5 
+        className="w-full flex-col justify-around gap-5 
        lg:flex-row lg:flex-wrap hidden lg:flex"
       >
         {teamMembers.map((teamMember, index) => {

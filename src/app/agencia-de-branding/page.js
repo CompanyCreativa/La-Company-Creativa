@@ -10,6 +10,8 @@ import Process from "../components/brandingTwo/process";
 import BeforeAfterSlider from "../components/brandingTwo/BeforeAfterSlider";
 import AfterImportadorasAsociadas from "/public/branding/afterImportadorasAsociadas.webp";
 import BeforeImportadorasAsociadas from "/public/branding/beforeImportadorasAsociadas.webp";
+import AfterImportadorasAsociadasMobile from "/public/branding/afterImportadorasAsociadasMobile.webp";
+import BeforeImportadorasAsociadasMobile from "/public/branding/beforeImportadorasAsociadasMobile.webp";
 
 export default function page() {
   return (
@@ -21,6 +23,8 @@ export default function page() {
         <BeforeAfterSlider
           after={AfterImportadorasAsociadas}
           before={BeforeImportadorasAsociadas}
+          afterMobile={AfterImportadorasAsociadasMobile}
+          beforeMobile={BeforeImportadorasAsociadasMobile}
           aspect="16 / 9"
         />
         <Projects />

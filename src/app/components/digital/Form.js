@@ -104,11 +104,8 @@ export default function LeadForm() {
     <div id="crmWebToEntityForm" className="bg-transparent">
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta httpEquiv="content-type" content="text/html;charset=UTF-8" />
-
       <form
         id="webform"
-        action="https://crm.zoho.com/crm/WebToLeadForm"
-        name="WebToLeads6724972000000743001"
         method="POST"
         onSubmit={checkMandatory}
         acceptCharset="UTF-8"

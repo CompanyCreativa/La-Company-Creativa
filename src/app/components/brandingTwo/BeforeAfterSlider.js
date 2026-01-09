@@ -2,8 +2,14 @@
 
 import { useEffect, useRef } from "react";
 import Image from "next/image";
+import ChangeImageButton from "/public/branding/changesButton.webp";
 
-export default function BeforeAfterSlider({ before, after, height = 600 }) {
+export default function BeforeAfterSlider({
+  before,
+  after,
+  beforeMobile,
+  afterMobile,
+}) {
   const containerRef = useRef(null);
   const handleRef = useRef(null);
   const afterRef = useRef(null);
@@ -62,17 +68,40 @@ export default function BeforeAfterSlider({ before, after, height = 600 }) {
   return (
     <div
       ref={containerRef}
-      className="relative w-full overflow-hidden rounded-xl select-none mx-auto xl:max-w-[1300px] 2xl:max-w-[1500px]"
-      style={{ height }}
+      className="relative w-full overflow-hidden rounded-xl select-none mx-auto max-w-[90%] h-[300px] xl:h-[600px] xl:max-w-[1300px] 2xl:max-w-[1500px]"
     >
-      {/* BEFORE */}
-      <Image src={after} alt="Before" fill className="object-cover" priority />
-
       {/* AFTER (SIEMPRE 100%) */}
+      <Image
+        src={after}
+        alt="Before"
+        fill
+        className="object-cover hidden lg:block"
+        priority
+      />
+
+      {/* AFTER MOBILE */}
+      <Image 
+        src={afterMobile}
+        alt="Before"
+        fill
+        className="object-cover lg:hidden"
+        priority
+      />
+
+      {/* BEFORE */}
       <div
         ref={afterRef}
-        className="absolute inset-0"
-        style={{ clipPath: "inset(0 50% 0 0)" }}
+        className="absolute inset-0 lg:hidden"
+        style={{ clipPath: "inset(0 100% 0 0)" }}
+      >
+        <Image src={beforeMobile} alt="After" fill className="object-cover" />
+      </div>
+
+      {/* BEFORE MOBILE */}
+      <div
+        ref={afterRef}
+        className="absolute inset-0 hidden lg:block"
+        style={{ clipPath: "inset(0 100% 0 0)" }}
       >
         <Image src={before} alt="After" fill className="object-cover" />
       </div>
@@ -80,10 +109,10 @@ export default function BeforeAfterSlider({ before, after, height = 600 }) {
       {/* HANDLE */}
       <div
         ref={handleRef}
-        className="absolute top-0 h-full w-[2px] bg-white cursor-ew-resize shadow-lg"
+        className="absolute top-0 h-full w-[2px] bg-white cursor-ew-resize shadow-[0px_4px_4px_rgba(0,0,0,1)]"
       >
-        <div className="absolute top-1/2 left-1/2 h-10 w-10 -translate-x-1/2 -translate-y-1/2 rounded-full bg-white shadow-lg flex items-center justify-center text-black font-bold">
-          ↔
+        <div className="absolute top-1/2 left-1/2 h-10 w-10 -translate-x-1/2 -translate-y-1/2 rounded-full bg-white  flex items-center justify-center text-black font-bold">
+          <Image src={ChangeImageButton} alt="Change" width={20} height={20} />
         </div>
       </div>
     </div>

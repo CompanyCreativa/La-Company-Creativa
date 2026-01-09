@@ -1,7 +1,19 @@
 "use client";
 import AccordionWeb from "../web/accordionWeb";
+import Image from "next/image";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+
+import Paco from "/public/branding/paco.png";
+import Moss from "/public/branding/moss.png";
+import DF from "/public/branding/df.png";
+import IA from "/public/branding/ia.png";
+import Zigzag from "/public/branding/zigzag.png";
+import Minipet2 from "/public/branding/minipet2.png";
 
 export default function FrequentQuestions() {
+  const logos = [Paco, Moss, DF, IA, Zigzag, Minipet2];
+
   const questions = [
     {
       question: "¿Qué incluye un proceso de branding completo?",
@@ -43,6 +55,39 @@ export default function FrequentQuestions() {
               answer={question.answer}
             />
           ))}
+        </div>
+      </div>
+      <div className="w-full flex flex-col items-center max-w-[1300px] 2xl:max-w-[1500px] mx-auto">
+        <h4 className="SpaceGrotesk font-bold text-[#F2F1ED] text-center">
+          Empresas y proyectos que han confiado en nuestro trabajo.
+        </h4>
+        <h3 className="robout font-bold text-center text-companySalmon text-[28px] mt-2">
+          Marcas que han sido parte de nuestro camino
+        </h3>
+        {/* DESKTOP: layout normal */}
+        <div className="hidden md:flex w-full flex-row items-center gap-4 2xl:gap-8 justify-center py-20">
+          {logos.map((logo, i) => (
+            <Image key={i} src={logo} alt={`Logo ${i}`} />
+          ))}
+        </div>
+
+        {/* MOBILE: carousel */}
+        <div className="block md:hidden py-20 w-full">
+          <Swiper spaceBetween={0} slidesPerView={2.5} loop={true}>
+            {logos.map((logo, i) => (
+              <SwiperSlide key={i} className="flex justify-center">
+                <div className="w-[140px] h-[120px] relative">
+                  <Image
+                    src={logo}
+                    alt={`Logo ${i}`}
+                    fill
+                    className="object-contain rounded-lg"
+                    sizes="200px"
+                  />
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
         </div>
       </div>
     </div>

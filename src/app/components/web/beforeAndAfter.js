@@ -74,8 +74,8 @@ export default function BeforeAndAfter({ children }) {
           aspect="16 / 9"
         />
       </div>
-      <div className="w-full flex max-w-[1366px] 2xl:max-w-[1500px] mx-auto py-10 xl:py-20 px-5 gap-10">
-        <div className="border border-[#343232] rounded-xl p-5 xl:p-8 2xl:p-10 w-[55%] flex flex-col gap-5">
+      <div className="w-full flex flex-col md:flex-row max-w-[1366px] 2xl:max-w-[1500px] mx-auto py-10 xl:py-20 px-5 gap-10">
+        <div className="border border-[#343232] rounded-xl p-5 xl:p-8 2xl:p-10 xl:w-[55%] flex flex-col gap-5">
           <h3 className="font-poppins text-2xl text-[#F55548] font-semibold">
             ¿Qué nos diferencia?
           </h3>
@@ -86,7 +86,7 @@ export default function BeforeAndAfter({ children }) {
             </div>
           ))}
         </div>
-        <div className="w-[45%] flex flex-col">
+        <div className="xl:w-[45%] flex flex-col">
           <div className="flex items-center gap-2">
             <p className="font-poppins text-[#E5E7EB] mb-2">
               Identifica lo que está frenando tu presencia digital.

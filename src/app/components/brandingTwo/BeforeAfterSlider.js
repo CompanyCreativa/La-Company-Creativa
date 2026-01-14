@@ -12,12 +12,14 @@ export default function BeforeAfterSlider({
 }) {
   const containerRef = useRef(null);
   const handleRef = useRef(null);
-  const afterRef = useRef(null);
+  const beforeDesktopRef = useRef(null);
+  const beforeMobileRef = useRef(null);
 
   useEffect(() => {
     const container = containerRef.current;
     const handle = handleRef.current;
-    const afterLayer = afterRef.current;
+    const beforeDesktop = beforeDesktopRef.current;
+    const beforeMobile = beforeMobileRef.current;
 
     const setPosition = (clientX) => {
       const rect = container.getBoundingClientRect();
@@ -26,86 +28,104 @@ export default function BeforeAfterSlider({
 
       const percentage = (x / rect.width) * 100;
       handle.style.left = `${percentage}%`;
-      afterLayer.style.clipPath = `inset(0 ${100 - percentage}% 0 0)`;
+      
+      const clipPath = `inset(0 ${100 - percentage}% 0 0)`;
+      if (beforeDesktop) beforeDesktop.style.clipPath = clipPath;
+      if (beforeMobile) beforeMobile.style.clipPath = clipPath;
     };
+
+    let isDragging = false;
 
     const onPointerDown = (e) => {
       e.preventDefault();
+      e.stopPropagation();
+      isDragging = true;
       handle.setPointerCapture(e.pointerId);
-      setPosition(e.clientX);
+      setPosition(e.clientX || e.touches?.[0]?.clientX);
     };
 
     const onPointerMove = (e) => {
-      if (!handle.hasPointerCapture(e.pointerId)) return;
-      setPosition(e.clientX);
+      if (!isDragging) return;
+      e.preventDefault();
+      setPosition(e.clientX || e.touches?.[0]?.clientX);
     };
 
     const onPointerUp = (e) => {
-      handle.releasePointerCapture(e.pointerId);
+      if (!isDragging) return;
+      isDragging = false;
+      if (handle.hasPointerCapture(e.pointerId)) {
+        handle.releasePointerCapture(e.pointerId);
+      }
     };
 
+    // Inicializar en el centro
     setPosition(container.offsetWidth / 2);
 
+    // Eventos pointer (funcionan en desktop y mobile)
     handle.addEventListener("pointerdown", onPointerDown);
-    handle.addEventListener("pointermove", onPointerMove);
-    handle.addEventListener("pointerup", onPointerUp);
-    handle.addEventListener("pointercancel", onPointerUp);
+    document.addEventListener("pointermove", onPointerMove);
+    document.addEventListener("pointerup", onPointerUp);
+    document.addEventListener("pointercancel", onPointerUp);
+
+    // Prevenir scroll en mobile mientras se arrastra
+    handle.addEventListener("touchstart", (e) => e.preventDefault(), { passive: false });
 
     return () => {
       handle.removeEventListener("pointerdown", onPointerDown);
-      handle.removeEventListener("pointermove", onPointerMove);
-      handle.removeEventListener("pointerup", onPointerUp);
-      handle.removeEventListener("pointercancel", onPointerUp);
+      document.removeEventListener("pointermove", onPointerMove);
+      document.removeEventListener("pointerup", onPointerUp);
+      document.removeEventListener("pointercancel", onPointerUp);
     };
   }, []);
 
   return (
     <div
       ref={containerRef}
-      className="relative w-full overflow-hidden rounded-xl select-none mx-auto max-w-[90%] h-[300px] xl:h-[600px] xl:max-w-[1300px] 2xl:max-w-[1500px]"
+      className="relative w-full overflow-hidden rounded-xl select-none mx-auto max-w-[90%] h-[300px] xl:h-[600px] xl:max-w-[1300px] 2xl:max-w-[1500px] touch-none"
     >
-      {/* AFTER (SIEMPRE 100%) */}
+      {/* AFTER Desktop (capa inferior) */}
       <Image
         src={after}
-        alt="Before"
+        alt="After"
         fill
-        className="object-cover hidden lg:block"
+        className="object-cover hidden lg:block pointer-events-none"
         priority
       />
 
-      {/* AFTER MOBILE */}
+      {/* AFTER Mobile (capa inferior) */}
       <Image
         src={afterMobile}
-        alt="Before"
+        alt="After"
         fill
-        className="object-cover lg:hidden"
+        className="object-cover lg:hidden pointer-events-none"
         priority
       />
 
-      {/* BEFORE */}
+      {/* BEFORE Desktop (capa superior con clipPath) */}
       <div
-        ref={afterRef}
-        className="absolute inset-0 lg:hidden"
-        style={{ clipPath: "inset(0 100% 0 0)" }}
+        ref={beforeDesktopRef}
+        className="absolute inset-0 hidden lg:block pointer-events-none"
+        style={{ clipPath: "inset(0 50% 0 0)" }}
       >
-        <Image src={beforeMobile} alt="After" fill className="object-cover" />
+        <Image src={before} alt="Before" fill className="object-cover" />
       </div>
 
-      {/* BEFORE MOBILE */}
+      {/* BEFORE Mobile (capa superior con clipPath) */}
       <div
-        ref={afterRef}
-        className="absolute inset-0 hidden lg:block"
-        style={{ clipPath: "inset(0 100% 0 0)" }}
+        ref={beforeMobileRef}
+        className="absolute inset-0 lg:hidden pointer-events-none"
+        style={{ clipPath: "inset(0 50% 0 0)" }}
       >
-        <Image src={before} alt="After" fill className="object-cover" />
+        <Image src={beforeMobile} alt="Before" fill className="object-cover" />
       </div>
 
       {/* HANDLE */}
       <div
         ref={handleRef}
-        className="absolute top-0 h-full w-[2px] bg-white cursor-pointer  shadow-[0px_4px_4px_rgba(0,0,0,1)]"
+        className="absolute top-0 h-full w-[2px] bg-white cursor-pointer shadow-[0px_4px_4px_rgba(0,0,0,1)] touch-none"
+        style={{ touchAction: "none" }}
       >
-        <div className="absolute top-1/2 left-1/2 h-10 w-10 -translate-x-1/2 -translate-y-1/2 rounded-full bg-white  flex items-center justify-center text-black font-bold">
+        <div className="absolute top-1/2 left-1/2 h-10 w-10 -translate-x-1/2 -translate-y-1/2 rounded-full bg-white flex items-center justify-center text-black font-bold">
           <Image src={ChangeImageButton} alt="Change" width={20} height={20} />
         </div>
       </div>

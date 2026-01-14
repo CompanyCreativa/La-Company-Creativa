@@ -28,7 +28,7 @@ export default function BeforeAfterSlider({
 
       const percentage = (x / rect.width) * 100;
       handle.style.left = `${percentage}%`;
-      
+
       const clipPath = `inset(0 ${100 - percentage}% 0 0)`;
       if (beforeDesktop) beforeDesktop.style.clipPath = clipPath;
       if (beforeMobile) beforeMobile.style.clipPath = clipPath;
@@ -68,7 +68,9 @@ export default function BeforeAfterSlider({
     document.addEventListener("pointercancel", onPointerUp);
 
     // Prevenir scroll en mobile mientras se arrastra
-    handle.addEventListener("touchstart", (e) => e.preventDefault(), { passive: false });
+    handle.addEventListener("touchstart", (e) => e.preventDefault(), {
+      passive: false,
+    });
 
     return () => {
       handle.removeEventListener("pointerdown", onPointerDown);

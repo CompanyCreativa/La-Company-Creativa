@@ -19,49 +19,43 @@ export default function BeforeAfterSlider({
     const handle = handleRef.current;
     const afterLayer = afterRef.current;
 
-    let dragging = false;
-
     const setPosition = (clientX) => {
       const rect = container.getBoundingClientRect();
       let x = clientX - rect.left;
-
       x = Math.max(0, Math.min(x, rect.width));
-      const percentage = (x / rect.width) * 100;
 
+      const percentage = (x / rect.width) * 100;
       handle.style.left = `${percentage}%`;
       afterLayer.style.clipPath = `inset(0 ${100 - percentage}% 0 0)`;
     };
 
-    const start = (e) => {
-      dragging = true;
-      setPosition(e.clientX || e.touches[0].clientX);
+    const onPointerDown = (e) => {
+      e.preventDefault();
+      handle.setPointerCapture(e.pointerId);
+      setPosition(e.clientX);
     };
 
-    const move = (e) => {
-      if (!dragging) return;
-      setPosition(e.clientX || e.touches[0].clientX);
+    const onPointerMove = (e) => {
+      if (!handle.hasPointerCapture(e.pointerId)) return;
+      setPosition(e.clientX);
     };
 
-    const stop = () => (dragging = false);
+    const onPointerUp = (e) => {
+      handle.releasePointerCapture(e.pointerId);
+    };
 
     setPosition(container.offsetWidth / 2);
 
-    handle.addEventListener("mousedown", start);
-    window.addEventListener("mousemove", move);
-    window.addEventListener("mouseup", stop);
-
-    handle.addEventListener("touchstart", start);
-    window.addEventListener("touchmove", move);
-    window.addEventListener("touchend", stop);
+    handle.addEventListener("pointerdown", onPointerDown);
+    handle.addEventListener("pointermove", onPointerMove);
+    handle.addEventListener("pointerup", onPointerUp);
+    handle.addEventListener("pointercancel", onPointerUp);
 
     return () => {
-      handle.removeEventListener("mousedown", start);
-      window.removeEventListener("mousemove", move);
-      window.removeEventListener("mouseup", stop);
-
-      handle.removeEventListener("touchstart", start);
-      window.removeEventListener("touchmove", move);
-      window.removeEventListener("touchend", stop);
+      handle.removeEventListener("pointerdown", onPointerDown);
+      handle.removeEventListener("pointermove", onPointerMove);
+      handle.removeEventListener("pointerup", onPointerUp);
+      handle.removeEventListener("pointercancel", onPointerUp);
     };
   }, []);
 
@@ -80,7 +74,7 @@ export default function BeforeAfterSlider({
       />
 
       {/* AFTER MOBILE */}
-      <Image 
+      <Image
         src={afterMobile}
         alt="Before"
         fill
@@ -109,7 +103,7 @@ export default function BeforeAfterSlider({
       {/* HANDLE */}
       <div
         ref={handleRef}
-        className="absolute top-0 h-full w-[2px] bg-white cursor-ew-resize shadow-[0px_4px_4px_rgba(0,0,0,1)]"
+        className="absolute top-0 h-full w-[2px] bg-white cursor-pointer  shadow-[0px_4px_4px_rgba(0,0,0,1)]"
       >
         <div className="absolute top-1/2 left-1/2 h-10 w-10 -translate-x-1/2 -translate-y-1/2 rounded-full bg-white  flex items-center justify-center text-black font-bold">
           <Image src={ChangeImageButton} alt="Change" width={20} height={20} />

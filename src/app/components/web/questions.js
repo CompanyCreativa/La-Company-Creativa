@@ -1,6 +1,25 @@
 import AccordionWeb from "./accordionWeb";
+import Image from "next/image";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+
+import ryrBrand from "/public/web/ryrBrand.webp";
+import adoquinarBrand from "/public/web/adoquinarBrand.webp";
+import ppcBrand from "/public/web/ppcBrand.webp";
+import mossBrand from "/public/web/mossBrand.webp";
+import ideoBrand from "/public/web/ideoBrand.webp";
+import auriBrand from "/public/web/auriBrand.webp";
 
 export default function Questions({ children }) {
+  const logos = [
+    ryrBrand,
+    adoquinarBrand,
+    ppcBrand,
+    mossBrand,
+    ideoBrand,
+    auriBrand,
+  ];
+
   const questions = [
     {
       question: "¿Qué tipos de páginas web diseñan?",
@@ -49,6 +68,39 @@ export default function Questions({ children }) {
             answer={question.answer}
           />
         ))}
+      </div>
+      <div className="w-full flex flex-col items-center max-w-[1300px] 2xl:max-w-[1500px] mx-auto mt-20">
+        <h4 className="SpaceGrotesk font-bold text-[#F2F1ED] text-center">
+          Empresas y proyectos que han confiado en nuestro trabajo.
+        </h4>
+        <h3 className="robout font-bold text-center text-companySalmon text-[28px] mt-2">
+          Marcas que han sido parte de nuestro camino
+        </h3>
+        {/* DESKTOP: layout normal */}
+        <div className="hidden md:flex w-full flex-row items-center gap-4 2xl:gap-8 justify-center py-20">
+          {logos.map((logo, i) => (
+            <Image key={i} src={logo} alt={`Logo ${i}`} />
+          ))}
+        </div>
+
+        {/* MOBILE: carousel */}
+        <div className="block md:hidden py-20 w-full">
+          <Swiper spaceBetween={0} slidesPerView={2.5} loop={true}>
+            {logos.map((logo, i) => (
+              <SwiperSlide key={i} className="flex justify-center">
+                <div className="w-[140px] h-[120px] relative">
+                  <Image
+                    src={logo}
+                    alt={`Logo ${i}`}
+                    fill
+                    className="object-contain rounded-lg"
+                    sizes="200px"
+                  />
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
       </div>
     </div>
   );

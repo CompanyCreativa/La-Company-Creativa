@@ -9,6 +9,7 @@ import VideoWeb from "../components/web/videoWeb";
 import Questions from "../components/web/questions";
 import Footer from "../components/web/footer";
 import ModalForm from "../components/modalForm";
+import BeforeAndAfter from "../components/web/beforeAndAfter";
 
 export default function page() {
   return (
@@ -16,6 +17,7 @@ export default function page() {
       <Header />
       <MainSection />
       <Services />
+      <BeforeAndAfter />
       <Skills />
       <Projects />
       <Testimonials />

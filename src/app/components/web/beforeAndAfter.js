@@ -53,16 +53,16 @@ export default function BeforeAndAfter({ children }) {
           <br />{" "}
           <span className="font-poppins text-[#FF8F87]">de cada proyecto</span>
         </h2>
-        <p className="SpaceGrotesk text-[#E5E7EB] mb-10">
+        <p className="text-[#E5E7EB] mt-5 md:mb-10 leading-6 SpaceGrotesk">
           Cuando una web se ve desordenada, lenta o anticuada,{" "}
-          <b className="font-semibold">
+          <b className="font-semibold SpaceGrotesk">
             tus clientes perciben lo mismo de tu marca.
           </b>{" "}
           Con nuestro proceso de rediseño,
           <br /> transformamos páginas comunes en experiencias digitales que
           generan confianza, comunican mejor y convierten mucho más.
           <br />{" "}
-          <b className="font-semibold">
+          <b className="font-semibold SpaceGrotesk">
             Este es el antes y después de una web bien hecha.
           </b>
         </p>
@@ -101,7 +101,7 @@ export default function BeforeAndAfter({ children }) {
             <br />{" "}
             <span className="font-poppins text-[#FF8F87]">de tu sitio web</span>
           </h2>
-          <p className="SpaceGrotesk text-[#E5E7EB] mb-10 tracking-widest text-justify">
+          <p className="SpaceGrotesk text-[#E5E7EB] mb-10 tracking-widest">
             Revisamos el rendimiento, la experiencia de usuario y la claridad de
             tu contenido para detectar oportunidades reales de mejora. Con este
             diagnóstico gratuito tendrás una visión clara de qué funciona, qué

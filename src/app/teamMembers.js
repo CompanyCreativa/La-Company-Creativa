@@ -1,7 +1,6 @@
 import claudiaImg from "/public/teamMembers/news/claudiaImg.png";
 import daniImg from "/public/teamMembers/news/daniImg.png";
 import emmaImg from "/public/teamMembers/news/emmaImg.png";
-import estebanImg from "/public/teamMembers/news/estebanImg.png";
 import gabrielImg from "/public/teamMembers/news/gabrielImg.png";
 import gladysImg from "/public/teamMembers/news/gladysImg.png";
 import guilleImg from "/public/teamMembers/news/guilleImg.png";
@@ -18,18 +17,19 @@ import isabelImg from "/public/teamMembers/news/isabelImg.png";
 import alejoImg from "/public/teamMembers/news/alejoImg.webp";
 import tatianaImg from "/public/teamMembers/news/tatianaImg.webp";
 import danielCaroImg from "/public/teamMembers/news/danielCaroImg.webp";
+import camilaImg from "/public/teamMembers/news/camilaImg.webp";
 
 export const teamMembers = [
   {
     img: edwinImg,
-    name: "Edwin Atehortúa",
+    name: "Edwin Jaramillo",
     profesion: "Director Creativo",
     position: 1,
   },
   {
-    img: estebanImg,
-    name: "Esteban Restrepo",
-    profesion: "Socio / Proyectos Especiales",
+    img: tomasImg,
+    name: "Tomás Jaramillo",
+    profesion: "Director Digital",
     position: 2,
   },
   {
@@ -39,22 +39,46 @@ export const teamMembers = [
     position: 3,
   },
   {
-    img: tomasImg,
-    name: "Tomás Jaramillo",
-    profesion: "Estratega Digital",
-    position: 4,
-  },
-  {
     img: gabrielImg,
     name: "Gabriel Jaramillo",
     profesion: "Fundador / Director General",
-    position: 5,
+    position: 4,
   },
   {
     img: ignacioImg,
     name: "Ignacio Restrepo",
     profesion: "Fundador / Gerente Administrativo",
-    position: 7,
+    position: 5,
+  },
+  {
+    img: camilaImg,
+    name: "Camila Toloza",
+    profesion: "Ejecutiva Comercial",
+    position: 6,
+  },
+  {
+    img: emmaImg,
+    name: "Emma Villareal",
+    profesion: "Ejecutiva de Cuentas / Producción",
+    position: 18,
+  },
+  {
+    img: daniImg,
+    name: "Daniel Zapata",
+    profesion: "Diseñador UI-UX",
+    position: 9,
+  },
+  {
+    img: federicoImg,
+    name: "Federico López",
+    profesion: "Desarrollador Web",
+    position: 11,
+  },
+  {
+    img: yenniImg,
+    name: "Yenifer Cadavid",
+    profesion: "Creativa Audiovisual",
+    position: 10,
   },
   {
     img: kellyImg,
@@ -69,42 +93,10 @@ export const teamMembers = [
     position: 8,
   },
   {
-    img: federicoImg,
-    name: "Federico López",
-    profesion: "Desarrollador Web",
-    position: 11,
-  },
-  {
-    img: daniImg,
-    name: "Daniel Zapata",
-    profesion: "Diseñador UI UX",
-    position: 9,
-  },
-
-  {
-    img: yenniImg,
-    name: "Yenifer Cadavid",
-    profesion: "Creativa Audiovisual",
-    position: 10,
-  },
-
-  {
-    img: manuImg,
-    name: "Manuela Correa",
-    profesion: "Community Manager",
-    position: 16,
-  },
-  {
     img: alejoImg,
     name: "Alejandro Cardona",
     profesion: "Creativo Gráfico",
     position: 12,
-  },
-  {
-    img: isabelImg,
-    name: "Isabel Benavides",
-    profesion: "Community Manager",
-    position: 13,
   },
   {
     img: danielCaroImg,
@@ -113,10 +105,16 @@ export const teamMembers = [
     position: 15,
   },
   {
-    img: emmaImg,
-    name: "Emma Villareal",
-    profesion: "Ejecutiva de Cuentas / Producción",
-    position: 18,
+    img: manuImg,
+    name: "Manuela Correa",
+    profesion: "Community Manager",
+    position: 16,
+  },
+  {
+    img: isabelImg,
+    name: "Isabel Benavides",
+    profesion: "Community Manager",
+    position: 13,
   },
   {
     img: gladysImg,
@@ -133,7 +131,7 @@ export const teamMembers = [
   {
     img: moniImg,
     name: "Mónica Arias",
-    profesion: "Coordinadora de RH",
+    profesion: "Coordinadora Gestión Humana",
     position: 21,
   },
   {

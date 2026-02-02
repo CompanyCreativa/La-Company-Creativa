@@ -59,6 +59,7 @@ export default function CreateBrand() {
         <button
           className={`flex text-sm md:text-base 2xl:text-lg font-light items-center gap-5 robout text-[#FFFFFF] bg-[#1D1D1D] px-4 py-2 rounded-full group ${className} overflow-hidden border border-white/10  shadow-[0_12px_40px_rgba(8,15,30,0.55)] relative `}
           onClick={handleClick}
+          id="botonwp-branding"
         >
           <p className="flex-1 ml-5 text-center font-[400]">
             Solicita diagnóstico gratuito

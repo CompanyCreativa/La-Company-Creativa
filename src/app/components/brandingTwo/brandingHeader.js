@@ -25,6 +25,7 @@ export default function BrandingHeader() {
         <button
           className={`flex text-sm md:text-base 2xl:text-lg font-light items-center gap-5 robout text-[#302F32] bg-[#fff] px-4 py-4 xl:py-2 rounded-full group ${className} overflow-hidden border border-white/10  shadow-[0_12px_40px_rgba(8,15,30,0.55)] relative hidden lg:flex`}
           onClick={handleClick}
+          id="botonwp-branding"
         >
           <p className="flex-1 ml-5 text-center font-[400]">Hablemos</p>
           <div className="relative bg-[#302F32] w-8 h-8 flex items-center justify-center rounded-full ">

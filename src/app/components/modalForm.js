@@ -152,7 +152,7 @@ const ModalFormInt = () => {
 
       <button
         onClick={() => setIsModalOpen(true)}
-        className="button fixed bottom-0 right-[4%] z-40"
+        className="button fixed bottom-16 right-[4%] z-40"
       >
         <div className="qubetwo qube">
           <div className="front" style={{ color: "#ffffff", gap: "8px" }}>

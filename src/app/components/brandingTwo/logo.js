@@ -94,6 +94,7 @@ export default function Logo() {
         <button
           className={`flex text-sm md:text-base 2xl:text-lg font-light items-center gap-5 robout text-[#FFFFFF] bg-[#1D1D1D] px-4 py-2 rounded-full group ${className} overflow-hidden border border-white/10 relative mt-40 hidden xl:flex`}
           onClick={handleClick}
+          id="botonwp-branding"
         >
           <p className="flex-1 ml-5 text-center font-[400]">Hablemos</p>
           <div className="relative bg-[#FFFFFF] w-8 h-8 flex items-center justify-center rounded-full ">

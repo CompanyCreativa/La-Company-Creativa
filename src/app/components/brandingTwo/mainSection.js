@@ -38,6 +38,7 @@ export default function MainSection({ city }) {
           <ButtonBranding
             text="Solicita diagnóstico gratuito"
             action={handleClick}
+            id="botonwp-branding"
             className="hidden xl:flex"
           />
           <ButtonBranding

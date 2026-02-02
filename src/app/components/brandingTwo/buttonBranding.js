@@ -4,7 +4,13 @@ import { useRouter } from "next/navigation";
 
 import Arrow from "../SVGicons/arrow";
 
-export default function ButtonBranding({ text, action, className, newTab }) {
+export default function ButtonBranding({
+  text,
+  action,
+  className,
+  newTab,
+  id,
+}) {
   const router = useRouter();
 
   const handleClick = () => {
@@ -21,6 +27,7 @@ export default function ButtonBranding({ text, action, className, newTab }) {
 
   return (
     <button
+      id={id}
       className={`flex text-sm md:text-base 2xl:text-lg font-light  items-center gap-5 robout text-[#302F32] bg-[#fff]/10 px-4 py-2 rounded-full group ${className} overflow-hidden border border-white/10 backdrop-blur-md bg-white/5 shadow-[0_12px_40px_rgba(8,15,30,0.55)] relative `}
       onClick={handleClick}
     >

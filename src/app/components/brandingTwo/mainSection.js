@@ -7,10 +7,6 @@ import { motion } from "motion/react";
 import ScrollDownIcon from "../SVGicons/scrollDownIcon";
 
 export default function MainSection({ city }) {
-  const handleClick = () => {
-    window.open("https://wa.link/103gx5", "_blank"); // 👉 abre en otra pestaña
-  };
-
   const handleClickProjects = () => {
     window.location.href = "/portafolio";
   };
@@ -35,12 +31,17 @@ export default function MainSection({ city }) {
           <span className="font-montserrat font-bold"> y se elija.</span>
         </p>
         <div className="flex gap-5 mt-10 2xl:mt-20">
-          <ButtonBranding
-            text="Solicita diagnóstico gratuito"
-            action={handleClick}
+          <a
+            href="https://wa.link/103gx5"
             id="botonwp-branding"
-            className="hidden xl:flex"
-          />
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <ButtonBranding
+              text="Solicita diagnóstico gratuito"
+              className="hidden xl:flex"
+            />
+          </a>
           <ButtonBranding
             text="Ver proyectos de branding"
             action={handleClickProjects}

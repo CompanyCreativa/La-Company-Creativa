@@ -56,19 +56,24 @@ export default function CreateBrand() {
         </p>
       </div>
       <div className="w-full items-center flex justify-center mt-20">
-        <button
-          className={`flex text-sm md:text-base 2xl:text-lg font-light items-center gap-5 robout text-[#FFFFFF] bg-[#1D1D1D] px-4 py-2 rounded-full group ${className} overflow-hidden border border-white/10  shadow-[0_12px_40px_rgba(8,15,30,0.55)] relative `}
-          onClick={handleClick}
+        <a
+          href="https://wa.link/103gx5"
           id="botonwp-branding"
+          target="_blank"
+          rel="noopener noreferrer"
         >
-          <p className="flex-1 ml-5 text-center font-[400]">
-            Solicita diagnóstico gratuito
-          </p>
-          <div className="relative bg-[#FFFFFF] w-8 h-8 flex items-center justify-center rounded-full ">
-            <Arrow className="text-[#353535] z-10" />
-            <div className="absolute w-0 h-0 group-hover:w-full bg-companySalmon transition-all duration-300 ease-in-out group-hover:h-full rounded-full"></div>
-          </div>
-        </button>
+          <button
+            className={`flex text-sm md:text-base 2xl:text-lg font-light items-center gap-5 robout text-[#FFFFFF] bg-[#1D1D1D] px-4 py-2 rounded-full group ${className} overflow-hidden border border-white/10  shadow-[0_12px_40px_rgba(8,15,30,0.55)] relative `}
+          >
+            <p className="flex-1 ml-5 text-center font-[400]">
+              Solicita diagnóstico gratuito
+            </p>
+            <div className="relative bg-[#FFFFFF] w-8 h-8 flex items-center justify-center rounded-full ">
+              <Arrow className="text-[#353535] z-10" />
+              <div className="absolute w-0 h-0 group-hover:w-full bg-companySalmon transition-all duration-300 ease-in-out group-hover:h-full rounded-full"></div>
+            </div>
+          </button>
+        </a>
       </div>
     </div>
   );

@@ -6,10 +6,6 @@ import logo from "/public/logoCompany.svg";
 import Arrow from "../SVGicons/arrow";
 
 export default function BrandingHeader() {
-  const handleClick = () => {
-    window.open("https://wa.link/103gx5", "_blank"); // 👉 abre en otra pestaña
-  };
-
   const className = "";
 
   return (
@@ -22,17 +18,22 @@ export default function BrandingHeader() {
             alt="Logo"
           />
         </Link>
-        <button
-          className={`flex text-sm md:text-base 2xl:text-lg font-light items-center gap-5 robout text-[#302F32] bg-[#fff] px-4 py-4 xl:py-2 rounded-full group ${className} overflow-hidden border border-white/10  shadow-[0_12px_40px_rgba(8,15,30,0.55)] relative hidden lg:flex`}
-          onClick={handleClick}
+        <a
+          href="https://wa.link/103gx5"
           id="botonwp-branding"
+          target="_blank"
+          rel="noopener noreferrer"
         >
-          <p className="flex-1 ml-5 text-center font-[400]">Hablemos</p>
-          <div className="relative bg-[#302F32] w-8 h-8 flex items-center justify-center rounded-full ">
-            <Arrow className="text-white z-10" />
-            <div className="absolute w-0 h-0 group-hover:w-full bg-companySalmon transition-all duration-300 ease-in-out group-hover:h-full rounded-full"></div>
-          </div>
-        </button>
+          <button
+            className={`flex text-sm md:text-base 2xl:text-lg font-light items-center gap-5 robout text-[#302F32] bg-[#fff] px-4 py-4 xl:py-2 rounded-full group ${className} overflow-hidden border border-white/10  shadow-[0_12px_40px_rgba(8,15,30,0.55)] relative hidden lg:flex`}
+          >
+            <p className="flex-1 ml-5 text-center font-[400]">Hablemos</p>
+            <div className="relative bg-[#302F32] w-8 h-8 flex items-center justify-center rounded-full ">
+              <Arrow className="text-white z-10" />
+              <div className="absolute w-0 h-0 group-hover:w-full bg-companySalmon transition-all duration-300 ease-in-out group-hover:h-full rounded-full"></div>
+            </div>
+          </button>
+        </a>
       </div>
     </header>
   );

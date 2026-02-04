@@ -17,7 +17,6 @@ import isabelImg from "/public/teamMembers/news/isabelImg.png";
 import alejoImg from "/public/teamMembers/news/alejoImg.webp";
 import tatianaImg from "/public/teamMembers/news/tatianaImg.webp";
 import danielCaroImg from "/public/teamMembers/news/danielCaroImg.webp";
-import camilaImg from "/public/teamMembers/news/camilaImg.webp";
 
 export const teamMembers = [
   {
@@ -49,12 +48,6 @@ export const teamMembers = [
     name: "Ignacio Restrepo",
     profesion: "Fundador / Gerente Administrativo",
     position: 5,
-  },
-  {
-    img: camilaImg,
-    name: "Camila Toloza",
-    profesion: "Ejecutiva Comercial",
-    position: 6,
   },
   {
     img: emmaImg,

@@ -55,6 +55,22 @@ export default function RootLayout({ children }) {
       <body>
         {children}
         <GoogleTagManager gtmId="GTM-WJ345W3" />
+        <Script
+          src="https://tracker.metricool.com/resources/be.js"
+          strategy="afterInteractive"
+        />
+
+        <Script id="metricool-init" strategy="afterInteractive">
+          {`
+            window.addEventListener("load", function() {
+              if (window.beTracker) {
+                window.beTracker.t({
+                  hash: "17654d0e9ea63241dcd0e6efada26779"
+                });
+              }
+            });
+          `}
+        </Script>
       </body>
     </html>
   );

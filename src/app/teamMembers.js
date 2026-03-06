@@ -17,6 +17,8 @@ import isabelImg from "/public/teamMembers/news/isabelImg.png";
 import alejoImg from "/public/teamMembers/news/alejoImg.webp";
 import tatianaImg from "/public/teamMembers/news/tatianaImg.webp";
 import danielCaroImg from "/public/teamMembers/news/danielCaroImg.webp";
+import luisaImg from "/public/teamMembers/news/luisaImg.png";
+import daniPracti from "/public/teamMembers/news/danielPractiImg.png";
 
 export const teamMembers = [
   {
@@ -50,6 +52,12 @@ export const teamMembers = [
     position: 5,
   },
   {
+    img: luisaImg,
+    name: "Luisa Hernández",
+    profesion: "Ejecutiva Comercial",
+    position: 7,
+  },
+  {
     img: emmaImg,
     name: "Emma Villareal",
     profesion: "Ejecutiva de Cuentas / Producción",
@@ -72,6 +80,12 @@ export const teamMembers = [
     name: "Yenifer Cadavid",
     profesion: "Creativa Audiovisual",
     position: 10,
+  },
+  {
+    img: tatianaImg,
+    name: "Tatiana Cadavid",
+    profesion: "Creativa Audiovisual",
+    position: 21,
   },
   {
     img: kellyImg,
@@ -128,9 +142,9 @@ export const teamMembers = [
     position: 21,
   },
   {
-    img: tatianaImg,
-    name: "Tatiana Cadavid",
+    img: daniPracti,
+    name: "Daniel Montoya",
     profesion: "Practicante",
-    position: 21,
-  },
+    position: 22,
+  }
 ];

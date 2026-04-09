@@ -59,7 +59,7 @@ export const teamMembers = [
   },
   {
     img: emmaImg,
-    name: "Emma Villareal",
+    name: "Emma Villarreal",
     profesion: "Ejecutiva de Cuentas / Producción",
     position: 18,
   },
@@ -114,13 +114,13 @@ export const teamMembers = [
   {
     img: manuImg,
     name: "Manuela Correa",
-    profesion: "Community Manager",
+    profesion: "Creativa Digital",
     position: 16,
   },
   {
     img: isabelImg,
     name: "Isabel Benavides",
-    profesion: "Community Manager",
+    profesion: "Creativa Digital",
     position: 13,
   },
   {

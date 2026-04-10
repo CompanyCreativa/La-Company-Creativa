@@ -27,7 +27,7 @@ export default function Footer() {
             </span>
             <div className="w-full h-px bg-white"></div>
           </div>
-          <span className="text-[29px] text-companySalmon">36 años</span>
+          <span className="text-[29px] text-companySalmon">37 años</span>
           <span className="text-white font-montserrat text-sm tracking-[8px] font-bold mt-2">
             de experiencia
           </span>

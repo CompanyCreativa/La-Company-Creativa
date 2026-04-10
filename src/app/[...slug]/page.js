@@ -59,8 +59,6 @@ export default function Gracias({ params }) {
 export async function generateStaticParams() {
   return [
     { slug: ["gracias"] },
-    { slug: ["agencia-de-branding-medellin", "gracias"] },
-    { slug: ["agencia-de-branding-bogota", "gracias"] },
     { slug: ["agencia-de-pauta-digital", "gracias"] },
     { slug: ["agencia-de-pauta-digital-medellin", "gracias"] },
     { slug: ["agencia-de-pauta-digital-bogota", "gracias"] },

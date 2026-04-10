@@ -11,6 +11,7 @@ import doradoDesktop from "/public/portfolio/doradoDesktop.png";
 import francaImg from "/public/portfolio/francaPortfolio.png";
 import terapiaDesktop from "/public/portfolio/terapiasDesktop.png";
 import zigDesktop from "/public/portfolio/zigDesktop.png";
+import distritoDesktop from "/public/portfolio/distritoFlorida.webp";
 
 export default function OurClients() {
   return (
@@ -87,6 +88,11 @@ export default function OurClients() {
               image={terapiaDesktop}
               title="Ideoterapias Ideo"
               link="/portafolio/ideoterapia"
+            />
+            <GridCard
+              image={distritoDesktop}
+              title="Distrito Florida"
+              link="/portafolio/distrito-florida"
             />
           </div>
         </div>

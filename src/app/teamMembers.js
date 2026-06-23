@@ -4,7 +4,6 @@ import emmaImg from "/public/teamMembers/news/emmaImg.png";
 import gabrielImg from "/public/teamMembers/news/gabrielImg.png";
 import gladysImg from "/public/teamMembers/news/gladysImg.png";
 import guilleImg from "/public/teamMembers/news/guilleImg.png";
-import manuImg from "/public/teamMembers/news/manuImg.png";
 import mileImg from "/public/teamMembers/news/mileImg.png";
 import moniImg from "/public/teamMembers/news/moniImg.png";
 import tomasImg from "/public/teamMembers/news/tomasImg.png";
@@ -19,6 +18,7 @@ import tatianaImg from "/public/teamMembers/news/tatianaImg.webp";
 import danielCaroImg from "/public/teamMembers/news/danielCaroImg.webp";
 import luisaImg from "/public/teamMembers/news/luisaImg.png";
 import daniPracti from "/public/teamMembers/news/danielPractiImg.png";
+import mariaLu from "/public/teamMembers/news/marialuImg.webp";
 
 export const teamMembers = [
   {
@@ -112,10 +112,10 @@ export const teamMembers = [
     position: 15,
   },
   {
-    img: manuImg,
-    name: "Manuela Correa",
-    profesion: "Creativa Digital",
-    position: 16,
+    img: mariaLu,
+    name: "Maria Luisa Peña",
+    profesion: "Community Manager",
+    position: 14,
   },
   {
     img: isabelImg,
@@ -146,5 +146,5 @@ export const teamMembers = [
     name: "Daniel Montoya",
     profesion: "Practicante",
     position: 22,
-  }
+  },
 ];

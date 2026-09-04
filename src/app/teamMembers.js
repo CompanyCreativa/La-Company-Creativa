@@ -4,21 +4,20 @@ import emmaImg from "/public/teamMembers/news/emmaImg.png";
 import gabrielImg from "/public/teamMembers/news/gabrielImg.png";
 import gladysImg from "/public/teamMembers/news/gladysImg.png";
 import guilleImg from "/public/teamMembers/news/guilleImg.png";
-import manuImg from "/public/teamMembers/news/manuImg.png";
 import mileImg from "/public/teamMembers/news/mileImg.png";
 import moniImg from "/public/teamMembers/news/moniImg.png";
 import tomasImg from "/public/teamMembers/news/tomasImg.png";
 import edwinImg from "/public/teamMembers/news/edwinImg.webp";
 import federicoImg from "/public/teamMembers/news/federicoImg.png";
 import kellyImg from "/public/teamMembers/news/kellyImg.png";
-import yenniImg from "/public/teamMembers/news/yenniImg.png";
 import ignacioImg from "/public/teamMembers/news/IgnacioImg.png";
 import isabelImg from "/public/teamMembers/news/isabelImg.png";
 import alejoImg from "/public/teamMembers/news/alejoImg.webp";
 import tatianaImg from "/public/teamMembers/news/tatianaImg.webp";
 import luisaImg from "/public/teamMembers/news/luisaImg.png";
-import daniPracti from "/public/teamMembers/news/danielPractiImg.png";
+import mariaLu from "/public/teamMembers/news/marialuImg.webp";
 import danielaRuizImg from "/public/teamMembers/news/danielaRuizImg.webp";
+import valentinaAriasImg from "/public/teamMembers/news/valentina-arias-practi.webp";
 
 export const teamMembers = [
   {
@@ -76,12 +75,6 @@ export const teamMembers = [
     position: 11,
   },
   {
-    img: yenniImg,
-    name: "Yenifer Cadavid",
-    profesion: "Creativa Audiovisual",
-    position: 10,
-  },
-  {
     img: tatianaImg,
     name: "Tatiana Cadavid",
     profesion: "Creativa Audiovisual",
@@ -112,10 +105,10 @@ export const teamMembers = [
     position: 12,
   },
   {
-    img: manuImg,
-    name: "Manuela Correa",
+    img: mariaLu,
+    name: "Maria Luisa Peña",
     profesion: "Creativa Digital",
-    position: 16,
+    position: 14,
   },
   {
     img: isabelImg,
@@ -142,9 +135,9 @@ export const teamMembers = [
     position: 21,
   },
   {
-    img: daniPracti,
-    name: "Daniel Montoya",
+    img: valentinaAriasImg,
+    name: "Valentina Arias",
     profesion: "Practicante",
     position: 22,
-  },
+  }
 ];

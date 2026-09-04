@@ -16,9 +16,9 @@ import ignacioImg from "/public/teamMembers/news/IgnacioImg.png";
 import isabelImg from "/public/teamMembers/news/isabelImg.png";
 import alejoImg from "/public/teamMembers/news/alejoImg.webp";
 import tatianaImg from "/public/teamMembers/news/tatianaImg.webp";
-import danielCaroImg from "/public/teamMembers/news/danielCaroImg.webp";
 import luisaImg from "/public/teamMembers/news/luisaImg.png";
 import daniPracti from "/public/teamMembers/news/danielPractiImg.png";
+import danielaRuizImg from "/public/teamMembers/news/danielaRuizImg.webp";
 
 export const teamMembers = [
   {
@@ -88,6 +88,12 @@ export const teamMembers = [
     position: 21,
   },
   {
+    img: danielaRuizImg,
+    name: "Daniela Ruiz",
+    profesion: "Copywriter",
+    position: 14,
+  },
+  {
     img: kellyImg,
     name: "Kelly Orozco",
     profesion: "Creativa Gráfica",
@@ -104,12 +110,6 @@ export const teamMembers = [
     name: "Alejandro Cardona",
     profesion: "Creativo Gráfico",
     position: 12,
-  },
-  {
-    img: danielCaroImg,
-    name: "Daniel Caro",
-    profesion: "Creativo Gráfico",
-    position: 15,
   },
   {
     img: manuImg,
@@ -146,5 +146,5 @@ export const teamMembers = [
     name: "Daniel Montoya",
     profesion: "Practicante",
     position: 22,
-  }
+  },
 ];

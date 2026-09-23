@@ -82,12 +82,6 @@ export const teamMembers = [
     position: 21,
   },
   {
-    img: danielaRuizImg,
-    name: "Daniela Ruiz",
-    profesion: "Copywriter",
-    position: 14,
-  },
-  {
     img: kellyImg,
     name: "Kelly Orozco",
     profesion: "Creativa Gráfica",

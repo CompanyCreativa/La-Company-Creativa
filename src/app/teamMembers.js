@@ -18,6 +18,7 @@ import luisaImg from "/public/teamMembers/news/luisaImg.png";
 import mariaLu from "/public/teamMembers/news/marialuImg.webp";
 import danielaRuizImg from "/public/teamMembers/news/danielaRuizImg.webp";
 import valentinaAriasImg from "/public/teamMembers/news/valentina-arias-practi.webp";
+import danielaBernal from "/public/teamMembers/news/daniela-bernal.webp";
 
 export const teamMembers = [
   {
@@ -139,5 +140,11 @@ export const teamMembers = [
     name: "Valentina Arias",
     profesion: "Practicante",
     position: 22,
-  }
+  },
+  {
+    img: danielaBernal,
+    name: "Daniela Bernal",
+    profesion: "Practicante",
+    position: 23,
+  },
 ];
